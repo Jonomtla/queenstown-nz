@@ -44,7 +44,7 @@ export default function ListingTemplate({ listing }: { listing: ListingData }) {
 
       {/* Breadcrumbs */}
       <div className="bg-cream px-8 md:px-20 lg:px-24 py-4">
-        <nav className="max-w-7xl mx-auto flex items-center gap-2 text-sm text-gray-500">
+        <nav className="container-wide flex items-center gap-2 text-sm text-gray-500">
           <Link href="/" className="hover:text-teal">Home</Link>
           <span>/</span>
           <span className="text-gray-700">{listing.title}</span>
@@ -53,7 +53,7 @@ export default function ListingTemplate({ listing }: { listing: ListingData }) {
 
       {/* Content */}
       <section className="bg-white px-8 md:px-20 lg:px-24 py-12">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-[1fr_380px] gap-12">
+        <div className="container-wide grid lg:grid-cols-[1fr_380px] gap-12">
           {/* Main content */}
           <div>
             <span className="inline-block bg-copper/10 text-copper text-xs font-semibold tracking-widest-custom uppercase px-4 py-1.5 rounded-full">
@@ -62,7 +62,7 @@ export default function ListingTemplate({ listing }: { listing: ListingData }) {
             <h1 className="text-3xl md:text-5xl font-bold text-teal mt-4 tracking-widest-custom uppercase leading-tight">
               {listing.title}
             </h1>
-            <div className="mt-8 text-gray-600 leading-relaxed space-y-4">
+            <div className="mt-8 text-body leading-relaxed space-y-4">
               {listing.description.split("\n\n").map((para, i) => (
                 <p key={i}>{para}</p>
               ))}
@@ -148,7 +148,7 @@ export default function ListingTemplate({ listing }: { listing: ListingData }) {
       {/* Related listings */}
       {related.length > 0 && (
         <section className="bg-cream px-8 md:px-20 lg:px-24 py-16">
-          <div className="max-w-7xl mx-auto">
+          <div className="container-wide">
             <h2 className="text-2xl font-bold text-teal tracking-widest-custom uppercase mb-8">
               You Might Also Like
             </h2>

@@ -10,12 +10,12 @@ export default function Hero() {
         className="object-cover"
         priority
       />
-      <div className="absolute inset-0 bg-black/20" />
-      <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-20 lg:px-24">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight max-w-2xl">
-          WELCOME TO
+      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/36" />
+      <div className="absolute inset-0 flex flex-col justify-end px-8 md:px-20 lg:px-24 pb-24">
+        <h1 className="text-[35px] md:text-[56px] lg:text-[70px] font-bold text-white leading-[1.1] max-w-2xl tracking-widest-custom uppercase">
+          Welcome to
           <br />
-          QUEENSTOWN
+          Queenstown
         </h1>
       </div>
       {/* Scroll indicator */}

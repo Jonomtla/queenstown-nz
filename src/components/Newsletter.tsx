@@ -1,7 +1,7 @@
 export default function Newsletter() {
   return (
     <section className="bg-cream py-16 px-8 md:px-20 lg:px-24">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="container-wide flex flex-col md:flex-row items-center justify-between gap-8">
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-teal tracking-widest-custom uppercase leading-tight">
             Get Queenstown Updates in Your Inbox
@@ -38,7 +38,7 @@ export default function Newsletter() {
       </div>
 
       {/* Email signup */}
-      <div className="max-w-7xl mx-auto mt-8 flex flex-col sm:flex-row gap-4">
+      <div className="container-wide mt-8 flex flex-col sm:flex-row gap-4">
         <input
           type="email"
           placeholder="your@email.com"

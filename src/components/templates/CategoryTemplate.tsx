@@ -47,7 +47,7 @@ export default function CategoryTemplate({ category, breadcrumbs }: { category: 
 
       {/* Breadcrumbs */}
       <div className="bg-cream px-8 md:px-20 lg:px-24 py-4">
-        <nav className="max-w-7xl mx-auto flex items-center gap-2 text-sm text-gray-500">
+        <nav className="container-wide flex items-center gap-2 text-sm text-gray-500">
           <Link href="/" className="hover:text-teal">Home</Link>
           {breadcrumbs.map((crumb) => (
             <span key={crumb.href} className="flex items-center gap-2">
@@ -60,8 +60,8 @@ export default function CategoryTemplate({ category, breadcrumbs }: { category: 
 
       {/* Intro */}
       <section className="bg-white px-8 md:px-20 lg:px-24 py-12">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-gray-600 text-lg leading-relaxed max-w-4xl">
+        <div className="container-wide">
+          <p className="text-body text-lg leading-relaxed max-w-4xl">
             {category.description}
           </p>
         </div>
@@ -70,7 +70,7 @@ export default function CategoryTemplate({ category, breadcrumbs }: { category: 
       {/* Listing cards grid */}
       {categoryListings.length > 0 && (
         <section className="bg-white px-8 md:px-20 lg:px-24 pb-20">
-          <div className="max-w-7xl mx-auto">
+          <div className="container-wide">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {categoryListings.map((listing) => (
                 <Link
@@ -116,7 +116,7 @@ export default function CategoryTemplate({ category, breadcrumbs }: { category: 
       {/* Empty state */}
       {categoryListings.length === 0 && (
         <section className="bg-white px-8 md:px-20 lg:px-24 pb-20">
-          <div className="max-w-7xl mx-auto text-center py-16">
+          <div className="container-wide text-center py-16">
             <p className="text-gray-400 text-lg">
               Listings coming soon. Check back for updates.
             </p>

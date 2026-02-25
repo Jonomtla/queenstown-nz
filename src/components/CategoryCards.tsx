@@ -115,7 +115,7 @@ export default function CategoryCards() {
 
   return (
     <section className="bg-white pb-16 px-8 md:px-20 lg:px-24">
-      <div className="max-w-7xl mx-auto">
+      <div className="container-wide">
         {/* Tabs */}
         <div className="flex gap-8 border-b border-gray-200 mb-10">
           {TABS.map((tab) => (

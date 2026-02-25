@@ -56,7 +56,7 @@ export default function StoriesSection() {
 
   return (
     <section className="bg-cream py-20 px-8 md:px-20 lg:px-24">
-      <div className="max-w-7xl mx-auto">
+      <div className="container-wide">
         <p className="text-gray-400 uppercase tracking-widest-custom text-sm font-semibold">
           Featured
         </p>

@@ -34,11 +34,11 @@ const SEASONS = [
 export default function SeasonsSection() {
   return (
     <section className="bg-cream py-20 px-8 md:px-20 lg:px-24">
-      <div className="max-w-7xl mx-auto">
+      <div className="container-wide">
         <h2 className="text-3xl md:text-4xl font-bold text-teal tracking-widest-custom uppercase leading-tight">
           Queenstown Through the Seasons
         </h2>
-        <p className="text-gray-600 mt-4 max-w-3xl leading-relaxed">
+        <p className="text-body mt-4 max-w-3xl leading-relaxed">
           One of the great things about Queenstown, is its ability to transform
           with the seasons. From our winter wonderland and blooming spring, to
           golden autumn hues and lake-side summers, there&apos;s always a good

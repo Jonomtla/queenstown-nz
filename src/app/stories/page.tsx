@@ -40,7 +40,7 @@ export default function StoriesIndexPage() {
 
       {/* Breadcrumbs */}
       <div className="bg-cream px-8 md:px-20 lg:px-24 py-4">
-        <nav className="max-w-7xl mx-auto flex items-center gap-2 text-sm text-gray-500">
+        <nav className="container-wide flex items-center gap-2 text-sm text-gray-500">
           <Link href="/" className="hover:text-teal">Home</Link>
           <span>/</span>
           <span className="text-gray-700">Stories</span>
@@ -49,7 +49,7 @@ export default function StoriesIndexPage() {
 
       {/* Intro */}
       <section className="bg-white px-8 md:px-20 lg:px-24 py-12">
-        <div className="max-w-7xl mx-auto">
+        <div className="container-wide">
           <p className="text-gray-600 text-lg leading-relaxed max-w-4xl">
             {storiesIndex.description}
           </p>
@@ -58,7 +58,7 @@ export default function StoriesIndexPage() {
 
       {/* Stories grid */}
       <section className="bg-white px-8 md:px-20 lg:px-24 pb-20">
-        <div className="max-w-7xl mx-auto">
+        <div className="container-wide">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {allStories.map((story) => (
               <Link

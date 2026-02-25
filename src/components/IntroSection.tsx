@@ -1,16 +1,16 @@
 export default function IntroSection() {
   return (
-    <section className="bg-white py-16 px-8 md:px-20 lg:px-24">
+    <section className="bg-white pt-8 pb-16 px-8 md:px-20 lg:px-24">
       {/* Breadcrumb */}
-      <div className="text-sm text-gray-400 mb-8">
+      <div className="container-wide text-sm text-gray-400 mb-10">
         <span>Home</span>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 items-start max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-teal leading-snug">
+      <div className="grid md:grid-cols-2 gap-12 items-start container-wide">
+        <h2 className="text-[28px] md:text-[35px] font-bold italic font-serif text-teal leading-snug">
           Ready to delve deeper? Your Queenstown adventure starts here.
         </h2>
-        <div className="text-gray-600 leading-relaxed space-y-4">
+        <div className="text-body leading-relaxed space-y-4 text-[18px]">
           <p>
             Nestled amidst New Zealand&apos;s spectacular alpine landscapes,
             Queenstown is home to a vibrant community that welcomes you as a

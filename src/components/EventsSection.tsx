@@ -19,11 +19,11 @@ const SIDE_EVENTS = [
 export default function EventsSection() {
   return (
     <section className="bg-white py-20 px-8 md:px-20 lg:px-24">
-      <div className="max-w-7xl mx-auto">
+      <div className="container-wide">
         <h2 className="text-3xl md:text-4xl font-bold text-teal tracking-widest-custom uppercase leading-tight">
           Queenstown Event & Festival Guide
         </h2>
-        <p className="text-gray-600 mt-4 max-w-3xl leading-relaxed">
+        <p className="text-body mt-4 max-w-3xl leading-relaxed">
           Queenstown is home to talented artists, artisans, musicians and
           athletes, hosting events big and small. Our social calendar is always
           pretty full! From festivals and sporting events, to markets and

@@ -34,8 +34,8 @@ export default function RegionsSection() {
   const region = REGIONS.find((r) => r.name === activeRegion)!;
 
   return (
-    <section className="bg-gray-100 py-20 px-8 md:px-20 lg:px-24">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-cream py-20 px-8 md:px-20 lg:px-24">
+      <div className="container-wide">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left content */}
           <div>
@@ -68,7 +68,7 @@ export default function RegionsSection() {
               <h3 className="text-lg font-bold text-teal uppercase tracking-wider">
                 Explore {region.name}
               </h3>
-              <p className="text-gray-600 mt-4 leading-relaxed">
+              <p className="text-body mt-4 leading-relaxed">
                 {region.description}
               </p>
             </div>

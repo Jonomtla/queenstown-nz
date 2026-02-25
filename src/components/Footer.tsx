@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-cream py-16 px-8 md:px-20 lg:px-24 border-t border-gray-200">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+      <div className="container-wide grid md:grid-cols-4 gap-10">
         {/* Plan Your Trip */}
         <div>
           <h4 className="font-bold text-teal tracking-widest-custom uppercase text-sm mb-4">
@@ -96,7 +96,7 @@ export default function Footer() {
       </div>
 
       {/* Partner logos */}
-      <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-200 flex flex-wrap items-center gap-8">
+      <div className="container-wide mt-12 pt-8 border-t border-gray-200 flex flex-wrap items-center gap-8">
         <span className="text-gray-400 text-xs font-bold tracking-wider">
           100% PURE NEW ZEALAND
         </span>

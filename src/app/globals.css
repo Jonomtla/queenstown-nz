@@ -1,9 +1,11 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap');
 
 @theme inline {
   --color-teal: #004157;
   --color-teal-dark: #003244;
   --color-teal-light: #005a7a;
+  --color-light-blue: #91b5be;
   --color-cream: #f7f3ed;
   --color-cream-dark: #ede7dd;
   --color-copper: #c67a3c;
@@ -17,9 +19,10 @@
   --color-gray-700: #404040;
   --color-gray-800: #262626;
   --color-gray-900: #171717;
+  --color-body: #3f3939;
   --font-sans: "Carlito", "Segoe UI", sans-serif;
   --font-heading: "Carlito", "Segoe UI", sans-serif;
-  --font-serif: Georgia, "Times New Roman", serif;
+  --font-serif: Georgia, "Publico Text", "Times New Roman", serif;
 }
 
 * {
@@ -30,8 +33,10 @@
 
 body {
   font-family: var(--font-sans);
-  color: var(--color-gray-800);
+  color: var(--color-body);
   background: var(--color-white);
+  font-size: 16px;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -41,4 +46,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .tracking-widest-custom {
   letter-spacing: 0.2em;
+}
+
+.container-wide {
+  max-width: 1568px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Prose overrides for story body content */
+.prose h2 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+}
+
+/* Smooth accordion animation */
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }

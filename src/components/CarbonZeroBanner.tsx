@@ -12,10 +12,10 @@ export default function CarbonZeroBanner() {
       />
       <div className="absolute inset-0 bg-black/40" />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
-        <h2 className="text-4xl md:text-6xl lg:text-7xl text-white font-bold italic font-serif leading-tight max-w-3xl">
+        <h2 className="text-[28px] md:text-[48px] lg:text-[56px] text-white font-bold italic font-serif leading-[1.15] max-w-3xl">
           Join our journey to a carbon zero future
         </h2>
-        <p className="text-white/90 mt-6 max-w-2xl text-lg leading-relaxed">
+        <p className="text-white/90 mt-6 max-w-2xl text-lg leading-relaxed font-sans">
           We&apos;re on a mission to keep this place special. That means working
           together to create a carbon zero visitor economy by 2030, and we need
           your help to make it happen.

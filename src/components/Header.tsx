@@ -79,7 +79,7 @@ export default function Header() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-teal/90 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-teal">
       {/* Secondary nav */}
       <div className="hidden lg:flex justify-end px-8 py-1 text-xs tracking-widest-custom text-white/80">
         {SECONDARY_LINKS.map((link, i) => (

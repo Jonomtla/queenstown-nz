@@ -46,14 +46,14 @@ export default function TripIdeas() {
 
   return (
     <section className="bg-white py-20 px-8 md:px-20 lg:px-24">
-      <div className="max-w-7xl mx-auto">
+      <div className="container-wide">
         <div className="grid lg:grid-cols-[300px_1fr] gap-12 items-start">
           {/* Left text */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-teal tracking-widest-custom uppercase leading-tight">
               Explore Trip Ideas
             </h2>
-            <p className="text-gray-600 mt-4 leading-relaxed">
+            <p className="text-body mt-4 leading-relaxed">
               Explore our collection of unique experiences and itineraries to
               make the most of your time in Queenstown.
             </p>

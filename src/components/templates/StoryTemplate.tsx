@@ -37,7 +37,7 @@ export default function StoryTemplate({ story }: { story: StoryData }) {
 
       {/* Breadcrumbs */}
       <div className="bg-cream px-8 md:px-20 lg:px-24 py-4">
-        <nav className="max-w-7xl mx-auto flex items-center gap-2 text-sm text-gray-500">
+        <nav className="container-wide flex items-center gap-2 text-sm text-gray-500">
           <Link href="/" className="hover:text-teal">Home</Link>
           <span>/</span>
           <Link href="/stories/" className="hover:text-teal">Stories</Link>
@@ -88,7 +88,7 @@ export default function StoryTemplate({ story }: { story: StoryData }) {
       {/* Related stories */}
       {related.length > 0 && (
         <section className="bg-cream px-8 md:px-20 lg:px-24 py-16">
-          <div className="max-w-7xl mx-auto">
+          <div className="container-wide">
             <h2 className="text-2xl font-bold text-teal tracking-widest-custom uppercase mb-8">
               More Stories
             </h2>

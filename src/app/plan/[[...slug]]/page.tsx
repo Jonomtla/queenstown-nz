@@ -66,7 +66,7 @@ export default async function PlanPage({ params }: { params: Promise<{ slug?: st
 
       {/* Breadcrumbs */}
       <div className="bg-cream px-8 md:px-20 lg:px-24 py-4">
-        <nav className="max-w-7xl mx-auto flex items-center gap-2 text-sm text-gray-500">
+        <nav className="container-wide flex items-center gap-2 text-sm text-gray-500">
           <Link href="/" className="hover:text-teal">Home</Link>
           {breadcrumbs.map((crumb) => (
             <span key={crumb.href} className="flex items-center gap-2">
