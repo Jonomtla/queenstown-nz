@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import ItineraryCard from "./ItineraryCard";
 import RecommendationCard from "./RecommendationCard";
 import CommunityFilterBar from "./CommunityFilterBar";
+import TripMatcher from "./TripMatcher";
 import itinerariesData from "@/data/community-itineraries.json";
 import recommendationsData from "@/data/community-recommendations.json";
 import contributorsData from "@/data/community-contributors.json";
@@ -20,18 +21,23 @@ const itineraries = itinerariesData as Record<string, {
   contributorSlug: string;
   tripDate: string;
   duration: string;
+  durationDays: number;
+  travellerType: string;
   categories: string[];
   season: string;
   summary: string;
   coverImage: string;
   upvotes: number;
   commentCount: number;
+  endorsements?: Record<string, number>;
+  days: { segments: { ageRange?: string }[] }[];
 }>;
 const recommendations = recommendationsData as Record<string, {
   title: string;
   contributorSlug: string;
   category: string;
   season?: string;
+  travellerType?: string;
   text: string;
   upvotes: number;
   commentCount: number;
@@ -40,16 +46,27 @@ const recommendations = recommendationsData as Record<string, {
   comments?: { author: string; authorSlug: string; authorType: string; date: string; text: string }[];
 }>;
 
+function matchDuration(durationDays: number, filter: string): boolean {
+  switch (filter) {
+    case "day": return durationDays === 1;
+    case "weekend": return durationDays >= 2 && durationDays <= 3;
+    case "midweek": return durationDays >= 3 && durationDays <= 5;
+    case "week": return durationDays >= 6;
+    default: return true;
+  }
+}
+
 interface CommunityFeedProps {
   initialCategory?: string;
   initialSeason?: string;
-  initialType?: string;
+  initialTraveller?: string;
 }
 
-export default function CommunityFeed({ initialCategory, initialSeason, initialType }: CommunityFeedProps) {
+export default function CommunityFeed({ initialCategory, initialSeason, initialTraveller }: CommunityFeedProps) {
   const [activeCategory, setActiveCategory] = useState(initialCategory || "all");
-  const [activeType, setActiveType] = useState(initialType || "all");
+  const [activeTraveller, setActiveTraveller] = useState(initialTraveller || "all");
   const [activeSeason, setActiveSeason] = useState(initialSeason || "all");
+  const [activeDuration, setActiveDuration] = useState("all");
   const [activeSort, setActiveSort] = useState("popular");
 
   const filteredItems = useMemo(() => {
@@ -59,8 +76,9 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
       const contrib = contributors[it.contributorSlug];
       if (!contrib) continue;
       if (activeCategory !== "all" && !it.categories.includes(activeCategory)) continue;
-      if (activeType !== "all" && contrib.type !== activeType) continue;
+      if (activeTraveller !== "all" && it.travellerType !== activeTraveller) continue;
       if (activeSeason !== "all" && it.season !== activeSeason) continue;
+      if (activeDuration !== "all" && !matchDuration(it.durationDays, activeDuration)) continue;
       items.push({ type: "itinerary", slug, upvotes: it.upvotes, date: it.tripDate });
     }
 
@@ -68,7 +86,7 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
       const contrib = contributors[rec.contributorSlug];
       if (!contrib) continue;
       if (activeCategory !== "all" && rec.category !== activeCategory) continue;
-      if (activeType !== "all" && contrib.type !== activeType) continue;
+      if (activeTraveller !== "all" && rec.travellerType !== activeTraveller) continue;
       if (activeSeason !== "all" && rec.season !== activeSeason && rec.season !== undefined) continue;
       items.push({ type: "recommendation", slug, upvotes: rec.upvotes, date: rec.date });
     }
@@ -80,17 +98,26 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
     );
 
     return items;
-  }, [activeCategory, activeType, activeSeason, activeSort]);
+  }, [activeCategory, activeTraveller, activeSeason, activeDuration, activeSort]);
 
   return (
     <div>
+      <TripMatcher
+        activeTraveller={activeTraveller}
+        activeDuration={activeDuration}
+        activeSeason={activeSeason}
+        onTravellerChange={setActiveTraveller}
+        onDurationChange={setActiveDuration}
+        onSeasonChange={setActiveSeason}
+      />
+
       <CommunityFilterBar
         activeCategory={activeCategory}
-        activeType={activeType}
+        activeTraveller={activeTraveller}
         activeSeason={activeSeason}
         activeSort={activeSort}
         onCategoryChange={setActiveCategory}
-        onTypeChange={setActiveType}
+        onTravellerChange={setActiveTraveller}
         onSeasonChange={setActiveSeason}
         onSortChange={setActiveSort}
       />
@@ -113,6 +140,10 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
                 upvotes={it.upvotes}
                 commentCount={it.commentCount}
                 contributor={{ ...contrib, slug: it.contributorSlug }}
+                travellerType={it.travellerType}
+                endorsements={it.endorsements}
+                activeTraveller={activeTraveller}
+                minAge={getMinAge(it.days)}
               />
             );
           }
@@ -143,4 +174,18 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
       )}
     </div>
   );
+}
+
+function getMinAge(days: { segments: { ageRange?: string }[] }[]): string | undefined {
+  const ageOrder = ["all-ages", "ages-3+", "ages-5+", "ages-8+", "teens+", "adults-only"];
+  let minIndex = -1;
+  for (const day of days) {
+    for (const seg of day.segments) {
+      if (seg.ageRange) {
+        const idx = ageOrder.indexOf(seg.ageRange);
+        if (idx > minIndex) minIndex = idx;
+      }
+    }
+  }
+  return minIndex >= 0 ? ageOrder[minIndex] : undefined;
 }

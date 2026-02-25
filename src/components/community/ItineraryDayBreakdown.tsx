@@ -14,6 +14,7 @@ interface Segment {
   places: Place[];
   image?: string;
   localTip?: string;
+  ageRange?: string;
 }
 
 interface Day {
@@ -26,6 +27,15 @@ const TIME_LABELS: Record<string, { label: string; color: string }> = {
   morning: { label: "Morning", color: "bg-copper/10 text-copper" },
   afternoon: { label: "Afternoon", color: "bg-teal/10 text-teal" },
   evening: { label: "Evening", color: "bg-gray-800/10 text-gray-700" },
+};
+
+const AGE_LABELS: Record<string, string> = {
+  "all-ages": "All Ages",
+  "ages-3+": "Ages 3+",
+  "ages-5+": "Ages 5+",
+  "ages-8+": "Ages 8+",
+  "teens+": "Teens+",
+  "adults-only": "Adults Only",
 };
 
 function PlaceLink({ place }: { place: Place }) {
@@ -82,9 +92,16 @@ export default function ItineraryDayBreakdown({ days }: { days: Day[] }) {
                   {/* Timeline dot */}
                   <div className="absolute -left-[41px] top-1 w-3 h-3 rounded-full bg-white border-2 border-gray-300" />
 
-                  <span className={`inline-block text-[10px] font-semibold tracking-widest-custom uppercase px-2.5 py-0.5 rounded-full mb-2 ${time.color}`}>
-                    {time.label}
-                  </span>
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
+                    <span className={`inline-block text-[10px] font-semibold tracking-widest-custom uppercase px-2.5 py-0.5 rounded-full ${time.color}`}>
+                      {time.label}
+                    </span>
+                    {segment.ageRange && (
+                      <span className="inline-block text-[10px] font-semibold tracking-widest-custom uppercase px-2.5 py-0.5 rounded-full bg-teal/10 text-teal">
+                        {AGE_LABELS[segment.ageRange] || segment.ageRange}
+                      </span>
+                    )}
+                  </div>
 
                   <h3 className="text-lg font-bold text-body">{segment.title}</h3>
                   <p className="text-gray-600 text-sm mt-2 leading-relaxed">{segment.description}</p>

@@ -7,6 +7,7 @@ import UpvoteButton from "@/components/community/UpvoteButton";
 import ItineraryDayBreakdown from "@/components/community/ItineraryDayBreakdown";
 import CommentSection from "@/components/community/CommentSection";
 import ItineraryCard from "@/components/community/ItineraryCard";
+import AdaptItinerary from "@/components/community/AdaptItinerary";
 import itinerariesData from "@/data/community-itineraries.json";
 import contributorsData from "@/data/community-contributors.json";
 
@@ -14,8 +15,31 @@ type Contributor = {
   name: string;
   avatar: string;
   type: "local" | "visitor" | "creator";
+  travellerProfile?: string;
   bio: string;
   contributions: number;
+};
+
+type Segment = {
+  timeOfDay: string;
+  title: string;
+  description: string;
+  places: { name: string; listingSlug?: string; href?: string }[];
+  image?: string;
+  localTip?: string;
+  ageRange?: string;
+};
+
+type Adaptation = {
+  swaps: {
+    segmentTitle: string;
+    replacement: {
+      title: string;
+      description: string;
+      places: { name: string; listingSlug?: string; href?: string }[];
+      ageRange?: string;
+    };
+  }[];
 };
 
 type Itinerary = {
@@ -23,19 +47,31 @@ type Itinerary = {
   contributorSlug: string;
   tripDate: string;
   duration: string;
+  durationDays: number;
+  travellerType: string;
+  travellerDetails?: string;
   categories: string[];
   season: string;
   summary: string;
   coverImage: string;
   upvotes: number;
   commentCount: number;
-  days: { dayNumber: number; title: string; segments: { timeOfDay: string; title: string; description: string; places: { name: string; listingSlug?: string; href?: string }[]; image?: string; localTip?: string }[] }[];
+  endorsements?: Record<string, number>;
+  adaptations?: Record<string, Adaptation>;
+  days: { dayNumber: number; title: string; segments: Segment[] }[];
   comments: { author: string; authorSlug: string; authorType: string; date: string; text: string; replies?: { author: string; authorSlug: string; authorType: string; date: string; text: string }[] }[];
   relatedItineraries: string[];
 };
 
 const itineraries = itinerariesData as Record<string, Itinerary>;
 const contributors = contributorsData as Record<string, Contributor>;
+
+const ENDORSEMENT_LABELS: Record<string, string> = {
+  family: "Families",
+  couple: "Couples",
+  solo: "Solo Travellers",
+  group: "Groups",
+};
 
 export function generateStaticParams() {
   return Object.keys(itineraries).map((slug) => ({ slug }));
@@ -52,6 +88,10 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
   const related = itinerary.relatedItineraries
     .map((s) => ({ slug: s, ...itineraries[s] }))
     .filter((r) => r.title);
+
+  const endorsementEntries = itinerary.endorsements
+    ? Object.entries(itinerary.endorsements).filter(([, count]) => count > 0)
+    : [];
 
   return (
     <PageLayout>
@@ -111,6 +151,12 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
                 size="md"
               />
               <p className="text-sm text-gray-500 mt-1">{contributor.bio}</p>
+
+              {/* Traveller details */}
+              {itinerary.travellerDetails && (
+                <p className="text-sm text-teal font-semibold mt-1">{itinerary.travellerDetails}</p>
+              )}
+
               <div className="flex items-center gap-4 mt-2 text-xs text-gray-400">
                 <span>{itinerary.duration}</span>
                 <span className="w-1 h-1 rounded-full bg-gray-300" />
@@ -118,6 +164,17 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
                 <span className="w-1 h-1 rounded-full bg-gray-300" />
                 <span>{contributor.contributions} contributions</span>
               </div>
+
+              {/* Endorsement stats */}
+              {endorsementEntries.length > 0 && (
+                <div className="flex flex-wrap gap-4 mt-3">
+                  {endorsementEntries.map(([type, count]) => (
+                    <span key={type} className="text-xs text-gray-500">
+                      <strong className="text-copper">{count}</strong> {ENDORSEMENT_LABELS[type] || type}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
             <div className="shrink-0">
               <UpvoteButton count={itinerary.upvotes} />
@@ -135,9 +192,9 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
             <button className="border border-teal rounded-full px-6 py-2.5 text-xs font-semibold tracking-widest-custom uppercase text-teal hover:bg-teal hover:text-white transition-colors cursor-not-allowed opacity-60">
               Save This Itinerary
             </button>
-            <button className="border border-gray-300 rounded-full px-6 py-2.5 text-xs font-semibold tracking-widest-custom uppercase text-gray-600 hover:bg-gray-100 transition-colors cursor-not-allowed opacity-60">
-              Adapt This Itinerary
-            </button>
+            {itinerary.adaptations && Object.keys(itinerary.adaptations).length > 0 && (
+              <AdaptItinerary itinerary={itinerary} />
+            )}
           </div>
 
           {/* Comments */}
@@ -171,6 +228,8 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
                     upvotes={r.upvotes}
                     commentCount={r.commentCount}
                     contributor={{ ...c, slug: r.contributorSlug }}
+                    travellerType={r.travellerType}
+                    endorsements={r.endorsements}
                   />
                 );
               })}

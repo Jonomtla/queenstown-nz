@@ -1,0 +1,37 @@
+{
+  "best-for-toddlers": {
+    "title": "Best for Toddlers",
+    "description": "Activities and itineraries tested by parents with kids under 5. Every suggestion has been approved by real toddlers (and their tired parents).",
+    "icon": "child",
+    "itineraries": ["family-friendly-summer-week"],
+    "recommendations": ["skyline-luge-hack", "family-restaurant-guide", "shotover-jet-tips", "glenorchy-sandflies"]
+  },
+  "rainy-day-with-kids": {
+    "title": "Rainy Day with Kids",
+    "description": "Queenstown in the rain doesn't have to mean a day in the hotel. These indoor activities, cosy restaurants, and creative solutions keep everyone happy when the weather turns.",
+    "icon": "cloud-rain",
+    "itineraries": ["rainy-day-queenstown"],
+    "recommendations": ["family-restaurant-guide", "fergburger-timing", "free-things-queenstown"]
+  },
+  "teen-approved": {
+    "title": "Teen-Approved Adventures",
+    "description": "Activities that even teenagers think are cool. Adrenaline, independence, and the kind of experiences they'll actually post about.",
+    "icon": "zap",
+    "itineraries": ["solo-adventure-5-days", "perfect-winter-weekend"],
+    "recommendations": ["bungy-first-timer", "shotover-jet-tips", "ben-lomond-prep"]
+  },
+  "romantic-getaway": {
+    "title": "Romantic Getaway",
+    "description": "Queenstown for couples — from luxury lodges and fine dining to scenic hikes and wine tasting. The perfect backdrop for a romantic escape.",
+    "icon": "heart",
+    "itineraries": ["luxury-long-weekend", "foodie-trail-queenstown"],
+    "recommendations": ["best-sunset-spot", "wine-region-guide", "lake-hayes-morning", "best-coffee-locals"]
+  },
+  "budget-backpacker": {
+    "title": "Budget Backpacker",
+    "description": "Queenstown on a shoestring. Free hikes, cheap eats, and the best experiences that don't cost a thing. Proof that you don't need money to have an incredible time.",
+    "icon": "backpack",
+    "itineraries": ["active-arrowtown-day", "cultural-queenstown"],
+    "recommendations": ["free-things-queenstown", "fergburger-timing", "hiking-gear-rental", "best-coffee-locals"]
+  }
+}

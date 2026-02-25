@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import contributorsData from "@/data/community-contributors.json";
-import itinerariesData from "@/data/community-itineraries.json";
+import collectionsData from "@/data/community-collections.json";
 
 type Contributor = {
   name: string;
@@ -11,20 +11,26 @@ type Contributor = {
   upvotesReceived: number;
 };
 
+type Collection = {
+  title: string;
+  description: string;
+  icon: string;
+};
+
 const contributors = contributorsData as Record<string, Contributor>;
-const itineraries = itinerariesData as Record<string, { title: string; upvotes: number; categories: string[] }>;
+const collections = collectionsData as Record<string, Collection>;
 
 const topContributors = Object.entries(contributors)
   .sort(([, a], [, b]) => b.upvotesReceived - a.upvotesReceived)
   .slice(0, 5);
 
-const trendingTopics = [
-  { label: "Winter Skiing", href: "/community/category/skiing/" },
-  { label: "Family Adventures", href: "/community/category/family/" },
-  { label: "Autumn Photography", href: "/community/category/photography/" },
-  { label: "Local Dining", href: "/community/category/dining/" },
-  { label: "Budget Tips", href: "/community/category/budget/" },
-];
+const ICON_PATHS: Record<string, string> = {
+  child: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
+  "cloud-rain": "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z",
+  zap: "M13 10V3L4 14h7v7l9-11h-7z",
+  heart: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
+  backpack: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z",
+};
 
 const seasonalHighlights = [
   { season: "Summer", tip: "Queenstown Trail by e-bike is the locals' favourite", color: "bg-copper/10 text-copper" },
@@ -36,21 +42,31 @@ const seasonalHighlights = [
 export default function CommunitySidebar() {
   return (
     <aside className="space-y-8">
-      {/* Trending Topics */}
+      {/* Collections */}
       <div className="bg-cream rounded-xl p-6">
         <h3 className="text-sm font-bold tracking-widest-custom uppercase text-teal mb-4">
-          Trending Topics
+          Collections
         </h3>
-        <div className="flex flex-wrap gap-2">
-          {trendingTopics.map((topic) => (
-            <Link
-              key={topic.label}
-              href={topic.href}
-              className="text-xs font-semibold tracking-widest-custom uppercase px-3 py-1.5 rounded-full bg-white text-gray-600 hover:bg-teal hover:text-white transition-colors"
-            >
-              {topic.label}
-            </Link>
-          ))}
+        <div className="space-y-2">
+          {Object.entries(collections).map(([slug, collection]) => {
+            const iconPath = ICON_PATHS[collection.icon] || ICON_PATHS.heart;
+            return (
+              <Link
+                key={slug}
+                href={`/community/collections/${slug}/`}
+                className="flex items-center gap-3 group py-1.5"
+              >
+                <div className="w-8 h-8 rounded-full bg-teal/10 flex items-center justify-center shrink-0 group-hover:bg-teal/20 transition-colors">
+                  <svg className="w-4 h-4 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={iconPath} />
+                  </svg>
+                </div>
+                <span className="text-sm font-semibold text-gray-700 group-hover:text-teal transition-colors">
+                  {collection.title}
+                </span>
+              </Link>
+            );
+          })}
         </div>
       </div>
 
