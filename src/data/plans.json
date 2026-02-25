@@ -1,0 +1,55 @@
+{
+  "plan": {
+    "title": "Plan Your Queenstown Trip",
+    "description": "Everything you need to plan the perfect Queenstown getaway. From travel tips and getting here, to maps, itineraries, and information about the surrounding region.",
+    "heroImage": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=2400&h=800&fit=crop",
+    "links": [
+      { "title": "Travel Tips", "href": "/plan/travel-tips/", "description": "Essential tips for visiting Queenstown" },
+      { "title": "Getting Here & Getting Around", "href": "/plan/getting-here-and-getting-around/", "description": "Flights, buses, and transport options" },
+      { "title": "Maps & Visitor Guides", "href": "/plan/queenstown-maps-and-visitor-guides/", "description": "Download maps and guides" },
+      { "title": "Itineraries", "href": "/plan/itineraries/", "description": "Curated trip itineraries" },
+      { "title": "Surrounding Region", "href": "#regions", "description": "Explore Arrowtown, Glenorchy, and more" }
+    ]
+  },
+  "plan/travel-tips": {
+    "title": "Travel Tips for Queenstown",
+    "description": "Make the most of your Queenstown visit with our essential travel tips.",
+    "heroImage": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=2400&h=800&fit=crop",
+    "body": "<h2>Best Time to Visit</h2><p>Queenstown is a year-round destination. Summer (December-February) offers long days and warm temperatures perfect for hiking, water sports, and outdoor dining. Winter (June-August) transforms the region into a snow-covered wonderland with world-class skiing and snowboarding.</p><h2>Weather</h2><p>Queenstown has a continental climate with warm, dry summers and cold winters. Summer temperatures range from 15-25°C, while winter averages 1-10°C. Rain can occur at any time of year, so always pack a waterproof layer. The weather can change quickly in alpine areas.</p><h2>What to Pack</h2><p>Layers are essential in Queenstown. Even in summer, evenings can be cool, and mountain weather is unpredictable. Bring comfortable walking shoes, sunscreen (NZ's UV levels are high), sunglasses, and a warm jacket. In winter, add thermal layers, gloves, and a beanie.</p><h2>Money</h2><p>New Zealand uses the NZ Dollar (NZD). Most places accept credit and debit cards, and contactless payment is widely used. ATMs are available in Queenstown and Frankton. Tipping is not expected but appreciated for exceptional service.</p><h2>Getting Around</h2><p>The Orbus public bus network connects Queenstown, Frankton, and Arrowtown for just $2 per ride with a Bee Card. Car rental is useful for exploring further afield. Many activities offer free transfers from central Queenstown.</p>"
+  },
+  "plan/surrounding-region/glenorchy": {
+    "title": "Glenorchy",
+    "description": "Discover the breathtaking beauty of Glenorchy, the gateway to some of New Zealand's most spectacular wilderness.",
+    "heroImage": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=2400&h=800&fit=crop",
+    "body": "<h2>About Glenorchy</h2><p>Located at the northern tip of Lake Wakatipu, just 45 minutes from Queenstown, Glenorchy is a small township surrounded by some of New Zealand's most dramatic mountain scenery. It's the gateway to the Routeburn Track, the Rees-Dart Track, and the spectacular Paradise area.</p><h2>Getting There</h2><p>The drive from Queenstown to Glenorchy along the shores of Lake Wakatipu is considered one of New Zealand's most scenic roads. Stop at the many viewpoints along the way to photograph the lake and mountains.</p><h2>Things To Do</h2><p>Glenorchy is a base for world-class tramping (hiking), with the Routeburn Track starting nearby. The Glenorchy Lagoon Walkway offers an easy walk with stunning mountain reflections. Horse riding, jet boating, and kayaking are also popular activities.</p><h2>Paradise</h2><p>Continue past Glenorchy to reach Paradise — and yes, it really is called that. This remote valley was used as a filming location for Lord of the Rings and is spectacularly beautiful. The road is unsealed beyond a certain point, so check conditions before heading in.</p>"
+  },
+  "plan/surrounding-region/arrowtown": {
+    "title": "Arrowtown",
+    "description": "Step back in time in this charming gold rush town, just 20 minutes from Queenstown.",
+    "heroImage": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_800,q_65,w_2400,x_2019,y_1539/v1/clients/queenstownnz/Picnic_by_historic_cottage_in_Macetown_Queenstown_196e80fd-60ba-4f36-96c0-590bd578cde9.jpg",
+    "body": "<h2>About Arrowtown</h2><p>Arrowtown is one of New Zealand's most charming small towns, founded during the Otago Gold Rush of the 1860s. The town's heritage buildings, tree-lined streets, and excellent cafes make it a must-visit destination.</p><h2>Historic Chinese Settlement</h2><p>Arrowtown's restored Chinese Settlement tells the story of Chinese miners who came to the Arrow River in search of gold during the 1860s. The restored stone cottages and interpretive panels offer a fascinating glimpse into this often-overlooked chapter of New Zealand history.</p><h2>Autumn in Arrowtown</h2><p>Arrowtown is famous for its spectacular autumn colours. The deciduous trees along the main street and river create a stunning display of gold, orange, and red from late March to May. The annual Arrowtown Autumn Festival in April celebrates the season with community events.</p><h2>Walking & Cycling</h2><p>The Arrow River Trail and Sawpit Gully Trail offer beautiful walks through the area's gold mining heritage. The Queenstown Trail connects Arrowtown to Queenstown and Lake Hayes by bike.</p>"
+  },
+  "plan/queenstown-maps-and-visitor-guides": {
+    "title": "Queenstown Maps & Visitor Guides",
+    "description": "Download and browse maps and visitor guides to help plan your Queenstown trip.",
+    "heroImage": "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=2400&h=800&fit=crop",
+    "body": "<h2>Town Maps</h2><p>Pick up a free Queenstown town map from the i-SITE Visitor Information Centre on the waterfront, or download a digital version to your phone. The map covers the town centre, Queenstown Bay, and the Queenstown Gardens area.</p><h2>Trail Maps</h2><p>The Queenstown Trail network spans over 130km of cycling and walking trails. Trail maps are available from the i-SITE, bike hire shops, and the Department of Conservation (DOC) office. Digital trail maps are also available through the Queenstown Trails Trust website.</p><h2>Visitor Guides</h2><p>The official Queenstown Visitor Guide is published seasonally and available at accommodation providers, the airport, and the i-SITE. It covers things to do, places to eat, accommodation options, and maps of the region.</p><h2>i-SITE Visitor Information Centre</h2><p>The Queenstown i-SITE is located in the old Queenstown courthouse on the corner of Shotover and Camp Streets. Staff can help with bookings, information, and recommendations. Open daily 8:30am-6pm (extended hours in summer).</p>"
+  },
+  "plan/getting-here-and-getting-around": {
+    "title": "Getting Here & Getting Around",
+    "description": "How to get to Queenstown and navigate the region once you arrive.",
+    "heroImage": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=2400&h=800&fit=crop",
+    "body": "<h2>By Air</h2><p>Queenstown Airport (ZQN) receives direct flights from Auckland, Wellington, Christchurch, and select Australian cities. The airport is located in Frankton, just 15 minutes from the town centre. Airport transfers, rental cars, and the Orbus bus service connect the airport to town.</p><h2>By Road</h2><p>Queenstown is accessible by road from all directions, though mountain passes can be affected by weather in winter. From Christchurch, the drive takes about 6 hours via the scenic Lindis Pass. From Dunedin, it's about 4.5 hours via the Kawarau Gorge.</p><h2>Getting Around</h2><p>The Orbus public bus network is the cheapest way to get around, with fares of just $2 per trip using a Bee Card. Routes connect Queenstown, Frankton, Arrowtown, and Lake Hayes. Car rental is recommended for exploring further afield, and many activity operators offer free transfers from central Queenstown.</p><h2>Water Taxi</h2><p>Water taxis operate on Lake Wakatipu, providing transport to trailheads and accommodation that are only accessible by water. The TSS Earnslaw steamship also provides scheduled services to Walter Peak.</p>"
+  },
+  "plan/itineraries": {
+    "title": "Queenstown Itineraries",
+    "description": "Curated itineraries to help you make the most of your time in Queenstown, whether you have 2 days or 2 weeks.",
+    "heroImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=2400&h=800&fit=crop",
+    "body": "<h2>Weekend Getaway (2-3 Days)</h2><p>Short on time? Focus on the essentials: Ride the Skyline Gondola, walk the Queenstown Gardens, take a scenic cruise on Lake Wakatipu, visit Arrowtown, and enjoy Queenstown's restaurant and bar scene.</p><h2>Active Adventure (5-7 Days)</h2><p>For thrill-seekers: bungy jumping at the Kawarau Bridge, jet boating the Shotover River, mountain biking the Queenstown Trail, hiking Ben Lomond, skiing at Coronet Peak or The Remarkables (winter), and a day trip to Milford Sound.</p><h2>Slow Travel (7-10 Days)</h2><p>Take your time to truly soak in the region. Combine walking trails, winery visits, market days, scenic drives, and cultural experiences. Spend time in both Queenstown and the surrounding areas of Arrowtown, Glenorchy, and Gibbston Valley.</p><h2>Family Fun (5-7 Days)</h2><p>Kid-friendly highlights: Skyline Gondola and Luge, Kiwi Birdlife Park, TSS Earnslaw cruise, Queenstown Gardens playground, the Queenstown Trail (flat sections by e-bike), gold panning in Arrowtown, and the Remarkables ice bar.</p>"
+  },
+  "stories": {
+    "title": "Queenstown Stories",
+    "description": "Stories, tips, and inspiration from Queenstown. Discover local insights, travel guides, and the people and places that make this region special.",
+    "heroImage": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=2400&h=800&fit=crop"
+  }
+}

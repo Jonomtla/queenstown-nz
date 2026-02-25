@@ -1,0 +1,160 @@
+{
+  "things-to-do": {
+    "title": "Things To Do in Queenstown",
+    "description": "Discover the best activities and experiences in Queenstown. From adventure sports to scenic cruises, walking trails to ski fields, there's something for everyone in the adventure capital of New Zealand.",
+    "heroImage": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=2400&h=800&fit=crop",
+    "subcategories": ["adventure-activities", "outdoor-activities", "biking", "family-fun", "shopping", "skiing-and-snowboarding", "golf", "events"],
+    "listings": ["skyline-queenstown", "realnz"]
+  },
+  "things-to-do/outdoor-activities/walking-and-hiking": {
+    "title": "Walking & Hiking in Queenstown",
+    "description": "Explore Queenstown's stunning landscapes on foot. From easy lakeside strolls to challenging alpine adventures, our trails offer breathtaking views of mountains, lakes, and native bush.",
+    "heroImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=2400&h=800&fit=crop",
+    "subcategories": ["short-walks", "day-walks"],
+    "listings": ["queenstown-hill-time-walk", "bobs-cove-track", "tiki-trail", "lower-wye-creek-track", "glenorchy-lagoon-walkway", "queenstown-gardens-trail", "mount-crichton-loop-track", "ben-lomond-track", "lake-hayes-loop-track", "moke-lake-loop-track", "sawpit-gully-trail", "arrowtown-river-trail"]
+  },
+  "things-to-do/outdoor-activities/walking-and-hiking/short-walks": {
+    "title": "Short Walks in Queenstown",
+    "description": "Perfect for those short on time, these walks range from 30 minutes to 2 hours and showcase the best of Queenstown's natural beauty.",
+    "heroImage": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=2400&h=800&fit=crop",
+    "listings": ["queenstown-gardens-trail", "tiki-trail", "bobs-cove-track", "glenorchy-lagoon-walkway"]
+  },
+  "things-to-do/outdoor-activities/walking-and-hiking/day-walks": {
+    "title": "Day Walks in Queenstown",
+    "description": "Full day adventures for experienced hikers. These tracks take 3-8 hours and reward with stunning alpine vistas.",
+    "heroImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=2400&h=800&fit=crop",
+    "listings": ["queenstown-hill-time-walk", "ben-lomond-track", "mount-crichton-loop-track", "lake-hayes-loop-track"]
+  },
+  "things-to-do/adventure-activities": {
+    "title": "Adventure Activities in Queenstown",
+    "description": "Get your adrenaline pumping in the adventure capital of the world. Bungy jumping, skydiving, jet boating and more await the thrill-seekers.",
+    "heroImage": "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?w=2400&h=800&fit=crop",
+    "subcategories": ["bungy-swing-and-zip", "indoor-thrills"],
+    "listings": ["skyline-queenstown", "realnz"]
+  },
+  "things-to-do/adventure-activities/bungy-swing-and-zip": {
+    "title": "Bungy, Swing & Zip in Queenstown",
+    "description": "Take the leap! Queenstown is the birthplace of commercial bungy jumping and home to some of the world's most thrilling jump sites.",
+    "heroImage": "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=2400&h=800&fit=crop",
+    "listings": []
+  },
+  "things-to-do/adventure-activities/indoor-thrills": {
+    "title": "Indoor Thrills in Queenstown",
+    "description": "Rain or shine, enjoy exciting indoor activities from escape rooms to indoor skydiving and gaming experiences.",
+    "heroImage": "https://images.unsplash.com/photo-1511882150382-421056c89033?w=2400&h=800&fit=crop",
+    "listings": []
+  },
+  "things-to-do/biking": {
+    "title": "Biking in Queenstown",
+    "description": "World-class mountain biking and scenic cycling trails. From beginner-friendly paths along the lakefront to challenging downhill tracks.",
+    "heroImage": "https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=2400&h=800&fit=crop",
+    "subcategories": ["bike-hire"],
+    "listings": []
+  },
+  "things-to-do/biking/bike-hire": {
+    "title": "Bike Hire in Queenstown",
+    "description": "Rent high-quality bikes to explore Queenstown at your own pace. E-bikes, mountain bikes, and road bikes available.",
+    "heroImage": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=2400&h=800&fit=crop",
+    "listings": []
+  },
+  "things-to-do/family-fun": {
+    "title": "Family Fun in Queenstown",
+    "description": "Queenstown is a fantastic family destination with activities for all ages. Create lasting memories with kid-friendly adventures.",
+    "heroImage": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_800,q_65,w_2400,x_1210,y_880/v1/clients/queenstownnz/Family_at_Queenstown_Bay_Playground_1__eef16657-1ae9-42c6-acbf-38456b437a10.jpg",
+    "listings": ["skyline-queenstown"]
+  },
+  "things-to-do/shopping": {
+    "title": "Shopping in Queenstown",
+    "description": "From boutique stores to outdoor gear specialists, discover unique New Zealand souvenirs and quality goods in Queenstown's retail scene.",
+    "heroImage": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=2400&h=800&fit=crop",
+    "listings": []
+  },
+  "things-to-do/skiing-and-snowboarding": {
+    "title": "Skiing & Snowboarding in Queenstown",
+    "description": "Home to world-renowned ski fields, Queenstown transforms into a winter wonderland from June to October.",
+    "heroImage": "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=2400&h=800&fit=crop",
+    "subcategories": ["ski-fields"],
+    "listings": []
+  },
+  "things-to-do/skiing-and-snowboarding/ski-fields": {
+    "title": "Ski Fields near Queenstown",
+    "description": "Four world-class ski fields within easy reach of Queenstown: Coronet Peak, The Remarkables, Cardrona, and Treble Cone.",
+    "heroImage": "https://images.unsplash.com/photo-1605540436563-5bca919ae766?w=2400&h=800&fit=crop",
+    "listings": []
+  },
+  "things-to-do/golf/golf-courses": {
+    "title": "Golf Courses in Queenstown",
+    "description": "Play golf surrounded by stunning mountain and lake scenery. Queenstown boasts some of New Zealand's most scenic courses.",
+    "heroImage": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_800,q_65,w_2400,x_3439,y_4457/v1/clients/queenstownnz/Queenstown_Golf_Club_8__4de95f71-8986-4f98-bd7d-30d79056c6db.jpg",
+    "listings": ["frankton-golf-centre"]
+  },
+  "things-to-do/events": {
+    "title": "Events in Queenstown",
+    "description": "From world-class sporting events to vibrant festivals, there's always something happening in Queenstown.",
+    "heroImage": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=2400&h=800&fit=crop",
+    "subcategories": ["event-calendar"],
+    "listings": []
+  },
+  "things-to-do/events/event-calendar": {
+    "title": "Event Calendar - Queenstown",
+    "description": "Plan your visit around Queenstown's exciting calendar of events, festivals, and activities throughout the year.",
+    "heroImage": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=2400&h=800&fit=crop",
+    "listings": []
+  },
+  "accommodation": {
+    "title": "Accommodation in Queenstown",
+    "description": "From luxury lodges to budget-friendly hostels, find the perfect place to stay in Queenstown. Wake up to stunning mountain and lake views.",
+    "heroImage": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=2400&h=800&fit=crop",
+    "subcategories": ["hotels-and-resorts", "serviced-apartments", "lodges-and-retreats", "motels"],
+    "listings": []
+  },
+  "accommodation/hotels-and-resorts": {
+    "title": "Hotels & Resorts in Queenstown",
+    "description": "Experience world-class hospitality in Queenstown's finest hotels and resorts, offering premium amenities and stunning views.",
+    "heroImage": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=2400&h=800&fit=crop",
+    "listings": []
+  },
+  "accommodation/serviced-apartments": {
+    "title": "Serviced Apartments in Queenstown",
+    "description": "Self-contained apartments perfect for families and longer stays. Enjoy home comforts with hotel services.",
+    "heroImage": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=2400&h=800&fit=crop",
+    "listings": []
+  },
+  "accommodation/lodges-and-retreats": {
+    "title": "Lodges & Retreats in Queenstown",
+    "description": "Escape to exclusive lodges and peaceful retreats surrounded by nature. Perfect for a romantic getaway or wellness retreat.",
+    "heroImage": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?w=2400&h=800&fit=crop",
+    "listings": []
+  },
+  "accommodation/motels": {
+    "title": "Motels in Queenstown",
+    "description": "Comfortable and convenient motel accommodation in Queenstown. Great value with easy parking and access to town.",
+    "heroImage": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=2400&h=800&fit=crop",
+    "listings": []
+  },
+  "places-to-eat-and-drink": {
+    "title": "Places to Eat & Drink in Queenstown",
+    "description": "From award-winning restaurants to cosy cafes, craft breweries to world-class wineries, Queenstown's food and drink scene is thriving.",
+    "heroImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=2400&h=800&fit=crop",
+    "subcategories": ["restaurants", "cafes-and-bakeries", "pubs-bars-and-clubs"],
+    "listings": []
+  },
+  "places-to-eat-and-drink/restaurants": {
+    "title": "Restaurants in Queenstown",
+    "description": "Dine with a view at Queenstown's best restaurants. From fine dining to casual eateries, discover diverse cuisines with local flavours.",
+    "heroImage": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=2400&h=800&fit=crop",
+    "listings": []
+  },
+  "places-to-eat-and-drink/cafes-and-bakeries": {
+    "title": "Cafes & Bakeries in Queenstown",
+    "description": "Start your day with excellent coffee and fresh pastries at Queenstown's vibrant cafe scene. Great for brunch and light lunches.",
+    "heroImage": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=2400&h=800&fit=crop",
+    "listings": []
+  },
+  "places-to-eat-and-drink/pubs-bars-and-clubs": {
+    "title": "Pubs, Bars & Clubs in Queenstown",
+    "description": "Experience Queenstown's legendary nightlife. From craft beer bars to late-night clubs, there's always a good time to be had.",
+    "heroImage": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=2400&h=800&fit=crop",
+    "listings": []
+  }
+}

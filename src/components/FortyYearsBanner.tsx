@@ -4,7 +4,7 @@ export default function FortyYearsBanner() {
   return (
     <section className="relative h-[70vh] w-full">
       <Image
-        src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_800,q_65,w_2304,x_1500,y_1000/v1/clients/queenstownnz/Queenstown_Remarkables_panorama_golden_hour_12345678-abcd-1234-abcd-123456789abc.jpg"
+        src="https://images.unsplash.com/photo-1589871973318-9ca1258faa5d?w=2400&h=1000&fit=crop"
         alt="The Remarkables mountain range at golden hour"
         fill
         className="object-cover"

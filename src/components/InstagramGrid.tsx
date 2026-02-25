@@ -10,7 +10,7 @@ const GRID_IMAGES = [
     alt: "Southern lights over Queenstown",
   },
   {
-    src: "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_1430,y_1269/v1/clients/queenstownnz-redesign/Arrowtown_75ffc999-cb6e-4112-9f47-a1.jpg",
+    src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=400&fit=crop",
     alt: "Remarkables Market fruit",
   },
   {
@@ -26,7 +26,7 @@ const GRID_IMAGES = [
     alt: "Queenstown Bay beach",
   },
   {
-    src: "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_3204,y_4266/v1/clients/queenstownnz/Coronet_Peak_snowboarding_winter_12345678-abcd-1234-ef01-234567890abc.jpg",
+    src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=400&fit=crop",
     alt: "Waterfront dining Queenstown",
   },
   {

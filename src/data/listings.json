@@ -1,0 +1,379 @@
+{
+  "queenstown-hill-time-walk": {
+    "id": "2039",
+    "title": "Queenstown Hill Time Walk",
+    "slug": "queenstown-hill-time-walk",
+    "type": "Walk",
+    "category": "Walking & Hiking",
+    "heroImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1600&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop"
+    ],
+    "shortDescription": "A rewarding climb to the summit of Te Tapu-nui (Queenstown Hill) with panoramic views of the Wakatipu Basin.",
+    "description": "The Queenstown Hill Time Walk is one of the most popular day walks in the region, offering stunning 360-degree views from the 907m summit. The track climbs steadily through Douglas fir forest before opening out to tussock-covered slopes with ever-expanding views.\n\nAt the summit, a 'Basket of Dreams' sculpture marks the high point and provides a perfect spot to rest and take in the panorama. On a clear day you can see Cecil Peak, Walter Peak, The Remarkables, and Ben Lomond.\n\nThe Time Walk interpretive panels along the route tell the story of the region's geological and human history, from the formation of the mountains to the arrival of early Maori and European settlers.",
+    "details": {
+      "duration": "3-4 hours return",
+      "distance": "5.6 km return",
+      "difficulty": "Moderate",
+      "elevation": "500m gain"
+    },
+    "address": "Belfast Terrace, Queenstown",
+    "phone": null,
+    "website": "https://www.doc.govt.nz",
+    "hours": "Open 24 hours",
+    "relatedListings": ["ben-lomond-track", "tiki-trail", "queenstown-gardens-trail"]
+  },
+  "bobs-cove-track": {
+    "id": "9103",
+    "title": "Bob's Cove Track & Nature Walk",
+    "slug": "bobs-cove-track-&-nature-walk",
+    "type": "Walk",
+    "category": "Walking & Hiking",
+    "heroImage": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1600&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=600&fit=crop"
+    ],
+    "shortDescription": "A gentle nature walk through native beech forest to a peaceful lakeside cove.",
+    "description": "Bob's Cove Track is a beautiful short walk through native beech forest on the shores of Lake Wakatipu, about 10 minutes' drive from Queenstown. The well-maintained track winds through a canopy of red and silver beech trees, with interpretive panels explaining the native flora and fauna.\n\nThe track leads to a lovely pebbly beach at Bob's Cove, where you can enjoy views across the lake to Cecil Peak and Walter Peak. It's a great spot for a picnic or a quiet moment of reflection.\n\nAn extension loop track climbs above the cove through regenerating forest, adding another 30 minutes to the walk and offering elevated views of the lake.",
+    "details": {
+      "duration": "1 hour return",
+      "distance": "2 km return",
+      "difficulty": "Easy",
+      "elevation": "50m gain"
+    },
+    "address": "Glenorchy-Queenstown Road, Queenstown",
+    "phone": null,
+    "website": "https://www.doc.govt.nz",
+    "hours": "Open 24 hours",
+    "relatedListings": ["glenorchy-lagoon-walkway", "queenstown-gardens-trail", "lower-wye-creek-track"]
+  },
+  "tiki-trail": {
+    "id": "9099",
+    "title": "Tiki Trail",
+    "slug": "tiki-trail",
+    "type": "Walk",
+    "category": "Walking & Hiking",
+    "heroImage": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=1600&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=800&h=600&fit=crop"
+    ],
+    "shortDescription": "A steep but rewarding trail from the Queenstown Gondola base to the top of Bob's Peak.",
+    "description": "The Tiki Trail is a popular walking track that runs alongside the Skyline Gondola, climbing from the base station in central Queenstown to the top of Bob's Peak at 790 metres above sea level.\n\nThe trail winds through Douglas fir and native bush, and while steep in places, it is well-maintained with steps and boardwalks. The reward at the top is panoramic views over Queenstown, Lake Wakatipu, and the surrounding mountains.\n\nMany walkers take the Tiki Trail up and ride the Gondola back down (one-way tickets available), making it a great option for those who want a workout with a comfortable return journey.",
+    "details": {
+      "duration": "1-2 hours one way",
+      "distance": "2.8 km one way",
+      "difficulty": "Moderate",
+      "elevation": "450m gain"
+    },
+    "address": "Brecon Street, Queenstown",
+    "phone": null,
+    "website": "https://www.doc.govt.nz",
+    "hours": "Open 24 hours",
+    "relatedListings": ["queenstown-hill-time-walk", "ben-lomond-track", "skyline-queenstown"]
+  },
+  "lower-wye-creek-track": {
+    "id": "1489",
+    "title": "Lower Wye Creek Track",
+    "slug": "lower-wye-creek-track",
+    "type": "Walk",
+    "category": "Walking & Hiking",
+    "heroImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&h=600&fit=crop"
+    ],
+    "shortDescription": "A scenic walk along Wye Creek beneath the towering Remarkables mountain range.",
+    "description": "The Lower Wye Creek Track offers a scenic walk in the shadow of The Remarkables mountain range. Starting from a car park along the Queenstown-Kingston highway, the track follows the creek through a mix of native bush and open terrain.\n\nThe walk is relatively flat and follows the creek upstream, crossing it several times via small bridges. The surrounding scenery is dramatic, with the sheer rock faces of The Remarkables towering above.\n\nThis is a particularly beautiful walk in autumn when the trees change colour, and in summer when the creek provides welcome shade. It's a quieter alternative to some of the more popular Queenstown walks.",
+    "details": {
+      "duration": "1.5-2 hours return",
+      "distance": "4 km return",
+      "difficulty": "Easy-Moderate",
+      "elevation": "100m gain"
+    },
+    "address": "Queenstown-Kingston Highway",
+    "phone": null,
+    "website": "https://www.doc.govt.nz",
+    "hours": "Open 24 hours",
+    "relatedListings": ["queenstown-hill-time-walk", "sawpit-gully-trail", "lake-hayes-loop-track"]
+  },
+  "glenorchy-lagoon-walkway": {
+    "id": "9102",
+    "title": "Glenorchy Lagoon Walkway",
+    "slug": "glenorchy-lagoon-walkway",
+    "type": "Walk",
+    "category": "Walking & Hiking",
+    "heroImage": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1600&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&h=600&fit=crop"
+    ],
+    "shortDescription": "A peaceful boardwalk through wetlands with stunning mountain reflections and birdlife.",
+    "description": "The Glenorchy Lagoon Walkway is a gentle boardwalk loop through a scenic wetland area on the edge of Glenorchy township. The walk offers spectacular views of the surrounding mountains reflected in the calm lagoon waters.\n\nThe boardwalk passes through a variety of habitats including wetlands, native bush, and open grassland. It's a birdwatcher's paradise, home to numerous species including paradise shelduck, grey teal, and pied stilt.\n\nThe lagoon is particularly photogenic in the early morning and late afternoon when the mountains create perfect reflections in the still water. The walk is suitable for all fitness levels and can be completed in under an hour.",
+    "details": {
+      "duration": "45 min - 1 hour",
+      "distance": "2.5 km loop",
+      "difficulty": "Easy",
+      "elevation": "Minimal"
+    },
+    "address": "Oban Street, Glenorchy",
+    "phone": null,
+    "website": "https://www.doc.govt.nz",
+    "hours": "Open 24 hours",
+    "relatedListings": ["bobs-cove-track", "queenstown-gardens-trail", "mount-crichton-loop-track"]
+  },
+  "queenstown-gardens-trail": {
+    "id": "9100",
+    "title": "Queenstown Gardens Trail",
+    "slug": "queenstown-gardens-trail",
+    "type": "Walk",
+    "category": "Walking & Hiking",
+    "heroImage": "https://images.unsplash.com/photo-1516939884455-1445c8652f83?w=1600&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1516939884455-1445c8652f83?w=800&h=600&fit=crop"
+    ],
+    "shortDescription": "An easy lakeside walk through Queenstown's beautiful botanic gardens.",
+    "description": "Queenstown Gardens sits on a peninsula jutting into Lake Wakatipu, and the perimeter trail offers one of the most accessible and scenic walks in the area. The flat, well-maintained path circles the entire gardens, offering views of the lake, The Remarkables, and the surrounding mountains.\n\nAlong the way you'll pass rose gardens, mature native trees, a disc golf course, lawn bowls, and a skate park. Several benches and picnic spots invite you to stop and enjoy the scenery.\n\nThe gardens are a perfect spot for an early morning or sunset stroll, and the trail is suitable for pushchairs and wheelchairs. It connects to the wider Queenstown Trail network for those wanting a longer walk or cycle.",
+    "details": {
+      "duration": "30-45 minutes",
+      "distance": "2 km loop",
+      "difficulty": "Easy",
+      "elevation": "Flat"
+    },
+    "address": "Park Street, Queenstown",
+    "phone": null,
+    "website": null,
+    "hours": "Open 24 hours",
+    "relatedListings": ["tiki-trail", "queenstown-hill-time-walk", "bobs-cove-track"]
+  },
+  "mount-crichton-loop-track": {
+    "id": "16153",
+    "title": "Mount Crichton Loop Track",
+    "slug": "mount-crichton-loop-track",
+    "type": "Walk",
+    "category": "Walking & Hiking",
+    "heroImage": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1600&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=800&h=600&fit=crop"
+    ],
+    "shortDescription": "A loop track through native bush with historic gold mining relics and a side trip to Sam Summers Hut.",
+    "description": "The Mount Crichton Loop Track is a scenic walk through beautiful native beech forest between Queenstown and Glenorchy. The track features remnants of the area's gold mining history, including the well-preserved Sam Summers Hut, a restored gold miner's hut from the 1860s.\n\nThe loop passes through a variety of landscapes including dense beech forest, creek crossings, and open clearings with views of Lake Dispute and the surrounding peaks. Birdlife is abundant, with tui, bellbird, and fantail commonly seen and heard.\n\nA side track leads to Sam Summers Hut, which adds about 30 minutes to the walk and is well worth the detour for its historical significance and peaceful bush setting.",
+    "details": {
+      "duration": "3-4 hours",
+      "distance": "6.4 km loop",
+      "difficulty": "Moderate",
+      "elevation": "300m gain"
+    },
+    "address": "Glenorchy-Queenstown Road",
+    "phone": null,
+    "website": "https://www.doc.govt.nz",
+    "hours": "Open 24 hours",
+    "relatedListings": ["glenorchy-lagoon-walkway", "ben-lomond-track", "queenstown-hill-time-walk"]
+  },
+  "ben-lomond-track": {
+    "id": "9114",
+    "title": "Ben Lomond Track",
+    "slug": "ben-lomond-track",
+    "type": "Walk",
+    "category": "Walking & Hiking",
+    "heroImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop"
+    ],
+    "shortDescription": "A challenging alpine hike to 1748m with the best panoramic views in the Queenstown area.",
+    "description": "The Ben Lomond Track is considered one of the best day walks in Queenstown, climbing to 1,748 metres above sea level. The summit offers unparalleled 360-degree views of Lake Wakatipu, The Remarkables, Cecil Peak, and the surrounding mountain ranges.\n\nMost hikers take the Skyline Gondola to the top of Bob's Peak and begin the walk from there, saving about 450m of climbing. From the gondola complex, the track climbs through subalpine bush before breaking out onto exposed tussock slopes.\n\nThe final section to the summit is steep and exposed, with some scrambling required. This is an alpine environment and conditions can change rapidly — good footwear, warm layers, and checking the weather forecast are essential.",
+    "details": {
+      "duration": "6-8 hours return (from gondola top)",
+      "distance": "11.2 km return",
+      "difficulty": "Hard",
+      "elevation": "960m gain from gondola top"
+    },
+    "address": "Skyline Gondola, Brecon Street, Queenstown",
+    "phone": null,
+    "website": "https://www.doc.govt.nz",
+    "hours": "Open 24 hours (weather dependent)",
+    "relatedListings": ["tiki-trail", "queenstown-hill-time-walk", "skyline-queenstown"]
+  },
+  "lake-hayes-loop-track": {
+    "id": "12465",
+    "title": "Lake Hayes Loop Track",
+    "slug": "lake-hayes-loop-track",
+    "type": "Walk",
+    "category": "Walking & Hiking",
+    "heroImage": "https://images.unsplash.com/photo-1589871973318-9ca1258faa5d?w=1600&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1589871973318-9ca1258faa5d?w=800&h=600&fit=crop"
+    ],
+    "shortDescription": "A scenic lakeside loop around one of New Zealand's most photographed lakes.",
+    "description": "Lake Hayes is one of the most photographed lakes in New Zealand, and the loop track around it offers a beautiful, mostly flat walk with ever-changing views of the surrounding mountains.\n\nThe track follows the shoreline of the lake, passing through farmland, native plantings, and wetland areas. On calm days, the lake creates perfect mirror reflections of the surrounding mountains — a photographer's dream.\n\nThe walk can be started from several access points around the lake. The A&P Showgrounds at the northern end has good parking and is a popular starting point. The track is also popular with runners and cyclists.",
+    "details": {
+      "duration": "2-3 hours",
+      "distance": "8 km loop",
+      "difficulty": "Easy",
+      "elevation": "Minimal"
+    },
+    "address": "Lake Hayes, Arrowtown-Lake Hayes Road",
+    "phone": null,
+    "website": "https://www.doc.govt.nz",
+    "hours": "Open 24 hours",
+    "relatedListings": ["arrowtown-river-trail", "sawpit-gully-trail", "queenstown-gardens-trail"]
+  },
+  "moke-lake-loop-track": {
+    "id": "2043",
+    "title": "Moke Lake Loop Track",
+    "slug": "moke-lake-loop-track",
+    "type": "Walk",
+    "category": "Walking & Hiking",
+    "heroImage": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1600&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&h=600&fit=crop"
+    ],
+    "shortDescription": "A peaceful loop around a secluded alpine lake surrounded by mountains, popular for camping.",
+    "description": "Moke Lake is a hidden gem tucked away in a valley just 10km from Queenstown. The loop track around the lake offers a peaceful escape from the busier trails, with beautiful mountain scenery and abundant birdlife.\n\nThe walk follows an easy track around the lakeshore, passing through tussock grassland and along the water's edge. The mountains surrounding the lake create a dramatic amphitheatre, particularly beautiful in the golden light of early morning or late afternoon.\n\nMoke Lake is also a popular camping spot (DOC campsite available), and the lake is swimmable in summer, making it a great destination for a full day out. The access road is unsealed and can be rough, but is suitable for most vehicles.",
+    "details": {
+      "duration": "1.5-2 hours",
+      "distance": "4.5 km loop",
+      "difficulty": "Easy",
+      "elevation": "Minimal"
+    },
+    "address": "Moke Lake Road, Queenstown",
+    "phone": null,
+    "website": "https://www.doc.govt.nz",
+    "hours": "Open 24 hours",
+    "relatedListings": ["queenstown-hill-time-walk", "lower-wye-creek-track", "lake-hayes-loop-track"]
+  },
+  "sawpit-gully-trail": {
+    "id": "2040",
+    "title": "Sawpit Gully Trail",
+    "slug": "sawpit-gully-trail",
+    "type": "Walk",
+    "category": "Walking & Hiking",
+    "heroImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&h=600&fit=crop"
+    ],
+    "shortDescription": "A historic trail through former gold mining country near Arrowtown.",
+    "description": "Sawpit Gully Trail takes you through the historic gold mining landscape of the Arrow River valley near Arrowtown. The trail follows old mining tracks and water races, offering a fascinating glimpse into the area's gold rush history.\n\nThe walk passes through a mix of regenerating native bush and exotic trees, with views of the Crown Range and surrounding peaks. Interpretive panels along the way explain the mining heritage and environmental restoration efforts.\n\nThe trail can be combined with the Arrowtown River Trail for a longer outing, and connects to the wider Queenstown Trail network for multi-day adventures.",
+    "details": {
+      "duration": "2-3 hours return",
+      "distance": "5 km return",
+      "difficulty": "Easy-Moderate",
+      "elevation": "200m gain"
+    },
+    "address": "Near Arrowtown",
+    "phone": null,
+    "website": "https://www.doc.govt.nz",
+    "hours": "Open 24 hours",
+    "relatedListings": ["arrowtown-river-trail", "lake-hayes-loop-track", "queenstown-hill-time-walk"]
+  },
+  "arrowtown-river-trail": {
+    "id": "9098",
+    "title": "Arrowtown River Trail",
+    "slug": "arrowtown-river-trail",
+    "type": "Walk",
+    "category": "Walking & Hiking",
+    "heroImage": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_800,q_65,w_1600,x_2019,y_1539/v1/clients/queenstownnz/Picnic_by_historic_cottage_in_Macetown_Queenstown_196e80fd-60ba-4f36-96c0-590bd578cde9.jpg",
+    "images": [
+      "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_600,q_65,w_800,x_2019,y_1539/v1/clients/queenstownnz/Picnic_by_historic_cottage_in_Macetown_Queenstown_196e80fd-60ba-4f36-96c0-590bd578cde9.jpg"
+    ],
+    "shortDescription": "A beautiful riverside walk following the Arrow River through historic Arrowtown.",
+    "description": "The Arrowtown River Trail is a scenic walk along the banks of the Arrow River, starting from the historic Chinese Settlement in Arrowtown. The trail follows the crystal-clear river upstream through willow-lined banks and old mining areas.\n\nArrowtown was established during the gold rush of the 1860s, and the river banks still hold traces of this history. Gold panning is still possible in the river, and you can purchase gold pans from local shops to try your luck.\n\nThe trail is particularly stunning in autumn when the deciduous trees along the river banks turn brilliant shades of gold, orange, and red, making Arrowtown one of the most photographed places in New Zealand during this season.",
+    "details": {
+      "duration": "1-2 hours",
+      "distance": "3 km one way",
+      "difficulty": "Easy",
+      "elevation": "Minimal"
+    },
+    "address": "Buckingham Street, Arrowtown",
+    "phone": null,
+    "website": null,
+    "hours": "Open 24 hours",
+    "relatedListings": ["sawpit-gully-trail", "lake-hayes-loop-track", "queenstown-gardens-trail"]
+  },
+  "ritchies-transport": {
+    "id": "3250",
+    "title": "Ritchie's Transport",
+    "slug": "ritchies-transport",
+    "type": "Transport",
+    "category": "Getting Around",
+    "heroImage": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1600&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800&h=600&fit=crop"
+    ],
+    "shortDescription": "Public bus services connecting Queenstown, Frankton, Arrowtown and surrounding areas.",
+    "description": "Ritchie's operates the Orbus public bus service in the Queenstown Lakes District. The affordable bus network connects key areas including Queenstown town centre, Frankton, Remarkables Park, Arrowtown, and Lake Hayes Estate.\n\nThe bus service runs regularly throughout the day, making it easy to get around without a car. A Bee Card (available from local retailers) gives you discounted fares, and children under 5 travel free.\n\nRoutes include the popular #1 (Queenstown to Frankton), #2 (Queenstown to Arrowtown via Lake Hayes), and seasonal services to ski fields during winter.",
+    "details": {
+      "services": "Orbus public bus network",
+      "coverage": "Queenstown, Frankton, Arrowtown, Lake Hayes"
+    },
+    "address": "Queenstown Bus Stop, Camp Street",
+    "phone": "0800 474 082",
+    "website": "https://www.orc.govt.nz/public-transport",
+    "hours": "Daily, 7:00am - 11:00pm",
+    "relatedListings": ["skyline-queenstown", "realnz"]
+  },
+  "realnz": {
+    "id": "1255",
+    "title": "RealNZ",
+    "slug": "realnz",
+    "type": "Activity provider",
+    "category": "Adventures",
+    "heroImage": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_800,q_65,w_1600,x_3212,y_1889/v1/clients/queenstownnz/Spirit_of_Queenstown_Scenic_Cruise_Southern_Discoveries_026754f4-87da-423e-a630-2a14f4b0c1cd.jpg",
+    "images": [
+      "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_600,q_65,w_800,x_3212,y_1889/v1/clients/queenstownnz/Spirit_of_Queenstown_Scenic_Cruise_Southern_Discoveries_026754f4-87da-423e-a630-2a14f4b0c1cd.jpg"
+    ],
+    "shortDescription": "New Zealand's largest tourism and experiences company, offering cruises, kayaking, and more.",
+    "description": "RealNZ (formerly Real Journeys and Southern Discoveries) is one of New Zealand's leading tourism experience providers. Based in Queenstown, they offer an incredible range of experiences across the Southern Lakes and Fiordland regions.\n\nPopular Queenstown experiences include the Spirit of Queenstown scenic cruises on Lake Wakatipu, the historic TSS Earnslaw steamship, Milford Sound day trips, and sea kayaking adventures.\n\nRealNZ is committed to sustainability and conservation, actively working to protect the natural environments in which they operate. They are a Qualmark Gold Sustainable Tourism Business.",
+    "details": {
+      "activities": "Scenic Cruises, TSS Earnslaw, Milford Sound, Kayaking",
+      "booking": "Online or walk-in"
+    },
+    "address": "Real Journeys Visitor Centre, Steamer Wharf",
+    "phone": "+64 3 249 6000",
+    "website": "https://www.realnz.com",
+    "hours": "Daily 7:30am - 8:00pm",
+    "relatedListings": ["skyline-queenstown", "ritchies-transport"]
+  },
+  "skyline-queenstown": {
+    "id": "1056",
+    "title": "Skyline Queenstown",
+    "slug": "skyline-queenstown",
+    "type": "Attraction",
+    "category": "Things To Do",
+    "heroImage": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=1600&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=800&h=600&fit=crop"
+    ],
+    "shortDescription": "Iconic gondola ride, luge tracks, dining, and stunning views from Bob's Peak.",
+    "description": "Skyline Queenstown is the city's most iconic attraction, featuring the steepest lift gondola in the Southern Hemisphere. Rising 450 metres above Queenstown to the top of Bob's Peak, the Gondola offers breathtaking views of the Remarkables, Walter Peak, Cecil Peak, and Lake Wakatipu.\n\nAt the top, a world of experiences awaits. The Skyline Luge offers three exciting tracks for all ages, while Stratosfare Restaurant & Bar serves a premium buffet with panoramic views. Mountain biking trails, Zipline tours, and stargazing experiences complete the offering.\n\nThe Skyline complex is also the starting point for the Tiki Trail walk and the Ben Lomond Track, making it a hub for both casual visitors and serious hikers.",
+    "details": {
+      "activities": "Gondola, Luge, Dining, Mountain Biking, Zipline, Stargazing",
+      "prices": "Gondola from NZ$49 adult"
+    },
+    "address": "Brecon Street, Queenstown",
+    "phone": "+64 3 441 0101",
+    "website": "https://www.skyline.co.nz/queenstown",
+    "hours": "Daily 9:00am - 9:00pm (seasonal variations)",
+    "relatedListings": ["tiki-trail", "ben-lomond-track", "realnz"]
+  },
+  "frankton-golf-centre": {
+    "id": "2021",
+    "title": "Frankton Golf Centre",
+    "slug": "frankton-golf-centre",
+    "type": "Golf",
+    "category": "Golf",
+    "heroImage": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_800,q_65,w_1600,x_3439,y_4457/v1/clients/queenstownnz/Queenstown_Golf_Club_8__4de95f71-8986-4f98-bd7d-30d79056c6db.jpg",
+    "images": [
+      "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_600,q_65,w_800,x_3439,y_4457/v1/clients/queenstownnz/Queenstown_Golf_Club_8__4de95f71-8986-4f98-bd7d-30d79056c6db.jpg"
+    ],
+    "shortDescription": "A scenic 9-hole golf course with stunning views of The Remarkables and Lake Wakatipu.",
+    "description": "Frankton Golf Centre offers a relaxed golfing experience with some of the most spectacular scenery of any golf course in New Zealand. The 9-hole course sits on the shores of Lake Wakatipu with views of The Remarkables mountain range.\n\nThe course is suitable for all skill levels, from beginners to experienced golfers, and offers club hire, a driving range, and professional coaching. The relaxed atmosphere makes it a great choice for a casual round.\n\nThe centre also features a practice putting green and a small pro shop with essential golfing supplies.",
+    "details": {
+      "holes": "9-hole course",
+      "facilities": "Driving range, club hire, pro shop, lessons"
+    },
+    "address": "Frankton Road, Frankton, Queenstown",
+    "phone": "+64 3 442 9513",
+    "website": null,
+    "hours": "Daily, dawn to dusk",
+    "relatedListings": ["skyline-queenstown", "realnz"]
+  }
+}

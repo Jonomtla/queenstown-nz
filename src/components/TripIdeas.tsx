@@ -9,7 +9,7 @@ const TRIPS = [
     excerpt:
       "Take the time to immerse yourself in Queenstown's natural beauty, connect with the locals, and...",
     image:
-      "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_500,q_65,w_700,x_2000,y_1200/v1/clients/queenstownnz/Queenstown_Trail_suspension_bridge_hikers_abcdef01-2345-6789-abcd-ef0123456789.jpg",
+      "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=800&h=600&fit=crop",
     alt: "Hikers crossing suspension bridge on Queenstown Trail",
   },
   {
@@ -18,7 +18,7 @@ const TRIPS = [
     excerpt:
       "Here's your guide to seven days exploring the best of Queenstown's hiking, trail riding, mountain...",
     image:
-      "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_500,q_65,w_700,x_1500,y_1000/v1/clients/queenstownnz/Queenstown_panorama_hiking_view_12345678-abcd-4321-ef01-234567890abc.jpg",
+      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=600&fit=crop",
     alt: "Panoramic mountain view while hiking near Queenstown",
   },
   {
@@ -27,7 +27,7 @@ const TRIPS = [
     excerpt:
       "Long days spent enjoying summer in Queenstown... ten of the best activities for your visit.",
     image:
-      "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_500,q_65,w_700,x_1800,y_900/v1/clients/queenstownnz/Summer_Queenstown_lakeside_activities_abcdef99-1234-5678-abcd-ef9876543210.jpg",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
     alt: "Summer activities by the lake in Queenstown",
   },
 ];

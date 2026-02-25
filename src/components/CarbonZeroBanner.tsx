@@ -4,7 +4,7 @@ export default function CarbonZeroBanner() {
   return (
     <section className="relative h-[70vh] w-full">
       <Image
-        src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_800,q_65,w_2304,x_2000,y_1500/v1/clients/queenstownnz/Biking_lakeside_Queenstown_carbon_zero_abcdef12-3456-7890-abcd-ef0123456789.jpg"
+        src="https://images.unsplash.com/photo-1516939884455-1445c8652f83?w=2400&h=1000&fit=crop"
         alt="Couple relaxing by the lake with bikes"
         fill
         className="object-cover"

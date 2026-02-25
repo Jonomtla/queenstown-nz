@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "assets.simpleviewinc.com" },
       { protocol: "https", hostname: "cdn.crowdriff.com" },
       { protocol: "https", hostname: "www.queenstownnz.co.nz" },
+      { protocol: "https", hostname: "images.unsplash.com" },
     ],
   },
 };

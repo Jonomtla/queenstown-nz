@@ -19,7 +19,7 @@ const SEASONS = [
     name: "Winter",
     months: "June - August",
     image:
-      "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_3204,y_4266/v1/clients/queenstownnz/Coronet_Peak_snowboarding_winter_12345678-abcd-1234-ef01-234567890abc.jpg",
+      "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=600&h=700&fit=crop",
     alt: "Snow-covered mountains in Queenstown winter",
   },
   {

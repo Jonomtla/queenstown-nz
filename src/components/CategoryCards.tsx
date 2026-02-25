@@ -21,13 +21,13 @@ const CATEGORIES = {
     {
       title: "Biking",
       image:
-        "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_3000,y_2000/v1/clients/queenstownnz/Mountain_biking_Queenstown_Trail_c9f2d45a-1234-4567-abcd-ef0123456789.jpg",
+        "https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=600&h=700&fit=crop",
       alt: "Mountain bikers on Queenstown trails",
     },
     {
       title: "Walking & Hiking",
       image:
-        "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_2500,y_1500/v1/clients/queenstownnz/Walking_Ben_Lomond_Track_Queenstown_12345678-abcd-4321-ef01-234567890abc.jpg",
+        "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=700&fit=crop",
       alt: "Walkers on lakeside trail with mountains",
     },
     {
