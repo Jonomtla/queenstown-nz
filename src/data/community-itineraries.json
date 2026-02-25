@@ -7,13 +7,21 @@
     "durationDays": 3,
     "travellerType": "couple",
     "travellerDetails": "Weekend ski trip with my partner",
-    "categories": ["winter", "skiing", "dining"],
+    "categories": [
+      "winter",
+      "skiing",
+      "dining"
+    ],
     "season": "winter",
     "summary": "Three days of skiing, après, and the best winter food Queenstown has to offer. This is how a local does winter — skip the tourist traps and hit the spots that actually deliver.",
     "coverImage": "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=1600&h=800&fit=crop",
     "upvotes": 187,
     "commentCount": 23,
-    "endorsements": { "family": 6, "couple": 24, "solo": 15 },
+    "endorsements": {
+      "family": 6,
+      "couple": 24,
+      "solo": 15
+    },
     "days": [
       {
         "dayNumber": 1,
@@ -23,25 +31,61 @@
             "timeOfDay": "morning",
             "title": "First Tracks at Coronet Peak",
             "description": "Get up early for first tracks — the groomed runs at sunrise with views across the basin are unbeatable. Rocky Gully and Greengates are perfect first runs to get your legs going.",
-            "places": [{ "name": "Coronet Peak", "listingSlug": "coronet-peak" }],
+            "places": [
+              {
+                "name": "Coronet Peak",
+                "listingSlug": "coronet-peak",
+                "lat": -45.0475,
+                "lng": 168.7278
+              }
+            ],
             "localTip": "Buy your lift pass online the night before — it's cheaper and you skip the queue. The M1 car park fills by 8:30am on weekends.",
-            "ageRange": "ages-8+"
+            "ageRange": "ages-8+",
+            "setting": "outdoor",
+            "rainyAlternative": {
+              "title": "Indoor Climbing at Basecamp",
+              "description": "If the mountain is closed due to weather, Basecamp Adventures in town has a great indoor climbing wall and café.",
+              "places": [
+                {
+                  "name": "Basecamp Adventures",
+                  "listingSlug": "basecamp-adventures",
+                  "lat": -45.0305,
+                  "lng": 168.66
+                }
+              ]
+            }
           },
           {
             "timeOfDay": "afternoon",
             "title": "Recover & Explore Arrowtown",
             "description": "Drive 20 minutes to Arrowtown for a change of scenery. Walk the historic Chinese settlement, browse the boutiques on Buckingham Street, and warm up with a hot chocolate.",
-            "places": [{ "name": "Arrowtown", "href": "/plan/surrounding-region/arrowtown/" }],
+            "places": [
+              {
+                "name": "Arrowtown",
+                "href": "/plan/surrounding-region/arrowtown/",
+                "lat": -44.942,
+                "lng": 168.8272
+              }
+            ],
             "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=500&fit=crop",
-            "ageRange": "all-ages"
+            "ageRange": "all-ages",
+            "setting": "both"
           },
           {
             "timeOfDay": "evening",
             "title": "Dinner at Botswana Butchery",
             "description": "Treat yourself on night one. The fireside tables at Botswana Butchery are peak winter vibes — order the scotch fillet and a glass of Central Otago pinot noir.",
-            "places": [{ "name": "Botswana Butchery", "listingSlug": "botswana-butchery" }],
+            "places": [
+              {
+                "name": "Botswana Butchery",
+                "listingSlug": "botswana-butchery",
+                "lat": -45.0312,
+                "lng": 168.6627
+              }
+            ],
             "localTip": "Book at least a week ahead in winter. Request a fireside table when you call.",
-            "ageRange": "adults-only"
+            "ageRange": "adults-only",
+            "setting": "indoor"
           }
         ]
       },
@@ -53,23 +97,59 @@
             "timeOfDay": "morning",
             "title": "The Remarkables for Terrain",
             "description": "Day two is all about The Remarkables. The terrain here is more varied than Coronet — Shadow Basin has incredible off-piste when conditions are right. The drive up is dramatic.",
-            "places": [{ "name": "The Remarkables", "listingSlug": "the-remarkables-ski" }],
+            "places": [
+              {
+                "name": "The Remarkables",
+                "listingSlug": "the-remarkables-ski",
+                "lat": -45.065,
+                "lng": 168.719
+              }
+            ],
             "image": "https://images.unsplash.com/photo-1565992441121-4367c2967103?w=800&h=500&fit=crop",
-            "ageRange": "ages-8+"
+            "ageRange": "ages-8+",
+            "setting": "outdoor",
+            "rainyAlternative": {
+              "title": "Thrillzone Indoor Activities",
+              "description": "If conditions close the mountain, Thrillzone has jet simulators, VR, and go-karts — plenty of adrenaline without the chairlift.",
+              "places": [
+                {
+                  "name": "Thrillzone",
+                  "listingSlug": "thrillzone-queenstown",
+                  "lat": -45.0308,
+                  "lng": 168.6598
+                }
+              ]
+            }
           },
           {
             "timeOfDay": "afternoon",
             "title": "Aprés at Atlas Beer Cafe",
             "description": "Back in town, head straight to Atlas for the best après scene. Great craft beer selection, warm atmosphere, and you can people-watch on Steamer Wharf.",
-            "places": [{ "name": "Atlas Beer Cafe", "listingSlug": "atlas-beer-cafe" }],
-            "ageRange": "adults-only"
+            "places": [
+              {
+                "name": "Atlas Beer Cafe",
+                "listingSlug": "atlas-beer-cafe",
+                "lat": -45.0318,
+                "lng": 168.6633
+              }
+            ],
+            "ageRange": "adults-only",
+            "setting": "indoor"
           },
           {
             "timeOfDay": "evening",
             "title": "Late Night on the Town",
             "description": "Queenstown's nightlife punches well above its weight for a small town. Start at The World Bar for cocktails in a converted church, then see where the night takes you.",
-            "places": [{ "name": "The World Bar", "listingSlug": "the-world-bar" }],
-            "ageRange": "adults-only"
+            "places": [
+              {
+                "name": "The World Bar",
+                "listingSlug": "the-world-bar",
+                "lat": -45.0324,
+                "lng": 168.6608
+              }
+            ],
+            "ageRange": "adults-only",
+            "setting": "indoor"
           }
         ]
       },
@@ -82,18 +162,37 @@
             "title": "Fergburger Breakfast",
             "description": "You can't leave Queenstown without a Fergburger. Get there early (before 9am) to avoid the queue. The Big Al chicken burger with a flat white from Vudu next door is the move.",
             "places": [
-              { "name": "Fergburger", "listingSlug": "fergburger" },
-              { "name": "Vudu Cafe", "listingSlug": "vudu-cafe" }
+              {
+                "name": "Fergburger",
+                "listingSlug": "fergburger",
+                "lat": -45.032,
+                "lng": 168.6614
+              },
+              {
+                "name": "Vudu Cafe",
+                "listingSlug": "vudu-cafe",
+                "lat": -45.0319,
+                "lng": 168.6616
+              }
             ],
             "localTip": "Locals know the queue is shortest between 8-9am and after 2pm. Midday is chaos.",
-            "ageRange": "all-ages"
+            "ageRange": "all-ages",
+            "setting": "indoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "TSS Earnslaw Cruise",
             "description": "If you have time before your flight, the TSS Earnslaw cruise across Lake Wakatipu is a beautiful way to end the trip. The vintage steamship has been running since 1912.",
-            "places": [{ "name": "TSS Earnslaw", "listingSlug": "tss-earnslaw" }],
-            "ageRange": "all-ages"
+            "places": [
+              {
+                "name": "TSS Earnslaw",
+                "listingSlug": "tss-earnslaw",
+                "lat": -45.031,
+                "lng": 168.6625
+              }
+            ],
+            "ageRange": "all-ages",
+            "setting": "outdoor"
           }
         ]
       }
@@ -106,7 +205,14 @@
             "replacement": {
               "title": "Family Dinner at Flame",
               "description": "Flame Bar & Grill is perfect for families after a day on the slopes — relaxed vibe, great kids' menu that goes beyond nuggets, and excellent ribs for the adults.",
-              "places": [{ "name": "Flame Bar & Grill", "listingSlug": "flame-bar-grill" }],
+              "places": [
+                {
+                  "name": "Flame Bar & Grill",
+                  "listingSlug": "flame-bar-grill",
+                  "lat": -45.0316,
+                  "lng": 168.6621
+                }
+              ],
               "ageRange": "all-ages"
             }
           },
@@ -115,7 +221,14 @@
             "replacement": {
               "title": "Hot Chocolates at Patagonia",
               "description": "Skip the pub and head to Patagonia Chocolates on the waterfront. The kids will love picking their hot chocolate flavour, and the adults can sneak in a mulled wine.",
-              "places": [{ "name": "Patagonia Chocolates", "listingSlug": "patagonia-chocolates" }],
+              "places": [
+                {
+                  "name": "Patagonia Chocolates",
+                  "listingSlug": "patagonia-chocolates",
+                  "lat": -45.0314,
+                  "lng": 168.6619
+                }
+              ],
               "ageRange": "all-ages"
             }
           },
@@ -124,7 +237,14 @@
             "replacement": {
               "title": "Stargazing from the Deck",
               "description": "Queenstown's winter skies are incredible for stargazing. Find a spot away from the town lights — the Skyline car park or Frankton beach works well. Bring blankets and hot drinks.",
-              "places": [{ "name": "Queenstown Waterfront", "href": "/things-to-do/" }],
+              "places": [
+                {
+                  "name": "Queenstown Waterfront",
+                  "href": "/things-to-do/",
+                  "lat": -45.0308,
+                  "lng": 168.6612
+                }
+              ],
               "ageRange": "all-ages"
             }
           }
@@ -137,7 +257,14 @@
             "replacement": {
               "title": "Bar Dinner at The Lodge Bar",
               "description": "The Lodge Bar is perfect for solo dining — sit at the bar, great cocktail menu, and the kitchen does elevated pub food. Easy to chat with locals here.",
-              "places": [{ "name": "The Lodge Bar", "listingSlug": "the-lodge-bar" }],
+              "places": [
+                {
+                  "name": "The Lodge Bar",
+                  "listingSlug": "the-lodge-bar",
+                  "lat": -45.0312,
+                  "lng": 168.6622
+                }
+              ],
               "ageRange": "adults-only"
             }
           }
@@ -157,19 +284,94 @@
             "authorSlug": "matt-wilson",
             "authorType": "local",
             "date": "2025-08-12",
-            "text": "Great call on the ice bar! I keep forgetting about that — perfect for families."
+            "text": "Great call on the ice bar! I keep forgetting about that — perfect for families.",
+            "type": "answer"
           }
-        ]
+        ],
+        "type": "tip"
       },
       {
         "author": "Alex Brooks",
         "authorSlug": "alex-brooks",
         "authorType": "visitor",
         "date": "2025-09-03",
-        "text": "The Remarkables drive is no joke in winter — make sure you have chains or a 4WD. Totally worth it though, Shadow Basin was insane."
+        "text": "The Remarkables drive is no joke in winter — make sure you have chains or a 4WD. Totally worth it though, Shadow Basin was insane.",
+        "type": "tip"
       }
     ],
-    "relatedItineraries": ["family-friendly-summer-week", "foodie-trail-queenstown", "solo-adventure-5-days"]
+    "relatedItineraries": [
+      "family-friendly-summer-week",
+      "foodie-trail-queenstown",
+      "solo-adventure-5-days"
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=1200&h=800&fit=crop",
+        "caption": "Coronet Peak first tracks at sunrise"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1565992441121-4367c2967103?w=1200&h=800&fit=crop",
+        "caption": "The Remarkables from the access road"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1200&h=800&fit=crop",
+        "caption": "Arrowtown's Buckingham Street in winter"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&h=800&fit=crop",
+        "caption": "Dinner at Botswana Butchery by the fire"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=1200&h=800&fit=crop",
+        "caption": "TSS Earnslaw on Lake Wakatipu"
+      }
+    ],
+    "costEstimate": {
+      "level": "mid-range",
+      "perPersonPerDay": 280,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 130,
+        "food": 70,
+        "activities": 60,
+        "transport": 20
+      },
+      "notes": "Based on mid-range hotel, lift passes, dining out for lunch and dinner"
+    },
+    "packingList": [
+      {
+        "item": "Warm base layers",
+        "essential": true
+      },
+      {
+        "item": "Ski gloves and goggles",
+        "essential": true
+      },
+      {
+        "item": "Sunscreen (snow glare is intense)",
+        "essential": true
+      },
+      {
+        "item": "Beanie and neck warmer",
+        "essential": true
+      },
+      {
+        "item": "Après outfit for dinners",
+        "essential": false
+      },
+      {
+        "item": "Hand warmers",
+        "essential": false
+      }
+    ],
+    "userStories": [
+      {
+        "authorSlug": "emma-james",
+        "text": "Followed this with the kids — the fireside table at Botswana Butchery was absolutely magical. We used the family adaptation and swapped to Flame for the kids which worked perfectly.",
+        "date": "2025-08",
+        "photo": "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=400&h=300&fit=crop"
+      }
+    ]
   },
   "family-friendly-summer-week": {
     "title": "Family-Friendly Summer Week",
@@ -179,13 +381,21 @@
     "durationDays": 5,
     "travellerType": "family",
     "travellerDetails": "3 kids (ages 4, 7, 9)",
-    "categories": ["family", "summer", "outdoor"],
+    "categories": [
+      "family",
+      "summer",
+      "outdoor"
+    ],
     "season": "summer",
     "summary": "Five days of family adventures that kept our three kids (ages 4, 7, and 9) entertained without a single meltdown. Tested and approved by real parents who've been there.",
     "coverImage": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=1600&h=800&fit=crop",
     "upvotes": 234,
     "commentCount": 31,
-    "endorsements": { "family": 42, "couple": 3, "solo": 1 },
+    "endorsements": {
+      "family": 42,
+      "couple": 3,
+      "solo": 1
+    },
     "days": [
       {
         "dayNumber": 1,
@@ -195,16 +405,44 @@
             "timeOfDay": "afternoon",
             "title": "Queenstown Gardens",
             "description": "After arriving and checking in, head straight to the Queenstown Gardens. Free, flat, and full of things for kids — disc golf, a skate park, and the most beautiful lakefront walk. Perfect for burning off travel energy.",
-            "places": [{ "name": "Queenstown Gardens", "listingSlug": "queenstown-gardens-trail" }],
+            "places": [
+              {
+                "name": "Queenstown Gardens",
+                "listingSlug": "queenstown-gardens-trail",
+                "lat": -45.0345,
+                "lng": 168.658
+              }
+            ],
             "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
-            "ageRange": "all-ages"
+            "ageRange": "all-ages",
+            "setting": "outdoor",
+            "rainyAlternative": {
+              "title": "Queenstown Indoor Activities",
+              "description": "Head to Thrillzone for VR experiences and indoor go-karts — kids absolutely love it on a rainy day.",
+              "places": [
+                {
+                  "name": "Thrillzone",
+                  "listingSlug": "thrillzone-queenstown",
+                  "lat": -45.0308,
+                  "lng": 168.6598
+                }
+              ]
+            }
           },
           {
             "timeOfDay": "evening",
             "title": "Fish & Chips by the Lake",
             "description": "Keep it simple on night one. Grab fish and chips from Erik's and eat them on the beach by the lake. The kids will love throwing stones in the water while you enjoy the view.",
-            "places": [{ "name": "Queenstown Waterfront", "href": "/things-to-do/" }],
-            "ageRange": "all-ages"
+            "places": [
+              {
+                "name": "Queenstown Waterfront",
+                "href": "/things-to-do/",
+                "lat": -45.0308,
+                "lng": 168.6612
+              }
+            ],
+            "ageRange": "all-ages",
+            "setting": "outdoor"
           }
         ]
       },
@@ -216,23 +454,47 @@
             "timeOfDay": "morning",
             "title": "Skyline Gondola & Luge",
             "description": "The Gondola ride up is exciting enough for kids, but the luge at the top is the real highlight. Our 7 and 9 year olds did the scenic track on their own — huge confidence boost. The 4 year old rode with dad.",
-            "places": [{ "name": "Skyline Queenstown", "listingSlug": "skyline-queenstown" }],
+            "places": [
+              {
+                "name": "Skyline Queenstown",
+                "listingSlug": "skyline-queenstown",
+                "lat": -45.0225,
+                "lng": 168.659
+              }
+            ],
             "localTip": "Buy the combo ticket (gondola + 3 luge rides). The kids will want more than one go, guaranteed.",
-            "ageRange": "ages-3+"
+            "ageRange": "ages-3+",
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Kiwi Birdlife Park",
             "description": "Just below the Gondola base, Kiwi Birdlife Park is a hidden gem. The conservation show is genuinely educational (and entertaining) and you might spot a kiwi in the dark house. Allow 2 hours.",
-            "places": [{ "name": "Kiwi Birdlife Park", "listingSlug": "kiwi-birdlife-park" }],
-            "ageRange": "all-ages"
+            "places": [
+              {
+                "name": "Kiwi Birdlife Park",
+                "listingSlug": "kiwi-birdlife-park",
+                "lat": -45.0295,
+                "lng": 168.6565
+              }
+            ],
+            "ageRange": "all-ages",
+            "setting": "both"
           },
           {
             "timeOfDay": "evening",
             "title": "Stratosfare Dinner",
             "description": "If you're going to splurge on one dinner, make it Stratosfare at the top of the Gondola. The buffet means fussy eaters can find something, and the sunset views are extraordinary.",
-            "places": [{ "name": "Stratosfare Restaurant", "listingSlug": "stratosfare-restaurant" }],
-            "ageRange": "all-ages"
+            "places": [
+              {
+                "name": "Stratosfare Restaurant",
+                "listingSlug": "stratosfare-restaurant",
+                "lat": -45.0228,
+                "lng": 168.6588
+              }
+            ],
+            "ageRange": "all-ages",
+            "setting": "indoor"
           }
         ]
       },
@@ -244,17 +506,45 @@
             "timeOfDay": "morning",
             "title": "Drive to Glenorchy",
             "description": "The 45-minute drive to Glenorchy is one of the most scenic roads in NZ. Stop at the lookout points — Bennett's Bluff is jaw-dropping. The kids loved spotting Lord of the Rings filming locations.",
-            "places": [{ "name": "Glenorchy", "href": "/plan/surrounding-region/glenorchy/" }],
+            "places": [
+              {
+                "name": "Glenorchy",
+                "href": "/plan/surrounding-region/glenorchy/",
+                "lat": -44.8484,
+                "lng": 168.38
+              }
+            ],
             "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=500&fit=crop",
-            "ageRange": "all-ages"
+            "ageRange": "all-ages",
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Lagoon Walk & Picnic",
             "description": "The Glenorchy Lagoon Walkway is flat, easy, and stunningly beautiful. Pack a picnic and let the kids explore. The water is crystal clear and safe for paddling in summer.",
-            "places": [{ "name": "Glenorchy Lagoon Walkway", "listingSlug": "glenorchy-lagoon-walkway" }],
+            "places": [
+              {
+                "name": "Glenorchy Lagoon Walkway",
+                "listingSlug": "glenorchy-lagoon-walkway",
+                "lat": -44.851,
+                "lng": 168.375
+              }
+            ],
             "localTip": "Bring insect repellent. Sandflies can be brutal near the lagoon, especially late afternoon.",
-            "ageRange": "all-ages"
+            "ageRange": "all-ages",
+            "setting": "outdoor",
+            "rainyAlternative": {
+              "title": "Escape Quest Queenstown",
+              "description": "If rain cancels the lagoon walk, the family-friendly escape rooms at Escape Quest are a great backup.",
+              "places": [
+                {
+                  "name": "Escape Quest Queenstown",
+                  "listingSlug": "escape-quest-queenstown",
+                  "lat": -45.0315,
+                  "lng": 168.6605
+                }
+              ]
+            }
           }
         ]
       },
@@ -266,22 +556,46 @@
             "timeOfDay": "morning",
             "title": "Shotover Jet",
             "description": "The Shotover Jet is safe for kids over 3 and it's a blast. The 360 spins had our kids screaming with delight. Book the first morning slot for the best light in the canyon.",
-            "places": [{ "name": "Shotover Jet", "listingSlug": "shotover-jet" }],
-            "ageRange": "ages-3+"
+            "places": [
+              {
+                "name": "Shotover Jet",
+                "listingSlug": "shotover-jet",
+                "lat": -44.9985,
+                "lng": 168.7305
+              }
+            ],
+            "ageRange": "ages-3+",
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "E-Bike the Trail",
             "description": "Hire e-bikes and ride the Queenstown Trail from Frankton to Arrowtown. It's mostly flat, well-paved, and beautiful. Our 9-year-old managed on a kids' bike; younger ones rode in a trailer.",
-            "places": [{ "name": "Charge About E-Bikes", "listingSlug": "charge-about-ebikes" }],
-            "ageRange": "ages-5+"
+            "places": [
+              {
+                "name": "Charge About E-Bikes",
+                "listingSlug": "charge-about-ebikes",
+                "lat": -45.031,
+                "lng": 168.6605
+              }
+            ],
+            "ageRange": "ages-5+",
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "evening",
             "title": "Flame Bar & Grill",
             "description": "After a big day, you want somewhere relaxed with good food. Flame does excellent ribs and has a kids' menu that isn't just nuggets and chips.",
-            "places": [{ "name": "Flame Bar & Grill", "listingSlug": "flame-bar-grill" }],
-            "ageRange": "all-ages"
+            "places": [
+              {
+                "name": "Flame Bar & Grill",
+                "listingSlug": "flame-bar-grill",
+                "lat": -45.0316,
+                "lng": 168.6621
+              }
+            ],
+            "ageRange": "all-ages",
+            "setting": "indoor"
           }
         ]
       },
@@ -294,10 +608,21 @@
             "title": "Patagonia Chocolates & Souvenirs",
             "description": "Our last morning ritual: hot chocolates at Patagonia Chocolates on the waterfront, then a browse through the Remarkable Sweet Shop for take-home treats. The kids voted this their favourite part of the trip.",
             "places": [
-              { "name": "Patagonia Chocolates", "listingSlug": "patagonia-chocolates" },
-              { "name": "Remarkable Sweet Shop", "listingSlug": "remarkable-sweet-shop" }
+              {
+                "name": "Patagonia Chocolates",
+                "listingSlug": "patagonia-chocolates",
+                "lat": -45.0314,
+                "lng": 168.6619
+              },
+              {
+                "name": "Remarkable Sweet Shop",
+                "listingSlug": "remarkable-sweet-shop",
+                "lat": -45.0322,
+                "lng": 168.6612
+              }
             ],
-            "ageRange": "all-ages"
+            "ageRange": "all-ages",
+            "setting": "indoor"
           }
         ]
       }
@@ -310,7 +635,14 @@
             "replacement": {
               "title": "Skyline Gondola & Stratosfare Brunch",
               "description": "Take the Gondola up for a leisurely brunch at Stratosfare with panoramic views. Much more relaxed than the luge crowds, and the mountain views with a glass of bubbles are unbeatable.",
-              "places": [{ "name": "Stratosfare Restaurant", "listingSlug": "stratosfare-restaurant" }],
+              "places": [
+                {
+                  "name": "Stratosfare Restaurant",
+                  "listingSlug": "stratosfare-restaurant",
+                  "lat": -45.0228,
+                  "lng": 168.6588
+                }
+              ],
               "ageRange": "adults-only"
             }
           },
@@ -319,7 +651,14 @@
             "replacement": {
               "title": "Wine Tasting at Gibbston Valley",
               "description": "Drive to Gibbston Valley for a cave wine tasting experience. Central Otago pinot noir in an underground cave — romantic and memorable.",
-              "places": [{ "name": "Gibbston Valley", "href": "/things-to-do/" }],
+              "places": [
+                {
+                  "name": "Gibbston Valley",
+                  "href": "/things-to-do/",
+                  "lat": -45.019,
+                  "lng": 168.8555
+                }
+              ],
               "ageRange": "adults-only"
             }
           },
@@ -328,7 +667,14 @@
             "replacement": {
               "title": "Dinner at Rata",
               "description": "Josh Emett's Rata is where local ingredients get the respect they deserve. The tasting menu with wine pairing is the way to go for a special evening.",
-              "places": [{ "name": "Rata", "listingSlug": "rata-restaurant" }],
+              "places": [
+                {
+                  "name": "Rata",
+                  "listingSlug": "rata-restaurant",
+                  "lat": -45.0315,
+                  "lng": 168.6622
+                }
+              ],
               "ageRange": "adults-only"
             }
           }
@@ -342,17 +688,105 @@
         "authorType": "local",
         "date": "2025-02-20",
         "text": "This is such a great guide for families. I always recommend the Glenorchy drive to visiting friends — you've captured it perfectly. One more tip: the Mrs Ferg gelato near Fergburger is amazing on a hot summer day.",
-        "replies": []
+        "replies": [],
+        "type": "answer"
       },
       {
         "author": "Jess Taylor",
         "authorSlug": "jess-taylor",
         "authorType": "creator",
         "date": "2025-03-05",
-        "text": "Love this! The Skyline combo ticket tip is so important — individual rides get expensive fast. Would add that the Stratosfare buffet has been revamped recently and it's even better now."
+        "text": "Love this! The Skyline combo ticket tip is so important — individual rides get expensive fast. Would add that the Stratosfare buffet has been revamped recently and it's even better now.",
+        "type": "tip"
       }
     ],
-    "relatedItineraries": ["perfect-winter-weekend", "active-arrowtown-day", "solo-adventure-5-days"]
+    "relatedItineraries": [
+      "perfect-winter-weekend",
+      "active-arrowtown-day",
+      "solo-adventure-5-days"
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=1200&h=800&fit=crop",
+        "caption": "Lake Wakatipu summer vibes"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=1200&h=800&fit=crop",
+        "caption": "Skyline Gondola views"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop",
+        "caption": "Queenstown Gardens disc golf"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1472791108553-c9405341e398?w=1200&h=800&fit=crop",
+        "caption": "E-biking the Queenstown Trail"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&h=800&fit=crop",
+        "caption": "Picnic at Glenorchy Lagoon"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1570197571499-166b36435e9f?w=1200&h=800&fit=crop",
+        "caption": "Shotover Jet thrills"
+      }
+    ],
+    "costEstimate": {
+      "level": "mid-range",
+      "perPersonPerDay": 200,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 80,
+        "food": 50,
+        "activities": 50,
+        "transport": 20
+      },
+      "notes": "Per person based on family of 4, mix of self-catering and eating out"
+    },
+    "packingList": [
+      {
+        "item": "Sunscreen and hats for everyone",
+        "essential": true
+      },
+      {
+        "item": "Comfortable walking shoes",
+        "essential": true
+      },
+      {
+        "item": "Layers — summer mornings can be cool",
+        "essential": true
+      },
+      {
+        "item": "Swimwear and towels",
+        "essential": true
+      },
+      {
+        "item": "Snacks for the car",
+        "essential": false
+      },
+      {
+        "item": "Binoculars for bird watching",
+        "essential": false
+      },
+      {
+        "item": "Portable phone charger",
+        "essential": false
+      }
+    ],
+    "userStories": [
+      {
+        "authorSlug": "sarah-chen",
+        "text": "Recommended this to three families who visited my cafe — all of them came back raving about the Glenorchy day trip. The lagoon walk is pure magic for little ones.",
+        "date": "2025-02",
+        "photo": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=300&fit=crop"
+      },
+      {
+        "authorSlug": "jess-taylor",
+        "text": "Did this over Christmas week. The Skyline Luge was the highlight for everyone — we went back three times! Pro tip: the last luge run at sunset is unbeatable.",
+        "date": "2025-01",
+        "photo": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=400&h=300&fit=crop"
+      }
+    ]
   },
   "foodie-trail-queenstown": {
     "title": "The Queenstown Foodie Trail",
@@ -362,13 +796,20 @@
     "durationDays": 2,
     "travellerType": "couple",
     "travellerDetails": "Foodie weekend with my wife",
-    "categories": ["dining", "wine"],
+    "categories": [
+      "dining",
+      "wine"
+    ],
     "season": "autumn",
     "summary": "Two days eating and drinking your way through Queenstown's best — from hole-in-the-wall bakeries to fine dining with lake views. A restaurant owner's honest guide to where the food actually lives up to the hype.",
     "coverImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&h=800&fit=crop",
     "upvotes": 156,
     "commentCount": 19,
-    "endorsements": { "family": 4, "couple": 31, "solo": 12 },
+    "endorsements": {
+      "family": 4,
+      "couple": 31,
+      "solo": 12
+    },
     "days": [
       {
         "dayNumber": 1,
@@ -378,21 +819,45 @@
             "timeOfDay": "morning",
             "title": "Bespoke Kitchen Breakfast",
             "description": "Start at Bespoke Kitchen in Searle Lane. The corn fritters with avocado smash are legendary, and their coffee is some of the best in town. It's a local favourite, not a tourist joint.",
-            "places": [{ "name": "Bespoke Kitchen", "listingSlug": "bespoke-kitchen" }],
-            "localTip": "Arrive before 9am on weekends or you'll be queuing. Weekday mornings are much calmer."
+            "places": [
+              {
+                "name": "Bespoke Kitchen",
+                "listingSlug": "bespoke-kitchen",
+                "lat": -45.029,
+                "lng": 168.6573
+              }
+            ],
+            "localTip": "Arrive before 9am on weekends or you'll be queuing. Weekday mornings are much calmer.",
+            "setting": "indoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Fergbaker & Waterfront Walk",
             "description": "For lunch, skip the Fergburger queue and go next door to Fergbaker. The venison pie is extraordinary — flaky pastry, rich filling. Grab one and eat it walking along the waterfront.",
-            "places": [{ "name": "Fergbaker", "listingSlug": "fergbaker" }]
+            "places": [
+              {
+                "name": "Fergbaker",
+                "listingSlug": "fergbaker",
+                "lat": -45.0321,
+                "lng": 168.6613
+              }
+            ],
+            "setting": "both"
           },
           {
             "timeOfDay": "evening",
             "title": "Rata for Dinner",
             "description": "Josh Emett's Rata is where local ingredients get the respect they deserve. The tasting menu showcases NZ produce beautifully — cervena, crayfish, Central Otago stone fruit. The wine pairing is worth it.",
-            "places": [{ "name": "Rata", "listingSlug": "rata-restaurant" }],
-            "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&h=500&fit=crop"
+            "places": [
+              {
+                "name": "Rata",
+                "listingSlug": "rata-restaurant",
+                "lat": -45.0315,
+                "lng": 168.6622
+              }
+            ],
+            "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&h=500&fit=crop",
+            "setting": "indoor"
           }
         ]
       },
@@ -405,22 +870,49 @@
             "title": "Vudu Cafe & Mrs Ferg",
             "description": "Morning coffee at Vudu on the waterfront — their cabinet food is superb. Follow it with a gelato from Mrs Ferg next door, because holiday calories don't count.",
             "places": [
-              { "name": "Vudu Cafe", "listingSlug": "vudu-cafe" },
-              { "name": "Mrs Ferg Gelato", "listingSlug": "mrs-ferg-gelato" }
-            ]
+              {
+                "name": "Vudu Cafe",
+                "listingSlug": "vudu-cafe",
+                "lat": -45.0319,
+                "lng": 168.6616
+              },
+              {
+                "name": "Mrs Ferg Gelato",
+                "listingSlug": "mrs-ferg-gelato",
+                "lat": -45.0319,
+                "lng": 168.6615
+              }
+            ],
+            "setting": "indoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Gibbston Valley Wine Tasting",
             "description": "Drive 25 minutes to Gibbston Valley — the 'Valley of the Vines'. Central Otago produces world-class pinot noir, and tasting it at source with mountain views is unforgettable. Most wineries offer tastings for $10-15.",
-            "places": [{ "name": "Gibbston Valley", "href": "/things-to-do/" }],
-            "localTip": "If you're short on time, Gibbston Valley Winery has a great cave tasting experience. If you have a full afternoon, Amisfield closer to town is stunning."
+            "places": [
+              {
+                "name": "Gibbston Valley",
+                "href": "/things-to-do/",
+                "lat": -45.019,
+                "lng": 168.8555
+              }
+            ],
+            "localTip": "If you're short on time, Gibbston Valley Winery has a great cave tasting experience. If you have a full afternoon, Amisfield closer to town is stunning.",
+            "setting": "both"
           },
           {
             "timeOfDay": "evening",
             "title": "Little Blackwood for Cocktails",
             "description": "End the trail at Little Blackwood on Steamer Wharf. Their cocktail menu changes seasonally and the ambience — right on the lake — is perfect for a nightcap. Try the Queenstown Sour.",
-            "places": [{ "name": "Little Blackwood", "listingSlug": "little-blackwood" }]
+            "places": [
+              {
+                "name": "Little Blackwood",
+                "listingSlug": "little-blackwood",
+                "lat": -45.0317,
+                "lng": 168.663
+              }
+            ],
+            "setting": "indoor"
           }
         ]
       }
@@ -433,7 +925,14 @@
             "replacement": {
               "title": "Family Dinner at Flame",
               "description": "Flame Bar & Grill is the best family-friendly dinner option in Queenstown. Great kids' menu, relaxed atmosphere, and the ribs are excellent for adults too.",
-              "places": [{ "name": "Flame Bar & Grill", "listingSlug": "flame-bar-grill" }],
+              "places": [
+                {
+                  "name": "Flame Bar & Grill",
+                  "listingSlug": "flame-bar-grill",
+                  "lat": -45.0316,
+                  "lng": 168.6621
+                }
+              ],
               "ageRange": "all-ages"
             }
           },
@@ -442,7 +941,14 @@
             "replacement": {
               "title": "Arrowtown Ice Cream & Explore",
               "description": "Drive to Arrowtown for an afternoon of exploring — the kids can pan for gold at the Arrow River while you browse the boutiques on Buckingham Street. Finish with ice cream from Mrs Jones.",
-              "places": [{ "name": "Arrowtown", "href": "/plan/surrounding-region/arrowtown/" }],
+              "places": [
+                {
+                  "name": "Arrowtown",
+                  "href": "/plan/surrounding-region/arrowtown/",
+                  "lat": -44.942,
+                  "lng": 168.8272
+                }
+              ],
               "ageRange": "all-ages"
             }
           },
@@ -451,7 +957,14 @@
             "replacement": {
               "title": "Hot Chocolates on the Wharf",
               "description": "Patagonia Chocolates on the waterfront is the perfect family-friendly end to the day. Everyone picks their hot chocolate flavour and watches the lake from the outdoor tables.",
-              "places": [{ "name": "Patagonia Chocolates", "listingSlug": "patagonia-chocolates" }],
+              "places": [
+                {
+                  "name": "Patagonia Chocolates",
+                  "listingSlug": "patagonia-chocolates",
+                  "lat": -45.0314,
+                  "lng": 168.6619
+                }
+              ],
               "ageRange": "all-ages"
             }
           }
@@ -464,10 +977,81 @@
         "authorSlug": "nina-patel",
         "authorType": "creator",
         "date": "2025-04-10",
-        "text": "Mike, this is such a good list. I'd also throw in The Lodge Bar for their scotch eggs — genuinely one of the best bar snacks in the South Island."
+        "text": "Mike, this is such a good list. I'd also throw in The Lodge Bar for their scotch eggs — genuinely one of the best bar snacks in the South Island.",
+        "type": "tip"
       }
     ],
-    "relatedItineraries": ["perfect-winter-weekend", "active-arrowtown-day", "rainy-day-queenstown"]
+    "relatedItineraries": [
+      "perfect-winter-weekend",
+      "active-arrowtown-day",
+      "rainy-day-queenstown"
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&h=800&fit=crop",
+        "caption": "Rata's autumn tasting menu"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&h=800&fit=crop",
+        "caption": "Morning flat white at Bespoke Kitchen"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=1200&h=800&fit=crop",
+        "caption": "Central Otago pinot noir tasting at Gibbston Valley"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=1200&h=800&fit=crop",
+        "caption": "Cocktails at Little Blackwood"
+      }
+    ],
+    "costEstimate": {
+      "level": "luxury",
+      "perPersonPerDay": 350,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 150,
+        "food": 120,
+        "activities": 50,
+        "transport": 30
+      },
+      "notes": "Fine dining focus — budget for wine tasting and degustation menus"
+    },
+    "packingList": [
+      {
+        "item": "Smart casual dinner outfits",
+        "essential": true
+      },
+      {
+        "item": "Comfortable walking shoes",
+        "essential": true
+      },
+      {
+        "item": "Layers for autumn evenings",
+        "essential": true
+      },
+      {
+        "item": "Camera for food photography",
+        "essential": false
+      },
+      {
+        "item": "Wine carrier for purchases",
+        "essential": false
+      }
+    ],
+    "userStories": [
+      {
+        "authorSlug": "jess-taylor",
+        "text": "Mike's foodie knowledge is unmatched. The Rata dinner was the best meal I've had in NZ, full stop. And the Gibbston Valley tasting — incredible pinot noir.",
+        "date": "2025-05",
+        "photo": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop"
+      },
+      {
+        "authorSlug": "sarah-chen",
+        "text": "As a cafe owner, I can confirm every spot on this list is legit. Bespoke Kitchen and Vudu are two of my favourite places in town.",
+        "date": "2025-06",
+        "photo": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop"
+      }
+    ]
   },
   "solo-adventure-5-days": {
     "title": "5 Days Solo: Pushing Your Limits",
@@ -477,13 +1061,21 @@
     "durationDays": 5,
     "travellerType": "solo",
     "travellerDetails": "Solo traveller from Portland",
-    "categories": ["adventure", "hiking", "solo"],
+    "categories": [
+      "adventure",
+      "hiking",
+      "solo"
+    ],
     "season": "summer",
     "summary": "I came to Queenstown for 5 days and left with a completely different perspective on what adventure means. Here's my solo itinerary — from bungy jumping to backcountry hikes to the best solo dining spots.",
     "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&h=800&fit=crop",
     "upvotes": 142,
     "commentCount": 17,
-    "endorsements": { "family": 1, "couple": 8, "solo": 34 },
+    "endorsements": {
+      "family": 1,
+      "couple": 8,
+      "solo": 34
+    },
     "days": [
       {
         "dayNumber": 1,
@@ -493,22 +1085,46 @@
             "timeOfDay": "morning",
             "title": "AJ Hackett Bungy",
             "description": "Rip the bandaid off day one. I did the Kawarau Bridge bungy — 43m over turquoise water. The fear is real, but the freefall is unlike anything else. Book the first morning slot when you're fresh.",
-            "places": [{ "name": "AJ Hackett Bungy", "listingSlug": "aj-hackett-bungy" }],
+            "places": [
+              {
+                "name": "AJ Hackett Bungy",
+                "listingSlug": "aj-hackett-bungy",
+                "lat": -45.013,
+                "lng": 168.727
+              }
+            ],
             "image": "https://images.unsplash.com/photo-1541480601022-2308c0f02487?w=800&h=500&fit=crop",
-            "ageRange": "teens+"
+            "ageRange": "teens+",
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Shotover Jet",
             "description": "Keep the adrenaline going with the Shotover Jet. The narrow canyon walls at 85km/h are insane. As a solo traveller, you just rock up — no group needed.",
-            "places": [{ "name": "Shotover Jet", "listingSlug": "shotover-jet" }],
-            "ageRange": "ages-3+"
+            "places": [
+              {
+                "name": "Shotover Jet",
+                "listingSlug": "shotover-jet",
+                "lat": -44.9985,
+                "lng": 168.7305
+              }
+            ],
+            "ageRange": "ages-3+",
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "evening",
             "title": "The Lodge Bar Solo Dinner",
             "description": "The Lodge Bar is perfect for solo dining — sit at the bar, great cocktail menu, and the kitchen does elevated pub food. I ended up chatting with locals for hours.",
-            "places": [{ "name": "The Lodge Bar", "listingSlug": "the-lodge-bar" }]
+            "places": [
+              {
+                "name": "The Lodge Bar",
+                "listingSlug": "the-lodge-bar",
+                "lat": -45.0312,
+                "lng": 168.6622
+              }
+            ],
+            "setting": "indoor"
           }
         ]
       },
@@ -521,17 +1137,47 @@
             "title": "Ben Lomond Track",
             "description": "This is a serious day hike — 12km return, 1438m summit. Start early (7am latest). Take the Tiki Trail up to the Gondola first, then follow the Ben Lomond saddle track. The last section is steep and exposed but the 360° views from the top are life-changing.",
             "places": [
-              { "name": "Ben Lomond Track", "listingSlug": "ben-lomond-track" },
-              { "name": "Tiki Trail", "listingSlug": "tiki-trail" }
+              {
+                "name": "Ben Lomond Track",
+                "listingSlug": "ben-lomond-track",
+                "lat": -45.0145,
+                "lng": 168.643
+              },
+              {
+                "name": "Tiki Trail",
+                "listingSlug": "tiki-trail",
+                "lat": -45.026,
+                "lng": 168.6575
+              }
             ],
             "localTip": "Check the weather forecast carefully. The summit can be in cloud even when town is sunny. Bring layers, sunscreen, and at least 2L of water.",
-            "ageRange": "teens+"
+            "ageRange": "teens+",
+            "setting": "outdoor",
+            "rainyAlternative": {
+              "title": "Queenstown Art Trail",
+              "description": "If the summit is in cloud, do the free art trail through town — check the i-SITE for the self-guided map.",
+              "places": [
+                {
+                  "name": "Queenstown i-SITE",
+                  "lat": -45.031,
+                  "lng": 168.661
+                }
+              ]
+            }
           },
           {
             "timeOfDay": "evening",
             "title": "Well-Earned Burger",
             "description": "After 7 hours of hiking, you've earned a Fergburger. The Bun Laden (beef, bacon, cheese, egg) is the ultimate recovery meal.",
-            "places": [{ "name": "Fergburger", "listingSlug": "fergburger" }]
+            "places": [
+              {
+                "name": "Fergburger",
+                "listingSlug": "fergburger",
+                "lat": -45.032,
+                "lng": 168.6614
+              }
+            ],
+            "setting": "indoor"
           }
         ]
       },
@@ -543,13 +1189,29 @@
             "timeOfDay": "morning",
             "title": "Drive to Glenorchy",
             "description": "Hire a car and drive to Glenorchy. Stop at every pullover — each one has a different incredible view. The road itself is the attraction.",
-            "places": [{ "name": "Glenorchy", "href": "/plan/surrounding-region/glenorchy/" }]
+            "places": [
+              {
+                "name": "Glenorchy",
+                "href": "/plan/surrounding-region/glenorchy/",
+                "lat": -44.8484,
+                "lng": 168.38
+              }
+            ],
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Lake Sylvan Track",
             "description": "Past Glenorchy, the Lake Sylvan Track is a peaceful beech forest walk to a pristine mountain lake. 2.5 hours return. Hardly anyone on it compared to the popular walks.",
-            "places": [{ "name": "Glenorchy Lagoon Walkway", "listingSlug": "glenorchy-lagoon-walkway" }]
+            "places": [
+              {
+                "name": "Glenorchy Lagoon Walkway",
+                "listingSlug": "glenorchy-lagoon-walkway",
+                "lat": -44.851,
+                "lng": 168.375
+              }
+            ],
+            "setting": "outdoor"
           }
         ]
       },
@@ -561,15 +1223,31 @@
             "timeOfDay": "morning",
             "title": "Ziptrek Ecotours",
             "description": "Ziptrek combines adventure with conservation education. The Kea tour (3 hours, 6 ziplines) takes you through ancient native forest canopy above Queenstown. It's thrilling but also genuinely educational.",
-            "places": [{ "name": "Ziptrek Ecotours", "listingSlug": "ziptrek-ecotours" }],
-            "ageRange": "ages-8+"
+            "places": [
+              {
+                "name": "Ziptrek Ecotours",
+                "listingSlug": "ziptrek-ecotours",
+                "lat": -45.024,
+                "lng": 168.658
+              }
+            ],
+            "ageRange": "ages-8+",
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Arrowtown Heritage Walk",
             "description": "Slow down in Arrowtown. Walk the Chinese settlement, browse the Lakes District Museum, and get a pie from the Arrowtown Bakery. This town has incredible character.",
-            "places": [{ "name": "Arrowtown", "href": "/plan/surrounding-region/arrowtown/" }],
-            "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=500&fit=crop"
+            "places": [
+              {
+                "name": "Arrowtown",
+                "href": "/plan/surrounding-region/arrowtown/",
+                "lat": -44.942,
+                "lng": 168.8272
+              }
+            ],
+            "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=500&fit=crop",
+            "setting": "both"
           }
         ]
       },
@@ -581,18 +1259,37 @@
             "timeOfDay": "morning",
             "title": "Queenstown Hill Sunrise",
             "description": "Set your alarm for 5:30am and hike Queenstown Hill for sunrise. It's about 90 minutes up in the dark, but watching the sun hit The Remarkables from the summit is a memory I'll keep forever.",
-            "places": [{ "name": "Queenstown Hill Time Walk", "listingSlug": "queenstown-hill-time-walk" }],
+            "places": [
+              {
+                "name": "Queenstown Hill Time Walk",
+                "listingSlug": "queenstown-hill-time-walk",
+                "lat": -45.038,
+                "lng": 168.651
+              }
+            ],
             "localTip": "Bring a headlamp and warm layers. Even in summer, it's cold at the top before sunrise.",
-            "ageRange": "ages-8+"
+            "ageRange": "ages-8+",
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Last Walk & Departure",
             "description": "One final walk around the Queenstown Gardens before heading to the airport. Grab a coffee from Vudu and sit on the waterfront. Try not to cry.",
             "places": [
-              { "name": "Queenstown Gardens", "listingSlug": "queenstown-gardens-trail" },
-              { "name": "Vudu Cafe", "listingSlug": "vudu-cafe" }
-            ]
+              {
+                "name": "Queenstown Gardens",
+                "listingSlug": "queenstown-gardens-trail",
+                "lat": -45.0345,
+                "lng": 168.658
+              },
+              {
+                "name": "Vudu Cafe",
+                "listingSlug": "vudu-cafe",
+                "lat": -45.0319,
+                "lng": 168.6616
+              }
+            ],
+            "setting": "both"
           }
         ]
       }
@@ -605,7 +1302,14 @@
             "replacement": {
               "title": "Shotover Jet Family Adventure",
               "description": "The Shotover Jet is safe for kids over 3 and way more family-friendly than bungy. The 360 spins have kids screaming with delight. Book the first morning slot.",
-              "places": [{ "name": "Shotover Jet", "listingSlug": "shotover-jet" }],
+              "places": [
+                {
+                  "name": "Shotover Jet",
+                  "listingSlug": "shotover-jet",
+                  "lat": -44.9985,
+                  "lng": 168.7305
+                }
+              ],
               "ageRange": "ages-3+"
             }
           },
@@ -614,7 +1318,14 @@
             "replacement": {
               "title": "Queenstown Hill Family Walk",
               "description": "Queenstown Hill is a much more family-friendly hike — about 2-3 hours return with amazing views. The 'Basket of Dreams' sculpture at the top is a fun goal for kids to aim for.",
-              "places": [{ "name": "Queenstown Hill Time Walk", "listingSlug": "queenstown-hill-time-walk" }],
+              "places": [
+                {
+                  "name": "Queenstown Hill Time Walk",
+                  "listingSlug": "queenstown-hill-time-walk",
+                  "lat": -45.038,
+                  "lng": 168.651
+                }
+              ],
               "ageRange": "ages-5+"
             }
           },
@@ -623,7 +1334,14 @@
             "replacement": {
               "title": "Family Dinner at Flame",
               "description": "Flame Bar & Grill has a great kids' menu and relaxed vibe. The ribs are excellent and kids love the casual atmosphere.",
-              "places": [{ "name": "Flame Bar & Grill", "listingSlug": "flame-bar-grill" }],
+              "places": [
+                {
+                  "name": "Flame Bar & Grill",
+                  "listingSlug": "flame-bar-grill",
+                  "lat": -45.0316,
+                  "lng": 168.6621
+                }
+              ],
               "ageRange": "all-ages"
             }
           }
@@ -636,7 +1354,14 @@
             "replacement": {
               "title": "Romantic Dinner at Botswana Butchery",
               "description": "Request a fireside table at Botswana Butchery — the scotch fillet with a glass of Central Otago pinot noir makes for an unforgettable evening.",
-              "places": [{ "name": "Botswana Butchery", "listingSlug": "botswana-butchery" }],
+              "places": [
+                {
+                  "name": "Botswana Butchery",
+                  "listingSlug": "botswana-butchery",
+                  "lat": -45.0312,
+                  "lng": 168.6627
+                }
+              ],
               "ageRange": "adults-only"
             }
           }
@@ -656,12 +1381,90 @@
             "authorSlug": "alex-brooks",
             "authorType": "visitor",
             "date": "2025-03-15",
-            "text": "Ha! I saw someone start it in Crocs. The last 200m to the summit is basically scrambling — definitely need proper boots."
+            "text": "Ha! I saw someone start it in Crocs. The last 200m to the summit is basically scrambling — definitely need proper boots.",
+            "type": "answer"
           }
-        ]
+        ],
+        "type": "question"
       }
     ],
-    "relatedItineraries": ["perfect-winter-weekend", "family-friendly-summer-week", "active-arrowtown-day"]
+    "relatedItineraries": [
+      "perfect-winter-weekend",
+      "family-friendly-summer-week",
+      "active-arrowtown-day"
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1516939884455-1445c8652f83?w=1200&h=800&fit=crop",
+        "caption": "AJ Hackett Bungy — the leap of faith"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&h=800&fit=crop",
+        "caption": "Ben Lomond summit views"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&h=800&fit=crop",
+        "caption": "Glenorchy road trip vibes"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=1200&h=800&fit=crop",
+        "caption": "Queenstown Hill sunrise"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1570197571499-166b36435e9f?w=1200&h=800&fit=crop",
+        "caption": "Shotover Jet solo adrenaline"
+      }
+    ],
+    "costEstimate": {
+      "level": "budget",
+      "perPersonPerDay": 150,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 50,
+        "food": 35,
+        "activities": 45,
+        "transport": 20
+      },
+      "notes": "Hostel/budget accommodation, some self-catering, combo activity deals"
+    },
+    "packingList": [
+      {
+        "item": "Sturdy hiking boots (broken in)",
+        "essential": true
+      },
+      {
+        "item": "Rain jacket",
+        "essential": true
+      },
+      {
+        "item": "Day pack with water bladder",
+        "essential": true
+      },
+      {
+        "item": "Sunscreen and sunglasses",
+        "essential": true
+      },
+      {
+        "item": "Camera with wide-angle lens",
+        "essential": false
+      },
+      {
+        "item": "Portable charger",
+        "essential": false
+      },
+      {
+        "item": "Merino wool socks",
+        "essential": false
+      }
+    ],
+    "userStories": [
+      {
+        "authorSlug": "nina-patel",
+        "text": "As a solo female traveller, this itinerary felt really safe and well thought-out. The Lodge Bar is genuinely great for solo dining — sat at the bar and chatted with locals all night.",
+        "date": "2025-03",
+        "photo": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop"
+      }
+    ]
   },
   "active-arrowtown-day": {
     "title": "A Perfect Day in Arrowtown",
@@ -671,13 +1474,21 @@
     "durationDays": 1,
     "travellerType": "solo",
     "travellerDetails": "A local's day off exploring",
-    "categories": ["walking", "dining", "arrowtown"],
+    "categories": [
+      "walking",
+      "dining",
+      "arrowtown"
+    ],
     "season": "autumn",
     "summary": "Arrowtown in autumn is one of the most beautiful places in New Zealand. Here's how to spend a perfect day — golden trees, river trails, and the best lunch spot most tourists walk right past.",
     "coverImage": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1600&h=800&fit=crop",
     "upvotes": 198,
     "commentCount": 14,
-    "endorsements": { "family": 15, "couple": 22, "solo": 18 },
+    "endorsements": {
+      "family": 15,
+      "couple": 22,
+      "solo": 18
+    },
     "days": [
       {
         "dayNumber": 1,
@@ -687,24 +1498,59 @@
             "timeOfDay": "morning",
             "title": "Arrowtown River Trail",
             "description": "Start with the Arrowtown River Trail — a gentle 2-hour loop along the Arrow River through tunnels of gold and red autumn trees. The morning light through the canopy is photographer's paradise.",
-            "places": [{ "name": "Arrowtown River Trail", "listingSlug": "arrowtown-river-trail" }],
+            "places": [
+              {
+                "name": "Arrowtown River Trail",
+                "listingSlug": "arrowtown-river-trail",
+                "lat": -44.943,
+                "lng": 168.825
+              }
+            ],
             "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=500&fit=crop",
             "localTip": "Peak autumn colour is usually mid-to-late April. The trees along the river change before the ones in town.",
-            "ageRange": "all-ages"
+            "ageRange": "all-ages",
+            "setting": "outdoor",
+            "rainyAlternative": {
+              "title": "Lakes District Museum",
+              "description": "Arrowtown's museum is surprisingly good — great gold rush history and Māori heritage exhibits.",
+              "places": [
+                {
+                  "name": "Lakes District Museum",
+                  "lat": -44.9415,
+                  "lng": 168.8265
+                }
+              ]
+            }
           },
           {
             "timeOfDay": "afternoon",
             "title": "Chinese Settlement & Buckingham Street",
             "description": "Explore the restored Chinese miners' settlement — it tells an important part of NZ's gold rush history. Then wander Buckingham Street's boutiques and galleries.",
-            "places": [{ "name": "Arrowtown", "href": "/plan/surrounding-region/arrowtown/" }],
-            "ageRange": "all-ages"
+            "places": [
+              {
+                "name": "Arrowtown",
+                "href": "/plan/surrounding-region/arrowtown/",
+                "lat": -44.942,
+                "lng": 168.8272
+              }
+            ],
+            "ageRange": "all-ages",
+            "setting": "both"
           },
           {
             "timeOfDay": "evening",
             "title": "Sunset from the Sawpit Gully Trail",
             "description": "For a short but rewarding sunset hike, take the Sawpit Gully Trail above town. 30 minutes up gives you panoramic views over Arrowtown and the Crown Range as the light turns golden.",
-            "places": [{ "name": "Sawpit Gully Trail", "listingSlug": "sawpit-gully-trail" }],
-            "ageRange": "ages-5+"
+            "places": [
+              {
+                "name": "Sawpit Gully Trail",
+                "listingSlug": "sawpit-gully-trail",
+                "lat": -44.945,
+                "lng": 168.818
+              }
+            ],
+            "ageRange": "ages-5+",
+            "setting": "outdoor"
           }
         ]
       }
@@ -715,10 +1561,63 @@
         "authorSlug": "nina-patel",
         "authorType": "creator",
         "date": "2025-04-28",
-        "text": "Sarah, these autumn photos. Arrowtown is my favourite place to shoot in April. The river trail at golden hour is something else."
+        "text": "Sarah, these autumn photos. Arrowtown is my favourite place to shoot in April. The river trail at golden hour is something else.",
+        "type": "tip"
       }
     ],
-    "relatedItineraries": ["foodie-trail-queenstown", "family-friendly-summer-week", "rainy-day-queenstown"]
+    "relatedItineraries": [
+      "foodie-trail-queenstown",
+      "family-friendly-summer-week",
+      "rainy-day-queenstown"
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1200&h=800&fit=crop",
+        "caption": "Arrowtown autumn colours along the river"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop",
+        "caption": "Chinese Settlement heritage trail"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&h=800&fit=crop",
+        "caption": "Sunset from Sawpit Gully Trail"
+      }
+    ],
+    "costEstimate": {
+      "level": "budget",
+      "perPersonPerDay": 80,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 0,
+        "food": 40,
+        "activities": 10,
+        "transport": 30
+      },
+      "notes": "Day trip — no accommodation needed, mostly free walking trails"
+    },
+    "packingList": [
+      {
+        "item": "Trail running shoes or hiking boots",
+        "essential": true
+      },
+      {
+        "item": "Water bottle",
+        "essential": true
+      },
+      {
+        "item": "Layered clothing",
+        "essential": true
+      },
+      {
+        "item": "Camera for autumn colours",
+        "essential": false
+      },
+      {
+        "item": "Picnic supplies",
+        "essential": false
+      }
+    ]
   },
   "rainy-day-queenstown": {
     "title": "Rainy Day? No Problem.",
@@ -728,13 +1627,22 @@
     "durationDays": 1,
     "travellerType": "group",
     "travellerDetails": "Group of 4 friends on a winter trip",
-    "categories": ["rainy-day", "indoor", "dining"],
+    "categories": [
+      "rainy-day",
+      "indoor",
+      "dining"
+    ],
     "season": "winter",
     "summary": "Queenstown gets 600mm of rain a year. When it's bucketing down, don't sit in your hotel — here's a full day of indoor adventures, comfort food, and rainy-day vibes that'll have you hoping it doesn't stop.",
     "coverImage": "https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?w=1600&h=800&fit=crop",
     "upvotes": 167,
     "commentCount": 12,
-    "endorsements": { "family": 19, "couple": 14, "solo": 8, "group": 22 },
+    "endorsements": {
+      "family": 19,
+      "couple": 14,
+      "solo": 8,
+      "group": 22
+    },
     "days": [
       {
         "dayNumber": 1,
@@ -744,22 +1652,46 @@
             "timeOfDay": "morning",
             "title": "Escape Room at Escape Quest",
             "description": "Start with an escape room at Escape Quest — they've got multiple rooms ranging from easy to seriously challenging. Great fun with a group or even as a couple. Aim for the hardest room you dare.",
-            "places": [{ "name": "Escape Quest Queenstown", "listingSlug": "escape-quest-queenstown" }],
-            "ageRange": "ages-8+"
+            "places": [
+              {
+                "name": "Escape Quest Queenstown",
+                "listingSlug": "escape-quest-queenstown",
+                "lat": -45.0315,
+                "lng": 168.6605
+              }
+            ],
+            "ageRange": "ages-8+",
+            "setting": "indoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Thrillzone Indoor Activities",
             "description": "Thrillzone has VR experiences, indoor go-karts, and a bunch of other indoor activities. It's not cheap but it kills a rainy afternoon brilliantly. The VR zombie experience is genuinely terrifying.",
-            "places": [{ "name": "Thrillzone", "listingSlug": "thrillzone-queenstown" }],
-            "ageRange": "ages-5+"
+            "places": [
+              {
+                "name": "Thrillzone",
+                "listingSlug": "thrillzone-queenstown",
+                "lat": -45.0308,
+                "lng": 168.6598
+              }
+            ],
+            "ageRange": "ages-5+",
+            "setting": "indoor"
           },
           {
             "timeOfDay": "evening",
             "title": "Cosy Pub Dinner",
             "description": "End the day at The Lodge Bar — their fireside tables, craft beer selection, and comfort food menu are exactly what a rainy Queenstown evening calls for. The lamb shoulder is incredible.",
-            "places": [{ "name": "The Lodge Bar", "listingSlug": "the-lodge-bar" }],
-            "localTip": "The Lodge Bar gets packed on rainy evenings — everyone has the same idea. Book ahead or go early (before 6pm)."
+            "places": [
+              {
+                "name": "The Lodge Bar",
+                "listingSlug": "the-lodge-bar",
+                "lat": -45.0312,
+                "lng": 168.6622
+              }
+            ],
+            "localTip": "The Lodge Bar gets packed on rainy evenings — everyone has the same idea. Book ahead or go early (before 6pm).",
+            "setting": "indoor"
           }
         ]
       }
@@ -770,10 +1702,63 @@
         "authorSlug": "emma-james",
         "authorType": "visitor",
         "date": "2025-07-20",
-        "text": "This saved our trip! It rained for 2 of our 5 days and we followed this guide on both. The kids loved Thrillzone — especially the VR stuff."
+        "text": "This saved our trip! It rained for 2 of our 5 days and we followed this guide on both. The kids loved Thrillzone — especially the VR stuff.",
+        "type": "question"
       }
     ],
-    "relatedItineraries": ["perfect-winter-weekend", "foodie-trail-queenstown", "active-arrowtown-day"]
+    "relatedItineraries": [
+      "perfect-winter-weekend",
+      "foodie-trail-queenstown",
+      "active-arrowtown-day"
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1200&h=800&fit=crop",
+        "caption": "Rainy day over Lake Wakatipu"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?w=1200&h=800&fit=crop",
+        "caption": "Escape room teamwork"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=1200&h=800&fit=crop",
+        "caption": "Cosy pub vibes at The Lodge Bar"
+      }
+    ],
+    "costEstimate": {
+      "level": "mid-range",
+      "perPersonPerDay": 180,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 0,
+        "food": 50,
+        "activities": 100,
+        "transport": 30
+      },
+      "notes": "Indoor activities can add up — book combo deals where possible"
+    },
+    "packingList": [
+      {
+        "item": "Waterproof jacket",
+        "essential": true
+      },
+      {
+        "item": "Umbrella",
+        "essential": true
+      },
+      {
+        "item": "Warm layers",
+        "essential": true
+      },
+      {
+        "item": "Indoor shoes (escape rooms)",
+        "essential": false
+      },
+      {
+        "item": "Book or card games",
+        "essential": false
+      }
+    ]
   },
   "cultural-queenstown": {
     "title": "Queenstown Through Maori Eyes",
@@ -783,13 +1768,21 @@
     "durationDays": 2,
     "travellerType": "couple",
     "travellerDetails": "Cultural exploration with my partner",
-    "categories": ["culture", "walking", "history"],
+    "categories": [
+      "culture",
+      "walking",
+      "history"
+    ],
     "season": "summer",
     "summary": "Most visitors see Queenstown as an adventure playground, but this land has a deep Maori history stretching back over 800 years. Here's a different perspective on the Wakatipu Basin — the stories behind the mountains, the lakes, and the names.",
     "coverImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1600&h=800&fit=crop",
     "upvotes": 245,
     "commentCount": 28,
-    "endorsements": { "family": 11, "couple": 18, "solo": 21 },
+    "endorsements": {
+      "family": 11,
+      "couple": 18,
+      "solo": 21
+    },
     "days": [
       {
         "dayNumber": 1,
@@ -799,23 +1792,58 @@
             "timeOfDay": "morning",
             "title": "Kiwi Birdlife Park",
             "description": "Start at the Kiwi Birdlife Park's conservation experience. Before the adventure tourism, this region's taonga (treasure) was its biodiversity. The kiwi encounter puts you face-to-face with why conservation matters here.",
-            "places": [{ "name": "Kiwi Birdlife Park", "listingSlug": "kiwi-birdlife-park" }],
-            "ageRange": "all-ages"
+            "places": [
+              {
+                "name": "Kiwi Birdlife Park",
+                "listingSlug": "kiwi-birdlife-park",
+                "lat": -45.0295,
+                "lng": 168.6565
+              }
+            ],
+            "ageRange": "all-ages",
+            "setting": "both"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Queenstown Hill — Te Tapu-nui",
             "description": "Hike Te Tapu-nui (Queenstown Hill). The mountain's name means 'the greatly sacred' — it was an important navigation point for Maori travelling through the Wakatipu. The interpretive panels on the Time Walk tell some of this history.",
-            "places": [{ "name": "Queenstown Hill Time Walk", "listingSlug": "queenstown-hill-time-walk" }],
+            "places": [
+              {
+                "name": "Queenstown Hill Time Walk",
+                "listingSlug": "queenstown-hill-time-walk",
+                "lat": -45.038,
+                "lng": 168.651
+              }
+            ],
             "localTip": "The 'Basket of Dreams' sculpture at the summit was created by Queenstown artist Ray Clements. It represents letting go of something you no longer need.",
-            "ageRange": "ages-8+"
+            "ageRange": "ages-8+",
+            "setting": "outdoor",
+            "rainyAlternative": {
+              "title": "Queenstown Lakes District Library",
+              "description": "The library has a great NZ section and often hosts local history talks. A quiet cultural alternative on wet days.",
+              "places": [
+                {
+                  "name": "Queenstown Library",
+                  "lat": -45.03,
+                  "lng": 168.659
+                }
+              ]
+            }
           },
           {
             "timeOfDay": "evening",
             "title": "TSS Earnslaw on Lake Wakatipu",
             "description": "Take the evening TSS Earnslaw cruise. Wakatipu comes from 'Wai-Taki-Tumu' — the legend of the sleeping giant whose heartbeat causes the lake's mysterious water-level changes. Watch for it — the lake genuinely rises and falls about 12cm every few minutes.",
-            "places": [{ "name": "TSS Earnslaw", "listingSlug": "tss-earnslaw" }],
-            "ageRange": "all-ages"
+            "places": [
+              {
+                "name": "TSS Earnslaw",
+                "listingSlug": "tss-earnslaw",
+                "lat": -45.031,
+                "lng": 168.6625
+              }
+            ],
+            "ageRange": "all-ages",
+            "setting": "outdoor"
           }
         ]
       },
@@ -827,16 +1855,32 @@
             "timeOfDay": "morning",
             "title": "Drive to Glenorchy — The Ancient Trail",
             "description": "The road to Glenorchy follows one of the oldest travel routes in NZ. Maori used this path to access pounamu (greenstone) in the valleys beyond. Each bay and headland along the lake has a story.",
-            "places": [{ "name": "Glenorchy", "href": "/plan/surrounding-region/glenorchy/" }],
+            "places": [
+              {
+                "name": "Glenorchy",
+                "href": "/plan/surrounding-region/glenorchy/",
+                "lat": -44.8484,
+                "lng": 168.38
+              }
+            ],
             "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=500&fit=crop",
-            "ageRange": "all-ages"
+            "ageRange": "all-ages",
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Moke Lake Circuit",
             "description": "The Moke Lake loop is a peaceful 2.5-hour walk around a glacial lake surrounded by mountains. It's one of the quieter spots near Queenstown — a chance to experience the stillness that drew people to this place long before tourism.",
-            "places": [{ "name": "Moke Lake Loop Track", "listingSlug": "moke-lake-loop-track" }],
-            "ageRange": "ages-5+"
+            "places": [
+              {
+                "name": "Moke Lake Loop Track",
+                "listingSlug": "moke-lake-loop-track",
+                "lat": -45.002,
+                "lng": 168.589
+              }
+            ],
+            "ageRange": "ages-5+",
+            "setting": "outdoor"
           }
         ]
       }
@@ -854,19 +1898,78 @@
             "authorSlug": "tane-hikuroa",
             "authorType": "local",
             "date": "2025-03-10",
-            "text": "Thanks Jess! The stories are everywhere once you know where to look. Planning a winter version focused on the significance of Matariki in the Southern Lakes."
+            "text": "Thanks Jess! The stories are everywhere once you know where to look. Planning a winter version focused on the significance of Matariki in the Southern Lakes.",
+            "type": "answer"
           }
-        ]
+        ],
+        "type": "question"
       },
       {
         "author": "Alex Brooks",
         "authorSlug": "alex-brooks",
         "authorType": "visitor",
         "date": "2025-03-22",
-        "text": "I wish I'd had this guide when I visited. Knowing the cultural context would have made the hikes so much more meaningful. Sharing this with everyone I know who's planning a trip."
+        "text": "I wish I'd had this guide when I visited. Knowing the cultural context would have made the hikes so much more meaningful. Sharing this with everyone I know who's planning a trip.",
+        "type": "tip"
       }
     ],
-    "relatedItineraries": ["solo-adventure-5-days", "active-arrowtown-day", "shoulder-season-photography"]
+    "relatedItineraries": [
+      "solo-adventure-5-days",
+      "active-arrowtown-day",
+      "shoulder-season-photography"
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=1200&h=800&fit=crop",
+        "caption": "Kiwi Birdlife Park encounter"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=1200&h=800&fit=crop",
+        "caption": "TSS Earnslaw steaming across the lake"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&h=800&fit=crop",
+        "caption": "Moke Lake serenity"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&h=800&fit=crop",
+        "caption": "Drive to Glenorchy along the lake"
+      }
+    ],
+    "costEstimate": {
+      "level": "mid-range",
+      "perPersonPerDay": 220,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 100,
+        "food": 50,
+        "activities": 40,
+        "transport": 30
+      },
+      "notes": "Mid-range accommodation, mix of free and paid cultural experiences"
+    },
+    "packingList": [
+      {
+        "item": "Comfortable walking shoes",
+        "essential": true
+      },
+      {
+        "item": "Layers for changing conditions",
+        "essential": true
+      },
+      {
+        "item": "Water bottle and snacks",
+        "essential": true
+      },
+      {
+        "item": "Notebook for cultural notes",
+        "essential": false
+      },
+      {
+        "item": "Binoculars for bird watching",
+        "essential": false
+      }
+    ]
   },
   "shoulder-season-photography": {
     "title": "Photographer's Guide to Shoulder Season",
@@ -876,13 +1979,21 @@
     "durationDays": 3,
     "travellerType": "solo",
     "travellerDetails": "Solo photographer on assignment",
-    "categories": ["photography", "walking", "autumn"],
+    "categories": [
+      "photography",
+      "walking",
+      "autumn"
+    ],
     "season": "autumn",
     "summary": "Forget summer — the real magic happens in the shoulder seasons. Lower light, fewer crowds, autumn colours, moody skies. Here's my 3-day photography itinerary hitting the best light at the best locations.",
     "coverImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&h=800&fit=crop",
     "upvotes": 178,
     "commentCount": 21,
-    "endorsements": { "family": 3, "couple": 16, "solo": 28 },
+    "endorsements": {
+      "family": 3,
+      "couple": 16,
+      "solo": 28
+    },
     "days": [
       {
         "dayNumber": 1,
@@ -892,21 +2003,45 @@
             "timeOfDay": "morning",
             "title": "Sunrise at Lake Hayes",
             "description": "Lake Hayes at sunrise is the quintessential Queenstown photo. Get there 30 minutes before sunrise for the best reflection shots. The autumn poplars along the shore create incredible symmetry in still water.",
-            "places": [{ "name": "Lake Hayes Loop Track", "listingSlug": "lake-hayes-loop-track" }],
+            "places": [
+              {
+                "name": "Lake Hayes Loop Track",
+                "listingSlug": "lake-hayes-loop-track",
+                "lat": -44.974,
+                "lng": 168.802
+              }
+            ],
             "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=500&fit=crop",
-            "localTip": "Check wind forecasts — you need near-zero wind for mirror reflections. Early morning is usually calmest."
+            "localTip": "Check wind forecasts — you need near-zero wind for mirror reflections. Early morning is usually calmest.",
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Bob's Cove Beech Forest",
             "description": "Bob's Cove is a hidden photographic gem. The native beech forest creates beautiful dappled light, and the cove itself with mountains reflected in the water is stunning. Great for long exposure work.",
-            "places": [{ "name": "Bob's Cove Track", "listingSlug": "bobs-cove-track" }]
+            "places": [
+              {
+                "name": "Bob's Cove Track",
+                "listingSlug": "bobs-cove-track",
+                "lat": -45.004,
+                "lng": 168.561
+              }
+            ],
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "evening",
             "title": "Queenstown Bay Blue Hour",
             "description": "End day one at Queenstown Bay for blue hour. The town lights reflecting in the lake with The Remarkables behind is an iconic shot. The gardens pier makes a great foreground element.",
-            "places": [{ "name": "Queenstown Gardens", "listingSlug": "queenstown-gardens-trail" }]
+            "places": [
+              {
+                "name": "Queenstown Gardens",
+                "listingSlug": "queenstown-gardens-trail",
+                "lat": -45.0345,
+                "lng": 168.658
+              }
+            ],
+            "setting": "outdoor"
           }
         ]
       },
@@ -918,14 +2053,30 @@
             "timeOfDay": "morning",
             "title": "Arrowtown Autumn Colours",
             "description": "Arrowtown in peak autumn is every photographer's dream. The avenue of trees on Buckingham Street, the willows along the river, the Chinese settlement against golden backdrop — you could shoot here all day.",
-            "places": [{ "name": "Arrowtown River Trail", "listingSlug": "arrowtown-river-trail" }]
+            "places": [
+              {
+                "name": "Arrowtown River Trail",
+                "listingSlug": "arrowtown-river-trail",
+                "lat": -44.943,
+                "lng": 168.825
+              }
+            ],
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Mount Crichton Loop",
             "description": "The Mount Crichton Loop track passes through ancient forest and past historic mining relics. The light filtering through the beech canopy in the afternoon creates magical conditions for moody forest photography.",
-            "places": [{ "name": "Mount Crichton Loop Track", "listingSlug": "mount-crichton-loop-track" }],
-            "ageRange": "ages-8+"
+            "places": [
+              {
+                "name": "Mount Crichton Loop Track",
+                "listingSlug": "mount-crichton-loop-track",
+                "lat": -45.014,
+                "lng": 168.572
+              }
+            ],
+            "ageRange": "ages-8+",
+            "setting": "outdoor"
           }
         ]
       },
@@ -937,14 +2088,30 @@
             "timeOfDay": "morning",
             "title": "Bennett's Bluff at Sunrise",
             "description": "Bennett's Bluff lookout is THE iconic Queenstown photo location. Get there for sunrise — the light hitting the lake and mountains is extraordinary. Bring a wide-angle lens.",
-            "places": [{ "name": "Glenorchy Road", "href": "/plan/surrounding-region/glenorchy/" }]
+            "places": [
+              {
+                "name": "Glenorchy Road",
+                "href": "/plan/surrounding-region/glenorchy/",
+                "lat": -44.91,
+                "lng": 168.47
+              }
+            ],
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Glenorchy Lagoon",
             "description": "The Glenorchy Lagoon with Paradise valley behind is one of the most photogenic scenes in NZ. The still water, mountain reflections, and ancient trees make for composition after composition.",
-            "places": [{ "name": "Glenorchy Lagoon Walkway", "listingSlug": "glenorchy-lagoon-walkway" }],
-            "localTip": "Stay until golden hour if you can. The way the light hits Mt Earnslaw from Glenorchy is breathtaking. Autumn sunsets are around 5:30-6pm."
+            "places": [
+              {
+                "name": "Glenorchy Lagoon Walkway",
+                "listingSlug": "glenorchy-lagoon-walkway",
+                "lat": -44.851,
+                "lng": 168.375
+              }
+            ],
+            "localTip": "Stay until golden hour if you can. The way the light hits Mt Earnslaw from Glenorchy is breathtaking. Autumn sunsets are around 5:30-6pm.",
+            "setting": "outdoor"
           }
         ]
       }
@@ -955,17 +2122,91 @@
         "authorSlug": "sarah-chen",
         "authorType": "local",
         "date": "2025-05-02",
-        "text": "Nina, your Lake Hayes sunrise tip about wind forecasts is so smart. I've gone there three times and gotten great reflections once — now I know why!"
+        "text": "Nina, your Lake Hayes sunrise tip about wind forecasts is so smart. I've gone there three times and gotten great reflections once — now I know why!",
+        "type": "tip"
       },
       {
         "author": "Alex Brooks",
         "authorSlug": "alex-brooks",
         "authorType": "visitor",
         "date": "2025-05-15",
-        "text": "This makes me want to come back in autumn specifically. I visited in summer and the light was harsh by 10am. Shoulder season clearly produces way better conditions."
+        "text": "This makes me want to come back in autumn specifically. I visited in summer and the light was harsh by 10am. Shoulder season clearly produces way better conditions.",
+        "type": "question"
       }
     ],
-    "relatedItineraries": ["active-arrowtown-day", "cultural-queenstown", "solo-adventure-5-days"]
+    "relatedItineraries": [
+      "active-arrowtown-day",
+      "cultural-queenstown",
+      "solo-adventure-5-days"
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop",
+        "caption": "Lake Hayes mirror reflection at dawn"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1200&h=800&fit=crop",
+        "caption": "Arrowtown autumn gold"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&h=800&fit=crop",
+        "caption": "Bennett's Bluff sunrise"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&h=800&fit=crop",
+        "caption": "Glenorchy Lagoon mist"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&h=800&fit=crop",
+        "caption": "Bob's Cove beech forest light"
+      }
+    ],
+    "costEstimate": {
+      "level": "budget",
+      "perPersonPerDay": 130,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 60,
+        "food": 35,
+        "activities": 10,
+        "transport": 25
+      },
+      "notes": "Most photography spots are free — main costs are accommodation and transport"
+    },
+    "packingList": [
+      {
+        "item": "Camera with spare batteries (cold drains them)",
+        "essential": true
+      },
+      {
+        "item": "Tripod for long exposures",
+        "essential": true
+      },
+      {
+        "item": "Warm layers for dawn shoots",
+        "essential": true
+      },
+      {
+        "item": "Lens cloth (morning dew)",
+        "essential": true
+      },
+      {
+        "item": "Wide-angle and telephoto lenses",
+        "essential": false
+      },
+      {
+        "item": "ND filters for water shots",
+        "essential": false
+      }
+    ],
+    "userStories": [
+      {
+        "authorSlug": "alex-brooks",
+        "text": "Nina's eye for light timing is incredible. I followed this in late April and every single sunrise spot delivered. Bennett's Bluff at dawn was life-changing.",
+        "date": "2025-05",
+        "photo": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop"
+      }
+    ]
   },
   "luxury-long-weekend": {
     "title": "The Luxury Long Weekend",
@@ -975,13 +2216,21 @@
     "durationDays": 3,
     "travellerType": "couple",
     "travellerDetails": "Anniversary trip for two",
-    "categories": ["luxury", "dining", "wellness"],
+    "categories": [
+      "luxury",
+      "dining",
+      "wellness"
+    ],
     "season": "spring",
     "summary": "Queenstown does luxury better than anywhere else in NZ — world-class lodges, fine dining with lake views, and exclusive experiences. Here's how to do a seriously indulgent long weekend without the pretension.",
     "coverImage": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1600&h=800&fit=crop",
     "upvotes": 121,
     "commentCount": 9,
-    "endorsements": { "family": 2, "couple": 35, "solo": 7 },
+    "endorsements": {
+      "family": 2,
+      "couple": 35,
+      "solo": 7
+    },
     "days": [
       {
         "dayNumber": 1,
@@ -991,16 +2240,32 @@
             "timeOfDay": "afternoon",
             "title": "Check into Eichardt's",
             "description": "Eichardt's Private Hotel is Queenstown's most iconic luxury stay. Right on the waterfront with views across the lake, the suites are impeccable. The in-house bar is one of the best in the South Island.",
-            "places": [{ "name": "Eichardt's Private Hotel", "listingSlug": "eichardt-private-hotel" }],
-            "ageRange": "adults-only"
+            "places": [
+              {
+                "name": "Eichardt's Private Hotel",
+                "listingSlug": "eichardt-private-hotel",
+                "lat": -45.0309,
+                "lng": 168.6628
+              }
+            ],
+            "ageRange": "adults-only",
+            "setting": "indoor"
           },
           {
             "timeOfDay": "evening",
             "title": "Dinner at Botswana Butchery",
             "description": "Walk two minutes to Botswana Butchery for a welcome dinner. The wine list is extensive and the service is exceptional without being stuffy. Start with the seared scallops.",
-            "places": [{ "name": "Botswana Butchery", "listingSlug": "botswana-butchery" }],
+            "places": [
+              {
+                "name": "Botswana Butchery",
+                "listingSlug": "botswana-butchery",
+                "lat": -45.0312,
+                "lng": 168.6627
+              }
+            ],
             "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&h=500&fit=crop",
-            "ageRange": "adults-only"
+            "ageRange": "adults-only",
+            "setting": "indoor"
           }
         ]
       },
@@ -1012,23 +2277,47 @@
             "timeOfDay": "morning",
             "title": "Helicopter to a Peak",
             "description": "Book a helicopter scenic flight — it's the ultimate Queenstown splurge. Most operators offer glacier landing or mountaintop picnic options. Seeing Milford Sound from the air is otherworldly.",
-            "places": [{ "name": "Queenstown Scenic Flights", "href": "/things-to-do/adventure-activities/" }],
-            "ageRange": "ages-3+"
+            "places": [
+              {
+                "name": "Queenstown Scenic Flights",
+                "href": "/things-to-do/adventure-activities/",
+                "lat": -45.021,
+                "lng": 168.739
+              }
+            ],
+            "ageRange": "ages-3+",
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "TSS Earnslaw to Walter Peak",
             "description": "The classic TSS Earnslaw cruise to Walter Peak High Country Farm. The vintage steamship journey across the lake followed by afternoon tea at the Colonel's Homestead is quintessentially Queenstown.",
-            "places": [{ "name": "TSS Earnslaw", "listingSlug": "tss-earnslaw" }],
-            "ageRange": "all-ages"
+            "places": [
+              {
+                "name": "TSS Earnslaw",
+                "listingSlug": "tss-earnslaw",
+                "lat": -45.031,
+                "lng": 168.6625
+              }
+            ],
+            "ageRange": "all-ages",
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "evening",
             "title": "Rata Tasting Menu",
             "description": "Josh Emett's Rata is fine dining done the NZ way — relaxed, ingredient-led, and genuinely delicious. The tasting menu with wine pairing is the way to go.",
-            "places": [{ "name": "Rata", "listingSlug": "rata-restaurant" }],
+            "places": [
+              {
+                "name": "Rata",
+                "listingSlug": "rata-restaurant",
+                "lat": -45.0315,
+                "lng": 168.6622
+              }
+            ],
             "localTip": "If the weather's good, request a table on the terrace. It overlooks the mall and has a beautiful garden feel.",
-            "ageRange": "adults-only"
+            "ageRange": "adults-only",
+            "setting": "indoor"
           }
         ]
       },
@@ -1040,15 +2329,31 @@
             "timeOfDay": "morning",
             "title": "Onsen Hot Pools",
             "description": "End the trip at Onsen Hot Pools — private cedar-lined hot tubs overlooking the Shotover Canyon. Book the sunrise session for the most magical experience.",
-            "places": [{ "name": "Onsen Hot Pools", "href": "/things-to-do/" }],
-            "ageRange": "adults-only"
+            "places": [
+              {
+                "name": "Onsen Hot Pools",
+                "href": "/things-to-do/",
+                "lat": -44.996,
+                "lng": 168.736
+              }
+            ],
+            "ageRange": "adults-only",
+            "setting": "outdoor"
           },
           {
             "timeOfDay": "afternoon",
             "title": "Wine Tasting in Gibbston",
             "description": "A private wine tour through Gibbston Valley is the perfect farewell. Amisfield, Peregrine, and Gibbston Valley Winery all produce exceptional pinot noir. Most offer cheese pairings too.",
-            "places": [{ "name": "Gibbston Valley", "href": "/things-to-do/" }],
-            "ageRange": "adults-only"
+            "places": [
+              {
+                "name": "Gibbston Valley",
+                "href": "/things-to-do/",
+                "lat": -45.019,
+                "lng": 168.8555
+              }
+            ],
+            "ageRange": "adults-only",
+            "setting": "both"
           }
         ]
       }
@@ -1059,9 +2364,70 @@
         "authorSlug": "mike-fraser",
         "authorType": "local",
         "date": "2025-12-01",
-        "text": "Jess, great picks. I'd also recommend Matakauri Lodge if Eichardt's is booked — the lake-view suites are extraordinary and their restaurant is underrated."
+        "text": "Jess, great picks. I'd also recommend Matakauri Lodge if Eichardt's is booked — the lake-view suites are extraordinary and their restaurant is underrated.",
+        "type": "tip"
       }
     ],
-    "relatedItineraries": ["foodie-trail-queenstown", "shoulder-season-photography", "perfect-winter-weekend"]
+    "relatedItineraries": [
+      "foodie-trail-queenstown",
+      "shoulder-season-photography",
+      "perfect-winter-weekend"
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1200&h=800&fit=crop",
+        "caption": "Eichardt's Private Hotel suite"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&h=800&fit=crop",
+        "caption": "Rata tasting menu presentation"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbec6a?w=1200&h=800&fit=crop",
+        "caption": "Helicopter to a mountain peak"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=1200&h=800&fit=crop",
+        "caption": "Gibbston Valley wine cellar"
+      }
+    ],
+    "costEstimate": {
+      "level": "luxury",
+      "perPersonPerDay": 650,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 350,
+        "food": 150,
+        "activities": 120,
+        "transport": 30
+      },
+      "notes": "5-star hotel, helicopter tour, fine dining — the full premium experience"
+    },
+    "packingList": [
+      {
+        "item": "Smart evening wear for dining",
+        "essential": true
+      },
+      {
+        "item": "Comfortable walking shoes",
+        "essential": true
+      },
+      {
+        "item": "Swimwear for Onsen Hot Pools",
+        "essential": true
+      },
+      {
+        "item": "Layers for the helicopter",
+        "essential": true
+      },
+      {
+        "item": "Camera for scenic flights",
+        "essential": false
+      },
+      {
+        "item": "Wine tote for cellar purchases",
+        "essential": false
+      }
+    ]
   }
 }

@@ -5,6 +5,7 @@ import ItineraryCard from "./ItineraryCard";
 import RecommendationCard from "./RecommendationCard";
 import CommunityFilterBar from "./CommunityFilterBar";
 import TripMatcher from "./TripMatcher";
+import SeasonalBanner from "./SeasonalBanner";
 import itinerariesData from "@/data/community-itineraries.json";
 import recommendationsData from "@/data/community-recommendations.json";
 import contributorsData from "@/data/community-contributors.json";
@@ -31,6 +32,8 @@ const itineraries = itinerariesData as Record<string, {
   commentCount: number;
   endorsements?: Record<string, number>;
   days: { segments: { ageRange?: string }[] }[];
+  photos?: { src: string; caption: string }[];
+  costEstimate?: { level: string };
 }>;
 const recommendations = recommendationsData as Record<string, {
   title: string;
@@ -102,6 +105,8 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
 
   return (
     <div>
+      <SeasonalBanner activeSeason={activeSeason} onSeasonChange={setActiveSeason} />
+
       <TripMatcher
         activeTraveller={activeTraveller}
         activeDuration={activeDuration}
@@ -144,6 +149,8 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
                 endorsements={it.endorsements}
                 activeTraveller={activeTraveller}
                 minAge={getMinAge(it.days)}
+                photoCount={it.photos?.length}
+                budgetLevel={it.costEstimate?.level}
               />
             );
           }

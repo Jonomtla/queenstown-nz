@@ -26,6 +26,12 @@ const ENDORSEMENT_VERBS: Record<string, string> = {
   group: "groups tried this",
 };
 
+const BUDGET_STYLES: Record<string, { label: string; color: string }> = {
+  budget: { label: "Budget", color: "bg-green-100 text-green-700" },
+  "mid-range": { label: "Mid-Range", color: "bg-amber-100 text-amber-700" },
+  luxury: { label: "Luxury", color: "bg-copper/10 text-copper" },
+};
+
 interface ItineraryCardProps {
   slug: string;
   title: string;
@@ -46,6 +52,8 @@ interface ItineraryCardProps {
   endorsements?: Record<string, number>;
   activeTraveller?: string;
   minAge?: string;
+  photoCount?: number;
+  budgetLevel?: string;
 }
 
 export default function ItineraryCard({
@@ -62,6 +70,8 @@ export default function ItineraryCard({
   endorsements,
   activeTraveller,
   minAge,
+  photoCount,
+  budgetLevel,
 }: ItineraryCardProps) {
   const traveller = travellerType ? TRAVELLER_LABELS[travellerType] : null;
 
@@ -90,6 +100,12 @@ export default function ItineraryCard({
               </span>
             ))}
           </div>
+          {photoCount && photoCount > 0 && (
+            <span className="absolute bottom-3 right-3 bg-black/60 text-white text-[10px] font-semibold px-2 py-1 rounded-full flex items-center gap-1 backdrop-blur-sm">
+              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+              {photoCount}
+            </span>
+          )}
         </div>
       </Link>
       <div className="p-5">
@@ -107,6 +123,11 @@ export default function ItineraryCard({
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={traveller.icon} />
                 </svg>
                 {traveller.label}
+              </span>
+            )}
+            {budgetLevel && BUDGET_STYLES[budgetLevel] && (
+              <span className={`text-[10px] font-semibold tracking-widest-custom uppercase px-2 py-0.5 rounded-full ${BUDGET_STYLES[budgetLevel].color}`}>
+                {BUDGET_STYLES[budgetLevel].label}
               </span>
             )}
             <span className="text-[10px] text-gray-400 tracking-widest-custom uppercase">{duration}</span>

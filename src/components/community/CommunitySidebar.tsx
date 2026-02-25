@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import contributorsData from "@/data/community-contributors.json";
 import collectionsData from "@/data/community-collections.json";
+import eventsData from "@/data/community-events.json";
 
 type Contributor = {
   name: string;
@@ -17,8 +18,17 @@ type Collection = {
   icon: string;
 };
 
+type Event = {
+  title: string;
+  dateRange: string;
+  season: string;
+  categories: string[];
+  description: string;
+};
+
 const contributors = contributorsData as Record<string, Contributor>;
 const collections = collectionsData as Record<string, Collection>;
+const events = eventsData as Event[];
 
 const topContributors = Object.entries(contributors)
   .sort(([, a], [, b]) => b.upvotesReceived - a.upvotesReceived)
@@ -32,12 +42,16 @@ const ICON_PATHS: Record<string, string> = {
   backpack: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z",
 };
 
-const seasonalHighlights = [
-  { season: "Summer", tip: "Queenstown Trail by e-bike is the locals' favourite", color: "bg-copper/10 text-copper" },
-  { season: "Autumn", tip: "Arrowtown colours peak mid-April", color: "bg-copper/10 text-copper" },
-  { season: "Winter", tip: "First tracks at Coronet Peak — get there by 8am", color: "bg-teal/10 text-teal" },
-  { season: "Spring", tip: "Wildflowers on the Moke Lake loop from September", color: "bg-teal/10 text-teal" },
-];
+function getCurrentNZSeason(): string {
+  const month = new Date().getMonth() + 1;
+  if ([12, 1, 2].includes(month)) return "summer";
+  if ([3, 4, 5].includes(month)) return "autumn";
+  if ([6, 7, 8].includes(month)) return "winter";
+  return "spring";
+}
+
+const currentSeason = getCurrentNZSeason();
+const seasonEvents = events.filter((e) => e.season === currentSeason);
 
 export default function CommunitySidebar() {
   return (
@@ -76,7 +90,7 @@ export default function CommunitySidebar() {
           Top Contributors
         </h3>
         <div className="space-y-3">
-          {topContributors.map(([slug, contrib]) => (
+          {topContributors.map(([slug, contrib], index) => (
             <Link
               key={slug}
               href={`/community/contributors/${slug}/`}
@@ -87,6 +101,7 @@ export default function CommunitySidebar() {
               </div>
               <div className="min-w-0">
                 <p className="text-sm font-semibold text-gray-700 group-hover:text-teal transition-colors truncate">
+                  {index === 0 && <span className="mr-1" title="Top contributor">🏆</span>}
                   {contrib.name}
                 </p>
                 <p className="text-[10px] text-gray-400 tracking-widest-custom uppercase">
@@ -96,23 +111,32 @@ export default function CommunitySidebar() {
             </Link>
           ))}
         </div>
+        <Link
+          href="/community/contributors/"
+          className="inline-block mt-4 text-xs font-semibold tracking-widest-custom uppercase text-teal hover:text-teal-light transition-colors"
+        >
+          View all →
+        </Link>
       </div>
 
-      {/* Seasonal Highlights */}
+      {/* Coming Up Events */}
       <div className="bg-cream rounded-xl p-6">
         <h3 className="text-sm font-bold tracking-widest-custom uppercase text-teal mb-4">
-          Seasonal Tips
+          Coming Up
         </h3>
-        <div className="space-y-3">
-          {seasonalHighlights.map((item) => (
-            <div key={item.season} className="flex items-start gap-3">
-              <span className={`text-[10px] font-bold tracking-widest-custom uppercase px-2 py-0.5 rounded-full shrink-0 mt-0.5 ${item.color}`}>
-                {item.season}
-              </span>
-              <p className="text-sm text-gray-600 leading-snug">{item.tip}</p>
-            </div>
-          ))}
-        </div>
+        {seasonEvents.length > 0 ? (
+          <div className="space-y-4">
+            {seasonEvents.map((event) => (
+              <div key={event.title}>
+                <p className="text-sm font-semibold text-gray-700">{event.title}</p>
+                <p className="text-xs text-copper font-semibold mt-0.5">{event.dateRange}</p>
+                <p className="text-xs text-gray-500 mt-1 leading-relaxed">{event.description}</p>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="text-sm text-gray-500">No upcoming events this season. Check back soon!</p>
+        )}
       </div>
     </aside>
   );
