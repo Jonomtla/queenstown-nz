@@ -2,11 +2,11 @@
 
 interface CommunityFilterBarProps {
   activeCategory: string;
-  activeType: string;
+  activeTraveller: string;
   activeSeason: string;
   activeSort: string;
   onCategoryChange: (v: string) => void;
-  onTypeChange: (v: string) => void;
+  onTravellerChange: (v: string) => void;
   onSeasonChange: (v: string) => void;
   onSortChange: (v: string) => void;
 }
@@ -24,11 +24,12 @@ const CATEGORIES = [
   { value: "luxury", label: "Luxury" },
 ];
 
-const CONTRIBUTOR_TYPES = [
+const TRAVELLER_TYPES = [
   { value: "all", label: "Everyone" },
-  { value: "local", label: "Locals" },
-  { value: "visitor", label: "Visitors" },
-  { value: "creator", label: "Creators" },
+  { value: "family", label: "Family" },
+  { value: "couple", label: "Couple" },
+  { value: "solo", label: "Solo" },
+  { value: "group", label: "Group" },
 ];
 
 const SEASONS = [
@@ -59,6 +60,7 @@ function PillGroup({
         <button
           key={item.value}
           onClick={() => onChange(item.value)}
+          aria-pressed={active === item.value}
           className={`text-xs font-semibold tracking-widest-custom uppercase px-4 py-2 rounded-full transition-colors ${
             active === item.value
               ? "bg-teal text-white"
@@ -74,11 +76,11 @@ function PillGroup({
 
 export default function CommunityFilterBar({
   activeCategory,
-  activeType,
+  activeTraveller,
   activeSeason,
   activeSort,
   onCategoryChange,
-  onTypeChange,
+  onTravellerChange,
   onSeasonChange,
   onSortChange,
 }: CommunityFilterBarProps) {
@@ -86,7 +88,7 @@ export default function CommunityFilterBar({
     <div className="space-y-4">
       <PillGroup items={CATEGORIES} active={activeCategory} onChange={onCategoryChange} />
       <div className="flex flex-wrap items-center gap-6">
-        <PillGroup items={CONTRIBUTOR_TYPES} active={activeType} onChange={onTypeChange} />
+        <PillGroup items={TRAVELLER_TYPES} active={activeTraveller} onChange={onTravellerChange} />
         <div className="hidden md:block w-px h-6 bg-gray-200" />
         <PillGroup items={SEASONS} active={activeSeason} onChange={onSeasonChange} />
         <div className="hidden md:block w-px h-6 bg-gray-200" />

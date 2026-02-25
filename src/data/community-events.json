@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Queenstown Winter Festival",
+    "dateRange": "20–29 June",
+    "season": "winter",
+    "categories": ["winter", "culture"],
+    "description": "10 days of winter celebrations — fireworks, live music, street parties, and comedy on the mountain."
+  },
+  {
+    "title": "Remarkables Ice & Mixed Festival",
+    "dateRange": "July",
+    "season": "winter",
+    "categories": ["winter", "adventure"],
+    "description": "International ice climbing competition on the Remarkables ice faces."
+  },
+  {
+    "title": "Arrowtown Autumn Festival",
+    "dateRange": "Late April",
+    "season": "autumn",
+    "categories": ["culture", "walking"],
+    "description": "Street parade, market day, and community events celebrating peak autumn colour."
+  },
+  {
+    "title": "Queenstown Marathon",
+    "dateRange": "Mid-November",
+    "season": "spring",
+    "categories": ["adventure", "outdoor"],
+    "description": "Scenic marathon along Lake Wakatipu from Arrowtown to Queenstown."
+  },
+  {
+    "title": "Gibbston Valley Wine & Food Festival",
+    "dateRange": "Late January",
+    "season": "summer",
+    "categories": ["dining", "wine"],
+    "description": "The region's biggest food and wine event — 30+ wineries, live music, and local chefs."
+  },
+  {
+    "title": "Luma Southern Light Project",
+    "dateRange": "Early June",
+    "season": "winter",
+    "categories": ["culture", "walking"],
+    "description": "Free light installations transform Queenstown Gardens into an after-dark wonderland."
+  },
+  {
+    "title": "Shotover Moonlight Mountain Marathon",
+    "dateRange": "Early February",
+    "season": "summer",
+    "categories": ["adventure", "hiking"],
+    "description": "Iconic 44km trail race through historic Shotover goldfields and mountain terrain."
+  },
+  {
+    "title": "Wakatipu Wildflower Walk",
+    "dateRange": "September – October",
+    "season": "spring",
+    "categories": ["walking", "outdoor"],
+    "description": "Guided wildflower walks on Moke Lake and Lake Hayes loops as spring blooms emerge."
+  }
+]

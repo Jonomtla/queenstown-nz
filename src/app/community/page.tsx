@@ -9,7 +9,7 @@ export default function CommunityPage() {
     <PageLayout>
       <CommunityHero
         title="Community"
-        subtitle="Real experiences from people who know Queenstown — local tips, honest itineraries, and recommendations you won't find in a guidebook."
+        subtitle="Find trips from people like you — families, couples, solo adventurers. Real itineraries, honest tips, and recommendations you won't find in a guidebook."
       />
 
       {/* Breadcrumbs */}

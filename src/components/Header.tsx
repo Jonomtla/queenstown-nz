@@ -56,6 +56,7 @@ const NAV_ITEMS = [
     href: "/community/",
     children: [
       { label: "All Itineraries", href: "/community/" },
+      { label: "Collections", href: "/community/collections/best-for-toddlers/" },
       { label: "Winter Guide", href: "/community/category/winter/" },
       { label: "Family", href: "/community/category/family/" },
       { label: "Dining Guide", href: "/community/category/dining/" },

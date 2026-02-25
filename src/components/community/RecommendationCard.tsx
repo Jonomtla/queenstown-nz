@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ContributorBadge from "./ContributorBadge";
@@ -16,6 +16,11 @@ interface Comment {
   authorType: string;
   date: string;
   text: string;
+}
+
+interface Photo {
+  src: string;
+  caption: string;
 }
 
 interface RecommendationCardProps {
@@ -34,6 +39,7 @@ interface RecommendationCardProps {
   };
   places?: { name: string; listingSlug?: string }[];
   comments?: Comment[];
+  photos?: Photo[];
 }
 
 const CATEGORY_STYLES: Record<string, { border: string }> = {
@@ -46,25 +52,21 @@ const CATEGORY_STYLES: Record<string, { border: string }> = {
   budget: { border: "border-l-teal" },
   transport: { border: "border-l-gray-400" },
   hiking: { border: "border-l-teal" },
+  wellness: { border: "border-l-copper" },
+  culture: { border: "border-l-copper" },
 };
 
-function RecommendationModal({
-  title,
-  text,
-  category,
-  upvotes,
-  commentCount,
-  contributor,
-  places,
-  comments,
-  onClose,
-}: RecommendationCardProps & { onClose: () => void }) {
+function RecommendationModal(props: RecommendationCardProps & { onClose: () => void; onPhotoClick: (index: number) => void }) {
+  const { title, text, category, upvotes, commentCount, contributor, places, comments, onClose } = props;
   const style = CATEGORY_STYLES[category] || { border: "border-l-gray-300" };
 
   return (
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8"
       onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="rec-modal-title"
     >
       {/* Backdrop */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
@@ -77,9 +79,10 @@ function RecommendationModal({
         {/* Close button */}
         <button
           onClick={onClose}
+          aria-label="Close dialog"
           className="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors z-10"
         >
-          <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
@@ -93,7 +96,7 @@ function RecommendationModal({
             <UpvoteButton count={upvotes} />
           </div>
 
-          <h2 className="text-xl md:text-2xl font-bold text-teal leading-snug">{title}</h2>
+          <h2 id="rec-modal-title" className="text-xl md:text-2xl font-bold text-teal leading-snug">{title}</h2>
 
           {/* Author */}
           <div className="mt-4">
@@ -108,6 +111,20 @@ function RecommendationModal({
 
           {/* Full text */}
           <p className="text-gray-600 text-base mt-6 leading-relaxed">{text}</p>
+
+          {/* Photo strip in modal — larger, clickable */}
+          {props.photos && props.photos.length > 0 && (
+            <div className="flex gap-2 mt-4 overflow-x-auto pb-2">
+              {props.photos.map((photo, i) => (
+                <button key={i} onClick={() => props.onPhotoClick(i)} className="relative w-28 h-20 rounded-lg overflow-hidden shrink-0 hover:ring-2 hover:ring-teal transition-all">
+                  <Image src={photo.src} alt={photo.caption} fill className="object-cover" unoptimized />
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/40 px-1.5 py-0.5">
+                    <p className="text-[9px] text-white truncate">{photo.caption}</p>
+                  </div>
+                </button>
+              ))}
+            </div>
+          )}
 
           {/* Places */}
           {places && places.length > 0 && (
@@ -138,6 +155,10 @@ function RecommendationModal({
             <h3 className="text-sm font-bold tracking-widest-custom uppercase text-teal mb-5">
               Comments ({commentCount})
             </h3>
+
+            {(!comments || comments.length === 0) && (
+              <p className="text-sm text-gray-400 mb-6">No comments yet. Be the first to share your thoughts.</p>
+            )}
 
             {comments && comments.length > 0 && (
               <div className="space-y-5 mb-6">
@@ -197,8 +218,54 @@ function RecommendationModal({
   );
 }
 
+function PhotoLightbox({ photos, initialIndex, onClose }: { photos: Photo[]; initialIndex: number; onClose: () => void }) {
+  const [current, setCurrent] = useState(initialIndex);
+  const prev = () => setCurrent((c) => (c === 0 ? photos.length - 1 : c - 1));
+  const next = () => setCurrent((c) => (c === photos.length - 1 ? 0 : c + 1));
+
+  return (
+    <div className="fixed inset-0 z-[200] bg-black/90 flex items-center justify-center" onClick={onClose}>
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white z-10"
+        aria-label="Close"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div className="relative w-full max-w-4xl h-[75vh] mx-4" onClick={(e) => e.stopPropagation()}>
+        <Image src={photos[current].src} alt={photos[current].caption} fill className="object-contain" unoptimized />
+        <div className="absolute bottom-4 left-0 right-0 text-center">
+          <p className="text-white text-sm bg-black/40 inline-block px-4 py-2 rounded-full">
+            {photos[current].caption} — {current + 1} / {photos.length}
+          </p>
+        </div>
+        {photos.length > 1 && (
+          <>
+            <button onClick={prev} className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white" aria-label="Previous">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+            </button>
+            <button onClick={next} className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white" aria-label="Next">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function RecommendationCard(props: RecommendationCardProps) {
   const [modalOpen, setModalOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (modalOpen || lightboxIndex !== null) {
+      document.body.style.overflow = "hidden";
+      return () => { document.body.style.overflow = ""; };
+    }
+  }, [modalOpen, lightboxIndex]);
   const { title, text, category, upvotes, commentCount, contributor, places } = props;
   const style = CATEGORY_STYLES[category] || { border: "border-l-gray-300" };
 
@@ -214,8 +281,19 @@ export default function RecommendationCard(props: RecommendationCardProps) {
           </span>
           <UpvoteButton count={upvotes} />
         </div>
-        <h3 className="text-base font-bold text-teal leading-snug">{title}</h3>
+        <h3 className="text-base font-bold text-teal leading-snug line-clamp-2">{title}</h3>
         <p className="text-gray-600 text-sm mt-2 leading-relaxed line-clamp-4">{text}</p>
+
+        {/* Google Reviews-style photo strip */}
+        {props.photos && props.photos.length > 0 && (
+          <div className="flex gap-1.5 mt-3 overflow-x-auto -mx-1 px-1 pb-1" onClick={(e) => e.stopPropagation()}>
+            {props.photos.map((photo, i) => (
+              <button key={i} onClick={() => setLightboxIndex(i)} className="relative w-16 h-16 rounded-lg overflow-hidden shrink-0 hover:ring-2 hover:ring-teal transition-all">
+                <Image src={photo.src} alt={photo.caption} fill className="object-cover" unoptimized />
+              </button>
+            ))}
+          </div>
+        )}
 
         {places && places.length > 0 && (
           <div className="flex flex-wrap gap-1.5 mt-3" onClick={(e) => e.stopPropagation()}>
@@ -249,9 +327,10 @@ export default function RecommendationCard(props: RecommendationCardProps) {
           />
           <button
             onClick={(e) => { e.stopPropagation(); setModalOpen(true); }}
+            aria-label={`${commentCount} comments — view details`}
             className="inline-flex items-center gap-1.5 text-xs text-gray-400 hover:text-teal transition-colors"
           >
-            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -265,7 +344,11 @@ export default function RecommendationCard(props: RecommendationCardProps) {
       </div>
 
       {modalOpen && (
-        <RecommendationModal {...props} onClose={() => setModalOpen(false)} />
+        <RecommendationModal {...props} onClose={() => setModalOpen(false)} onPhotoClick={setLightboxIndex} />
+      )}
+
+      {lightboxIndex !== null && props.photos && (
+        <PhotoLightbox photos={props.photos} initialIndex={lightboxIndex} onClose={() => setLightboxIndex(null)} />
       )}
     </>
   );

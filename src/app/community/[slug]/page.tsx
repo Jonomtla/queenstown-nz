@@ -7,6 +7,13 @@ import UpvoteButton from "@/components/community/UpvoteButton";
 import ItineraryDayBreakdown from "@/components/community/ItineraryDayBreakdown";
 import CommentSection from "@/components/community/CommentSection";
 import ItineraryCard from "@/components/community/ItineraryCard";
+import AdaptItinerary from "@/components/community/AdaptItinerary";
+import PhotoCarousel from "@/components/community/PhotoCarousel";
+import CostEstimator from "@/components/community/CostEstimator";
+import ItineraryMap from "@/components/community/ItineraryMap";
+import PackingList from "@/components/community/PackingList";
+import UserStories from "@/components/community/UserStories";
+import ShareButtons from "@/components/community/ShareButtons";
 import itinerariesData from "@/data/community-itineraries.json";
 import contributorsData from "@/data/community-contributors.json";
 
@@ -14,8 +21,67 @@ type Contributor = {
   name: string;
   avatar: string;
   type: "local" | "visitor" | "creator";
+  travellerProfile?: string;
   bio: string;
   contributions: number;
+};
+
+type Place = {
+  name: string;
+  listingSlug?: string;
+  href?: string;
+  lat?: number;
+  lng?: number;
+};
+
+type RainyAlternative = {
+  title: string;
+  description: string;
+  places: Place[];
+};
+
+type Segment = {
+  timeOfDay: string;
+  title: string;
+  description: string;
+  places: Place[];
+  image?: string;
+  localTip?: string;
+  ageRange?: string;
+  setting?: "indoor" | "outdoor" | "both";
+  rainyAlternative?: RainyAlternative;
+};
+
+type Adaptation = {
+  swaps: {
+    segmentTitle: string;
+    replacement: {
+      title: string;
+      description: string;
+      places: Place[];
+      ageRange?: string;
+    };
+  }[];
+};
+
+type Photo = { src: string; caption: string };
+type CostEstimateType = {
+  level: "budget" | "mid-range" | "luxury";
+  perPersonPerDay: number;
+  currency: string;
+  breakdown: Record<string, number>;
+  notes?: string;
+};
+type PackingItem = { item: string; essential: boolean };
+type UserStory = { authorSlug: string; text: string; date: string; photo?: string };
+type Comment = {
+  author: string;
+  authorSlug: string;
+  authorType: string;
+  date: string;
+  text: string;
+  type?: "question" | "answer" | "tip";
+  replies?: Comment[];
 };
 
 type Itinerary = {
@@ -23,19 +89,35 @@ type Itinerary = {
   contributorSlug: string;
   tripDate: string;
   duration: string;
+  durationDays: number;
+  travellerType: string;
+  travellerDetails?: string;
   categories: string[];
   season: string;
   summary: string;
   coverImage: string;
   upvotes: number;
   commentCount: number;
-  days: { dayNumber: number; title: string; segments: { timeOfDay: string; title: string; description: string; places: { name: string; listingSlug?: string; href?: string }[]; image?: string; localTip?: string }[] }[];
-  comments: { author: string; authorSlug: string; authorType: string; date: string; text: string; replies?: { author: string; authorSlug: string; authorType: string; date: string; text: string }[] }[];
+  endorsements?: Record<string, number>;
+  adaptations?: Record<string, Adaptation>;
+  days: { dayNumber: number; title: string; segments: Segment[] }[];
+  comments: Comment[];
   relatedItineraries: string[];
+  photos?: Photo[];
+  costEstimate?: CostEstimateType;
+  packingList?: PackingItem[];
+  userStories?: UserStory[];
 };
 
 const itineraries = itinerariesData as Record<string, Itinerary>;
 const contributors = contributorsData as Record<string, Contributor>;
+
+const ENDORSEMENT_LABELS: Record<string, string> = {
+  family: "Families",
+  couple: "Couples",
+  solo: "Solo Travellers",
+  group: "Groups",
+};
 
 export function generateStaticParams() {
   return Object.keys(itineraries).map((slug) => ({ slug }));
@@ -52,6 +134,10 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
   const related = itinerary.relatedItineraries
     .map((s) => ({ slug: s, ...itineraries[s] }))
     .filter((r) => r.title);
+
+  const endorsementEntries = itinerary.endorsements
+    ? Object.entries(itinerary.endorsements).filter(([, count]) => count > 0)
+    : [];
 
   return (
     <PageLayout>
@@ -111,6 +197,12 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
                 size="md"
               />
               <p className="text-sm text-gray-500 mt-1">{contributor.bio}</p>
+
+              {/* Traveller details */}
+              {itinerary.travellerDetails && (
+                <p className="text-sm text-teal font-semibold mt-1">{itinerary.travellerDetails}</p>
+              )}
+
               <div className="flex items-center gap-4 mt-2 text-xs text-gray-400">
                 <span>{itinerary.duration}</span>
                 <span className="w-1 h-1 rounded-full bg-gray-300" />
@@ -118,6 +210,17 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
                 <span className="w-1 h-1 rounded-full bg-gray-300" />
                 <span>{contributor.contributions} contributions</span>
               </div>
+
+              {/* Endorsement stats */}
+              {endorsementEntries.length > 0 && (
+                <div className="flex flex-wrap gap-4 mt-3">
+                  {endorsementEntries.map(([type, count]) => (
+                    <span key={type} className="text-xs text-gray-500">
+                      <strong className="text-copper">{count}</strong> {ENDORSEMENT_LABELS[type] || type}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
             <div className="shrink-0">
               <UpvoteButton count={itinerary.upvotes} />
@@ -125,19 +228,53 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
           </div>
 
           {/* Summary */}
-          <p className="text-body text-lg leading-relaxed mt-8 mb-12">{itinerary.summary}</p>
+          <p className="text-body text-lg leading-relaxed mt-8 mb-8">{itinerary.summary}</p>
+
+          {/* Photo Carousel */}
+          {itinerary.photos && itinerary.photos.length > 0 && (
+            <div className="mb-8">
+              <PhotoCarousel photos={itinerary.photos} />
+            </div>
+          )}
+
+          {/* Cost Estimator */}
+          {itinerary.costEstimate && (
+            <div className="mb-8">
+              <CostEstimator costEstimate={itinerary.costEstimate} durationDays={itinerary.durationDays} />
+            </div>
+          )}
+
+          {/* Route Map */}
+          <div className="mb-8">
+            <ItineraryMap days={itinerary.days} />
+          </div>
 
           {/* Day breakdown */}
           <ItineraryDayBreakdown days={itinerary.days} />
+
+          {/* Packing List */}
+          {itinerary.packingList && itinerary.packingList.length > 0 && (
+            <div className="mt-12">
+              <PackingList items={itinerary.packingList} />
+            </div>
+          )}
+
+          {/* User Stories */}
+          {itinerary.userStories && itinerary.userStories.length > 0 && (
+            <div className="mt-12">
+              <UserStories stories={itinerary.userStories} />
+            </div>
+          )}
 
           {/* Action buttons */}
           <div className="flex flex-wrap gap-4 mt-12 pt-8 border-t border-gray-200">
             <button className="border border-teal rounded-full px-6 py-2.5 text-xs font-semibold tracking-widest-custom uppercase text-teal hover:bg-teal hover:text-white transition-colors cursor-not-allowed opacity-60">
               Save This Itinerary
             </button>
-            <button className="border border-gray-300 rounded-full px-6 py-2.5 text-xs font-semibold tracking-widest-custom uppercase text-gray-600 hover:bg-gray-100 transition-colors cursor-not-allowed opacity-60">
-              Adapt This Itinerary
-            </button>
+            {itinerary.adaptations && Object.keys(itinerary.adaptations).length > 0 && (
+              <AdaptItinerary itinerary={itinerary} />
+            )}
+            <ShareButtons title={itinerary.title} />
           </div>
 
           {/* Comments */}
@@ -171,6 +308,10 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
                     upvotes={r.upvotes}
                     commentCount={r.commentCount}
                     contributor={{ ...c, slug: r.contributorSlug }}
+                    travellerType={r.travellerType}
+                    endorsements={r.endorsements}
+                    photoCount={r.photos?.length}
+                    budgetLevel={r.costEstimate?.level}
                   />
                 );
               })}
