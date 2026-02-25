@@ -8,36 +8,42 @@ const CATEGORIES = {
   "Things To Do": [
     {
       title: "Adventure",
+      href: "/things-to-do/adventure-activities/",
       image:
         "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_1390,y_798/v1/clients/queenstownnz/Paradise_Ziplines_Please_use_SouthernWay_where_possible_5704037b-c6b5-47f4-9f70-bfe79ab644bf.jpg",
       alt: "Person ziplining with snow-covered mountain",
     },
     {
-      title: "Culture & Heritage",
-      image:
-        "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_2019,y_1539/v1/clients/queenstownnz/Picnic_by_historic_cottage_in_Macetown_Queenstown_196e80fd-60ba-4f36-96c0-590bd578cde9.jpg",
-      alt: "Picnic by historic cottage in Macetown",
-    },
-    {
-      title: "Biking",
-      image:
-        "https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=600&h=700&fit=crop",
-      alt: "Mountain bikers on Queenstown trails",
-    },
-    {
       title: "Walking & Hiking",
+      href: "/things-to-do/outdoor-activities/walking-and-hiking/",
       image:
         "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=700&fit=crop",
       alt: "Walkers on lakeside trail with mountains",
     },
     {
+      title: "Biking",
+      href: "/things-to-do/biking/",
+      image:
+        "https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=600&h=700&fit=crop",
+      alt: "Mountain bikers on Queenstown trails",
+    },
+    {
       title: "Family Fun",
+      href: "/things-to-do/family-fun/",
       image:
         "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_1210,y_880/v1/clients/queenstownnz/Family_at_Queenstown_Bay_Playground_1__eef16657-1ae9-42c6-acbf-38456b437a10.jpg",
       alt: "Family playing on a playground",
     },
     {
-      title: "Sightseeing",
+      title: "Skiing",
+      href: "/things-to-do/skiing-and-snowboarding/",
+      image:
+        "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=600&h=700&fit=crop",
+      alt: "Skiing in Queenstown",
+    },
+    {
+      title: "Events",
+      href: "/things-to-do/events/",
       image:
         "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_3212,y_1889/v1/clients/queenstownnz/Spirit_of_Queenstown_Scenic_Cruise_Southern_Discoveries_026754f4-87da-423e-a630-2a14f4b0c1cd.jpg",
       alt: "Spirit of Queenstown Scenic Cruise",
@@ -46,53 +52,61 @@ const CATEGORIES = {
   "Eat & Drink": [
     {
       title: "Restaurants",
+      href: "/places-to-eat-and-drink/restaurants/",
       image:
-        "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_1210,y_880/v1/clients/queenstownnz/Family_at_Queenstown_Bay_Playground_1__eef16657-1ae9-42c6-acbf-38456b437a10.jpg",
+        "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=700&fit=crop",
       alt: "Restaurant dining in Queenstown",
     },
     {
-      title: "Cafes",
+      title: "Cafes & Bakeries",
+      href: "/places-to-eat-and-drink/cafes-and-bakeries/",
       image:
-        "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_1430,y_1269/v1/clients/queenstownnz-redesign/Arrowtown_75ffc999-cb6e-4112-9f47-a1.jpg",
-      alt: "Cafe in Arrowtown",
+        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=700&fit=crop",
+      alt: "Cafe in Queenstown",
     },
     {
-      title: "Wineries & Breweries",
+      title: "Pubs, Bars & Clubs",
+      href: "/places-to-eat-and-drink/pubs-bars-and-clubs/",
+      image:
+        "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=600&h=700&fit=crop",
+      alt: "Queenstown nightlife",
+    },
+    {
+      title: "Wineries",
+      href: "/places-to-eat-and-drink/",
       image:
         "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_2019,y_1539/v1/clients/queenstownnz/Picnic_by_historic_cottage_in_Macetown_Queenstown_196e80fd-60ba-4f36-96c0-590bd578cde9.jpg",
       alt: "Wine tasting in Gibbston Valley",
     },
-    {
-      title: "Pubs & Bars",
-      image:
-        "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_3212,y_1889/v1/clients/queenstownnz/Spirit_of_Queenstown_Scenic_Cruise_Southern_Discoveries_026754f4-87da-423e-a630-2a14f4b0c1cd.jpg",
-      alt: "Queenstown nightlife",
-    },
   ],
   Accommodation: [
     {
-      title: "Hotels",
+      title: "Hotels & Resorts",
+      href: "/accommodation/hotels-and-resorts/",
       image:
-        "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_3439,y_4457/v1/clients/queenstownnz/Queenstown_Golf_Club_8__4de95f71-8986-4f98-bd7d-30d79056c6db.jpg",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=700&fit=crop",
       alt: "Luxury hotel in Queenstown",
     },
     {
-      title: "Holiday Rentals",
+      title: "Serviced Apartments",
+      href: "/accommodation/serviced-apartments/",
       image:
-        "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_1390,y_798/v1/clients/queenstownnz/Paradise_Ziplines_Please_use_SouthernWay_where_possible_5704037b-c6b5-47f4-9f70-bfe79ab644bf.jpg",
-      alt: "Holiday rental with mountain views",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&h=700&fit=crop",
+      alt: "Serviced apartment Queenstown",
     },
     {
-      title: "Lodges",
+      title: "Lodges & Retreats",
+      href: "/accommodation/lodges-and-retreats/",
       image:
-        "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_2019,y_1539/v1/clients/queenstownnz/Picnic_by_historic_cottage_in_Macetown_Queenstown_196e80fd-60ba-4f36-96c0-590bd578cde9.jpg",
+        "https://images.unsplash.com/photo-1587061949409-02df41d5e562?w=600&h=700&fit=crop",
       alt: "Luxury lodge accommodation",
     },
     {
-      title: "Backpackers",
+      title: "Motels",
+      href: "/accommodation/motels/",
       image:
-        "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_582,q_65,w_511,x_1210,y_880/v1/clients/queenstownnz/Family_at_Queenstown_Bay_Playground_1__eef16657-1ae9-42c6-acbf-38456b437a10.jpg",
-      alt: "Budget accommodation Queenstown",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=700&fit=crop",
+      alt: "Motel accommodation Queenstown",
     },
   ],
 };
@@ -162,7 +176,7 @@ export default function CategoryCards() {
             {cards.map((card) => (
               <a
                 key={card.title}
-                href="#"
+                href={card.href}
                 className="shrink-0 w-[280px] h-[350px] rounded-2xl overflow-hidden relative group cursor-pointer"
               >
                 <Image

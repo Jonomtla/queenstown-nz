@@ -6,6 +6,7 @@ const TRIPS = [
   {
     title: "Soak Up Summer in Queenstown - a 6-day Travel Itinerary",
     readTime: "9 min read",
+    href: "/stories/post/6-day-queenstown-slow-travel-itinerary/",
     excerpt:
       "Take the time to immerse yourself in Queenstown's natural beauty, connect with the locals, and...",
     image:
@@ -13,17 +14,19 @@ const TRIPS = [
     alt: "Hikers crossing suspension bridge on Queenstown Trail",
   },
   {
-    title: "7-day Queenstown Itinerary for Active Explorers",
-    readTime: "12 min read",
+    title: "A Local's Guide to the Queenstown Markets",
+    readTime: "7 min read",
+    href: "/stories/post/a-locals-guide-to-the-queenstown-markets/",
     excerpt:
-      "Here's your guide to seven days exploring the best of Queenstown's hiking, trail riding, mountain...",
+      "From artisan food to handmade crafts, discover Queenstown's vibrant market scene through the eyes of a local.",
     image:
-      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=600&fit=crop",
-    alt: "Panoramic mountain view while hiking near Queenstown",
+      "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=800&h=600&fit=crop",
+    alt: "Queenstown markets",
   },
   {
     title: "10 Things To Do in Queenstown This Summer",
     readTime: "14 min read",
+    href: "/stories/post/10-things-to-do-in-summer/",
     excerpt:
       "Long days spent enjoying summer in Queenstown... ten of the best activities for your visit.",
     image:
@@ -58,7 +61,7 @@ export default function TripIdeas() {
               make the most of your time in Queenstown.
             </p>
             <a
-              href="/itineraries"
+              href="/plan/itineraries/"
               className="inline-block mt-6 border border-gray-400 rounded-full px-8 py-3 text-sm font-semibold tracking-widest-custom uppercase text-gray-600 hover:bg-gray-50 transition-colors"
             >
               See All
@@ -94,7 +97,7 @@ export default function TripIdeas() {
               {TRIPS.map((trip) => (
                 <a
                   key={trip.title}
-                  href="#"
+                  href={trip.href}
                   className="shrink-0 w-[380px] group cursor-pointer"
                 >
                   <div className="relative h-[280px] rounded-xl overflow-hidden mb-4">

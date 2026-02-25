@@ -100,7 +100,7 @@ export default function EventsSection() {
             ))}
 
             <a
-              href="/events"
+              href="/things-to-do/events/"
               className="mt-6 bg-teal text-white font-semibold tracking-widest-custom uppercase text-sm px-8 py-4 rounded-full text-center hover:bg-teal-dark transition-colors"
             >
               Discover All Events

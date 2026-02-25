@@ -5,66 +5,52 @@ import Image from "next/image";
 const NAV_ITEMS = [
   {
     label: "Plan",
-    href: "/plan",
+    href: "/plan/",
     children: [
-      "Getting Here & Around",
-      "Maps & Visitor Guide",
-      "Seasons & Weather",
-      "Surrounding Region",
-      "Itineraries",
-      "Services",
-      "Accessibility",
-      "Weddings",
+      { label: "Getting Here & Around", href: "/plan/getting-here-and-getting-around/" },
+      { label: "Maps & Visitor Guide", href: "/plan/queenstown-maps-and-visitor-guides/" },
+      { label: "Travel Tips", href: "/plan/travel-tips/" },
+      { label: "Itineraries", href: "/plan/itineraries/" },
+      { label: "Arrowtown", href: "/plan/surrounding-region/arrowtown/" },
+      { label: "Glenorchy", href: "/plan/surrounding-region/glenorchy/" },
     ],
   },
   {
     label: "Things To Do",
-    href: "/things-to-do",
+    href: "/things-to-do/",
     children: [
-      "Adventure",
-      "Biking",
-      "Culture & Heritage",
-      "Events",
-      "Family Fun",
-      "Golf",
-      "Nightlife",
-      "Outdoor Activities",
-      "Shopping",
-      "Sightseeing",
-      "Skiing & Snowboarding",
-      "Walking & Hiking",
-      "Wellness & Beauty",
-      "Wineries & Breweries",
+      { label: "Adventure Activities", href: "/things-to-do/adventure-activities/" },
+      { label: "Bungy, Swing & Zip", href: "/things-to-do/adventure-activities/bungy-swing-and-zip/" },
+      { label: "Walking & Hiking", href: "/things-to-do/outdoor-activities/walking-and-hiking/" },
+      { label: "Biking", href: "/things-to-do/biking/" },
+      { label: "Skiing & Snowboarding", href: "/things-to-do/skiing-and-snowboarding/" },
+      { label: "Family Fun", href: "/things-to-do/family-fun/" },
+      { label: "Events", href: "/things-to-do/events/" },
+      { label: "Golf", href: "/things-to-do/golf/golf-courses/" },
+      { label: "Shopping", href: "/things-to-do/shopping/" },
+      { label: "Indoor Thrills", href: "/things-to-do/adventure-activities/indoor-thrills/" },
     ],
   },
   {
     label: "Accommodation",
-    href: "/accommodation",
+    href: "/accommodation/",
     children: [
-      "Backpackers",
-      "B&Bs",
-      "Holiday Parks",
-      "Holiday Rentals",
-      "Hotels",
-      "Lodges",
-      "Motels",
-      "Serviced Apartments",
+      { label: "Hotels & Resorts", href: "/accommodation/hotels-and-resorts/" },
+      { label: "Serviced Apartments", href: "/accommodation/serviced-apartments/" },
+      { label: "Lodges & Retreats", href: "/accommodation/lodges-and-retreats/" },
+      { label: "Motels", href: "/accommodation/motels/" },
     ],
   },
   {
     label: "Eat & Drink",
-    href: "/eat-drink",
+    href: "/places-to-eat-and-drink/",
     children: [
-      "Cafes",
-      "Dessert Shops",
-      "Pubs & Bars",
-      "Restaurants",
-      "Takeaways",
-      "Wineries",
-      "Breweries",
+      { label: "Restaurants", href: "/places-to-eat-and-drink/restaurants/" },
+      { label: "Cafes & Bakeries", href: "/places-to-eat-and-drink/cafes-and-bakeries/" },
+      { label: "Pubs, Bars & Clubs", href: "/places-to-eat-and-drink/pubs-bars-and-clubs/" },
     ],
   },
-  { label: "Inspiration", href: "/stories", children: [] },
+  { label: "Inspiration", href: "/stories/", children: [] },
 ];
 
 const SECONDARY_LINKS = [
@@ -132,11 +118,11 @@ export default function Header() {
                 <div className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-xl p-6 min-w-[250px] grid grid-cols-2 gap-2">
                   {item.children.map((child) => (
                     <a
-                      key={child}
-                      href="#"
+                      key={child.label}
+                      href={child.href}
                       className="text-gray-700 text-sm hover:text-teal transition-colors py-1"
                     >
-                      {child}
+                      {child.label}
                     </a>
                   ))}
                 </div>
@@ -185,15 +171,25 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-teal border-t border-white/10 px-6 py-4">
+        <div className="lg:hidden bg-teal border-t border-white/10 px-6 py-4 max-h-[80vh] overflow-y-auto">
           {NAV_ITEMS.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="block text-white text-sm font-semibold tracking-wider uppercase py-3 border-b border-white/10"
-            >
-              {item.label}
-            </a>
+            <div key={item.label} className="border-b border-white/10">
+              <a
+                href={item.href}
+                className="block text-white text-sm font-semibold tracking-wider uppercase py-3"
+              >
+                {item.label}
+              </a>
+              {item.children.length > 0 && (
+                <div className="pb-3 pl-4 flex flex-col gap-2">
+                  {item.children.map((child) => (
+                    <a key={child.label} href={child.href} className="text-white/70 text-xs uppercase tracking-wider hover:text-white">
+                      {child.label}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
           <div className="flex gap-4 mt-4 pt-4 border-t border-white/10">
             {SECONDARY_LINKS.map((link) => (
