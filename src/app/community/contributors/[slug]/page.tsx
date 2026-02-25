@@ -12,6 +12,7 @@ type Contributor = {
   name: string;
   avatar: string;
   type: "local" | "visitor" | "creator";
+  travellerProfile?: string;
   location?: string;
   bio: string;
   memberSince: string;
@@ -22,8 +23,10 @@ type Contributor = {
 const contributors = contributorsData as Record<string, Contributor>;
 const itineraries = itinerariesData as Record<string, {
   title: string; contributorSlug: string; tripDate: string; duration: string;
-  categories: string[]; season: string; summary: string; coverImage: string;
+  durationDays: number; travellerType: string; categories: string[];
+  season: string; summary: string; coverImage: string;
   upvotes: number; commentCount: number;
+  endorsements?: Record<string, number>;
 }>;
 const recommendations = recommendationsData as Record<string, {
   title: string; contributorSlug: string; category: string; season?: string;
@@ -90,6 +93,9 @@ export default async function ContributorPage({ params }: { params: Promise<{ sl
               </p>
             )}
             <p className="text-white/80 mt-3 max-w-2xl leading-relaxed">{contributor.bio}</p>
+            {contributor.travellerProfile && (
+              <p className="text-white/60 text-sm mt-2 italic">{contributor.travellerProfile}</p>
+            )}
             <div className="flex items-center gap-6 mt-4 text-sm text-white/50">
               <span>Member since {contributor.memberSince}</span>
               <span>{contributor.contributions} contributions</span>
@@ -132,6 +138,8 @@ export default async function ContributorPage({ params }: { params: Promise<{ sl
                     upvotes={it.upvotes}
                     commentCount={it.commentCount}
                     contributor={{ ...contributor, slug }}
+                    travellerType={it.travellerType}
+                    endorsements={it.endorsements}
                   />
                 ))}
               </div>

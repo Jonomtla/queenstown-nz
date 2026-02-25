@@ -9,8 +9,10 @@ type Contributor = { name: string; avatar: string; type: "local" | "visitor" | "
 const contributors = contributorsData as Record<string, Contributor>;
 const itineraries = itinerariesData as Record<string, {
   title: string; contributorSlug: string; tripDate: string; duration: string;
-  categories: string[]; season: string; summary: string; coverImage: string;
+  durationDays: number; travellerType: string; categories: string[];
+  season: string; summary: string; coverImage: string;
   upvotes: number; commentCount: number;
+  endorsements?: Record<string, number>;
 }>;
 const recommendations = recommendationsData as Record<string, {
   title: string; contributorSlug: string; category: string; season?: string;
@@ -83,6 +85,8 @@ export default function CommunityContentStrip({ category, heading, maxItems = 3 
                   upvotes={it.upvotes}
                   commentCount={it.commentCount}
                   contributor={{ ...contrib, slug: it.contributorSlug }}
+                  travellerType={it.travellerType}
+                  endorsements={it.endorsements}
                 />
               );
             }

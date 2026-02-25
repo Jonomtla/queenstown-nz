@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 type Place = { name: string; listingSlug?: string; href?: string };
 
@@ -53,6 +53,13 @@ const AGE_LABELS: Record<string, string> = {
 export default function AdaptItinerary({ itinerary }: { itinerary: Itinerary }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedAdaptation, setSelectedAdaptation] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+      return () => { document.body.style.overflow = ""; };
+    }
+  }, [isOpen]);
 
   const availableAdaptations = ADAPTATION_OPTIONS.filter(
     (opt) => itinerary.adaptations?.[opt.value]

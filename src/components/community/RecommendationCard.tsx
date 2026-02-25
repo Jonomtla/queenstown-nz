@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ContributorBadge from "./ContributorBadge";
@@ -199,6 +199,13 @@ function RecommendationModal({
 
 export default function RecommendationCard(props: RecommendationCardProps) {
   const [modalOpen, setModalOpen] = useState(false);
+
+  useEffect(() => {
+    if (modalOpen) {
+      document.body.style.overflow = "hidden";
+      return () => { document.body.style.overflow = ""; };
+    }
+  }, [modalOpen]);
   const { title, text, category, upvotes, commentCount, contributor, places } = props;
   const style = CATEGORY_STYLES[category] || { border: "border-l-gray-300" };
 
