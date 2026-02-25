@@ -1,0 +1,266 @@
+{
+  "fergburger-timing": {
+    "title": "How to Actually Avoid the Fergburger Queue",
+    "contributorSlug": "sarah-chen",
+    "category": "dining",
+    "season": "summer",
+    "text": "Everyone says 'go early' but here's the real intel: 7:30-8:30am and after 2pm are the sweet spots. Lunchtime (11am-1pm) is chaos, especially in summer. Also — Fergbaker next door has the same quality pastries and pies with zero queue. The venison pie is my go-to.",
+    "upvotes": 312,
+    "commentCount": 28,
+    "date": "2025-08-15",
+    "places": [
+      { "name": "Fergburger", "listingSlug": "fergburger" },
+      { "name": "Fergbaker", "listingSlug": "fergbaker" }
+    ],
+    "comments": [
+      { "author": "Matt Wilson", "authorSlug": "matt-wilson", "authorType": "local", "date": "2025-08-16", "text": "Can confirm — 2pm is the sweet spot. I also rate the Little Lamby burger if you haven't tried it." },
+      { "author": "Emma & James", "authorSlug": "emma-james", "authorType": "visitor", "date": "2025-08-18", "text": "We went at 8am on a Tuesday and walked straight in. Fergbaker venison pie is incredible, the kids loved it too." }
+    ]
+  },
+  "remarkables-chains": {
+    "title": "Don't Drive to The Remarkables Without Chains",
+    "contributorSlug": "matt-wilson",
+    "category": "skiing",
+    "season": "winter",
+    "text": "The access road to The Remarkables is steep, winding, and often icy. Even with a 4WD, carry chains from June to September. You can hire them from most service stations in Frankton. The road gets closed regularly after snowfall — check the Remarkables website before leaving. And give yourself an extra 30 minutes for the drive; it takes longer than you think in winter conditions.",
+    "upvotes": 245,
+    "commentCount": 15,
+    "date": "2025-06-20",
+    "places": [
+      { "name": "The Remarkables", "listingSlug": "the-remarkables-ski" }
+    ],
+    "comments": [
+      { "author": "Alex Brooks", "authorSlug": "alex-brooks", "authorType": "visitor", "date": "2025-06-22", "text": "Learned this the hard way. Got stuck behind someone without chains for 45 minutes. Hire them from the BP in Frankton — cheapest option." },
+      { "author": "Tane Hikuroa", "authorSlug": "tane-hikuroa", "authorType": "local", "date": "2025-06-25", "text": "Also worth noting — the road can be closed even when it looks fine in town. Always check the app before you leave." }
+    ]
+  },
+  "best-sunset-spot": {
+    "title": "The Best Free Sunset Viewpoint Nobody Talks About",
+    "contributorSlug": "nina-patel",
+    "category": "photography",
+    "text": "Everyone goes to the Skyline for sunset, but the view from the Queenstown Gardens pier is free and arguably better. You get the full panorama — The Remarkables, Cecil Peak, and the town lights reflecting in the lake. Bring a blanket and a bottle of Central Otago pinot. You're welcome.",
+    "upvotes": 289,
+    "commentCount": 22,
+    "date": "2025-04-10",
+    "places": [
+      { "name": "Queenstown Gardens", "listingSlug": "queenstown-gardens-trail" }
+    ],
+    "comments": [
+      { "author": "Jess Taylor", "authorSlug": "jess-taylor", "authorType": "creator", "date": "2025-04-12", "text": "This is my go-to sunset spot too. The reflections on a calm evening are unreal. Shhh don't tell everyone 😄" },
+      { "author": "Sarah Chen", "authorSlug": "sarah-chen", "authorType": "local", "date": "2025-04-14", "text": "The gardens pier in autumn with the golden poplars is next level. Best kept secret in town." }
+    ]
+  },
+  "glenorchy-sandflies": {
+    "title": "Glenorchy Sandfly Survival Guide",
+    "contributorSlug": "emma-james",
+    "category": "outdoor",
+    "season": "summer",
+    "text": "Glenorchy is paradise until the sandflies find you. Bring industrial-strength repellent (the NZ brand 'Goodbye Sandfly' works best), wear long sleeves near water, and avoid standing still near the lagoon after 4pm. The kids learned this the hard way — covered in bites for a week. On the bright side, sandflies don't follow you onto the water.",
+    "upvotes": 198,
+    "commentCount": 31,
+    "date": "2025-01-22",
+    "places": [
+      { "name": "Glenorchy Lagoon Walkway", "listingSlug": "glenorchy-lagoon-walkway" }
+    ],
+    "comments": [
+      { "author": "Matt Wilson", "authorSlug": "matt-wilson", "authorType": "local", "date": "2025-01-23", "text": "Pro tip: Avon Skin So Soft actually works as sandfly repellent. Old tramping trick." },
+      { "author": "Nina Patel", "authorSlug": "nina-patel", "authorType": "creator", "date": "2025-01-25", "text": "I shoot there regularly and can confirm — after 4pm is brutal. Morning is much better for both light and sandflies." }
+    ]
+  },
+  "free-things-queenstown": {
+    "title": "10 Amazing Free Things to Do in Queenstown",
+    "contributorSlug": "jess-taylor",
+    "category": "budget",
+    "text": "Queenstown doesn't have to be expensive: 1) Queenstown Gardens walk 2) Queenstown Hill sunrise hike 3) Lake Hayes loop walk 4) Glenorchy drive (just petrol cost) 5) Arrowtown Chinese settlement 6) Bob's Cove nature walk 7) Disc golf in the Gardens (bring your own disc) 8) Swim at Sunshine Bay beach 9) Walk the Frankton Track along the lake 10) Watch the sunset from the pier. That's a week of incredible experiences for essentially free.",
+    "upvotes": 456,
+    "commentCount": 42,
+    "date": "2025-03-01",
+    "places": [
+      { "name": "Queenstown Gardens", "listingSlug": "queenstown-gardens-trail" },
+      { "name": "Queenstown Hill", "listingSlug": "queenstown-hill-time-walk" },
+      { "name": "Lake Hayes", "listingSlug": "lake-hayes-loop-track" },
+      { "name": "Bob's Cove", "listingSlug": "bobs-cove-track" }
+    ],
+    "comments": [
+      { "author": "Alex Brooks", "authorSlug": "alex-brooks", "authorType": "visitor", "date": "2025-03-05", "text": "Sunshine Bay beach was my favourite find. Crystal clear water and barely anyone there on a weekday." },
+      { "author": "Tane Hikuroa", "authorSlug": "tane-hikuroa", "authorType": "local", "date": "2025-03-08", "text": "Great list! I'd add the Kelvin Heights sculpture trail — free, beautiful, and most visitors have no idea it exists." },
+      { "author": "Emma & James", "authorSlug": "emma-james", "authorType": "visitor", "date": "2025-03-10", "text": "The disc golf in the Gardens was a surprise hit with our kids. You can buy cheap discs from the sports shop on Shotover St." }
+    ]
+  },
+  "best-coffee-locals": {
+    "title": "Where Locals Actually Get Coffee (Not Where Tourists Go)",
+    "contributorSlug": "sarah-chen",
+    "category": "dining",
+    "text": "Tourist coffee: Starbucks on the mall (yes, people actually go there). Local coffee: Vudu on the waterfront, Bespoke Kitchen in Searle Lane, or Yonder on Church Street. If you're in Frankton, hit up The Boat Shed. Each one roasts or sources differently — Vudu is bold, Bespoke is smooth, Yonder is specialty. Skip the chains.",
+    "upvotes": 234,
+    "commentCount": 19,
+    "date": "2025-05-08",
+    "places": [
+      { "name": "Vudu Cafe", "listingSlug": "vudu-cafe" },
+      { "name": "Bespoke Kitchen", "listingSlug": "bespoke-kitchen" }
+    ],
+    "comments": [
+      { "author": "Mike Fraser", "authorSlug": "mike-fraser", "authorType": "local", "date": "2025-05-10", "text": "Yonder is legit the best coffee in town. Their filter menu changes weekly and it's always excellent." },
+      { "author": "Jess Taylor", "authorSlug": "jess-taylor", "authorType": "creator", "date": "2025-05-12", "text": "As a fellow local I endorse this entire list. Would also add the coffee cart at the Saturday market — surprisingly good." }
+    ]
+  },
+  "winter-driving-tips": {
+    "title": "Winter Driving in Queenstown: What You Need to Know",
+    "contributorSlug": "tane-hikuroa",
+    "category": "transport",
+    "season": "winter",
+    "text": "The Crown Range to Wanaka, the road to The Remarkables, and the road past Arrowtown to Macetown are all serious winter driving roads. Always check road conditions on the NZTA website before heading out. Carry chains (most rental companies offer them), leave earlier than you think, and don't tailgate — black ice is invisible. If you're not confident, take the longer route via Cromwell instead of the Crown Range.",
+    "upvotes": 187,
+    "commentCount": 11,
+    "date": "2025-05-25",
+    "places": [],
+    "comments": [
+      { "author": "Matt Wilson", "authorSlug": "matt-wilson", "authorType": "local", "date": "2025-05-27", "text": "The Crown Range in winter is genuinely scary if you're not used to it. The Cromwell route adds 30 min but it's so much safer." }
+    ]
+  },
+  "bungy-first-timer": {
+    "title": "First-Time Bungy? Here's What Nobody Tells You",
+    "contributorSlug": "alex-brooks",
+    "category": "adventure",
+    "text": "I was terrified. Here's what helped: 1) The Kawarau Bridge (43m) is the best first bungy — not too high, spectacular setting 2) Don't look down from the platform — look at the mountains 3) Go in the morning when you're fresh, not after psyching yourself out all day 4) The scariest part is the 3-2-1 countdown, not the fall 5) You'll want to do it again immediately. Also, the staff are incredible — they'll talk you through everything and never pressure you.",
+    "upvotes": 176,
+    "commentCount": 24,
+    "date": "2025-02-14",
+    "places": [
+      { "name": "AJ Hackett Bungy", "listingSlug": "aj-hackett-bungy" }
+    ],
+    "comments": [
+      { "author": "Jess Taylor", "authorSlug": "jess-taylor", "authorType": "creator", "date": "2025-02-16", "text": "Point 4 is so true — the countdown is the worst bit. Once you're falling it's pure euphoria. I've done it 6 times now." },
+      { "author": "Emma & James", "authorSlug": "emma-james", "authorType": "visitor", "date": "2025-02-18", "text": "James did this while I watched from the viewing platform. He said the same thing — the fear is all in the waiting, not the jump." }
+    ]
+  },
+  "arrowtown-autumn-timing": {
+    "title": "When to Visit Arrowtown for Peak Autumn Colour",
+    "contributorSlug": "nina-patel",
+    "category": "photography",
+    "season": "autumn",
+    "text": "The autumn colour window is surprisingly short — usually 2-3 weeks in mid-to-late April. The trees along the Arrow River change first, then Buckingham Street, then the residential streets. For the absolute peak, aim for April 15-25. Too early and it's still green; too late and the leaves are on the ground. The Autumn Festival (usually third weekend of April) is timed perfectly.",
+    "upvotes": 267,
+    "commentCount": 18,
+    "date": "2025-04-20",
+    "places": [
+      { "name": "Arrowtown River Trail", "listingSlug": "arrowtown-river-trail" }
+    ],
+    "comments": [
+      { "author": "Sarah Chen", "authorSlug": "sarah-chen", "authorType": "local", "date": "2025-04-22", "text": "April 20 this year was absolutely perfect. The whole avenue was gold. Best I've seen in 12 years." },
+      { "author": "Alex Brooks", "authorSlug": "alex-brooks", "authorType": "visitor", "date": "2025-04-25", "text": "I visited late April and caught the tail end — still beautiful but some trees were bare. Next time I'm aiming for the 15th." }
+    ]
+  },
+  "lake-hayes-morning": {
+    "title": "Lake Hayes at Dawn is a Different Planet",
+    "contributorSlug": "jess-taylor",
+    "category": "outdoor",
+    "season": "autumn",
+    "text": "Set your alarm. I know, you're on holiday. But Lake Hayes at 6:30am in autumn will give you one of the most beautiful moments of your life. Dead calm water, mirror reflections of the mountains, golden light, absolute silence. It only lasts about 30 minutes before the wind picks up. The carpark on Arrowtown-Lake Hayes Road has the best vantage point.",
+    "upvotes": 198,
+    "commentCount": 14,
+    "date": "2025-04-15",
+    "places": [
+      { "name": "Lake Hayes Loop Track", "listingSlug": "lake-hayes-loop-track" }
+    ],
+    "comments": [
+      { "author": "Nina Patel", "authorSlug": "nina-patel", "authorType": "creator", "date": "2025-04-17", "text": "This is my #1 photo spot in the region. The reflections on a dead calm morning are unbelievable." },
+      { "author": "Matt Wilson", "authorSlug": "matt-wilson", "authorType": "local", "date": "2025-04-18", "text": "Also great for a morning run — the full loop is about 8km and flat. Stunning at sunrise." }
+    ]
+  },
+  "wine-region-guide": {
+    "title": "Central Otago Wine: A Quick Primer",
+    "contributorSlug": "mike-fraser",
+    "category": "dining",
+    "season": "autumn",
+    "text": "Central Otago is the world's southernmost wine region, and it produces exceptional pinot noir. The Gibbston Valley (25 min from Queenstown) is the easiest to visit — try Gibbston Valley Winery's cave tasting. For a longer trip, Bannockburn and Cromwell wineries are next level. Top picks: Amisfield (stunning setting), Peregrine (great architecture), Mt Difficulty (bold wines). Most tastings are $10-15 and often waived if you buy. Don't drive — book a wine tour or use a designated driver.",
+    "upvotes": 156,
+    "commentCount": 12,
+    "date": "2025-03-20",
+    "places": [],
+    "comments": [
+      { "author": "Sarah Chen", "authorSlug": "sarah-chen", "authorType": "local", "date": "2025-03-22", "text": "Amisfield's bistro lunch paired with their wines is one of the best dining experiences in the region. Don't skip it." },
+      { "author": "Jess Taylor", "authorSlug": "jess-taylor", "authorType": "creator", "date": "2025-03-25", "text": "The Gibbston Valley cave tour is a really unique experience. Cool temperature underground year-round and you learn a lot." }
+    ]
+  },
+  "hiking-gear-rental": {
+    "title": "Don't Buy Hiking Gear — Rent It",
+    "contributorSlug": "matt-wilson",
+    "category": "outdoor",
+    "text": "If you're visiting for a week and want to do serious hikes, rent your gear instead of buying. Small Planet Sports on Shotover Street rents quality boots, packs, poles, and rain jackets for reasonable daily rates. Way better than buying cheap gear from the $2 shops that'll fall apart on Ben Lomond. Your feet will thank you.",
+    "upvotes": 145,
+    "commentCount": 8,
+    "date": "2025-01-10",
+    "places": [],
+    "comments": [
+      { "author": "Alex Brooks", "authorSlug": "alex-brooks", "authorType": "visitor", "date": "2025-01-12", "text": "Wish I'd known this before buying $40 boots that gave me blisters on day one. Rented proper Salomons for my last 3 hikes and it was a game changer." }
+    ]
+  },
+  "shotover-jet-tips": {
+    "title": "Shotover Jet: Tips for the Best Experience",
+    "contributorSlug": "emma-james",
+    "category": "adventure",
+    "text": "Book the first morning trip (usually 9am) for the best light in the canyon and smaller crowds. Sit at the front for maximum thrill, back for slightly less spray. Leave your phone in the locker — the waterproof GoPro footage they sell is better than anything you'd film on a wet phone. And wear the splash jacket they give you, even on a sunny day. You WILL get wet.",
+    "upvotes": 134,
+    "commentCount": 10,
+    "date": "2025-01-28",
+    "places": [
+      { "name": "Shotover Jet", "listingSlug": "shotover-jet" }
+    ],
+    "comments": [
+      { "author": "Matt Wilson", "authorSlug": "matt-wilson", "authorType": "local", "date": "2025-01-30", "text": "Front row is absolutely the way to go. The 360 spins from the front are next level." },
+      { "author": "Alex Brooks", "authorSlug": "alex-brooks", "authorType": "visitor", "date": "2025-02-01", "text": "Bought the GoPro footage and it was totally worth it. Way better than my shaky phone would have managed." }
+    ]
+  },
+  "family-restaurant-guide": {
+    "title": "Best Queenstown Restaurants That Actually Welcome Kids",
+    "contributorSlug": "emma-james",
+    "category": "family",
+    "text": "Not every 'family-friendly' restaurant actually wants your kids there. These ones genuinely do: Flame Bar & Grill (great kids menu, relaxed vibe), Stratosfare (buffet = fussy eater heaven), Fergburger (fast, casual, universally loved), and Bespoke Kitchen for brunch (they have colouring sheets). Avoid fine dining places before 7pm — the eye rolls aren't worth it.",
+    "upvotes": 189,
+    "commentCount": 16,
+    "date": "2025-02-05",
+    "places": [
+      { "name": "Flame Bar & Grill", "listingSlug": "flame-bar-grill" },
+      { "name": "Stratosfare", "listingSlug": "stratosfare-restaurant" },
+      { "name": "Fergburger", "listingSlug": "fergburger" },
+      { "name": "Bespoke Kitchen", "listingSlug": "bespoke-kitchen" }
+    ],
+    "comments": [
+      { "author": "Sarah Chen", "authorSlug": "sarah-chen", "authorType": "local", "date": "2025-02-07", "text": "As a cafe owner I appreciate this list! Bespoke Kitchen genuinely loves having families in. It's part of their vibe." },
+      { "author": "Jess Taylor", "authorSlug": "jess-taylor", "authorType": "creator", "date": "2025-02-10", "text": "Would add Yonder to this — they have a great kids corner and the food is incredible for adults too." }
+    ]
+  },
+  "skyline-luge-hack": {
+    "title": "The Skyline Luge Hack Every Parent Needs",
+    "contributorSlug": "jess-taylor",
+    "category": "family",
+    "text": "Buy the 5-ride combo, not the 3-ride. Trust me. Every single kid wants 'just one more go.' The scenic track is gentle enough for 5-year-olds with an adult, and the advanced track adds enough speed to thrill older kids without terrifying parents. Pro tip: go late afternoon (after 3pm) when the morning tour groups have left. Way shorter queues.",
+    "upvotes": 167,
+    "commentCount": 13,
+    "date": "2025-12-18",
+    "places": [
+      { "name": "Skyline Queenstown", "listingSlug": "skyline-queenstown" }
+    ],
+    "comments": [
+      { "author": "Emma & James", "authorSlug": "emma-james", "authorType": "visitor", "date": "2025-12-20", "text": "Can confirm — we bought the 3-ride and immediately wished we'd got the 5. Ended up buying extra rides at the top which cost more." },
+      { "author": "Sarah Chen", "authorSlug": "sarah-chen", "authorType": "local", "date": "2025-12-22", "text": "Late afternoon is also when the light is best for photos from the top. Win-win." }
+    ]
+  },
+  "ben-lomond-prep": {
+    "title": "Ben Lomond: Don't Underestimate This Hike",
+    "contributorSlug": "matt-wilson",
+    "category": "hiking",
+    "text": "Every season I see unprepared tourists attempting Ben Lomond in sneakers with a 500ml water bottle. It's a proper alpine hike — 1438m elevation, 6-8 hours return, exposed above the treeline. You need: proper boots, 2L+ water, sun protection, warm layers (it's always colder at the top), food, and rain gear. Check the weather forecast. If cloud's below the summit, don't go — the track above the saddle is exposed and navigation in cloud is dangerous. Save it for a clear day.",
+    "upvotes": 278,
+    "commentCount": 20,
+    "date": "2025-01-05",
+    "places": [
+      { "name": "Ben Lomond Track", "listingSlug": "ben-lomond-track" }
+    ],
+    "comments": [
+      { "author": "Alex Brooks", "authorSlug": "alex-brooks", "authorType": "visitor", "date": "2025-01-08", "text": "I did this hike in proper gear and it was still tough. The last section to the summit is legit scrambling. But the views — absolutely worth every step." },
+      { "author": "Tane Hikuroa", "authorSlug": "tane-hikuroa", "authorType": "local", "date": "2025-01-10", "text": "Please listen to Matt on this one. SAR gets called out too often for unprepared hikers on Ben Lomond. It's a real mountain." }
+    ]
+  }
+}

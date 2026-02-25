@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import listings from "@/data/listings.json";
+import CommunityContentStrip from "@/components/community/CommunityContentStrip";
 
 interface CategoryData {
   title: string;
@@ -123,6 +124,12 @@ export default function CategoryTemplate({ category, breadcrumbs }: { category: 
           </div>
         </section>
       )}
+
+      {/* Community content strip */}
+      <CommunityContentStrip
+        category={category.title.split(" ")[0].toLowerCase()}
+        heading={`What Locals Are Saying About ${category.title.replace(/in Queenstown/i, "").trim()}`}
+      />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import listings from "@/data/listings.json";
+import itinerariesData from "@/data/community-itineraries.json";
 
 interface ListingData {
   id: string;
@@ -21,6 +22,26 @@ interface ListingData {
 }
 
 const listingsData = listings as Record<string, ListingData>;
+
+const communityItineraries = itinerariesData as Record<string, {
+  title: string;
+  days: { segments: { places: { listingSlug?: string }[] }[] }[];
+}>;
+
+function countItineraryMentions(listingSlug: string): number {
+  let count = 0;
+  for (const it of Object.values(communityItineraries)) {
+    for (const day of it.days) {
+      for (const seg of day.segments) {
+        if (seg.places.some((p) => p.listingSlug === listingSlug)) {
+          count++;
+          break; // Count each itinerary only once
+        }
+      }
+    }
+  }
+  return count;
+}
 
 export default function ListingTemplate({ listing }: { listing: ListingData }) {
   const related = listing.relatedListings
@@ -56,9 +77,22 @@ export default function ListingTemplate({ listing }: { listing: ListingData }) {
         <div className="container-wide grid lg:grid-cols-[1fr_380px] gap-12">
           {/* Main content */}
           <div>
-            <span className="inline-block bg-copper/10 text-copper text-xs font-semibold tracking-widest-custom uppercase px-4 py-1.5 rounded-full">
-              {listing.type}
-            </span>
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="inline-block bg-copper/10 text-copper text-xs font-semibold tracking-widest-custom uppercase px-4 py-1.5 rounded-full">
+                {listing.type}
+              </span>
+              {countItineraryMentions(listing.slug) > 0 && (
+                <Link
+                  href="/community/"
+                  className="inline-flex items-center gap-1 bg-teal/10 text-teal text-xs font-semibold tracking-widest-custom uppercase px-4 py-1.5 rounded-full hover:bg-teal/20 transition-colors"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0" />
+                  </svg>
+                  Mentioned in {countItineraryMentions(listing.slug)} {countItineraryMentions(listing.slug) === 1 ? "itinerary" : "itineraries"}
+                </Link>
+              )}
+            </div>
             <h1 className="text-3xl md:text-5xl font-bold text-teal mt-4 tracking-widest-custom uppercase leading-tight">
               {listing.title}
             </h1>

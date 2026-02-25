@@ -51,6 +51,16 @@ const NAV_ITEMS = [
     ],
   },
   { label: "Inspiration", href: "/stories/", children: [] },
+  {
+    label: "Community",
+    href: "/community/",
+    children: [
+      { label: "All Itineraries", href: "/community/" },
+      { label: "Winter Guide", href: "/community/category/winter/" },
+      { label: "Family", href: "/community/category/family/" },
+      { label: "Dining Guide", href: "/community/category/dining/" },
+    ],
+  },
 ];
 
 const SECONDARY_LINKS = [
