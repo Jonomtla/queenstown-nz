@@ -60,6 +60,7 @@ function PillGroup({
         <button
           key={item.value}
           onClick={() => onChange(item.value)}
+          aria-pressed={active === item.value}
           className={`text-xs font-semibold tracking-widest-custom uppercase px-4 py-2 rounded-full transition-colors ${
             active === item.value
               ? "bg-teal text-white"

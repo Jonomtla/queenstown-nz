@@ -122,7 +122,7 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
         onSortChange={setActiveSort}
       />
 
-      <div className="mt-8 grid md:grid-cols-2 gap-6">
+      <div className="mt-8 grid md:grid-cols-2 gap-6" aria-live="polite">
         {filteredItems.map((item) => {
           if (item.type === "itinerary") {
             const it = itineraries[item.slug];

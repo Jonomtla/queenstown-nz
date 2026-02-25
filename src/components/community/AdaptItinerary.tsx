@@ -81,19 +81,20 @@ export default function AdaptItinerary({ itinerary }: { itinerary: Itinerary }) 
       </button>
 
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-          <div className="absolute inset-0 bg-black/50" onClick={() => setIsOpen(false)} />
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="adapt-modal-title">
+          <div className="absolute inset-0 bg-black/50" onClick={() => { setIsOpen(false); setSelectedAdaptation(null); }} />
           <div className="relative bg-white rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto shadow-2xl">
             {/* Header */}
             <div className="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 rounded-t-2xl flex items-center justify-between">
-              <h2 className="text-lg font-bold text-teal tracking-widest-custom uppercase">
+              <h2 id="adapt-modal-title" className="text-lg font-bold text-teal tracking-widest-custom uppercase">
                 Adapt This Itinerary
               </h2>
               <button
-                onClick={() => setIsOpen(false)}
+                onClick={() => { setIsOpen(false); setSelectedAdaptation(null); }}
+                aria-label="Close dialog"
                 className="text-gray-400 hover:text-gray-600 transition-colors"
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
@@ -171,7 +172,11 @@ export default function AdaptItinerary({ itinerary }: { itinerary: Itinerary }) 
                     ))}
                   </div>
 
-                  <button className="w-full mt-6 bg-gray-200 text-gray-500 rounded-full px-6 py-3 text-xs font-semibold tracking-widest-custom uppercase cursor-not-allowed">
+                  <button
+                    disabled
+                    title="This feature is coming soon — you'll be able to save and share adapted itineraries"
+                    className="w-full mt-6 bg-gray-200 text-gray-500 rounded-full px-6 py-3 text-xs font-semibold tracking-widest-custom uppercase cursor-not-allowed"
+                  >
                     Save Adapted Version (Coming Soon)
                   </button>
                 </div>

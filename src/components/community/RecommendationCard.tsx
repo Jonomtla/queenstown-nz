@@ -65,6 +65,9 @@ function RecommendationModal({
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8"
       onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="rec-modal-title"
     >
       {/* Backdrop */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
@@ -77,9 +80,10 @@ function RecommendationModal({
         {/* Close button */}
         <button
           onClick={onClose}
+          aria-label="Close dialog"
           className="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors z-10"
         >
-          <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
@@ -93,7 +97,7 @@ function RecommendationModal({
             <UpvoteButton count={upvotes} />
           </div>
 
-          <h2 className="text-xl md:text-2xl font-bold text-teal leading-snug">{title}</h2>
+          <h2 id="rec-modal-title" className="text-xl md:text-2xl font-bold text-teal leading-snug">{title}</h2>
 
           {/* Author */}
           <div className="mt-4">
@@ -138,6 +142,10 @@ function RecommendationModal({
             <h3 className="text-sm font-bold tracking-widest-custom uppercase text-teal mb-5">
               Comments ({commentCount})
             </h3>
+
+            {(!comments || comments.length === 0) && (
+              <p className="text-sm text-gray-400 mb-6">No comments yet. Be the first to share your thoughts.</p>
+            )}
 
             {comments && comments.length > 0 && (
               <div className="space-y-5 mb-6">
@@ -221,7 +229,7 @@ export default function RecommendationCard(props: RecommendationCardProps) {
           </span>
           <UpvoteButton count={upvotes} />
         </div>
-        <h3 className="text-base font-bold text-teal leading-snug">{title}</h3>
+        <h3 className="text-base font-bold text-teal leading-snug line-clamp-2">{title}</h3>
         <p className="text-gray-600 text-sm mt-2 leading-relaxed line-clamp-4">{text}</p>
 
         {places && places.length > 0 && (
@@ -256,9 +264,10 @@ export default function RecommendationCard(props: RecommendationCardProps) {
           />
           <button
             onClick={(e) => { e.stopPropagation(); setModalOpen(true); }}
+            aria-label={`${commentCount} comments — view details`}
             className="inline-flex items-center gap-1.5 text-xs text-gray-400 hover:text-teal transition-colors"
           >
-            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"

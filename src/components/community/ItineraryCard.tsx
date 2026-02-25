@@ -103,7 +103,7 @@ export default function ItineraryCard({
           <div className="flex items-center gap-2">
             {traveller && (
               <span className="inline-flex items-center gap-1 text-[10px] font-semibold tracking-widest-custom uppercase text-teal bg-teal/10 px-2.5 py-1 rounded-full">
-                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={traveller.icon} />
                 </svg>
                 {traveller.label}
@@ -121,7 +121,7 @@ export default function ItineraryCard({
         )}
 
         <Link href={`/community/${slug}/`}>
-          <h3 className="text-lg font-bold text-teal mt-1 group-hover:text-teal-light transition-colors">
+          <h3 className="text-lg font-bold text-teal mt-1 group-hover:text-teal-light transition-colors line-clamp-2">
             {title}
           </h3>
         </Link>
@@ -136,8 +136,8 @@ export default function ItineraryCard({
 
         <div className="flex items-center justify-between mt-4 pt-3 border-t border-gray-200">
           <UpvoteButton count={upvotes} />
-          <span className="inline-flex items-center gap-1.5 text-sm text-gray-500">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <span className="inline-flex items-center gap-1.5 text-sm text-gray-500" aria-label={`${commentCount} comments`}>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"

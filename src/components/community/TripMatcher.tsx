@@ -42,10 +42,11 @@ function MatcherPill({
   return (
     <button
       onClick={onClick}
+      aria-pressed={active}
       className={`text-xs font-semibold tracking-widest-custom uppercase px-4 py-2 rounded-full transition-colors ${
         active
           ? "bg-white text-teal"
-          : "bg-white/20 text-white hover:bg-white/30"
+          : "bg-white/30 text-white hover:bg-white/40"
       }`}
     >
       {label}
