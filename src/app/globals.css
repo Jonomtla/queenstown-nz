@@ -24,49 +24,42 @@
   --font-serif: Georgia, "Publico Text", "Times New Roman", serif;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-body);
+    background: var(--color-white);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
 }
 
-body {
-  font-family: var(--font-sans);
-  color: var(--color-body);
-  background: var(--color-white);
-  font-size: 16px;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+@layer utilities {
+  .tracking-widest-custom {
+    letter-spacing: 0.2em;
+  }
+
+  .container-wide {
+    max-width: 1568px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-}
+@layer base {
+  .prose h2 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
 
-.tracking-widest-custom {
-  letter-spacing: 0.2em;
-}
-
-.container-wide {
-  max-width: 1568px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Prose overrides for story body content */
-.prose h2 {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
-}
-
-.prose p {
-  margin-bottom: 1.25rem;
-}
-
-/* Smooth accordion animation */
-.accordion-content {
-  overflow: hidden;
-  transition: max-height 0.3s ease;
+  .prose p {
+    margin-bottom: 1.25rem;
+  }
 }
