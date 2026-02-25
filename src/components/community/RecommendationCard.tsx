@@ -56,7 +56,7 @@ const CATEGORY_STYLES: Record<string, { border: string }> = {
   culture: { border: "border-l-copper" },
 };
 
-function RecommendationModal(props: RecommendationCardProps & { onClose: () => void }) {
+function RecommendationModal(props: RecommendationCardProps & { onClose: () => void; onPhotoClick: (index: number) => void }) {
   const { title, text, category, upvotes, commentCount, contributor, places, comments, onClose } = props;
   const style = CATEGORY_STYLES[category] || { border: "border-l-gray-300" };
 
@@ -112,16 +112,16 @@ function RecommendationModal(props: RecommendationCardProps & { onClose: () => v
           {/* Full text */}
           <p className="text-gray-600 text-base mt-6 leading-relaxed">{text}</p>
 
-          {/* Photo strip in modal — larger */}
+          {/* Photo strip in modal — larger, clickable */}
           {props.photos && props.photos.length > 0 && (
             <div className="flex gap-2 mt-4 overflow-x-auto pb-2">
               {props.photos.map((photo, i) => (
-                <div key={i} className="relative w-28 h-20 rounded-lg overflow-hidden shrink-0">
+                <button key={i} onClick={() => props.onPhotoClick(i)} className="relative w-28 h-20 rounded-lg overflow-hidden shrink-0 hover:ring-2 hover:ring-teal transition-all">
                   <Image src={photo.src} alt={photo.caption} fill className="object-cover" unoptimized />
                   <div className="absolute bottom-0 left-0 right-0 bg-black/40 px-1.5 py-0.5">
                     <p className="text-[9px] text-white truncate">{photo.caption}</p>
                   </div>
-                </div>
+                </button>
               ))}
             </div>
           )}
@@ -218,15 +218,54 @@ function RecommendationModal(props: RecommendationCardProps & { onClose: () => v
   );
 }
 
+function PhotoLightbox({ photos, initialIndex, onClose }: { photos: Photo[]; initialIndex: number; onClose: () => void }) {
+  const [current, setCurrent] = useState(initialIndex);
+  const prev = () => setCurrent((c) => (c === 0 ? photos.length - 1 : c - 1));
+  const next = () => setCurrent((c) => (c === photos.length - 1 ? 0 : c + 1));
+
+  return (
+    <div className="fixed inset-0 z-[200] bg-black/90 flex items-center justify-center" onClick={onClose}>
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white z-10"
+        aria-label="Close"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div className="relative w-full max-w-4xl h-[75vh] mx-4" onClick={(e) => e.stopPropagation()}>
+        <Image src={photos[current].src} alt={photos[current].caption} fill className="object-contain" unoptimized />
+        <div className="absolute bottom-4 left-0 right-0 text-center">
+          <p className="text-white text-sm bg-black/40 inline-block px-4 py-2 rounded-full">
+            {photos[current].caption} — {current + 1} / {photos.length}
+          </p>
+        </div>
+        {photos.length > 1 && (
+          <>
+            <button onClick={prev} className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white" aria-label="Previous">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+            </button>
+            <button onClick={next} className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white" aria-label="Next">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function RecommendationCard(props: RecommendationCardProps) {
   const [modalOpen, setModalOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   useEffect(() => {
-    if (modalOpen) {
+    if (modalOpen || lightboxIndex !== null) {
       document.body.style.overflow = "hidden";
       return () => { document.body.style.overflow = ""; };
     }
-  }, [modalOpen]);
+  }, [modalOpen, lightboxIndex]);
   const { title, text, category, upvotes, commentCount, contributor, places } = props;
   const style = CATEGORY_STYLES[category] || { border: "border-l-gray-300" };
 
@@ -247,11 +286,11 @@ export default function RecommendationCard(props: RecommendationCardProps) {
 
         {/* Google Reviews-style photo strip */}
         {props.photos && props.photos.length > 0 && (
-          <div className="flex gap-1.5 mt-3 overflow-x-auto -mx-1 px-1 pb-1">
+          <div className="flex gap-1.5 mt-3 overflow-x-auto -mx-1 px-1 pb-1" onClick={(e) => e.stopPropagation()}>
             {props.photos.map((photo, i) => (
-              <div key={i} className="relative w-16 h-16 rounded-lg overflow-hidden shrink-0">
+              <button key={i} onClick={() => setLightboxIndex(i)} className="relative w-16 h-16 rounded-lg overflow-hidden shrink-0 hover:ring-2 hover:ring-teal transition-all">
                 <Image src={photo.src} alt={photo.caption} fill className="object-cover" unoptimized />
-              </div>
+              </button>
             ))}
           </div>
         )}
@@ -305,7 +344,11 @@ export default function RecommendationCard(props: RecommendationCardProps) {
       </div>
 
       {modalOpen && (
-        <RecommendationModal {...props} onClose={() => setModalOpen(false)} />
+        <RecommendationModal {...props} onClose={() => setModalOpen(false)} onPhotoClick={setLightboxIndex} />
+      )}
+
+      {lightboxIndex !== null && props.photos && (
+        <PhotoLightbox photos={props.photos} initialIndex={lightboxIndex} onClose={() => setLightboxIndex(null)} />
       )}
     </>
   );
