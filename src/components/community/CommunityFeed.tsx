@@ -47,6 +47,7 @@ const recommendations = recommendationsData as Record<string, {
   date: string;
   places?: { name: string; listingSlug?: string }[];
   comments?: { author: string; authorSlug: string; authorType: string; date: string; text: string }[];
+  photos?: { src: string; caption: string }[];
 }>;
 
 function matchDuration(durationDays: number, filter: string): boolean {
@@ -169,6 +170,7 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
               contributor={{ ...contrib, slug: rec.contributorSlug }}
               places={rec.places}
               comments={rec.comments}
+              photos={rec.photos}
             />
           );
         })}

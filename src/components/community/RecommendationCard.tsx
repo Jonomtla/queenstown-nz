@@ -18,6 +18,11 @@ interface Comment {
   text: string;
 }
 
+interface Photo {
+  src: string;
+  caption: string;
+}
+
 interface RecommendationCardProps {
   slug: string;
   title: string;
@@ -34,6 +39,7 @@ interface RecommendationCardProps {
   };
   places?: { name: string; listingSlug?: string }[];
   comments?: Comment[];
+  photos?: Photo[];
 }
 
 const CATEGORY_STYLES: Record<string, { border: string }> = {
@@ -46,19 +52,12 @@ const CATEGORY_STYLES: Record<string, { border: string }> = {
   budget: { border: "border-l-teal" },
   transport: { border: "border-l-gray-400" },
   hiking: { border: "border-l-teal" },
+  wellness: { border: "border-l-copper" },
+  culture: { border: "border-l-copper" },
 };
 
-function RecommendationModal({
-  title,
-  text,
-  category,
-  upvotes,
-  commentCount,
-  contributor,
-  places,
-  comments,
-  onClose,
-}: RecommendationCardProps & { onClose: () => void }) {
+function RecommendationModal(props: RecommendationCardProps & { onClose: () => void }) {
+  const { title, text, category, upvotes, commentCount, contributor, places, comments, onClose } = props;
   const style = CATEGORY_STYLES[category] || { border: "border-l-gray-300" };
 
   return (
@@ -112,6 +111,20 @@ function RecommendationModal({
 
           {/* Full text */}
           <p className="text-gray-600 text-base mt-6 leading-relaxed">{text}</p>
+
+          {/* Photo strip in modal — larger */}
+          {props.photos && props.photos.length > 0 && (
+            <div className="flex gap-2 mt-4 overflow-x-auto pb-2">
+              {props.photos.map((photo, i) => (
+                <div key={i} className="relative w-28 h-20 rounded-lg overflow-hidden shrink-0">
+                  <Image src={photo.src} alt={photo.caption} fill className="object-cover" unoptimized />
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/40 px-1.5 py-0.5">
+                    <p className="text-[9px] text-white truncate">{photo.caption}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
 
           {/* Places */}
           {places && places.length > 0 && (
@@ -231,6 +244,17 @@ export default function RecommendationCard(props: RecommendationCardProps) {
         </div>
         <h3 className="text-base font-bold text-teal leading-snug line-clamp-2">{title}</h3>
         <p className="text-gray-600 text-sm mt-2 leading-relaxed line-clamp-4">{text}</p>
+
+        {/* Google Reviews-style photo strip */}
+        {props.photos && props.photos.length > 0 && (
+          <div className="flex gap-1.5 mt-3 overflow-x-auto -mx-1 px-1 pb-1">
+            {props.photos.map((photo, i) => (
+              <div key={i} className="relative w-16 h-16 rounded-lg overflow-hidden shrink-0">
+                <Image src={photo.src} alt={photo.caption} fill className="object-cover" unoptimized />
+              </div>
+            ))}
+          </div>
+        )}
 
         {places && places.length > 0 && (
           <div className="flex flex-wrap gap-1.5 mt-3" onClick={(e) => e.stopPropagation()}>

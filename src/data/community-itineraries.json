@@ -2429,5 +2429,1369 @@
         "essential": false
       }
     ]
+  },
+  "summer-adrenaline-weekend": {
+    "title": "Summer Adrenaline Weekend",
+    "contributorSlug": "alex-brooks",
+    "tripDate": "2025-02",
+    "duration": "2 days",
+    "durationDays": 2,
+    "travellerType": "solo",
+    "travellerDetails": "Solo adventure seeker on a budget",
+    "categories": [
+      "summer",
+      "adventure",
+      "outdoor"
+    ],
+    "season": "summer",
+    "summary": "Two days of pure adrenaline — bungy, jet boat, canyon swing, and ziplining. This is Queenstown at its heart-pumping best, designed for solo travellers who want maximum thrills.",
+    "coverImage": "https://images.unsplash.com/photo-1516939884455-1445c8652f83?w=1600&h=800&fit=crop",
+    "upvotes": 156,
+    "commentCount": 12,
+    "endorsements": {
+      "solo": 28,
+      "couple": 8,
+      "group": 15
+    },
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1516939884455-1445c8652f83?w=1200&h=800&fit=crop",
+        "caption": "Kawarau Bridge Bungy"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1570197571499-166b36435e9f?w=1200&h=800&fit=crop",
+        "caption": "Shotover Jet canyon ride"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=1200&h=800&fit=crop",
+        "caption": "Canyon swing adrenaline"
+      }
+    ],
+    "costEstimate": {
+      "level": "mid-range",
+      "perPersonPerDay": 300,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 60,
+        "food": 40,
+        "activities": 180,
+        "transport": 20
+      },
+      "notes": "Activities are the main cost — look for combo deals that bundle 2-3 together"
+    },
+    "packingList": [
+      {
+        "item": "Secure shoes (no jandals)",
+        "essential": true
+      },
+      {
+        "item": "Sunscreen",
+        "essential": true
+      },
+      {
+        "item": "Swimwear (you will get wet)",
+        "essential": true
+      },
+      {
+        "item": "GoPro or waterproof camera",
+        "essential": false
+      },
+      {
+        "item": "Change of clothes",
+        "essential": false
+      }
+    ],
+    "userStories": [
+      {
+        "authorSlug": "jess-taylor",
+        "text": "Alex's adrenaline picks are on point. The canyon swing is genuinely the scariest thing I've ever done — way more intense than bungy.",
+        "date": "2025-03",
+        "photo": "https://images.unsplash.com/photo-1516939884455-1445c8652f83?w=400&h=300&fit=crop"
+      }
+    ],
+    "days": [
+      {
+        "dayNumber": 1,
+        "title": "Bungy, Jet & Canyon",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "Kawarau Bridge Bungy",
+            "description": "Start with the original — the 43m Kawarau Bridge bungy. Morning is best when you're fresh and the light is incredible in the canyon.",
+            "places": [
+              {
+                "name": "AJ Hackett Bungy",
+                "listingSlug": "aj-hackett-bungy",
+                "lat": -45.013,
+                "lng": 168.727
+              }
+            ],
+            "setting": "outdoor",
+            "localTip": "Book the first slot. You'll be on a high all day."
+          },
+          {
+            "timeOfDay": "afternoon",
+            "title": "Shotover Jet",
+            "description": "Head to Shotover Canyon for the jet boat. The 360-degree spins through the narrow canyon walls are insane. Sit at the front.",
+            "places": [
+              {
+                "name": "Shotover Jet",
+                "listingSlug": "shotover-jet",
+                "lat": -44.9985,
+                "lng": 168.7305
+              }
+            ],
+            "image": "https://images.unsplash.com/photo-1570197571499-166b36435e9f?w=800&h=500&fit=crop",
+            "setting": "outdoor",
+            "rainyAlternative": {
+              "title": "Thrillzone Indoor Activities",
+              "description": "VR experiences and indoor go-karts if the river is too high for jet boats.",
+              "places": [
+                {
+                  "name": "Thrillzone",
+                  "listingSlug": "thrillzone-queenstown",
+                  "lat": -45.0308,
+                  "lng": 168.6598
+                }
+              ]
+            }
+          },
+          {
+            "timeOfDay": "evening",
+            "title": "Burgers & Stories at Fergburger",
+            "description": "You've earned the biggest burger on the menu. Swap stories with other travellers in the queue — it's half the fun.",
+            "places": [
+              {
+                "name": "Fergburger",
+                "listingSlug": "fergburger",
+                "lat": -45.032,
+                "lng": 168.6614
+              }
+            ],
+            "setting": "indoor"
+          }
+        ]
+      },
+      {
+        "dayNumber": 2,
+        "title": "Heights & Trails",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "Ziptrek Ecotours",
+            "description": "Zipline through native forest canopy above Queenstown. The 6-line Kereru tour has the steepest, longest ziplines and incredible views.",
+            "places": [
+              {
+                "name": "Ziptrek Ecotours",
+                "listingSlug": "ziptrek-ecotours",
+                "lat": -45.024,
+                "lng": 168.658
+              }
+            ],
+            "setting": "outdoor"
+          },
+          {
+            "timeOfDay": "afternoon",
+            "title": "Queenstown Hill Quick Hike",
+            "description": "Burn off the adrenaline with a quick hike up Queenstown Hill. 2-3 hours return with panoramic views of the entire basin.",
+            "places": [
+              {
+                "name": "Queenstown Hill Time Walk",
+                "listingSlug": "queenstown-hill-time-walk",
+                "lat": -45.038,
+                "lng": 168.651
+              }
+            ],
+            "setting": "outdoor",
+            "rainyAlternative": {
+              "title": "Escape Quest Queenstown",
+              "description": "Test your problem-solving skills in one of their themed escape rooms.",
+              "places": [
+                {
+                  "name": "Escape Quest Queenstown",
+                  "listingSlug": "escape-quest-queenstown",
+                  "lat": -45.0315,
+                  "lng": 168.6605
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "comments": [
+      {
+        "author": "Jess Taylor",
+        "authorSlug": "jess-taylor",
+        "authorType": "creator",
+        "date": "2025-03-05",
+        "text": "Would you recommend the Nevis Bungy over Kawarau for someone who's already done bungy before?",
+        "type": "question",
+        "replies": [
+          {
+            "author": "Alex Brooks",
+            "authorSlug": "alex-brooks",
+            "authorType": "visitor",
+            "date": "2025-03-06",
+            "text": "Absolutely — the Nevis is 134m and a completely different experience. Kawarau first, Nevis when you want to level up.",
+            "type": "answer"
+          }
+        ]
+      }
+    ],
+    "relatedItineraries": [
+      "solo-adventure-5-days",
+      "rainy-day-queenstown",
+      "perfect-winter-weekend"
+    ]
+  },
+  "winter-family-fun": {
+    "title": "Winter Family Fun: Skiing + Snow Play",
+    "contributorSlug": "emma-james",
+    "tripDate": "2025-07",
+    "duration": "4 days",
+    "durationDays": 4,
+    "travellerType": "family",
+    "travellerDetails": "Family of 4 — kids aged 5 and 8",
+    "categories": [
+      "winter",
+      "family",
+      "skiing"
+    ],
+    "season": "winter",
+    "summary": "A winter family holiday that keeps little ones entertained on and off the mountain. Mix of skiing, snow play, and cosy indoor activities for when little legs get tired.",
+    "coverImage": "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=1600&h=800&fit=crop",
+    "upvotes": 198,
+    "commentCount": 18,
+    "endorsements": {
+      "family": 35,
+      "couple": 4,
+      "solo": 2
+    },
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=1200&h=800&fit=crop",
+        "caption": "Family ski day at Coronet Peak"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=1200&h=800&fit=crop",
+        "caption": "Skyline Luge in the snow"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=1200&h=800&fit=crop",
+        "caption": "Hot chocolate at Patagonia"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=1200&h=800&fit=crop",
+        "caption": "TSS Earnslaw winter cruise"
+      }
+    ],
+    "costEstimate": {
+      "level": "mid-range",
+      "perPersonPerDay": 220,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 90,
+        "food": 50,
+        "activities": 60,
+        "transport": 20
+      },
+      "notes": "Per person based on family of 4. Kids' ski lessons are extra — book early."
+    },
+    "packingList": [
+      {
+        "item": "Warm base layers for everyone",
+        "essential": true
+      },
+      {
+        "item": "Waterproof gloves (kids lose them!)",
+        "essential": true
+      },
+      {
+        "item": "Sunscreen (snow glare)",
+        "essential": true
+      },
+      {
+        "item": "Snacks and water bottles",
+        "essential": true
+      },
+      {
+        "item": "Hand warmers",
+        "essential": false
+      },
+      {
+        "item": "Card games for evenings",
+        "essential": false
+      }
+    ],
+    "days": [
+      {
+        "dayNumber": 1,
+        "title": "Arrive & Town Explore",
+        "segments": [
+          {
+            "timeOfDay": "afternoon",
+            "title": "Skyline Gondola & Luge",
+            "description": "Take the gondola up for panoramic snow views. The luge tracks run year-round and kids absolutely love it. Buy the 5-ride combo.",
+            "places": [
+              {
+                "name": "Skyline Queenstown",
+                "listingSlug": "skyline-queenstown",
+                "lat": -45.0225,
+                "lng": 168.659
+              }
+            ],
+            "setting": "outdoor",
+            "ageRange": "ages-5+"
+          },
+          {
+            "timeOfDay": "evening",
+            "title": "Hot Chocolates & Dinner at Flame",
+            "description": "Warm up with Patagonia hot chocolates, then dinner at Flame — the kids' menu is genuinely good and the atmosphere is relaxed.",
+            "places": [
+              {
+                "name": "Patagonia Chocolates",
+                "listingSlug": "patagonia-chocolates",
+                "lat": -45.0314,
+                "lng": 168.6619
+              },
+              {
+                "name": "Flame Bar & Grill",
+                "listingSlug": "flame-bar-grill",
+                "lat": -45.0316,
+                "lng": 168.6621
+              }
+            ],
+            "setting": "indoor",
+            "ageRange": "all-ages"
+          }
+        ]
+      },
+      {
+        "dayNumber": 2,
+        "title": "Ski Day at Coronet Peak",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "Kids' Ski Lessons at Coronet",
+            "description": "Drop the kids at ski school (book well in advance) and enjoy a few adult runs. Coronet's learner area is excellent for little ones.",
+            "places": [
+              {
+                "name": "Coronet Peak",
+                "listingSlug": "coronet-peak",
+                "lat": -45.0475,
+                "lng": 168.7278
+              }
+            ],
+            "setting": "outdoor",
+            "ageRange": "ages-5+",
+            "localTip": "Book ski school at least 2 weeks ahead in school holidays — it sells out fast.",
+            "rainyAlternative": {
+              "title": "Thrillzone Indoor Fun",
+              "description": "If the mountain closes, Thrillzone has VR, go-karts, and simulators that kids love.",
+              "places": [
+                {
+                  "name": "Thrillzone",
+                  "listingSlug": "thrillzone-queenstown",
+                  "lat": -45.0308,
+                  "lng": 168.6598
+                }
+              ]
+            }
+          },
+          {
+            "timeOfDay": "evening",
+            "title": "Pizza Night",
+            "description": "Keep it simple after a big ski day. Grab pizzas and head back to your accommodation — everyone will be exhausted.",
+            "places": [
+              {
+                "name": "Fergburger",
+                "listingSlug": "fergburger",
+                "lat": -45.032,
+                "lng": 168.6614
+              }
+            ],
+            "setting": "indoor",
+            "ageRange": "all-ages"
+          }
+        ]
+      },
+      {
+        "dayNumber": 3,
+        "title": "Rest Day & Indoor Fun",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "Kiwi Birdlife Park",
+            "description": "A gentler morning — see kiwi birds, tuatara, and native birds. The conservation show is educational and kids love the feeding times.",
+            "places": [
+              {
+                "name": "Kiwi Birdlife Park",
+                "listingSlug": "kiwi-birdlife-park",
+                "lat": -45.0295,
+                "lng": 168.6565
+              }
+            ],
+            "setting": "both",
+            "ageRange": "all-ages"
+          },
+          {
+            "timeOfDay": "afternoon",
+            "title": "Escape Quest or Thrillzone",
+            "description": "Let the kids choose — puzzle-solving escape rooms or go-karts and VR. Both are great rainy day options.",
+            "places": [
+              {
+                "name": "Escape Quest Queenstown",
+                "listingSlug": "escape-quest-queenstown",
+                "lat": -45.0315,
+                "lng": 168.6605
+              },
+              {
+                "name": "Thrillzone",
+                "listingSlug": "thrillzone-queenstown",
+                "lat": -45.0308,
+                "lng": 168.6598
+              }
+            ],
+            "setting": "indoor",
+            "ageRange": "ages-5+"
+          }
+        ]
+      },
+      {
+        "dayNumber": 4,
+        "title": "Lake Day & Departure",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "TSS Earnslaw Cruise",
+            "description": "A magical way to end the trip — the vintage steamship across Lake Wakatipu. Kids love watching the engine room.",
+            "places": [
+              {
+                "name": "TSS Earnslaw",
+                "listingSlug": "tss-earnslaw",
+                "lat": -45.031,
+                "lng": 168.6625
+              }
+            ],
+            "setting": "outdoor",
+            "ageRange": "all-ages"
+          },
+          {
+            "timeOfDay": "afternoon",
+            "title": "Queenstown Gardens Farewell Walk",
+            "description": "One last walk through the gardens. Disc golf, the playground, and one more lakefront ice cream before heading to the airport.",
+            "places": [
+              {
+                "name": "Queenstown Gardens",
+                "listingSlug": "queenstown-gardens-trail",
+                "lat": -45.0345,
+                "lng": 168.658
+              }
+            ],
+            "setting": "outdoor",
+            "ageRange": "all-ages"
+          }
+        ]
+      }
+    ],
+    "comments": [
+      {
+        "author": "Sarah Chen",
+        "authorSlug": "sarah-chen",
+        "authorType": "local",
+        "date": "2025-08-10",
+        "text": "Great family itinerary! One tip — the Coronet Peak kids' night ski sessions on Fridays are amazing. Totally worth it if your kids are confident enough.",
+        "type": "tip"
+      },
+      {
+        "author": "Matt Wilson",
+        "authorSlug": "matt-wilson",
+        "authorType": "local",
+        "date": "2025-08-15",
+        "text": "Is the luge open in winter?",
+        "type": "question",
+        "replies": [
+          {
+            "author": "Emma & James",
+            "authorSlug": "emma-james",
+            "authorType": "visitor",
+            "date": "2025-08-16",
+            "text": "Yes! It runs year-round. The winter views from the top are even better than summer.",
+            "type": "answer"
+          }
+        ]
+      }
+    ],
+    "relatedItineraries": [
+      "perfect-winter-weekend",
+      "family-friendly-summer-week",
+      "rainy-day-queenstown"
+    ]
+  },
+  "spring-wellness-retreat": {
+    "title": "Spring Wellness Retreat",
+    "contributorSlug": "nina-patel",
+    "tripDate": "2025-10",
+    "duration": "3 days",
+    "durationDays": 3,
+    "travellerType": "couple",
+    "travellerDetails": "Relaxing long weekend with my partner",
+    "categories": [
+      "spring",
+      "wellness",
+      "walking"
+    ],
+    "season": "spring",
+    "summary": "Queenstown in spring is pure renewal — wildflowers, crisp mornings, and uncrowded trails. This itinerary blends gentle walks, hot pools, and slow dining for a genuine reset.",
+    "coverImage": "https://images.unsplash.com/photo-1540555700478-4be289fbec6a?w=1600&h=800&fit=crop",
+    "upvotes": 142,
+    "commentCount": 9,
+    "endorsements": {
+      "couple": 18,
+      "solo": 12
+    },
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbec6a?w=1200&h=800&fit=crop",
+        "caption": "Onsen Hot Pools overlooking the river"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop",
+        "caption": "Spring wildflowers at Moke Lake"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&h=800&fit=crop",
+        "caption": "Glenorchy morning calm"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&h=800&fit=crop",
+        "caption": "Long lunch at Amisfield"
+      }
+    ],
+    "costEstimate": {
+      "level": "luxury",
+      "perPersonPerDay": 400,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 200,
+        "food": 100,
+        "activities": 70,
+        "transport": 30
+      },
+      "notes": "Premium accommodation and dining focused — activities are mostly free walks"
+    },
+    "packingList": [
+      {
+        "item": "Comfortable walking shoes",
+        "essential": true
+      },
+      {
+        "item": "Layers for spring weather",
+        "essential": true
+      },
+      {
+        "item": "Swimwear for hot pools",
+        "essential": true
+      },
+      {
+        "item": "Camera for wildflowers",
+        "essential": false
+      },
+      {
+        "item": "Book for downtime",
+        "essential": false
+      }
+    ],
+    "days": [
+      {
+        "dayNumber": 1,
+        "title": "Arrive & Unwind",
+        "segments": [
+          {
+            "timeOfDay": "afternoon",
+            "title": "Moke Lake Wildflower Walk",
+            "description": "Ease into the trip with a gentle walk around Moke Lake. In October, the hills are covered in spring wildflowers and the lake is mirror-calm.",
+            "places": [
+              {
+                "name": "Moke Lake Loop Track",
+                "listingSlug": "moke-lake-loop-track",
+                "lat": -45.002,
+                "lng": 168.589
+              }
+            ],
+            "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
+            "setting": "outdoor"
+          },
+          {
+            "timeOfDay": "evening",
+            "title": "Dinner at Rata",
+            "description": "Josh Emett's Rata is perfect for a special first night. The spring menu features local lamb and seasonal produce. Book the courtyard if it's warm enough.",
+            "places": [
+              {
+                "name": "Rata",
+                "listingSlug": "rata-restaurant",
+                "lat": -45.0315,
+                "lng": 168.6622
+              }
+            ],
+            "setting": "indoor"
+          }
+        ]
+      },
+      {
+        "dayNumber": 2,
+        "title": "Hot Pools & Lake Hayes",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "Onsen Hot Pools",
+            "description": "Book the earliest slot for sunrise over the Shotover Canyon. The cedar-lined hot tubs overlooking the river are pure bliss. Spring mornings here are magical.",
+            "places": [
+              {
+                "name": "Onsen Hot Pools",
+                "lat": -44.996,
+                "lng": 168.736
+              }
+            ],
+            "setting": "outdoor",
+            "localTip": "The sunrise session books out weeks ahead in spring. Reserve as early as possible."
+          },
+          {
+            "timeOfDay": "afternoon",
+            "title": "Lake Hayes Loop Walk",
+            "description": "An easy 8km loop around one of the most photographed lakes in NZ. The spring colours on the surrounding hills are gorgeous, and there's hardly anyone here compared to summer.",
+            "places": [
+              {
+                "name": "Lake Hayes Loop Track",
+                "listingSlug": "lake-hayes-loop-track",
+                "lat": -44.974,
+                "lng": 168.802
+              }
+            ],
+            "setting": "outdoor"
+          },
+          {
+            "timeOfDay": "evening",
+            "title": "Wine Tasting & Bistro at Amisfield",
+            "description": "End the day with a wine tasting at Amisfield, then stay for their bistro lunch-turned-dinner. The pinot noir with the spring lamb is exceptional.",
+            "places": [
+              {
+                "name": "Gibbston Valley",
+                "lat": -45.019,
+                "lng": 168.8555
+              }
+            ],
+            "setting": "indoor"
+          }
+        ]
+      },
+      {
+        "dayNumber": 3,
+        "title": "Glenorchy & Departure",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "Drive to Glenorchy",
+            "description": "The 45-minute drive is one of the most scenic in NZ. Stop at Bennett's Bluff lookout for the iconic view. In spring, the beech forests are fresh green.",
+            "places": [
+              {
+                "name": "Glenorchy",
+                "lat": -44.8484,
+                "lng": 168.38
+              }
+            ],
+            "setting": "outdoor"
+          },
+          {
+            "timeOfDay": "afternoon",
+            "title": "Glenorchy Lagoon & Coffee",
+            "description": "A short, flat walk around the lagoon with mountain reflections. Grab a coffee at the Glenorchy Café before heading back to QT.",
+            "places": [
+              {
+                "name": "Glenorchy Lagoon Walkway",
+                "listingSlug": "glenorchy-lagoon-walkway",
+                "lat": -44.851,
+                "lng": 168.375
+              }
+            ],
+            "setting": "outdoor"
+          }
+        ]
+      }
+    ],
+    "comments": [
+      {
+        "author": "Mike Fraser",
+        "authorSlug": "mike-fraser",
+        "authorType": "local",
+        "date": "2025-11-05",
+        "text": "The Amisfield recommendation is spot on. Their spring tasting menu is one of the best dining experiences in the region.",
+        "type": "tip"
+      }
+    ],
+    "relatedItineraries": [
+      "luxury-long-weekend",
+      "shoulder-season-photography",
+      "cultural-queenstown"
+    ]
+  },
+  "group-adventure-weekend": {
+    "title": "Group Adventure Weekend",
+    "contributorSlug": "jess-taylor",
+    "tripDate": "2025-03",
+    "duration": "2 days",
+    "durationDays": 2,
+    "travellerType": "group",
+    "travellerDetails": "Mates' weekend — 6 of us from Auckland",
+    "categories": [
+      "adventure",
+      "dining",
+      "outdoor"
+    ],
+    "season": "autumn",
+    "summary": "A weekend built for groups — mix of adrenaline activities, competitive fun, and big shared meals. Tested with 6 mates and zero complaints (apart from who screamed loudest on the canyon swing).",
+    "coverImage": "https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=1600&h=800&fit=crop",
+    "upvotes": 178,
+    "commentCount": 14,
+    "endorsements": {
+      "group": 22,
+      "solo": 5,
+      "couple": 3
+    },
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=1200&h=800&fit=crop",
+        "caption": "Squad goals at the canyon"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1570197571499-166b36435e9f?w=1200&h=800&fit=crop",
+        "caption": "Shotover Jet group shot"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&h=800&fit=crop",
+        "caption": "Big group dinner at Flame"
+      }
+    ],
+    "costEstimate": {
+      "level": "mid-range",
+      "perPersonPerDay": 250,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 50,
+        "food": 60,
+        "activities": 120,
+        "transport": 20
+      },
+      "notes": "Shared accommodation keeps costs down. Group discounts on activities if you book together."
+    },
+    "packingList": [
+      {
+        "item": "Comfortable outdoor clothes",
+        "essential": true
+      },
+      {
+        "item": "Swimwear",
+        "essential": true
+      },
+      {
+        "item": "Sunscreen and sunnies",
+        "essential": true
+      },
+      {
+        "item": "Camera for group photos",
+        "essential": false
+      },
+      {
+        "item": "Card/board games for evenings",
+        "essential": false
+      }
+    ],
+    "days": [
+      {
+        "dayNumber": 1,
+        "title": "Adrenaline Day",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "Shotover Jet Group Run",
+            "description": "Nothing bonds a group like screaming together at 85km/h through narrow canyon walls. Book the whole boat for maximum fun.",
+            "places": [
+              {
+                "name": "Shotover Jet",
+                "listingSlug": "shotover-jet",
+                "lat": -44.9985,
+                "lng": 168.7305
+              }
+            ],
+            "setting": "outdoor"
+          },
+          {
+            "timeOfDay": "afternoon",
+            "title": "Skyline Luge Races",
+            "description": "Take the gondola up and race each other down the luge tracks. The advanced track gets surprisingly competitive. Buy the 5-ride combo.",
+            "places": [
+              {
+                "name": "Skyline Queenstown",
+                "listingSlug": "skyline-queenstown",
+                "lat": -45.0225,
+                "lng": 168.659
+              }
+            ],
+            "setting": "outdoor"
+          },
+          {
+            "timeOfDay": "evening",
+            "title": "Group Dinner at Atlas Beer Cafe",
+            "description": "Long tables, craft beer, sharing platters — Atlas is built for groups. The waterfront setting on Steamer Wharf is perfect for big nights.",
+            "places": [
+              {
+                "name": "Atlas Beer Cafe",
+                "listingSlug": "atlas-beer-cafe",
+                "lat": -45.0318,
+                "lng": 168.6633
+              }
+            ],
+            "setting": "indoor"
+          }
+        ]
+      },
+      {
+        "dayNumber": 2,
+        "title": "Explore & Feast",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "E-Bike the Queenstown Trail",
+            "description": "Hire e-bikes and ride the lakefront trail together. The section from Frankton to Queenstown Gardens is flat, scenic, and perfect for groups of mixed fitness.",
+            "places": [
+              {
+                "name": "Charge About E-Bikes",
+                "listingSlug": "charge-about-ebikes",
+                "lat": -45.031,
+                "lng": 168.6605
+              }
+            ],
+            "setting": "outdoor",
+            "rainyAlternative": {
+              "title": "Escape Quest Team Challenge",
+              "description": "Split into two teams and race to escape. Loser buys lunch.",
+              "places": [
+                {
+                  "name": "Escape Quest Queenstown",
+                  "listingSlug": "escape-quest-queenstown",
+                  "lat": -45.0315,
+                  "lng": 168.6605
+                }
+              ]
+            }
+          },
+          {
+            "timeOfDay": "afternoon",
+            "title": "Farewell Fergburgers",
+            "description": "No Queenstown trip is complete without Fergburger. Order the whole menu between you and rate them. The Big Al and the Sweet Bambi are the top picks.",
+            "places": [
+              {
+                "name": "Fergburger",
+                "listingSlug": "fergburger",
+                "lat": -45.032,
+                "lng": 168.6614
+              }
+            ],
+            "setting": "indoor"
+          }
+        ]
+      }
+    ],
+    "comments": [
+      {
+        "author": "Alex Brooks",
+        "authorSlug": "alex-brooks",
+        "authorType": "visitor",
+        "date": "2025-04-02",
+        "text": "Did this with my travel mates and it was perfect. The luge races got seriously competitive!",
+        "type": "tip"
+      },
+      {
+        "author": "Matt Wilson",
+        "authorSlug": "matt-wilson",
+        "authorType": "local",
+        "date": "2025-04-05",
+        "text": "Any group discounts available for the Shotover Jet?",
+        "type": "question"
+      }
+    ],
+    "relatedItineraries": [
+      "summer-adrenaline-weekend",
+      "solo-adventure-5-days",
+      "rainy-day-queenstown"
+    ]
+  },
+  "autumn-wine-culture": {
+    "title": "Autumn Wine & Culture Trail",
+    "contributorSlug": "tane-hikuroa",
+    "tripDate": "2025-04",
+    "duration": "3 days",
+    "durationDays": 3,
+    "travellerType": "couple",
+    "travellerDetails": "Cultural exploration with my partner",
+    "categories": [
+      "autumn",
+      "wine",
+      "culture",
+      "walking"
+    ],
+    "season": "autumn",
+    "summary": "Autumn in the Wakatipu Basin is magical — golden trees, harvest wines, and the stories behind the place names. This itinerary blends Maori history, Central Otago wine, and the best autumn walks.",
+    "coverImage": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1600&h=800&fit=crop",
+    "upvotes": 165,
+    "commentCount": 11,
+    "endorsements": {
+      "couple": 20,
+      "solo": 8
+    },
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1200&h=800&fit=crop",
+        "caption": "Arrowtown autumn gold"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=1200&h=800&fit=crop",
+        "caption": "Gibbston Valley cellar door"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=1200&h=800&fit=crop",
+        "caption": "Kiwi encounter at Birdlife Park"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&h=800&fit=crop",
+        "caption": "Moke Lake autumn reflections"
+      }
+    ],
+    "costEstimate": {
+      "level": "mid-range",
+      "perPersonPerDay": 260,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 110,
+        "food": 80,
+        "activities": 40,
+        "transport": 30
+      },
+      "notes": "Wine tastings and cultural experiences. Most walks are free."
+    },
+    "packingList": [
+      {
+        "item": "Warm layers for autumn mornings",
+        "essential": true
+      },
+      {
+        "item": "Comfortable walking shoes",
+        "essential": true
+      },
+      {
+        "item": "Rain jacket",
+        "essential": true
+      },
+      {
+        "item": "Camera for autumn colours",
+        "essential": false
+      },
+      {
+        "item": "Wine carrier for purchases",
+        "essential": false
+      }
+    ],
+    "days": [
+      {
+        "dayNumber": 1,
+        "title": "Queenstown Culture & Heritage",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "Queenstown Hill — Te Tapu-nui",
+            "description": "The hill's Maori name means 'the very sacred place.' The Time Walk panels along the trail tell the story of the region from pounamu trails to gold rush. A beautiful morning walk with autumn colour.",
+            "places": [
+              {
+                "name": "Queenstown Hill Time Walk",
+                "listingSlug": "queenstown-hill-time-walk",
+                "lat": -45.038,
+                "lng": 168.651
+              }
+            ],
+            "setting": "outdoor"
+          },
+          {
+            "timeOfDay": "afternoon",
+            "title": "Kiwi Birdlife Park",
+            "description": "See kiwi in their nocturnal house and learn about NZ's unique native species. The conservation stories here are powerful.",
+            "places": [
+              {
+                "name": "Kiwi Birdlife Park",
+                "listingSlug": "kiwi-birdlife-park",
+                "lat": -45.0295,
+                "lng": 168.6565
+              }
+            ],
+            "setting": "both"
+          },
+          {
+            "timeOfDay": "evening",
+            "title": "Dinner at Little Blackwood",
+            "description": "Cocktails and shared plates on the waterfront. Little Blackwood has a great autumn vibe — warm interiors, lake views, excellent wine list.",
+            "places": [
+              {
+                "name": "Little Blackwood",
+                "listingSlug": "little-blackwood",
+                "lat": -45.0317,
+                "lng": 168.663
+              }
+            ],
+            "setting": "indoor"
+          }
+        ]
+      },
+      {
+        "dayNumber": 2,
+        "title": "Arrowtown & Wine Country",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "Arrowtown Autumn Walk",
+            "description": "Walk the Arrow River trail through peak autumn colour. The Chinese Settlement tells a powerful story of NZ's gold rush Chinese community.",
+            "places": [
+              {
+                "name": "Arrowtown River Trail",
+                "listingSlug": "arrowtown-river-trail",
+                "lat": -44.943,
+                "lng": 168.825
+              }
+            ],
+            "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=500&fit=crop",
+            "setting": "outdoor"
+          },
+          {
+            "timeOfDay": "afternoon",
+            "title": "Gibbston Valley Wine Tasting",
+            "description": "Drive 15 minutes to the Gibbston Valley wine caves for a tasting. The cave tour is unique — learn about Central Otago's winemaking story underground.",
+            "places": [
+              {
+                "name": "Gibbston Valley",
+                "lat": -45.019,
+                "lng": 168.8555
+              }
+            ],
+            "setting": "both"
+          },
+          {
+            "timeOfDay": "evening",
+            "title": "Dinner at Rata",
+            "description": "Josh Emett's autumn menu celebrates seasonal Central Otago produce. The venison with autumn root vegetables is exceptional.",
+            "places": [
+              {
+                "name": "Rata",
+                "listingSlug": "rata-restaurant",
+                "lat": -45.0315,
+                "lng": 168.6622
+              }
+            ],
+            "setting": "indoor"
+          }
+        ]
+      },
+      {
+        "dayNumber": 3,
+        "title": "Lakes & Farewell",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "Lake Hayes Loop",
+            "description": "The golden poplars around Lake Hayes in autumn are stunning. Walk the 8km loop at dawn for mirror reflections.",
+            "places": [
+              {
+                "name": "Lake Hayes Loop Track",
+                "listingSlug": "lake-hayes-loop-track",
+                "lat": -44.974,
+                "lng": 168.802
+              }
+            ],
+            "setting": "outdoor"
+          },
+          {
+            "timeOfDay": "afternoon",
+            "title": "TSS Earnslaw Cruise",
+            "description": "End the trip with a cruise on the vintage steamship. The autumn light on the lake and mountains is special.",
+            "places": [
+              {
+                "name": "TSS Earnslaw",
+                "listingSlug": "tss-earnslaw",
+                "lat": -45.031,
+                "lng": 168.6625
+              }
+            ],
+            "setting": "outdoor"
+          }
+        ]
+      }
+    ],
+    "comments": [
+      {
+        "author": "Nina Patel",
+        "authorSlug": "nina-patel",
+        "authorType": "creator",
+        "date": "2025-05-01",
+        "text": "Tane's cultural knowledge brings such depth to these walks. The Queenstown Hill Te Tapu-nui story is something every visitor should hear.",
+        "type": "tip"
+      }
+    ],
+    "relatedItineraries": [
+      "foodie-trail-queenstown",
+      "shoulder-season-photography",
+      "cultural-queenstown"
+    ]
+  },
+  "hiking-highlights-3-day": {
+    "title": "3-Day Hiking Highlights",
+    "contributorSlug": "matt-wilson",
+    "tripDate": "2025-02",
+    "duration": "3 days",
+    "durationDays": 3,
+    "travellerType": "solo",
+    "travellerDetails": "Fit solo hiker looking for the best trails",
+    "categories": [
+      "hiking",
+      "outdoor",
+      "summer"
+    ],
+    "season": "summer",
+    "summary": "The best hikes Queenstown has to offer in 3 days — from quick summit scrambles to full-day lake walks. Graded from moderate to challenging, with the big one (Ben Lomond) on day 2 when you're warmed up.",
+    "coverImage": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&h=800&fit=crop",
+    "upvotes": 203,
+    "commentCount": 16,
+    "endorsements": {
+      "solo": 32,
+      "couple": 10,
+      "group": 6
+    },
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&h=800&fit=crop",
+        "caption": "Ben Lomond summit panorama"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop",
+        "caption": "Lake Hayes morning loop"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&h=800&fit=crop",
+        "caption": "Bob's Cove beech forest"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&h=800&fit=crop",
+        "caption": "Glenorchy Lagoon"
+      }
+    ],
+    "costEstimate": {
+      "level": "budget",
+      "perPersonPerDay": 110,
+      "currency": "NZD",
+      "breakdown": {
+        "accommodation": 50,
+        "food": 35,
+        "activities": 5,
+        "transport": 20
+      },
+      "notes": "Almost all activities are free. Main costs are accommodation and getting to trailheads."
+    },
+    "packingList": [
+      {
+        "item": "Broken-in hiking boots",
+        "essential": true
+      },
+      {
+        "item": "Day pack with 2L+ water capacity",
+        "essential": true
+      },
+      {
+        "item": "Rain jacket and warm layer",
+        "essential": true
+      },
+      {
+        "item": "Sunscreen and hat",
+        "essential": true
+      },
+      {
+        "item": "Trail snacks and lunch",
+        "essential": true
+      },
+      {
+        "item": "Trekking poles",
+        "essential": false
+      },
+      {
+        "item": "Camera with spare battery",
+        "essential": false
+      }
+    ],
+    "days": [
+      {
+        "dayNumber": 1,
+        "title": "Warm-Up Walks",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "Queenstown Hill Time Walk",
+            "description": "A solid warm-up — 2-3 hours return with 500m elevation gain. The basket of dreams at the summit has incredible 360-degree views.",
+            "places": [
+              {
+                "name": "Queenstown Hill Time Walk",
+                "listingSlug": "queenstown-hill-time-walk",
+                "lat": -45.038,
+                "lng": 168.651
+              }
+            ],
+            "setting": "outdoor"
+          },
+          {
+            "timeOfDay": "afternoon",
+            "title": "Bob's Cove Nature Walk",
+            "description": "An easy stroll through ancient beech forest to a hidden cove on Lake Wakatipu. Beautiful light through the canopy in the afternoon.",
+            "places": [
+              {
+                "name": "Bob's Cove Track",
+                "listingSlug": "bobs-cove-track",
+                "lat": -45.004,
+                "lng": 168.561
+              }
+            ],
+            "setting": "outdoor"
+          },
+          {
+            "timeOfDay": "evening",
+            "title": "Carb Loading at Fergburger",
+            "description": "You're going to need the calories for tomorrow. Fergburger is the tradition.",
+            "places": [
+              {
+                "name": "Fergburger",
+                "listingSlug": "fergburger",
+                "lat": -45.032,
+                "lng": 168.6614
+              }
+            ],
+            "setting": "indoor"
+          }
+        ]
+      },
+      {
+        "dayNumber": 2,
+        "title": "Ben Lomond Summit",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "Ben Lomond via Tiki Trail",
+            "description": "The big one. Take the Tiki Trail up through the trees to the saddle, then the exposed ridge to the 1748m summit. 6-8 hours return, 1438m elevation. Start early.",
+            "places": [
+              {
+                "name": "Ben Lomond Track",
+                "listingSlug": "ben-lomond-track",
+                "lat": -45.0145,
+                "lng": 168.643
+              },
+              {
+                "name": "Tiki Trail",
+                "listingSlug": "tiki-trail",
+                "lat": -45.026,
+                "lng": 168.6575
+              }
+            ],
+            "image": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=500&fit=crop",
+            "setting": "outdoor",
+            "localTip": "Start by 7am to have the summit to yourself. Take the gondola down to save your knees if you're wrecked.",
+            "ageRange": "teens+"
+          },
+          {
+            "timeOfDay": "evening",
+            "title": "Recovery Dinner at The Lodge Bar",
+            "description": "You've earned a proper meal. The Lodge Bar does excellent elevated pub food and is a great spot for solo dining at the bar.",
+            "places": [
+              {
+                "name": "The Lodge Bar",
+                "listingSlug": "the-lodge-bar",
+                "lat": -45.0312,
+                "lng": 168.6622
+              }
+            ],
+            "setting": "indoor"
+          }
+        ]
+      },
+      {
+        "dayNumber": 3,
+        "title": "Lake & Forest Walks",
+        "segments": [
+          {
+            "timeOfDay": "morning",
+            "title": "Lake Hayes Loop",
+            "description": "An easy 8km flat loop to recover from yesterday. Dawn start for the best reflections. Your legs will thank you for the flat terrain.",
+            "places": [
+              {
+                "name": "Lake Hayes Loop Track",
+                "listingSlug": "lake-hayes-loop-track",
+                "lat": -44.974,
+                "lng": 168.802
+              }
+            ],
+            "setting": "outdoor"
+          },
+          {
+            "timeOfDay": "afternoon",
+            "title": "Mount Crichton Loop",
+            "description": "A beautiful 2-hour loop through beech forest with views into the Shotover River canyon. The old gold mine relics add interest.",
+            "places": [
+              {
+                "name": "Mount Crichton Loop Track",
+                "listingSlug": "mount-crichton-loop-track",
+                "lat": -45.014,
+                "lng": 168.572
+              }
+            ],
+            "setting": "outdoor"
+          }
+        ]
+      }
+    ],
+    "comments": [
+      {
+        "author": "Alex Brooks",
+        "authorSlug": "alex-brooks",
+        "authorType": "visitor",
+        "date": "2025-03-10",
+        "text": "Matt's hiking knowledge is legit. The Tiki Trail start instead of the gondola made the Ben Lomond experience so much better — more rewarding.",
+        "type": "tip"
+      },
+      {
+        "author": "Nina Patel",
+        "authorSlug": "nina-patel",
+        "authorType": "creator",
+        "date": "2025-03-15",
+        "text": "Any recommendations for a sunrise hike on day 3 instead of Lake Hayes?",
+        "type": "question",
+        "replies": [
+          {
+            "author": "Matt Wilson",
+            "authorSlug": "matt-wilson",
+            "authorType": "local",
+            "date": "2025-03-16",
+            "text": "Drive to the Lake Hayes carpark and start the loop 30 min before sunrise — the reflections as the sun hits the mountains are photographer's gold.",
+            "type": "answer"
+          }
+        ]
+      }
+    ],
+    "relatedItineraries": [
+      "solo-adventure-5-days",
+      "active-arrowtown-day",
+      "shoulder-season-photography"
+    ]
   }
 }

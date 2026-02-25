@@ -10,12 +10,44 @@
     "commentCount": 28,
     "date": "2025-08-15",
     "places": [
-      { "name": "Fergburger", "listingSlug": "fergburger" },
-      { "name": "Fergbaker", "listingSlug": "fergbaker" }
+      {
+        "name": "Fergburger",
+        "listingSlug": "fergburger"
+      },
+      {
+        "name": "Fergbaker",
+        "listingSlug": "fergbaker"
+      }
     ],
     "comments": [
-      { "author": "Matt Wilson", "authorSlug": "matt-wilson", "authorType": "local", "date": "2025-08-16", "text": "Can confirm — 2pm is the sweet spot. I also rate the Little Lamby burger if you haven't tried it." },
-      { "author": "Emma & James", "authorSlug": "emma-james", "authorType": "visitor", "date": "2025-08-18", "text": "We went at 8am on a Tuesday and walked straight in. Fergbaker venison pie is incredible, the kids loved it too." }
+      {
+        "author": "Matt Wilson",
+        "authorSlug": "matt-wilson",
+        "authorType": "local",
+        "date": "2025-08-16",
+        "text": "Can confirm — 2pm is the sweet spot. I also rate the Little Lamby burger if you haven't tried it."
+      },
+      {
+        "author": "Emma & James",
+        "authorSlug": "emma-james",
+        "authorType": "visitor",
+        "date": "2025-08-18",
+        "text": "We went at 8am on a Tuesday and walked straight in. Fergbaker venison pie is incredible, the kids loved it too."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
+        "caption": "The famous Fergburger"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&h=300&fit=crop",
+        "caption": "No queue at 8am"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop",
+        "caption": "Fergbaker venison pie"
+      }
     ]
   },
   "remarkables-chains": {
@@ -29,11 +61,36 @@
     "commentCount": 15,
     "date": "2025-06-20",
     "places": [
-      { "name": "The Remarkables", "listingSlug": "the-remarkables-ski" }
+      {
+        "name": "The Remarkables",
+        "listingSlug": "the-remarkables-ski"
+      }
     ],
     "comments": [
-      { "author": "Alex Brooks", "authorSlug": "alex-brooks", "authorType": "visitor", "date": "2025-06-22", "text": "Learned this the hard way. Got stuck behind someone without chains for 45 minutes. Hire them from the BP in Frankton — cheapest option." },
-      { "author": "Tane Hikuroa", "authorSlug": "tane-hikuroa", "authorType": "local", "date": "2025-06-25", "text": "Also worth noting — the road can be closed even when it looks fine in town. Always check the app before you leave." }
+      {
+        "author": "Alex Brooks",
+        "authorSlug": "alex-brooks",
+        "authorType": "visitor",
+        "date": "2025-06-22",
+        "text": "Learned this the hard way. Got stuck behind someone without chains for 45 minutes. Hire them from the BP in Frankton — cheapest option."
+      },
+      {
+        "author": "Tane Hikuroa",
+        "authorSlug": "tane-hikuroa",
+        "authorType": "local",
+        "date": "2025-06-25",
+        "text": "Also worth noting — the road can be closed even when it looks fine in town. Always check the app before you leave."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1565992441121-4367c2967103?w=400&h=300&fit=crop",
+        "caption": "The Remarkables access road"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=400&h=300&fit=crop",
+        "caption": "Icy conditions on the drive up"
+      }
     ]
   },
   "best-sunset-spot": {
@@ -46,11 +103,40 @@
     "commentCount": 22,
     "date": "2025-04-10",
     "places": [
-      { "name": "Queenstown Gardens", "listingSlug": "queenstown-gardens-trail" }
+      {
+        "name": "Queenstown Gardens",
+        "listingSlug": "queenstown-gardens-trail"
+      }
     ],
     "comments": [
-      { "author": "Jess Taylor", "authorSlug": "jess-taylor", "authorType": "creator", "date": "2025-04-12", "text": "This is my go-to sunset spot too. The reflections on a calm evening are unreal. Shhh don't tell everyone." },
-      { "author": "Sarah Chen", "authorSlug": "sarah-chen", "authorType": "local", "date": "2025-04-14", "text": "The gardens pier in autumn with the golden poplars is next level. Best kept secret in town." }
+      {
+        "author": "Jess Taylor",
+        "authorSlug": "jess-taylor",
+        "authorType": "creator",
+        "date": "2025-04-12",
+        "text": "This is my go-to sunset spot too. The reflections on a calm evening are unreal. Shhh don't tell everyone."
+      },
+      {
+        "author": "Sarah Chen",
+        "authorSlug": "sarah-chen",
+        "authorType": "local",
+        "date": "2025-04-14",
+        "text": "The gardens pier in autumn with the golden poplars is next level. Best kept secret in town."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+        "caption": "Sunset from Queenstown Gardens pier"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop",
+        "caption": "Remarkables at golden hour"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=400&h=300&fit=crop",
+        "caption": "Lake reflections at dusk"
+      }
     ]
   },
   "glenorchy-sandflies": {
@@ -64,11 +150,36 @@
     "commentCount": 31,
     "date": "2025-01-22",
     "places": [
-      { "name": "Glenorchy Lagoon Walkway", "listingSlug": "glenorchy-lagoon-walkway" }
+      {
+        "name": "Glenorchy Lagoon Walkway",
+        "listingSlug": "glenorchy-lagoon-walkway"
+      }
     ],
     "comments": [
-      { "author": "Matt Wilson", "authorSlug": "matt-wilson", "authorType": "local", "date": "2025-01-23", "text": "Pro tip: Avon Skin So Soft actually works as sandfly repellent. Old tramping trick." },
-      { "author": "Nina Patel", "authorSlug": "nina-patel", "authorType": "creator", "date": "2025-01-25", "text": "I shoot there regularly and can confirm — after 4pm is brutal. Morning is much better for both light and sandflies." }
+      {
+        "author": "Matt Wilson",
+        "authorSlug": "matt-wilson",
+        "authorType": "local",
+        "date": "2025-01-23",
+        "text": "Pro tip: Avon Skin So Soft actually works as sandfly repellent. Old tramping trick."
+      },
+      {
+        "author": "Nina Patel",
+        "authorSlug": "nina-patel",
+        "authorType": "creator",
+        "date": "2025-01-25",
+        "text": "I shoot there regularly and can confirm — after 4pm is brutal. Morning is much better for both light and sandflies."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=300&fit=crop",
+        "caption": "Glenorchy Lagoon beauty"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop",
+        "caption": "The drive to Glenorchy"
+      }
     ]
   },
   "free-things-queenstown": {
@@ -81,15 +192,59 @@
     "commentCount": 42,
     "date": "2025-03-01",
     "places": [
-      { "name": "Queenstown Gardens", "listingSlug": "queenstown-gardens-trail" },
-      { "name": "Queenstown Hill", "listingSlug": "queenstown-hill-time-walk" },
-      { "name": "Lake Hayes", "listingSlug": "lake-hayes-loop-track" },
-      { "name": "Bob's Cove", "listingSlug": "bobs-cove-track" }
+      {
+        "name": "Queenstown Gardens",
+        "listingSlug": "queenstown-gardens-trail"
+      },
+      {
+        "name": "Queenstown Hill",
+        "listingSlug": "queenstown-hill-time-walk"
+      },
+      {
+        "name": "Lake Hayes",
+        "listingSlug": "lake-hayes-loop-track"
+      },
+      {
+        "name": "Bob's Cove",
+        "listingSlug": "bobs-cove-track"
+      }
     ],
     "comments": [
-      { "author": "Alex Brooks", "authorSlug": "alex-brooks", "authorType": "visitor", "date": "2025-03-05", "text": "Sunshine Bay beach was my favourite find. Crystal clear water and barely anyone there on a weekday." },
-      { "author": "Tane Hikuroa", "authorSlug": "tane-hikuroa", "authorType": "local", "date": "2025-03-08", "text": "Great list! I'd add the Kelvin Heights sculpture trail — free, beautiful, and most visitors have no idea it exists." },
-      { "author": "Emma & James", "authorSlug": "emma-james", "authorType": "visitor", "date": "2025-03-10", "text": "The disc golf in the Gardens was a surprise hit with our kids. You can buy cheap discs from the sports shop on Shotover St." }
+      {
+        "author": "Alex Brooks",
+        "authorSlug": "alex-brooks",
+        "authorType": "visitor",
+        "date": "2025-03-05",
+        "text": "Sunshine Bay beach was my favourite find. Crystal clear water and barely anyone there on a weekday."
+      },
+      {
+        "author": "Tane Hikuroa",
+        "authorSlug": "tane-hikuroa",
+        "authorType": "local",
+        "date": "2025-03-08",
+        "text": "Great list! I'd add the Kelvin Heights sculpture trail — free, beautiful, and most visitors have no idea it exists."
+      },
+      {
+        "author": "Emma & James",
+        "authorSlug": "emma-james",
+        "authorType": "visitor",
+        "date": "2025-03-10",
+        "text": "The disc golf in the Gardens was a surprise hit with our kids. You can buy cheap discs from the sports shop on Shotover St."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+        "caption": "Queenstown Gardens"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop",
+        "caption": "Queenstown Hill sunrise"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=300&fit=crop",
+        "caption": "Bob's Cove nature walk"
+      }
     ]
   },
   "best-coffee-locals": {
@@ -102,12 +257,44 @@
     "commentCount": 19,
     "date": "2025-05-08",
     "places": [
-      { "name": "Vudu Cafe", "listingSlug": "vudu-cafe" },
-      { "name": "Bespoke Kitchen", "listingSlug": "bespoke-kitchen" }
+      {
+        "name": "Vudu Cafe",
+        "listingSlug": "vudu-cafe"
+      },
+      {
+        "name": "Bespoke Kitchen",
+        "listingSlug": "bespoke-kitchen"
+      }
     ],
     "comments": [
-      { "author": "Mike Fraser", "authorSlug": "mike-fraser", "authorType": "local", "date": "2025-05-10", "text": "Yonder is legit the best coffee in town. Their filter menu changes weekly and it's always excellent." },
-      { "author": "Jess Taylor", "authorSlug": "jess-taylor", "authorType": "creator", "date": "2025-05-12", "text": "As a fellow local I endorse this entire list. Would also add the coffee cart at the Saturday market — surprisingly good." }
+      {
+        "author": "Mike Fraser",
+        "authorSlug": "mike-fraser",
+        "authorType": "local",
+        "date": "2025-05-10",
+        "text": "Yonder is legit the best coffee in town. Their filter menu changes weekly and it's always excellent."
+      },
+      {
+        "author": "Jess Taylor",
+        "authorSlug": "jess-taylor",
+        "authorType": "creator",
+        "date": "2025-05-12",
+        "text": "As a fellow local I endorse this entire list. Would also add the coffee cart at the Saturday market — surprisingly good."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
+        "caption": "Flat white at Vudu"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=400&h=300&fit=crop",
+        "caption": "Bespoke Kitchen vibes"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400&h=300&fit=crop",
+        "caption": "Latte art game strong"
+      }
     ]
   },
   "winter-driving-tips": {
@@ -122,7 +309,23 @@
     "date": "2025-05-25",
     "places": [],
     "comments": [
-      { "author": "Matt Wilson", "authorSlug": "matt-wilson", "authorType": "local", "date": "2025-05-27", "text": "The Crown Range in winter is genuinely scary if you're not used to it. The Cromwell route adds 30 min but it's so much safer." }
+      {
+        "author": "Matt Wilson",
+        "authorSlug": "matt-wilson",
+        "authorType": "local",
+        "date": "2025-05-27",
+        "text": "The Crown Range in winter is genuinely scary if you're not used to it. The Cromwell route adds 30 min but it's so much safer."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=400&h=300&fit=crop",
+        "caption": "Crown Range in winter"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1565992441121-4367c2967103?w=400&h=300&fit=crop",
+        "caption": "Chains are essential"
+      }
     ]
   },
   "bungy-first-timer": {
@@ -135,11 +338,36 @@
     "commentCount": 24,
     "date": "2025-02-14",
     "places": [
-      { "name": "AJ Hackett Bungy", "listingSlug": "aj-hackett-bungy" }
+      {
+        "name": "AJ Hackett Bungy",
+        "listingSlug": "aj-hackett-bungy"
+      }
     ],
     "comments": [
-      { "author": "Jess Taylor", "authorSlug": "jess-taylor", "authorType": "creator", "date": "2025-02-16", "text": "Point 4 is so true — the countdown is the worst bit. Once you're falling it's pure euphoria. I've done it 6 times now." },
-      { "author": "Emma & James", "authorSlug": "emma-james", "authorType": "visitor", "date": "2025-02-18", "text": "James did this while I watched from the viewing platform. He said the same thing — the fear is all in the waiting, not the jump." }
+      {
+        "author": "Jess Taylor",
+        "authorSlug": "jess-taylor",
+        "authorType": "creator",
+        "date": "2025-02-16",
+        "text": "Point 4 is so true — the countdown is the worst bit. Once you're falling it's pure euphoria. I've done it 6 times now."
+      },
+      {
+        "author": "Emma & James",
+        "authorSlug": "emma-james",
+        "authorType": "visitor",
+        "date": "2025-02-18",
+        "text": "James did this while I watched from the viewing platform. He said the same thing — the fear is all in the waiting, not the jump."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1516939884455-1445c8652f83?w=400&h=300&fit=crop",
+        "caption": "The Kawarau Bridge"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=400&h=300&fit=crop",
+        "caption": "The leap of faith"
+      }
     ]
   },
   "arrowtown-autumn-timing": {
@@ -153,11 +381,40 @@
     "commentCount": 18,
     "date": "2025-04-20",
     "places": [
-      { "name": "Arrowtown River Trail", "listingSlug": "arrowtown-river-trail" }
+      {
+        "name": "Arrowtown River Trail",
+        "listingSlug": "arrowtown-river-trail"
+      }
     ],
     "comments": [
-      { "author": "Sarah Chen", "authorSlug": "sarah-chen", "authorType": "local", "date": "2025-04-22", "text": "April 20 this year was absolutely perfect. The whole avenue was gold. Best I've seen in 12 years." },
-      { "author": "Alex Brooks", "authorSlug": "alex-brooks", "authorType": "visitor", "date": "2025-04-25", "text": "I visited late April and caught the tail end — still beautiful but some trees were bare. Next time I'm aiming for the 15th." }
+      {
+        "author": "Sarah Chen",
+        "authorSlug": "sarah-chen",
+        "authorType": "local",
+        "date": "2025-04-22",
+        "text": "April 20 this year was absolutely perfect. The whole avenue was gold. Best I've seen in 12 years."
+      },
+      {
+        "author": "Alex Brooks",
+        "authorSlug": "alex-brooks",
+        "authorType": "visitor",
+        "date": "2025-04-25",
+        "text": "I visited late April and caught the tail end — still beautiful but some trees were bare. Next time I'm aiming for the 15th."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=400&h=300&fit=crop",
+        "caption": "Peak autumn gold"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+        "caption": "Arrow River trail"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop",
+        "caption": "Buckingham Street colours"
+      }
     ]
   },
   "lake-hayes-morning": {
@@ -171,11 +428,36 @@
     "commentCount": 14,
     "date": "2025-04-15",
     "places": [
-      { "name": "Lake Hayes Loop Track", "listingSlug": "lake-hayes-loop-track" }
+      {
+        "name": "Lake Hayes Loop Track",
+        "listingSlug": "lake-hayes-loop-track"
+      }
     ],
     "comments": [
-      { "author": "Nina Patel", "authorSlug": "nina-patel", "authorType": "creator", "date": "2025-04-17", "text": "This is my #1 photo spot in the region. The reflections on a dead calm morning are unbelievable." },
-      { "author": "Matt Wilson", "authorSlug": "matt-wilson", "authorType": "local", "date": "2025-04-18", "text": "Also great for a morning run — the full loop is about 8km and flat. Stunning at sunrise." }
+      {
+        "author": "Nina Patel",
+        "authorSlug": "nina-patel",
+        "authorType": "creator",
+        "date": "2025-04-17",
+        "text": "This is my #1 photo spot in the region. The reflections on a dead calm morning are unbelievable."
+      },
+      {
+        "author": "Matt Wilson",
+        "authorSlug": "matt-wilson",
+        "authorType": "local",
+        "date": "2025-04-18",
+        "text": "Also great for a morning run — the full loop is about 8km and flat. Stunning at sunrise."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+        "caption": "Mirror reflections at dawn"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop",
+        "caption": "Golden light on the mountains"
+      }
     ]
   },
   "wine-region-guide": {
@@ -190,8 +472,34 @@
     "date": "2025-03-20",
     "places": [],
     "comments": [
-      { "author": "Sarah Chen", "authorSlug": "sarah-chen", "authorType": "local", "date": "2025-03-22", "text": "Amisfield's bistro lunch paired with their wines is one of the best dining experiences in the region. Don't skip it." },
-      { "author": "Jess Taylor", "authorSlug": "jess-taylor", "authorType": "creator", "date": "2025-03-25", "text": "The Gibbston Valley cave tour is a really unique experience. Cool temperature underground year-round and you learn a lot." }
+      {
+        "author": "Sarah Chen",
+        "authorSlug": "sarah-chen",
+        "authorType": "local",
+        "date": "2025-03-22",
+        "text": "Amisfield's bistro lunch paired with their wines is one of the best dining experiences in the region. Don't skip it."
+      },
+      {
+        "author": "Jess Taylor",
+        "authorSlug": "jess-taylor",
+        "authorType": "creator",
+        "date": "2025-03-25",
+        "text": "The Gibbston Valley cave tour is a really unique experience. Cool temperature underground year-round and you learn a lot."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=400&h=300&fit=crop",
+        "caption": "Gibbston Valley cellar door"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1474722883778-792e7990302f?w=400&h=300&fit=crop",
+        "caption": "Central Otago pinot noir"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&h=300&fit=crop",
+        "caption": "Wine tasting in the cave"
+      }
     ]
   },
   "hiking-gear-rental": {
@@ -205,7 +513,19 @@
     "date": "2025-01-10",
     "places": [],
     "comments": [
-      { "author": "Alex Brooks", "authorSlug": "alex-brooks", "authorType": "visitor", "date": "2025-01-12", "text": "Wish I'd known this before buying $40 boots that gave me blisters on day one. Rented proper Salomons for my last 3 hikes and it was a game changer." }
+      {
+        "author": "Alex Brooks",
+        "authorSlug": "alex-brooks",
+        "authorType": "visitor",
+        "date": "2025-01-12",
+        "text": "Wish I'd known this before buying $40 boots that gave me blisters on day one. Rented proper Salomons for my last 3 hikes and it was a game changer."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop",
+        "caption": "Proper boots make all the difference"
+      }
     ]
   },
   "shotover-jet-tips": {
@@ -218,11 +538,36 @@
     "commentCount": 10,
     "date": "2025-01-28",
     "places": [
-      { "name": "Shotover Jet", "listingSlug": "shotover-jet" }
+      {
+        "name": "Shotover Jet",
+        "listingSlug": "shotover-jet"
+      }
     ],
     "comments": [
-      { "author": "Matt Wilson", "authorSlug": "matt-wilson", "authorType": "local", "date": "2025-01-30", "text": "Front row is absolutely the way to go. The 360 spins from the front are next level." },
-      { "author": "Alex Brooks", "authorSlug": "alex-brooks", "authorType": "visitor", "date": "2025-02-01", "text": "Bought the GoPro footage and it was totally worth it. Way better than my shaky phone would have managed." }
+      {
+        "author": "Matt Wilson",
+        "authorSlug": "matt-wilson",
+        "authorType": "local",
+        "date": "2025-01-30",
+        "text": "Front row is absolutely the way to go. The 360 spins from the front are next level."
+      },
+      {
+        "author": "Alex Brooks",
+        "authorSlug": "alex-brooks",
+        "authorType": "visitor",
+        "date": "2025-02-01",
+        "text": "Bought the GoPro footage and it was totally worth it. Way better than my shaky phone would have managed."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1570197571499-166b36435e9f?w=400&h=300&fit=crop",
+        "caption": "Shotover Jet in the canyon"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=300&fit=crop",
+        "caption": "The Shotover River"
+      }
     ]
   },
   "family-restaurant-guide": {
@@ -235,14 +580,48 @@
     "commentCount": 16,
     "date": "2025-02-05",
     "places": [
-      { "name": "Flame Bar & Grill", "listingSlug": "flame-bar-grill" },
-      { "name": "Stratosfare", "listingSlug": "stratosfare-restaurant" },
-      { "name": "Fergburger", "listingSlug": "fergburger" },
-      { "name": "Bespoke Kitchen", "listingSlug": "bespoke-kitchen" }
+      {
+        "name": "Flame Bar & Grill",
+        "listingSlug": "flame-bar-grill"
+      },
+      {
+        "name": "Stratosfare",
+        "listingSlug": "stratosfare-restaurant"
+      },
+      {
+        "name": "Fergburger",
+        "listingSlug": "fergburger"
+      },
+      {
+        "name": "Bespoke Kitchen",
+        "listingSlug": "bespoke-kitchen"
+      }
     ],
     "comments": [
-      { "author": "Sarah Chen", "authorSlug": "sarah-chen", "authorType": "local", "date": "2025-02-07", "text": "As a cafe owner I appreciate this list! Bespoke Kitchen genuinely loves having families in. It's part of their vibe." },
-      { "author": "Jess Taylor", "authorSlug": "jess-taylor", "authorType": "creator", "date": "2025-02-10", "text": "Would add Yonder to this — they have a great kids corner and the food is incredible for adults too." }
+      {
+        "author": "Sarah Chen",
+        "authorSlug": "sarah-chen",
+        "authorType": "local",
+        "date": "2025-02-07",
+        "text": "As a cafe owner I appreciate this list! Bespoke Kitchen genuinely loves having families in. It's part of their vibe."
+      },
+      {
+        "author": "Jess Taylor",
+        "authorSlug": "jess-taylor",
+        "authorType": "creator",
+        "date": "2025-02-10",
+        "text": "Would add Yonder to this — they have a great kids corner and the food is incredible for adults too."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop",
+        "caption": "Family dinner at Flame"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
+        "caption": "Kids love Fergburger"
+      }
     ]
   },
   "skyline-luge-hack": {
@@ -255,11 +634,36 @@
     "commentCount": 13,
     "date": "2025-12-18",
     "places": [
-      { "name": "Skyline Queenstown", "listingSlug": "skyline-queenstown" }
+      {
+        "name": "Skyline Queenstown",
+        "listingSlug": "skyline-queenstown"
+      }
     ],
     "comments": [
-      { "author": "Emma & James", "authorSlug": "emma-james", "authorType": "visitor", "date": "2025-12-20", "text": "Can confirm — we bought the 3-ride and immediately wished we'd got the 5. Ended up buying extra rides at the top which cost more." },
-      { "author": "Sarah Chen", "authorSlug": "sarah-chen", "authorType": "local", "date": "2025-12-22", "text": "Late afternoon is also when the light is best for photos from the top. Win-win." }
+      {
+        "author": "Emma & James",
+        "authorSlug": "emma-james",
+        "authorType": "visitor",
+        "date": "2025-12-20",
+        "text": "Can confirm — we bought the 3-ride and immediately wished we'd got the 5. Ended up buying extra rides at the top which cost more."
+      },
+      {
+        "author": "Sarah Chen",
+        "authorSlug": "sarah-chen",
+        "authorType": "local",
+        "date": "2025-12-22",
+        "text": "Late afternoon is also when the light is best for photos from the top. Win-win."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=400&h=300&fit=crop",
+        "caption": "Luge tracks with a view"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+        "caption": "Gondola views"
+      }
     ]
   },
   "ben-lomond-prep": {
@@ -272,11 +676,337 @@
     "commentCount": 20,
     "date": "2025-01-05",
     "places": [
-      { "name": "Ben Lomond Track", "listingSlug": "ben-lomond-track" }
+      {
+        "name": "Ben Lomond Track",
+        "listingSlug": "ben-lomond-track"
+      }
     ],
     "comments": [
-      { "author": "Alex Brooks", "authorSlug": "alex-brooks", "authorType": "visitor", "date": "2025-01-08", "text": "I did this hike in proper gear and it was still tough. The last section to the summit is legit scrambling. But the views — absolutely worth every step." },
-      { "author": "Tane Hikuroa", "authorSlug": "tane-hikuroa", "authorType": "local", "date": "2025-01-10", "text": "Please listen to Matt on this one. SAR gets called out too often for unprepared hikers on Ben Lomond. It's a real mountain." }
+      {
+        "author": "Alex Brooks",
+        "authorSlug": "alex-brooks",
+        "authorType": "visitor",
+        "date": "2025-01-08",
+        "text": "I did this hike in proper gear and it was still tough. The last section to the summit is legit scrambling. But the views — absolutely worth every step."
+      },
+      {
+        "author": "Tane Hikuroa",
+        "authorSlug": "tane-hikuroa",
+        "authorType": "local",
+        "date": "2025-01-10",
+        "text": "Please listen to Matt on this one. SAR gets called out too often for unprepared hikers on Ben Lomond. It's a real mountain."
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop",
+        "caption": "The summit reward"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop",
+        "caption": "Above the treeline"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=400&h=300&fit=crop",
+        "caption": "The final scramble"
+      }
+    ]
+  },
+  "queenstown-trail-ebike": {
+    "title": "E-Biking the Queenstown Trail: The Route Locals Love",
+    "contributorSlug": "jess-taylor",
+    "category": "outdoor",
+    "season": "summer",
+    "travellerType": "couple",
+    "text": "The full Queenstown Trail is 130km, but the locals' favourite section is Frankton to Arrowtown via Lake Hayes. About 15km, mostly flat, stunning lake views the entire way. Hire e-bikes from Charge About in town — they deliver to Frankton. Ride to Arrowtown, have lunch at Provisions, then ride back. The return leg with the afternoon sun on the lake is magical.",
+    "upvotes": 198,
+    "commentCount": 14,
+    "date": "2025-11-15",
+    "places": [
+      {
+        "name": "Charge About E-Bikes",
+        "listingSlug": "charge-about-ebikes"
+      },
+      {
+        "name": "Lake Hayes Loop Track",
+        "listingSlug": "lake-hayes-loop-track"
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1472791108553-c9405341e398?w=400&h=300&fit=crop",
+        "caption": "E-biking along Lake Hayes"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+        "caption": "The trail at golden hour"
+      }
+    ],
+    "comments": [
+      {
+        "author": "Matt Wilson",
+        "authorSlug": "matt-wilson",
+        "authorType": "local",
+        "date": "2025-11-18",
+        "text": "This is my go-to recommendation for visitors. E-bikes make it accessible for everyone and the scenery is next level."
+      }
+    ]
+  },
+  "onsen-hot-pools-tips": {
+    "title": "Onsen Hot Pools: Everything You Need to Know",
+    "contributorSlug": "nina-patel",
+    "category": "wellness",
+    "season": "spring",
+    "travellerType": "couple",
+    "text": "Book the sunrise session — it's the most popular but worth waking up for. You get a private cedar hot tub overlooking the Shotover Canyon with nobody else around. The twilight sessions are romantic too. Bring your own towel (saves $5), arrive 15 min early, and leave your phone in the locker. Just be present. In winter, the steam rising off the pools with snow on the mountains is pure magic.",
+    "upvotes": 234,
+    "commentCount": 18,
+    "date": "2025-09-20",
+    "places": [
+      {
+        "name": "Onsen Hot Pools"
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbec6a?w=400&h=300&fit=crop",
+        "caption": "Private hot tub with canyon views"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=300&fit=crop",
+        "caption": "Sunrise over the Shotover"
+      }
+    ],
+    "comments": [
+      {
+        "author": "Mike Fraser",
+        "authorSlug": "mike-fraser",
+        "authorType": "local",
+        "date": "2025-09-22",
+        "text": "The twilight session is underrated. Watching the stars come out from the pool is a top Queenstown experience."
+      },
+      {
+        "author": "Sarah Chen",
+        "authorSlug": "sarah-chen",
+        "authorType": "local",
+        "date": "2025-09-25",
+        "text": "Pro tip: they sometimes have cancellations for the sunrise slot. Call the day before."
+      }
+    ]
+  },
+  "arrowtown-beyond-autumn": {
+    "title": "Arrowtown is More Than Just Autumn Colours",
+    "contributorSlug": "tane-hikuroa",
+    "category": "culture",
+    "season": "summer",
+    "travellerType": "couple",
+    "text": "Everyone visits in autumn for the colours, but Arrowtown year-round is special. The Chinese Settlement is one of NZ's most significant heritage sites — the restored huts tell the story of Chinese gold miners from the 1860s. Walk the River Trail any season. The boutique shops on Buckingham Street are genuinely good (not tourist tat). And the Fork & Tap brewery does excellent pub food. In summer, the river swimming holes upstream from the settlement are a local secret.",
+    "upvotes": 156,
+    "commentCount": 10,
+    "date": "2025-01-08",
+    "places": [
+      {
+        "name": "Arrowtown River Trail",
+        "listingSlug": "arrowtown-river-trail"
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=400&h=300&fit=crop",
+        "caption": "Buckingham Street"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+        "caption": "Chinese Settlement heritage"
+      }
+    ],
+    "comments": [
+      {
+        "author": "Sarah Chen",
+        "authorSlug": "sarah-chen",
+        "authorType": "local",
+        "date": "2025-01-10",
+        "text": "The river swimming holes are amazing in January. Head upstream past the settlement about 500m."
+      }
+    ]
+  },
+  "tss-earnslaw-guide": {
+    "title": "TSS Earnslaw: More Than Just a Boat Trip",
+    "contributorSlug": "mike-fraser",
+    "category": "culture",
+    "travellerType": "family",
+    "text": "The TSS Earnslaw isn't just a cruise — she's a 1912 coal-fired steamship, one of the oldest in the southern hemisphere. Go below deck and watch the stokers shovelling coal into the furnace. The Walter Peak farm experience on the other side is great for kids — sheep shearing, dog trials, and an incredible afternoon tea. Book the lunchtime BBQ for the best value. The sunset cruise is romantic but you don't get the Walter Peak experience.",
+    "upvotes": 167,
+    "commentCount": 12,
+    "date": "2025-06-12",
+    "places": [
+      {
+        "name": "TSS Earnslaw",
+        "listingSlug": "tss-earnslaw"
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=400&h=300&fit=crop",
+        "caption": "TSS Earnslaw on Lake Wakatipu"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=300&fit=crop",
+        "caption": "Walter Peak farm"
+      }
+    ],
+    "comments": [
+      {
+        "author": "Emma & James",
+        "authorSlug": "emma-james",
+        "authorType": "visitor",
+        "date": "2025-06-15",
+        "text": "Our kids were obsessed with watching the engine room. The stokers are so friendly and explained everything."
+      }
+    ]
+  },
+  "budget-accommodation-tips": {
+    "title": "Where to Stay in Queenstown on a Budget",
+    "contributorSlug": "alex-brooks",
+    "category": "budget",
+    "travellerType": "solo",
+    "text": "Queenstown accommodation is expensive, but here's how to save: 1) Frankton is 10 min from town and way cheaper 2) YHA Queenstown Lakefront is the best hostel — great location, clean, lake views 3) Holiday parks in Arrowtown/Frankton have cabins from $80/night 4) Off-season (May/November) rates drop 40-50% 5) Book direct with properties — many offer better rates than booking.com 6) Airbnb in Fernhill/Sunshine Bay for groups sharing is the best value per person.",
+    "upvotes": 287,
+    "commentCount": 22,
+    "date": "2025-02-28",
+    "places": [],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+        "caption": "Queenstown lakefront — free views"
+      }
+    ],
+    "comments": [
+      {
+        "author": "Jess Taylor",
+        "authorSlug": "jess-taylor",
+        "authorType": "creator",
+        "date": "2025-03-02",
+        "text": "Fernhill is such an underrated area. Walking distance to town, way quieter, and the views from the hillside are amazing."
+      },
+      {
+        "author": "Matt Wilson",
+        "authorSlug": "matt-wilson",
+        "authorType": "local",
+        "date": "2025-03-05",
+        "text": "Arrowtown holiday park is genuinely nice and the drive to QT is only 20 min. Good shout."
+      }
+    ]
+  },
+  "moke-lake-hidden-gem": {
+    "title": "Moke Lake: Queenstown's Best Kept Secret",
+    "contributorSlug": "sarah-chen",
+    "category": "outdoor",
+    "season": "spring",
+    "travellerType": "solo",
+    "text": "Everyone does the Queenstown Hill walk or Ben Lomond, but Moke Lake is where I go to actually escape. 20 minutes' drive from town on a gravel road, then a flat 1-hour loop around a pristine mountain lake. Almost nobody there, even in peak season. The DOC campsite is basic but beautiful — $8/night. In spring the wildflowers around the shore are stunning. Bring sandfly repellent.",
+    "upvotes": 178,
+    "commentCount": 8,
+    "date": "2025-10-05",
+    "places": [
+      {
+        "name": "Moke Lake Loop Track",
+        "listingSlug": "moke-lake-loop-track"
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=300&fit=crop",
+        "caption": "Moke Lake morning calm"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+        "caption": "Spring wildflowers on the shore"
+      }
+    ],
+    "comments": [
+      {
+        "author": "Nina Patel",
+        "authorSlug": "nina-patel",
+        "authorType": "creator",
+        "date": "2025-10-08",
+        "text": "Shhh Sarah! This is our secret spot. The morning mist on the lake is photographer heaven."
+      }
+    ]
+  },
+  "night-sky-queenstown": {
+    "title": "Queenstown's Night Sky is Criminally Underrated",
+    "contributorSlug": "nina-patel",
+    "category": "photography",
+    "season": "winter",
+    "travellerType": "solo",
+    "text": "Queenstown is close to a Dark Sky Reserve and winter nights are crystal clear. Best spots: Glenorchy waterfront (zero light pollution), Moke Lake (if you're camping), or the Kelvin Heights peninsula (closest to town). The Milky Way is visible to the naked eye from June to September. You don't need a fancy camera — even an iPhone 15+ can capture it with night mode on a tripod. Just dress warm — it gets to -5°C.",
+    "upvotes": 145,
+    "commentCount": 11,
+    "date": "2025-07-20",
+    "places": [],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop",
+        "caption": "Milky Way over the mountains"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=300&fit=crop",
+        "caption": "Stars at Glenorchy"
+      }
+    ],
+    "comments": [
+      {
+        "author": "Alex Brooks",
+        "authorSlug": "alex-brooks",
+        "authorType": "visitor",
+        "date": "2025-07-25",
+        "text": "The night sky at Glenorchy blew my mind. Growing up in Portland I've never seen anything like it."
+      }
+    ]
+  },
+  "kids-under-5-guide": {
+    "title": "Queenstown with Toddlers: Honest Guide from a Parent",
+    "contributorSlug": "emma-james",
+    "category": "family",
+    "season": "summer",
+    "travellerType": "family",
+    "text": "Real talk from a parent of three: Queenstown with under-5s requires planning. The Queenstown Gardens playground is excellent (fenced, lake views). The Kiwi Birdlife Park is the right length for tiny attention spans. The gondola ride is exciting and the Stratosfare buffet means no waiting for food with hangry toddlers. Skip anything that says 'ages 5+' — they mean it. Bring the pushchair for the waterfront but leave it behind for anything involving steps or gravel.",
+    "upvotes": 213,
+    "commentCount": 19,
+    "date": "2025-01-15",
+    "places": [
+      {
+        "name": "Queenstown Gardens",
+        "listingSlug": "queenstown-gardens-trail"
+      },
+      {
+        "name": "Kiwi Birdlife Park",
+        "listingSlug": "kiwi-birdlife-park"
+      },
+      {
+        "name": "Skyline Queenstown",
+        "listingSlug": "skyline-queenstown"
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+        "caption": "Gardens playground heaven"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=400&h=300&fit=crop",
+        "caption": "Gondola excitement"
+      }
+    ],
+    "comments": [
+      {
+        "author": "Sarah Chen",
+        "authorSlug": "sarah-chen",
+        "authorType": "local",
+        "date": "2025-01-18",
+        "text": "As a local without kids, I always recommend the Gardens playground to visiting families — it's genuinely one of the best in the South Island."
+      }
     ]
   }
 }
