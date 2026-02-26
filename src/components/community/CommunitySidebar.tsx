@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import contributorsData from "@/data/community-contributors.json";
 import { useSavedItems } from "./SaveButton";
+import DestinationBusyness from "./DestinationBusyness";
 import collectionsData from "@/data/community-collections.json";
 import eventsData from "@/data/community-events.json";
 
@@ -61,6 +62,9 @@ export default function CommunitySidebar() {
 
   return (
     <aside className="space-y-8">
+      {/* Destination Busyness */}
+      <DestinationBusyness />
+
       {/* Saved Items (desktop) */}
       {savedItems.length > 0 && (
         <div className="bg-teal/5 border border-teal/20 rounded-xl p-6">
