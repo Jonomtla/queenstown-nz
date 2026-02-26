@@ -17,6 +17,7 @@ import ShareButtons from "@/components/community/ShareButtons";
 import CrowdSummary from "@/components/community/CrowdSummary";
 import SaveButton from "@/components/community/SaveButton";
 import BonusDay from "@/components/community/BonusDay";
+import StickyActionBar from "@/components/community/StickyActionBar";
 import itinerariesData from "@/data/community-itineraries.json";
 import contributorsData from "@/data/community-contributors.json";
 
@@ -309,7 +310,7 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
         <section className="bg-cream px-8 md:px-20 lg:px-24 py-16">
           <div className="container-wide">
             <h2 className="text-2xl font-bold text-teal tracking-widest-custom uppercase mb-8">
-              Related Itineraries
+              People Also Viewed
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {related.slice(0, 3).map((r) => {
@@ -332,6 +333,7 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
                     endorsements={r.endorsements}
                     photoCount={r.photos?.length}
                     budgetLevel={r.costEstimate?.level}
+                    highlights={r.days.flatMap((d: { segments: { title: string }[] }) => d.segments.map((s: { title: string }) => s.title)).slice(0, 3)}
                   />
                 );
               })}
@@ -339,6 +341,8 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
           </div>
         </section>
       )}
+      {/* Sticky save CTA on mobile */}
+      <StickyActionBar slug={slug} title={itinerary.title} duration={itinerary.duration} />
     </PageLayout>
   );
 }

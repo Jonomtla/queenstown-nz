@@ -57,6 +57,8 @@ interface ItineraryCardProps {
   photoCount?: number;
   budgetLevel?: string;
   ecoTag?: string;
+  highlights?: string[];
+  stewardshipTags?: string[];
 }
 
 export default function ItineraryCard({
@@ -77,6 +79,8 @@ export default function ItineraryCard({
   photoCount,
   budgetLevel,
   ecoTag,
+  highlights,
+  stewardshipTags,
 }: ItineraryCardProps) {
   const traveller = travellerType ? TRAVELLER_LABELS[travellerType] : null;
 
@@ -106,11 +110,13 @@ export default function ItineraryCard({
               </span>
             ))}
           </div>
-          {photoCount && photoCount > 0 && (
-            <span className="absolute bottom-3 right-3 z-20 bg-black/60 text-white text-[10px] font-semibold px-2 py-1 rounded-full flex items-center gap-1 backdrop-blur-sm">
-              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-              {photoCount}
-            </span>
+          {photoCount && photoCount > 1 && (
+            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex items-center gap-1.5">
+              {Array.from({ length: Math.min(photoCount, 5) }).map((_, i) => (
+                <span key={i} className={`w-1.5 h-1.5 rounded-full ${i === 0 ? "bg-white" : "bg-white/50"}`} />
+              ))}
+              {photoCount > 5 && <span className="text-[9px] text-white/70 font-semibold ml-0.5">+{photoCount - 5}</span>}
+            </div>
           )}
         </div>
       </Link>
@@ -147,7 +153,7 @@ export default function ItineraryCard({
           </span>
         )}
 
-        {ecoTag && (
+        {ecoTag && (!stewardshipTags || stewardshipTags.length === 0) && (
           <span className="inline-flex items-center gap-1 text-[10px] font-semibold tracking-widest-custom uppercase text-green-700 bg-green-100 px-2.5 py-0.5 rounded-full mb-1">
             <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -162,6 +168,27 @@ export default function ItineraryCard({
           </h3>
         </Link>
         <p className="text-gray-600 text-sm mt-2 leading-relaxed line-clamp-2">{summary}</p>
+
+        {/* Activity preview */}
+        {highlights && highlights.length > 0 && (
+          <p className="text-xs text-gray-400 mt-2 truncate">
+            {highlights.slice(0, 3).join(" · ")}
+          </p>
+        )}
+
+        {/* Stewardship badges */}
+        {stewardshipTags && stewardshipTags.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 mt-2">
+            {stewardshipTags.map((tag) => (
+              <span key={tag} className="inline-flex items-center gap-1 text-[10px] font-semibold tracking-widest-custom uppercase text-green-700 bg-green-100 px-2 py-0.5 rounded-full">
+                <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
 
         {/* Social proof badge */}
         {endorsementCount && endorsementCount > 0 && endorsementVerb && (

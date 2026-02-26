@@ -466,7 +466,8 @@
       "stayLonger": 115,
       "confirmed": 161,
       "contextMatters": 31
-    }
+    },
+    "stewardshipTags": ["Local Business"]
   },
   "family-friendly-summer-week": {
     "title": "Family-Friendly Summer Week",
@@ -961,7 +962,8 @@
       "stayLonger": 142,
       "confirmed": 192,
       "contextMatters": 39
-    }
+    },
+    "stewardshipTags": ["Family Friendly"]
   },
   "foodie-trail-queenstown": {
     "title": "The Queenstown Foodie Trail",
@@ -1305,7 +1307,8 @@
       "stayLonger": 98,
       "confirmed": 139,
       "contextMatters": 24
-    }
+    },
+    "stewardshipTags": ["Local Business", "Supports Community"]
   },
   "solo-adventure-5-days": {
     "title": "5 Days Solo: Pushing Your Limits",
@@ -1768,7 +1771,8 @@
       "confirmed": 120,
       "contextMatters": 23
     },
-    "ecoTag": "Low-Impact Trail"
+    "ecoTag": "Low-Impact Trail",
+    "stewardshipTags": ["Trail Fund", "Low Impact"]
   },
   "active-arrowtown-day": {
     "title": "A Perfect Day in Arrowtown",
@@ -2572,7 +2576,8 @@
       "stayLonger": 115,
       "confirmed": 150,
       "contextMatters": 28
-    }
+    },
+    "stewardshipTags": ["Off-Peak Travel"]
   },
   "luxury-long-weekend": {
     "title": "The Luxury Long Weekend",
@@ -3597,7 +3602,8 @@
       "confirmed": 115,
       "contextMatters": 23
     },
-    "ecoTag": "Eco-Certified"
+    "ecoTag": "Eco-Certified",
+    "stewardshipTags": ["Eco-Certified", "Carbon Offset"]
   },
   "group-adventure-weekend": {
     "title": "Group Adventure Weekend",
@@ -4320,6 +4326,7 @@
       "confirmed": 162,
       "contextMatters": 30
     },
-    "ecoTag": "DOC Conservation Partner"
+    "ecoTag": "DOC Conservation Partner",
+    "stewardshipTags": ["DOC Partner", "Conservation Fund"]
   }
 }

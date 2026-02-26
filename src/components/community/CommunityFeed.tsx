@@ -36,11 +36,12 @@ const itineraries = itinerariesData as Record<string, {
   upvotes: number;
   commentCount: number;
   endorsements?: Record<string, number>;
-  days: { segments: { ageRange?: string }[] }[];
+  days: { segments: { title: string; ageRange?: string }[] }[];
   reactions?: { stayLonger: number; confirmed: number; contextMatters: number };
   photos?: { src: string; caption: string }[];
   costEstimate?: { level: string };
   ecoTag?: string;
+  stewardshipTags?: string[];
 }>;
 const recommendations = recommendationsData as Record<string, {
   title: string;
@@ -167,6 +168,8 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
                 photoCount={it.photos?.length}
                 budgetLevel={it.costEstimate?.level}
                 ecoTag={it.ecoTag}
+                highlights={it.days.flatMap(d => d.segments.map(s => s.title)).slice(0, 3)}
+                stewardshipTags={it.stewardshipTags}
               />
             );
           })() : (() => {
