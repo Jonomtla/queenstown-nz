@@ -81,6 +81,13 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
   const [activeDuration, setActiveDuration] = useState("all");
   const [activeSort, setActiveSort] = useState("popular");
 
+  const onCategoryReset = () => {
+    setActiveCategory("all");
+    setActiveTraveller("all");
+    setActiveSeason("all");
+    setActiveDuration("all");
+  };
+
   const filteredItems = useMemo(() => {
     const items: { type: "itinerary" | "recommendation"; slug: string; upvotes: number; stayLonger: number; date: string }[] = [];
 
@@ -204,8 +211,18 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
       </div>
 
       {filteredItems.length === 0 && (
-        <div className="text-center py-16">
-          <p className="text-gray-400 text-lg">No results match your filters. Try broadening your search.</p>
+        <div className="text-center py-16 md:col-span-2">
+          <svg className="w-16 h-16 text-gray-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <p className="text-gray-500 text-lg mb-2">No results match your filters</p>
+          <p className="text-gray-400 text-sm mb-6">Try selecting fewer filters or a different combination.</p>
+          <button
+            onClick={() => { onCategoryReset(); }}
+            className="inline-block border border-teal rounded-full px-6 py-2.5 text-xs font-semibold tracking-widest-custom uppercase text-teal hover:bg-teal hover:text-white transition-colors"
+          >
+            Clear All Filters
+          </button>
         </div>
       )}
 

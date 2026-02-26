@@ -35,7 +35,7 @@ export default function CommunityFilterBar({
 }: CommunityFilterBarProps) {
   return (
     <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-      <div className="flex flex-wrap gap-2 flex-1 overflow-x-auto -mx-1 px-1 scrollbar-hide">
+      <div className="relative flex flex-wrap gap-2 flex-1 overflow-x-auto -mx-1 px-1 scrollbar-hide" style={{ maskImage: "linear-gradient(to right, black 90%, transparent 100%)", WebkitMaskImage: "linear-gradient(to right, black 90%, transparent 100%)" }}>
         {CATEGORIES.map((item) => (
           <button
             key={item.value}
