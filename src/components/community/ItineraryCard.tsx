@@ -28,9 +28,9 @@ const ENDORSEMENT_VERBS: Record<string, string> = {
 };
 
 const BUDGET_STYLES: Record<string, { label: string; color: string }> = {
-  budget: { label: "Budget", color: "bg-green-100 text-green-700" },
-  "mid-range": { label: "Mid-Range", color: "bg-amber-100 text-amber-700" },
-  luxury: { label: "Luxury", color: "bg-copper/10 text-copper" },
+  budget: { label: "$", color: "bg-green-100 text-green-700" },
+  "mid-range": { label: "$$", color: "bg-amber-100 text-amber-700" },
+  luxury: { label: "$$$", color: "bg-copper/10 text-copper" },
 };
 
 interface ItineraryCardProps {
