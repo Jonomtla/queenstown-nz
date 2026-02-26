@@ -49,9 +49,9 @@
 | Teal Dark | `--color-teal-dark` | `#003244` | Header bg, deep emphasis |
 | Teal Light | `--color-teal-light` | `#005a7a` | Hover states on teal text |
 | Light Blue | `--color-light-blue` | `#91b5be` | Decorative accents (rarely used currently) |
-| Cream | `--color-cream` | `#f7f3ed` | Page backgrounds, card backgrounds, sections |
+| Cream | `--color-cream` | `#f4ece1` | Page backgrounds, card backgrounds, sections |
 | Cream Dark | `--color-cream-dark` | `#ede7dd` | Not currently used — available for depth |
-| Copper | `--color-copper` | `#c67a3c` | Secondary accent — badges, endorsements, seasonal labels, "New" badges |
+| Copper | `--color-copper` | `#c86128` | Secondary accent — badges, endorsements, seasonal labels, "New" badges |
 | Body | `--color-body` | `#3f3939` | Default body text color |
 
 ### Gray Scale
@@ -81,7 +81,7 @@
 Teal is used for headings, links, CTAs, icons, badges, chart highlights, sidebar labels. This dilutes visual hierarchy. **Recommendation:** Reserve teal for interactive elements (links, buttons, icons). Use `text-body` or `text-gray-700` for section headings that aren't clickable.
 
 ### Known Issue: Official QT Site Uses Orange
-The official site uses `#c86128` (orange-brown) for hover states and CTAs. Our `copper` (`#c67a3c`) is close but slightly different. Consider aligning to `#c86128` for consistency if this is meant to match the official brand.
+The official site uses `#c86128` (orange-brown) for hover states and CTAs. Our `copper` (`#c86128`) is close but slightly different. Consider aligning to `#c86128` for consistency if this is meant to match the official brand.
 
 ---
 
@@ -118,7 +118,7 @@ The official site uses `#c86128` (orange-brown) for hover states and CTAs. Our `
 
 ### Custom Utility: `tracking-widest-custom`
 ```css
-.tracking-widest-custom { letter-spacing: 0.2em; }
+.tracking-widest-custom { letter-spacing: 0.15em; }
 ```
 Used on ALL uppercase labels, headings, badges, and navigation items. This is a signature visual element of the design — every uppercase element should use it.
 
@@ -418,7 +418,7 @@ Tailwind defaults apply:
    - Color-only crowd level differentiation (needs text + color)
    - Some SVG icons missing `aria-label` or `aria-hidden`
    - `text-[10px]` on badges may be below WCAG minimum (12px recommended)
-   - Cream bg (`#f7f3ed`) against `text-gray-500` (`#737373`) contrast ratio: ~3.8:1 — fails WCAG AA (needs 4.5:1)
+   - Cream bg (`#f4ece1`) against `text-gray-500` (`#737373`) contrast ratio: ~3.8:1 — fails WCAG AA (needs 4.5:1)
 
 ### Moderate
 
@@ -456,7 +456,7 @@ Tailwind defaults apply:
 | **Hero treatment** | Aspect-ratio responsive (2304x1110 desktop), gradient to black at bottom, white accent underline below title | Fixed `h-[50vh]`, gradient overlay, no underline | Official heroes feel more cinematic |
 | **Card hover** | Scale 1.05x + overlay fade + shadow lift | Scale 1.05x + shadow lift | Missing overlay fade on hover |
 | **Button design** | Pill buttons with `px-[72px]` generous padding, clear primary/secondary distinction | Pill buttons with `px-6`, primary only | Our buttons feel smaller and less confident |
-| **Color warmth** | Cream bg `#f4ece1` (warmer), orange `#c86128` as accent | Cream `#f7f3ed` (cooler), copper `#c67a3c` | Our palette is slightly colder |
+| **Color warmth** | Cream bg `#f4ece1` (warmer), orange `#c86128` as accent | Cream `#f4ece1` (cooler), copper `#c86128` | Our palette is slightly colder |
 | **Tripbuilder** | Heart icon save system with counter in nav header | Heart save with floating bar | Official version is more integrated into the navigation |
 | **Megamenu** | 3-column dropdowns with smooth transitions | Single-column dropdowns | Official nav feels more premium |
 | **Letter-spacing** | `0.11-0.13em` on uppercase | `0.2em` on uppercase | Ours is noticeably wider — stylised but less "official" |
@@ -478,12 +478,12 @@ Tailwind defaults apply:
 
 To feel like an extension of the official site rather than a separate product:
 
-1. **Warm up the cream** — shift `#f7f3ed` → `#f4ece1` to match official bg
+1. **Warm up the cream** — shift `#f4ece1` → `#f4ece1` to match official bg
 2. **Tighten letter-spacing** — consider `0.15em` as a middle ground (our `0.2em` is noticeably wider than official `0.11em`)
 3. **Add overlay fade on card hover** — matches official interaction pattern
 4. **Increase button padding** — our CTAs feel timid compared to official `px-[72px]`
 5. **Consider adding Carnac Bold** — if DQ can provide the font files, it would instantly align the visual language. If not, a heavier weight of Carlito or a similar geometric sans could help
-6. **Match copper to official orange** — `#c67a3c` → `#c86128` for exact brand alignment
+6. **Match copper to official orange** — `#c86128` → `#c86128` for exact brand alignment
 
 ---
 
@@ -491,12 +491,17 @@ To feel like an extension of the official site rather than a separate product:
 
 ### Priority 1 — Quick Wins
 
-- [ ] Fix footer links (real routes or remove)
-- [ ] Increase badge font size from `10px` to `11px` minimum for accessibility
-- [ ] Add `aria-hidden="true"` to all decorative SVG icons consistently
-- [ ] Warm cream from `#f7f3ed` to `#f4ece1`
-- [ ] Add overlay fade effect on card image hover: `absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all`
-- [ ] Switch Google Fonts to `next/font/google` for performance
+- [x] Fix footer links (real routes) — DONE
+- [x] Increase badge font size `10px` → `11px` minimum (WCAG) — DONE
+- [ ] Add `aria-hidden="true"` to all decorative SVGs — partial, ongoing
+- [x] Warm cream to `#f4ece1` — DONE
+- [x] Align copper to official orange `#c86128` — DONE
+- [x] Tighten letter-spacing `0.2em` → `0.15em` — DONE
+- [x] Add overlay fade on card image hover — DONE
+- [x] Switch to `next/font/google` — DONE
+- [x] Add print stylesheet — DONE
+- [x] Filter bar scroll fade indicator — DONE
+- [x] Proper empty state for zero filter results — DONE
 
 ### Priority 2 — UX Improvements
 
