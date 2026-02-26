@@ -36,6 +36,7 @@ const itineraries = itinerariesData as Record<string, {
   reactions?: { stayLonger: number; confirmed: number; contextMatters: number };
   photos?: { src: string; caption: string }[];
   costEstimate?: { level: string };
+  ecoTag?: string;
 }>;
 const recommendations = recommendationsData as Record<string, {
   title: string;
@@ -152,6 +153,7 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
                 minAge={getMinAge(it.days)}
                 photoCount={it.photos?.length}
                 budgetLevel={it.costEstimate?.level}
+                ecoTag={it.ecoTag}
               />
             );
           }

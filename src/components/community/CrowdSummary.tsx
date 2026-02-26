@@ -2,12 +2,14 @@ interface CrowdPressure {
   level: "low" | "moderate" | "high" | "extreme";
   peakTimes: string;
   tip: string;
-  byHour: number[];
+  byMonth?: number[];
   bestSeason: string;
   worstSeason: string;
+  dispersalNudge?: { alternative: string; reason: string; slug?: string | null };
 }
 
 interface Segment {
+  title?: string;
   crowdPressure?: CrowdPressure;
   [key: string]: unknown;
 }
@@ -17,9 +19,7 @@ interface Day {
   [key: string]: unknown;
 }
 
-const LEVEL_ORDER = ["low", "moderate", "high", "extreme"];
-
-function seasonLabel(s: string) {
+function cap(s: string) {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
@@ -29,35 +29,30 @@ export default function CrowdSummary({ days }: { days: Day[] }) {
 
   if (crowded.length === 0) return null;
 
-  const highCrowdCount = crowded.filter(
+  const highCrowd = crowded.filter(
     (s) => s.crowdPressure!.level === "high" || s.crowdPressure!.level === "extreme"
-  ).length;
+  );
 
-  // Find most common best season
+  // Find most common best/worst season
   const seasonCounts: Record<string, number> = {};
-  crowded.forEach((s) => {
-    const best = s.crowdPressure!.bestSeason;
-    seasonCounts[best] = (seasonCounts[best] || 0) + 1;
-  });
-  const bestSeason = Object.entries(seasonCounts).sort((a, b) => b[1] - a[1])[0]?.[0];
-
-  // Find worst season
   const worstCounts: Record<string, number> = {};
   crowded.forEach((s) => {
+    const best = s.crowdPressure!.bestSeason;
     const worst = s.crowdPressure!.worstSeason;
+    seasonCounts[best] = (seasonCounts[best] || 0) + 1;
     worstCounts[worst] = (worstCounts[worst] || 0) + 1;
   });
+  const bestSeason = Object.entries(seasonCounts).sort((a, b) => b[1] - a[1])[0]?.[0];
   const worstSeason = Object.entries(worstCounts).sort((a, b) => b[1] - a[1])[0]?.[0];
 
-  // Find overall peak time pattern
-  const avgByHour = new Array(24).fill(0);
-  crowded.forEach((s) => {
-    s.crowdPressure!.byHour.forEach((v, i) => {
-      avgByHour[i] += v;
-    });
-  });
-  const maxHour = avgByHour.indexOf(Math.max(...avgByHour));
-  const peakRange = maxHour >= 10 && maxHour <= 14 ? "midday" : maxHour < 10 ? "morning" : "afternoon";
+  // Get names of high-crowd activities
+  const highNames = highCrowd
+    .map((s) => s.title)
+    .filter(Boolean)
+    .slice(0, 3);
+
+  // Count dispersal nudges available
+  const nudgeCount = crowded.filter((s) => s.crowdPressure!.dispersalNudge).length;
 
   return (
     <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 mb-8">
@@ -70,39 +65,43 @@ export default function CrowdSummary({ days }: { days: Day[] }) {
         </h3>
       </div>
 
-      <div className="space-y-2">
-        {highCrowdCount > 0 && (
-          <p className="text-sm text-gray-700">
-            <span className="font-semibold text-orange-600">{highCrowdCount} of {segments.length} activities</span> hit peak crowds at {peakRange} — go early for a better experience.
-          </p>
+      <div className="space-y-3">
+        {highCrowd.length > 0 && (
+          <div>
+            <p className="text-sm text-gray-700">
+              <span className="font-semibold text-orange-600">{highCrowd.length} of {segments.length} activities</span> get crowded:
+            </p>
+            {highNames.length > 0 && (
+              <ul className="mt-1 space-y-1">
+                {highNames.map((name, i) => {
+                  const seg = highCrowd[i];
+                  return (
+                    <li key={i} className="flex items-start gap-2 text-xs text-gray-600">
+                      <span className={`shrink-0 mt-1 w-1.5 h-1.5 rounded-full ${
+                        seg.crowdPressure!.level === "extreme" ? "bg-red-400" : "bg-orange-400"
+                      }`} />
+                      <span>
+                        <span className="font-semibold">{name}</span>
+                        {" — "}{seg.crowdPressure!.tip}
+                      </span>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
         )}
 
         {bestSeason && worstSeason && bestSeason !== worstSeason && (
           <p className="text-sm text-gray-700">
-            This itinerary is <span className="font-semibold text-green-600">much quieter in {seasonLabel(bestSeason)}</span> vs {seasonLabel(worstSeason)}.
+            This itinerary is <span className="font-semibold text-green-600">much quieter in {cap(bestSeason)}</span> vs {cap(worstSeason)}.
           </p>
         )}
 
-        {crowded.length > 0 && (
-          <div className="flex flex-wrap gap-2 mt-3">
-            {crowded.map((s, i) => {
-              const level = s.crowdPressure!.level;
-              const colors: Record<string, string> = {
-                low: "bg-green-100 text-green-700",
-                moderate: "bg-amber-100 text-amber-700",
-                high: "bg-orange-100 text-orange-700",
-                extreme: "bg-red-100 text-red-700",
-              };
-              return (
-                <span
-                  key={i}
-                  className={`text-[10px] font-semibold tracking-widest-custom uppercase px-2 py-0.5 rounded-full ${colors[level]}`}
-                >
-                  {level}
-                </span>
-              );
-            })}
-          </div>
+        {nudgeCount > 0 && (
+          <p className="text-xs text-teal">
+            {nudgeCount} less-crowded alternative{nudgeCount > 1 ? "s" : ""} suggested below — look for the <span className="font-semibold">&quot;Consider&quot;</span> tips.
+          </p>
         )}
       </div>
     </div>

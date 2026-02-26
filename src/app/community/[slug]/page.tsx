@@ -46,9 +46,10 @@ type CrowdPressure = {
   level: "low" | "moderate" | "high" | "extreme";
   peakTimes: string;
   tip: string;
-  byHour: number[];
+  byMonth?: number[];
   bestSeason: string;
   worstSeason: string;
+  dispersalNudge?: { alternative: string; reason: string; slug?: string | null };
 };
 
 type Segment = {

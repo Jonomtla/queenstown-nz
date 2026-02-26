@@ -18,13 +18,20 @@ interface RainyAlternative {
   places: Place[];
 }
 
+interface DispersalNudge {
+  alternative: string;
+  reason: string;
+  slug?: string | null;
+}
+
 interface CrowdPressure {
   level: "low" | "moderate" | "high" | "extreme";
   peakTimes: string;
   tip: string;
-  byHour: number[];
+  byMonth?: number[];
   bestSeason: string;
   worstSeason: string;
+  dispersalNudge?: DispersalNudge;
 }
 
 interface Segment {
@@ -125,51 +132,82 @@ function getBarColor(value: number): string {
   return "bg-red-400";
 }
 
+const MONTH_LABELS = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
+const MONTH_NAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
 function CrowdPressureChart({ pressure }: { pressure: CrowdPressure }) {
   const style = CROWD_LEVEL_STYLES[pressure.level] || CROWD_LEVEL_STYLES.moderate;
-  const currentHour = new Date().getHours();
-  const seasonLabel = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+  const currentMonth = new Date().getMonth();
+  const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
   return (
     <div className="mt-4 bg-gray-50 border border-gray-200 rounded-xl p-4">
-      <div className="flex items-center gap-2 mb-3">
-        <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-        <span className={`text-[10px] font-semibold tracking-widest-custom uppercase px-2 py-0.5 rounded-full ${style.bg} ${style.color}`}>
-          {style.label}
-        </span>
+      <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center gap-2">
+          <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          <span className={`text-[10px] font-semibold tracking-widest-custom uppercase px-2 py-0.5 rounded-full ${style.bg} ${style.color}`}>
+            {style.label}
+          </span>
+        </div>
+        <span className="text-[10px] text-gray-400">{MONTH_NAMES[currentMonth]} now</span>
       </div>
 
-      {/* Busyness bar chart */}
-      <div className="flex items-end gap-[2px] h-12 mb-2">
-        {pressure.byHour.map((value, hour) => (
-          <div
-            key={hour}
-            className={`flex-1 rounded-t-sm transition-opacity ${getBarColor(value)} ${hour === currentHour ? "ring-1 ring-gray-800" : "opacity-70"}`}
-            style={{ height: `${Math.max(value * 4.5, 2)}px` }}
-            title={`${hour}:00 — ${value}/10 busy`}
-          />
-        ))}
-      </div>
-      <div className="flex justify-between text-[9px] text-gray-400 mb-2">
-        <span>12am</span>
-        <span>6am</span>
-        <span>12pm</span>
-        <span>6pm</span>
-        <span>12am</span>
-      </div>
+      {/* Monthly busyness bar chart */}
+      {pressure.byMonth && (
+        <>
+          <div className="flex items-end gap-[3px] h-12 mb-1">
+            {pressure.byMonth.map((value, month) => (
+              <div
+                key={month}
+                className={`flex-1 rounded-t-sm transition-all ${getBarColor(value)} ${
+                  month === currentMonth ? "ring-1 ring-gray-800 opacity-100" : "opacity-60"
+                }`}
+                style={{ height: `${Math.max(value * 4.5, 2)}px` }}
+                title={`${MONTH_NAMES[month]} — ${value}/10 busy`}
+              />
+            ))}
+          </div>
+          <div className="flex gap-[3px] mb-3">
+            {MONTH_LABELS.map((label, i) => (
+              <span key={i} className={`flex-1 text-center text-[8px] ${i === currentMonth ? "text-teal font-bold" : "text-gray-400"}`}>
+                {label}
+              </span>
+            ))}
+          </div>
+        </>
+      )}
 
       <p className="text-xs text-gray-600">
-        <span className="font-semibold">Usually busiest:</span> {pressure.peakTimes}
+        <span className="font-semibold">Peak times:</span> {pressure.peakTimes}
       </p>
       <p className="text-xs text-teal font-semibold mt-1">{pressure.tip}</p>
 
       {pressure.bestSeason !== pressure.worstSeason && (
         <p className="text-xs text-gray-500 mt-1">
-          Best time to visit: <span className="font-semibold text-green-600">{seasonLabel(pressure.bestSeason)}</span>
-          {" "}(much quieter than {seasonLabel(pressure.worstSeason)})
+          Best: <span className="font-semibold text-green-600">{cap(pressure.bestSeason)}</span>
+          {" · "}Busiest: <span className="font-semibold text-orange-600">{cap(pressure.worstSeason)}</span>
         </p>
+      )}
+
+      {/* Dispersal nudge */}
+      {pressure.dispersalNudge && (
+        <div className="mt-3 pt-3 border-t border-gray-200">
+          <div className="flex items-start gap-2">
+            <svg className="w-4 h-4 text-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+            <div>
+              <p className="text-xs font-semibold text-teal">
+                Consider: {pressure.dispersalNudge.alternative}
+              </p>
+              <p className="text-[11px] text-gray-500 leading-relaxed mt-0.5">
+                {pressure.dispersalNudge.reason}
+              </p>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );
@@ -241,13 +279,18 @@ function SegmentItem({ segment }: { segment: Segment }) {
         <CrowdPressureChart pressure={segment.crowdPressure} />
       )}
 
-      {/* Impact note */}
+      {/* Impact note — operator/stewardship context */}
       {segment.impactNote && (
-        <div className="flex items-start gap-2 mt-3">
-          <svg className="w-4 h-4 text-green-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-          </svg>
-          <p className="text-xs text-green-700 italic leading-relaxed">{segment.impactNote}</p>
+        <div className="mt-4 bg-green-50 border border-green-200 rounded-xl p-4 flex items-start gap-3">
+          <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+            <svg className="w-4 h-4 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <div>
+            <p className="text-[10px] font-semibold tracking-widest-custom uppercase text-green-700 mb-0.5">Stewardship</p>
+            <p className="text-xs text-green-800 leading-relaxed">{segment.impactNote}</p>
+          </div>
         </div>
       )}
 
