@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 interface CommunityFilterBarProps {
   activeCategory: string;
   activeSort: string;
@@ -48,6 +50,15 @@ export default function CommunityFilterBar({
             {item.label}
           </button>
         ))}
+        <Link
+          href="/community/hubs/golf/"
+          className="relative inline-flex items-center gap-1.5 text-xs font-semibold tracking-widest-custom uppercase px-4 py-2 rounded-full bg-green-100 text-green-700 hover:bg-green-200 transition-colors whitespace-nowrap"
+        >
+          Golf Hub
+          <span className="absolute -top-1.5 -right-1.5 text-[8px] font-bold tracking-widest-custom uppercase bg-copper text-white px-1.5 py-0.5 rounded-full leading-none">
+            New
+          </span>
+        </Link>
       </div>
       <div className="flex gap-2 shrink-0">
         {SORTS.map((item) => (
