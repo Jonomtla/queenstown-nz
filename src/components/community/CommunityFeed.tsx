@@ -7,6 +7,7 @@ import CommunityFilterBar from "./CommunityFilterBar";
 import TripMatcher from "./TripMatcher";
 import SeasonalBanner from "./SeasonalBanner";
 import SavedTripBar from "./SavedTripBar";
+import ContributeBar from "./ContributeBar";
 import itinerariesData from "@/data/community-itineraries.json";
 import recommendationsData from "@/data/community-recommendations.json";
 import contributorsData from "@/data/community-contributors.json";
@@ -110,6 +111,8 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
 
   return (
     <div>
+      <ContributeBar />
+
       <SeasonalBanner activeSeason={activeSeason} onSeasonChange={setActiveSeason} />
 
       <TripMatcher
