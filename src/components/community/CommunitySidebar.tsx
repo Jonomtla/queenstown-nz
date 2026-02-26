@@ -5,6 +5,8 @@ import Link from "next/link";
 import contributorsData from "@/data/community-contributors.json";
 import { useSavedItems } from "./SaveButton";
 import DestinationBusyness from "./DestinationBusyness";
+import SeasonalDepth from "./SeasonalDepth";
+import StayLongerProof from "./StayLongerProof";
 import collectionsData from "@/data/community-collections.json";
 import eventsData from "@/data/community-events.json";
 
@@ -64,6 +66,12 @@ export default function CommunitySidebar() {
     <aside className="space-y-8">
       {/* Destination Busyness */}
       <DestinationBusyness />
+
+      {/* Seasonal Exclusives */}
+      <SeasonalDepth />
+
+      {/* Stay Longer Social Proof */}
+      <StayLongerProof />
 
       {/* Saved Items (desktop) */}
       {savedItems.length > 0 && (

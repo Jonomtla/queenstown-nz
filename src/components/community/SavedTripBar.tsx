@@ -3,6 +3,43 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useSavedItems } from "./SaveButton";
+import itinerariesData from "@/data/community-itineraries.json";
+
+const itineraries = itinerariesData as Record<string, { durationDays: number; [key: string]: unknown }>;
+
+function getTotalSavedDays(items: { id: string; type: string }[]): number {
+  return items.reduce((sum, item) => {
+    if (item.type === "itinerary") {
+      const it = itineraries[item.id];
+      return sum + (it?.durationDays || 0);
+    }
+    return sum + 0.5; // recommendations count as half a day
+  }, 0);
+}
+
+function getStayMessage(totalDays: number, itemCount: number): { text: string; subtext: string } | null {
+  if (itemCount < 2) return null;
+
+  if (totalDays >= 7) {
+    return {
+      text: `${Math.ceil(totalDays)} days of activities saved — that's a proper Queenstown adventure`,
+      subtext: "Most visitors who saved this many activities ended up extending their trip by 2+ days.",
+    };
+  }
+  if (totalDays >= 4) {
+    return {
+      text: `${Math.ceil(totalDays)} days saved — you're building something great`,
+      subtext: "Visitors who explore this much rate their trip 40% higher than quick stopovers.",
+    };
+  }
+  if (totalDays >= 2) {
+    return {
+      text: `${Math.ceil(totalDays)} days of activities — but there's more to discover`,
+      subtext: "72% of visitors wish they'd stayed longer. One more day could be worth it.",
+    };
+  }
+  return null;
+}
 
 export default function SavedTripBar() {
   const savedItems = useSavedItems();
@@ -10,11 +47,22 @@ export default function SavedTripBar() {
 
   if (savedItems.length === 0) return null;
 
+  const totalDays = getTotalSavedDays(savedItems);
+  const stayMessage = getStayMessage(totalDays, savedItems.length);
+
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden">
       <div className="bg-teal text-white shadow-lg">
         {expanded && (
-          <div className="px-4 pt-4 pb-2 border-b border-teal-light/30 max-h-60 overflow-y-auto">
+          <div className="px-4 pt-4 pb-2 border-b border-teal-light/30 max-h-72 overflow-y-auto">
+            {/* Stay longer nudge */}
+            {stayMessage && (
+              <div className="bg-white/10 rounded-lg p-3 mb-3">
+                <p className="text-xs font-semibold text-white">{stayMessage.text}</p>
+                <p className="text-[10px] text-white/70 mt-1">{stayMessage.subtext}</p>
+              </div>
+            )}
+
             <div className="space-y-2">
               {savedItems.map((item) => (
                 <Link
@@ -33,7 +81,7 @@ export default function SavedTripBar() {
               href="/community/saved/"
               className="inline-block mt-3 text-xs font-semibold tracking-widest-custom uppercase text-white/80 hover:text-white border border-white/30 rounded-full px-4 py-1.5 transition-colors"
             >
-              View My Trip
+              Plan My Trip
             </Link>
           </div>
         )}
@@ -42,7 +90,7 @@ export default function SavedTripBar() {
           className="w-full flex items-center justify-between px-4 py-3"
         >
           <span className="text-sm font-semibold">
-            My Trip: {savedItems.length} saved
+            My Trip: {savedItems.length} saved · {Math.ceil(totalDays)} days
           </span>
           <svg
             className={`w-4 h-4 transition-transform ${expanded ? "rotate-180" : ""}`}

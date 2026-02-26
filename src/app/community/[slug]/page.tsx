@@ -16,6 +16,7 @@ import UserStories from "@/components/community/UserStories";
 import ShareButtons from "@/components/community/ShareButtons";
 import CrowdSummary from "@/components/community/CrowdSummary";
 import SaveButton from "@/components/community/SaveButton";
+import BonusDay from "@/components/community/BonusDay";
 import itinerariesData from "@/data/community-itineraries.json";
 import contributorsData from "@/data/community-contributors.json";
 
@@ -269,6 +270,9 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
 
           {/* Day breakdown */}
           <ItineraryDayBreakdown days={itinerary.days} />
+
+          {/* Bonus Day — stay longer nudge */}
+          <BonusDay slug={slug} itinerary={itinerary} />
 
           {/* Packing List */}
           {itinerary.packingList && itinerary.packingList.length > 0 && (
