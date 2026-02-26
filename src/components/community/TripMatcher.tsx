@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 interface TripMatcherProps {
   activeTraveller: string;
   activeDuration: string;
@@ -62,7 +64,9 @@ export default function TripMatcher({
   onDurationChange,
   onSeasonChange,
 }: TripMatcherProps) {
+  const [expanded, setExpanded] = useState(false);
   const hasSelection = activeTraveller !== "all" || activeDuration !== "all" || activeSeason !== "all";
+  const activeCount = [activeTraveller !== "all", activeDuration !== "all", activeSeason !== "all"].filter(Boolean).length;
 
   function handleClear() {
     onTravellerChange("all");
@@ -71,8 +75,32 @@ export default function TripMatcher({
   }
 
   return (
-    <div className="bg-teal rounded-2xl p-6 md:p-8 mb-8">
-      <div className="flex items-center justify-between mb-5">
+    <div className="bg-teal rounded-2xl p-5 md:p-8 mb-8">
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="md:hidden flex items-center justify-between w-full"
+      >
+        <div className="flex items-center gap-3">
+          <h2 className="text-white text-sm font-bold tracking-widest-custom uppercase">
+            Find Trips Like Yours
+          </h2>
+          {activeCount > 0 && (
+            <span className="bg-white text-teal text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+              {activeCount}
+            </span>
+          )}
+        </div>
+        <svg
+          className={`w-5 h-5 text-white/70 transition-transform ${expanded ? "rotate-180" : ""}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+
+      <div className="hidden md:flex items-center justify-between mb-5">
         <h2 className="text-white text-sm font-bold tracking-widest-custom uppercase">
           Find Trips Like Yours
         </h2>
@@ -86,7 +114,7 @@ export default function TripMatcher({
         )}
       </div>
 
-      <div className="space-y-4">
+      <div className={`${expanded ? "mt-5" : "hidden"} md:block space-y-4`}>
         <div>
           <p className="text-white/70 text-xs font-semibold tracking-widest-custom uppercase mb-2">
             Who&apos;s coming?
@@ -134,6 +162,15 @@ export default function TripMatcher({
             ))}
           </div>
         </div>
+
+        {hasSelection && (
+          <button
+            onClick={handleClear}
+            className="md:hidden text-white/70 text-xs font-semibold tracking-widest-custom uppercase hover:text-white transition-colors mt-2"
+          >
+            Clear filters
+          </button>
+        )}
       </div>
     </div>
   );

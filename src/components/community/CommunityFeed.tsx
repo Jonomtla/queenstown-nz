@@ -119,12 +119,8 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
 
       <CommunityFilterBar
         activeCategory={activeCategory}
-        activeTraveller={activeTraveller}
-        activeSeason={activeSeason}
         activeSort={activeSort}
         onCategoryChange={setActiveCategory}
-        onTravellerChange={setActiveTraveller}
-        onSeasonChange={setActiveSeason}
         onSortChange={setActiveSort}
       />
 
