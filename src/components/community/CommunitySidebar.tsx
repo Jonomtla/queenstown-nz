@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import contributorsData from "@/data/community-contributors.json";
+import { useSavedItems } from "./SaveButton";
 import collectionsData from "@/data/community-collections.json";
 import eventsData from "@/data/community-events.json";
 
@@ -54,8 +57,41 @@ const currentSeason = getCurrentNZSeason();
 const seasonEvents = events.filter((e) => e.season === currentSeason);
 
 export default function CommunitySidebar() {
+  const savedItems = useSavedItems();
+
   return (
     <aside className="space-y-8">
+      {/* Saved Items (desktop) */}
+      {savedItems.length > 0 && (
+        <div className="bg-teal/5 border border-teal/20 rounded-xl p-6">
+          <h3 className="text-sm font-bold tracking-widest-custom uppercase text-teal mb-4">
+            My Trip ({savedItems.length} saved)
+          </h3>
+          <div className="space-y-2">
+            {savedItems.map((item) => (
+              <Link
+                key={item.id}
+                href={item.type === "itinerary" ? `/community/${item.id}/` : "#"}
+                className="flex items-center gap-2 group py-1"
+              >
+                <svg className="w-3.5 h-3.5 text-red-400 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+                <span className="text-sm text-gray-700 group-hover:text-teal transition-colors truncate">
+                  {item.title}
+                </span>
+              </Link>
+            ))}
+          </div>
+          <Link
+            href="/community/saved/"
+            className="inline-block mt-4 text-xs font-semibold tracking-widest-custom uppercase text-teal hover:text-teal-light transition-colors"
+          >
+            View My Trip →
+          </Link>
+        </div>
+      )}
+
       {/* Collections */}
       <div className="bg-cream rounded-xl p-6">
         <h3 className="text-sm font-bold tracking-widest-custom uppercase text-teal mb-4">

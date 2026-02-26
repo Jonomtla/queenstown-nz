@@ -48,7 +48,12 @@
         "src": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop",
         "caption": "Fergbaker venison pie"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 158,
+      "confirmed": 286,
+      "contextMatters": 39
+    }
   },
   "remarkables-chains": {
     "title": "Don't Drive to The Remarkables Without Chains",
@@ -91,7 +96,12 @@
         "src": "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=400&h=300&fit=crop",
         "caption": "Icy conditions on the drive up"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 129,
+      "confirmed": 227,
+      "contextMatters": 31
+    }
   },
   "best-sunset-spot": {
     "title": "The Best Free Sunset Viewpoint Nobody Talks About",
@@ -137,7 +147,12 @@
         "src": "https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=400&h=300&fit=crop",
         "caption": "Lake reflections at dusk"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 145,
+      "confirmed": 266,
+      "contextMatters": 36
+    }
   },
   "glenorchy-sandflies": {
     "title": "Glenorchy Sandfly Survival Guide",
@@ -180,7 +195,12 @@
         "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop",
         "caption": "The drive to Glenorchy"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 101,
+      "confirmed": 187,
+      "contextMatters": 26
+    }
   },
   "free-things-queenstown": {
     "title": "10 Amazing Free Things to Do in Queenstown",
@@ -245,7 +265,12 @@
         "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=300&fit=crop",
         "caption": "Bob's Cove nature walk"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 232,
+      "confirmed": 421,
+      "contextMatters": 56
+    }
   },
   "best-coffee-locals": {
     "title": "Where Locals Actually Get Coffee (Not Where Tourists Go)",
@@ -295,7 +320,12 @@
         "src": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400&h=300&fit=crop",
         "caption": "Latte art game strong"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 117,
+      "confirmed": 222,
+      "contextMatters": 29
+    }
   },
   "winter-driving-tips": {
     "title": "Winter Driving in Queenstown: What You Need to Know",
@@ -326,7 +356,12 @@
         "src": "https://images.unsplash.com/photo-1565992441121-4367c2967103?w=400&h=300&fit=crop",
         "caption": "Chains are essential"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 94,
+      "confirmed": 176,
+      "contextMatters": 25
+    }
   },
   "bungy-first-timer": {
     "title": "First-Time Bungy? Here's What Nobody Tells You",
@@ -368,7 +403,12 @@
         "src": "https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=400&h=300&fit=crop",
         "caption": "The leap of faith"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 90,
+      "confirmed": 158,
+      "contextMatters": 23
+    }
   },
   "arrowtown-autumn-timing": {
     "title": "When to Visit Arrowtown for Peak Autumn Colour",
@@ -415,7 +455,12 @@
         "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop",
         "caption": "Buckingham Street colours"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 135,
+      "confirmed": 251,
+      "contextMatters": 32
+    }
   },
   "lake-hayes-morning": {
     "title": "Lake Hayes at Dawn is a Different Planet",
@@ -458,7 +503,12 @@
         "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop",
         "caption": "Golden light on the mountains"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 99,
+      "confirmed": 188,
+      "contextMatters": 26
+    }
   },
   "wine-region-guide": {
     "title": "Central Otago Wine: A Quick Primer",
@@ -500,7 +550,12 @@
         "src": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&h=300&fit=crop",
         "caption": "Wine tasting in the cave"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 78,
+      "confirmed": 148,
+      "contextMatters": 20
+    }
   },
   "hiking-gear-rental": {
     "title": "Don't Buy Hiking Gear — Rent It",
@@ -526,7 +581,12 @@
         "src": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop",
         "caption": "Proper boots make all the difference"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 76,
+      "confirmed": 131,
+      "contextMatters": 19
+    }
   },
   "shotover-jet-tips": {
     "title": "Shotover Jet: Tips for the Best Experience",
@@ -568,7 +628,12 @@
         "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=300&fit=crop",
         "caption": "The Shotover River"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 70,
+      "confirmed": 122,
+      "contextMatters": 19
+    }
   },
   "family-restaurant-guide": {
     "title": "Best Queenstown Restaurants That Actually Welcome Kids",
@@ -622,7 +687,12 @@
         "src": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
         "caption": "Kids love Fergburger"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 99,
+      "confirmed": 180,
+      "contextMatters": 24
+    }
   },
   "skyline-luge-hack": {
     "title": "The Skyline Luge Hack Every Parent Needs",
@@ -664,7 +734,12 @@
         "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
         "caption": "Gondola views"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 84,
+      "confirmed": 150,
+      "contextMatters": 20
+    }
   },
   "ben-lomond-prep": {
     "title": "Ben Lomond: Don't Underestimate This Hike",
@@ -710,7 +785,12 @@
         "src": "https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=400&h=300&fit=crop",
         "caption": "The final scramble"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 146,
+      "confirmed": 261,
+      "contextMatters": 33
+    }
   },
   "queenstown-trail-ebike": {
     "title": "E-Biking the Queenstown Trail: The Route Locals Love",
@@ -750,7 +830,12 @@
         "date": "2025-11-18",
         "text": "This is my go-to recommendation for visitors. E-bikes make it accessible for everyone and the scenery is next level."
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 101,
+      "confirmed": 178,
+      "contextMatters": 24
+    }
   },
   "onsen-hot-pools-tips": {
     "title": "Onsen Hot Pools: Everything You Need to Know",
@@ -792,7 +877,12 @@
         "date": "2025-09-25",
         "text": "Pro tip: they sometimes have cancellations for the sunrise slot. Call the day before."
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 119,
+      "confirmed": 215,
+      "contextMatters": 29
+    }
   },
   "arrowtown-beyond-autumn": {
     "title": "Arrowtown is More Than Just Autumn Colours",
@@ -828,7 +918,12 @@
         "date": "2025-01-10",
         "text": "The river swimming holes are amazing in January. Head upstream past the settlement about 500m."
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 84,
+      "confirmed": 147,
+      "contextMatters": 21
+    }
   },
   "tss-earnslaw-guide": {
     "title": "TSS Earnslaw: More Than Just a Boat Trip",
@@ -863,7 +958,12 @@
         "date": "2025-06-15",
         "text": "Our kids were obsessed with watching the engine room. The stokers are so friendly and explained everything."
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 86,
+      "confirmed": 152,
+      "contextMatters": 22
+    }
   },
   "budget-accommodation-tips": {
     "title": "Where to Stay in Queenstown on a Budget",
@@ -896,7 +996,12 @@
         "date": "2025-03-05",
         "text": "Arrowtown holiday park is genuinely nice and the drive to QT is only 20 min. Good shout."
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 144,
+      "confirmed": 269,
+      "contextMatters": 34
+    }
   },
   "moke-lake-hidden-gem": {
     "title": "Moke Lake: Queenstown's Best Kept Secret",
@@ -932,7 +1037,12 @@
         "date": "2025-10-08",
         "text": "Shhh Sarah! This is our secret spot. The morning mist on the lake is photographer heaven."
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 89,
+      "confirmed": 165,
+      "contextMatters": 21
+    }
   },
   "night-sky-queenstown": {
     "title": "Queenstown's Night Sky is Criminally Underrated",
@@ -963,7 +1073,12 @@
         "date": "2025-07-25",
         "text": "The night sky at Glenorchy blew my mind. Growing up in Portland I've never seen anything like it."
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 74,
+      "confirmed": 140,
+      "contextMatters": 20
+    }
   },
   "kids-under-5-guide": {
     "title": "Queenstown with Toddlers: Honest Guide from a Parent",
@@ -1007,6 +1122,11 @@
         "date": "2025-01-18",
         "text": "As a local without kids, I always recommend the Gardens playground to visiting families — it's genuinely one of the best in the South Island."
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 109,
+      "confirmed": 200,
+      "contextMatters": 28
+    }
   }
 }

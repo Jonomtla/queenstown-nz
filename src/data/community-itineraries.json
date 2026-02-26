@@ -53,7 +53,41 @@
                   "lng": 168.66
                 }
               ]
-            }
+            },
+            "crowdPressure": {
+              "level": "high",
+              "peakTimes": "9am-12pm",
+              "tip": "Arrive for first chair at 8:30am or wait until after 1pm",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                3,
+                7,
+                9,
+                10,
+                9,
+                7,
+                5,
+                4,
+                3,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "bestSeason": "winter",
+              "worstSeason": "winter"
+            },
+            "impactNote": "Lift pass revenue directly funds trail maintenance and avalanche safety programs"
           },
           {
             "timeOfDay": "afternoon",
@@ -119,6 +153,39 @@
                   "lng": 168.6598
                 }
               ]
+            },
+            "crowdPressure": {
+              "level": "moderate",
+              "peakTimes": "10am-2pm",
+              "tip": "The Remarkables gets less crowded than Coronet on weekdays",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                2,
+                5,
+                7,
+                8,
+                8,
+                7,
+                5,
+                4,
+                3,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "bestSeason": "winter",
+              "worstSeason": "winter"
             }
           },
           {
@@ -371,7 +438,12 @@
         "date": "2025-08",
         "photo": "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=400&h=300&fit=crop"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 115,
+      "confirmed": 161,
+      "contextMatters": 31
+    }
   },
   "family-friendly-summer-week": {
     "title": "Family-Friendly Summer Week",
@@ -427,7 +499,41 @@
                   "lng": 168.6598
                 }
               ]
-            }
+            },
+            "crowdPressure": {
+              "level": "extreme",
+              "peakTimes": "10am-2pm",
+              "tip": "Arrive before 9am or after 3pm for a much better experience",
+              "byHour": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                2,
+                2,
+                3,
+                5,
+                7,
+                9,
+                10,
+                10,
+                9,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                1,
+                1
+              ],
+              "bestSeason": "autumn",
+              "worstSeason": "summer"
+            },
+            "impactNote": "Revenue supports Wakatipu Trails Trust maintenance"
           },
           {
             "timeOfDay": "evening",
@@ -786,7 +892,12 @@
         "date": "2025-01",
         "photo": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=400&h=300&fit=crop"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 142,
+      "confirmed": 192,
+      "contextMatters": 39
+    }
   },
   "foodie-trail-queenstown": {
     "title": "The Queenstown Foodie Trail",
@@ -828,7 +939,40 @@
               }
             ],
             "localTip": "Arrive before 9am on weekends or you'll be queuing. Weekday mornings are much calmer.",
-            "setting": "indoor"
+            "setting": "indoor",
+            "crowdPressure": {
+              "level": "high",
+              "peakTimes": "11am-1pm",
+              "tip": "Go for breakfast (before 9am) or mid-afternoon",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                3,
+                5,
+                8,
+                10,
+                10,
+                8,
+                5,
+                3,
+                2,
+                2,
+                3,
+                4,
+                3,
+                2,
+                1,
+                0
+              ],
+              "bestSeason": "winter",
+              "worstSeason": "summer"
+            }
           },
           {
             "timeOfDay": "afternoon",
@@ -1051,7 +1195,12 @@
         "date": "2025-06",
         "photo": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 98,
+      "confirmed": 139,
+      "contextMatters": 24
+    }
   },
   "solo-adventure-5-days": {
     "title": "5 Days Solo: Pushing Your Limits",
@@ -1095,7 +1244,41 @@
             ],
             "image": "https://images.unsplash.com/photo-1541480601022-2308c0f02487?w=800&h=500&fit=crop",
             "ageRange": "teens+",
-            "setting": "outdoor"
+            "setting": "outdoor",
+            "crowdPressure": {
+              "level": "moderate",
+              "peakTimes": "10am-3pm",
+              "tip": "Start before 8am for near-solitude on the trail",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                2,
+                3,
+                5,
+                7,
+                8,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "bestSeason": "autumn",
+              "worstSeason": "summer"
+            },
+            "impactNote": "DOC-maintained track — hut fees fund conservation and pest control"
           },
           {
             "timeOfDay": "afternoon",
@@ -1464,7 +1647,12 @@
         "date": "2025-03",
         "photo": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 91,
+      "confirmed": 120,
+      "contextMatters": 23
+    }
   },
   "active-arrowtown-day": {
     "title": "A Perfect Day in Arrowtown",
@@ -1520,6 +1708,39 @@
                   "lng": 168.8265
                 }
               ]
+            },
+            "crowdPressure": {
+              "level": "low",
+              "peakTimes": "11am-1pm",
+              "tip": "Arrowtown stays quiet — mornings are magical",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                5,
+                4,
+                3,
+                3,
+                2,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "bestSeason": "autumn",
+              "worstSeason": "summer"
             }
           },
           {
@@ -1617,7 +1838,12 @@
         "item": "Picnic supplies",
         "essential": false
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 122,
+      "confirmed": 158,
+      "contextMatters": 34
+    }
   },
   "rainy-day-queenstown": {
     "title": "Rainy Day? No Problem.",
@@ -1758,7 +1984,12 @@
         "item": "Book or card games",
         "essential": false
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 101,
+      "confirmed": 144,
+      "contextMatters": 29
+    }
   },
   "cultural-queenstown": {
     "title": "Queenstown Through Maori Eyes",
@@ -1969,7 +2200,12 @@
         "item": "Binoculars for bird watching",
         "essential": false
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 152,
+      "confirmed": 210,
+      "contextMatters": 38
+    }
   },
   "shoulder-season-photography": {
     "title": "Photographer's Guide to Shoulder Season",
@@ -2206,7 +2442,12 @@
         "date": "2025-05",
         "photo": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop"
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 115,
+      "confirmed": 150,
+      "contextMatters": 28
+    }
   },
   "luxury-long-weekend": {
     "title": "The Luxury Long Weekend",
@@ -2428,7 +2669,12 @@
         "item": "Wine tote for cellar purchases",
         "essential": false
       }
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 82,
+      "confirmed": 106,
+      "contextMatters": 21
+    }
   },
   "summer-adrenaline-weekend": {
     "title": "Summer Adrenaline Weekend",
@@ -2527,7 +2773,41 @@
               }
             ],
             "setting": "outdoor",
-            "localTip": "Book the first slot. You'll be on a high all day."
+            "localTip": "Book the first slot. You'll be on a high all day.",
+            "crowdPressure": {
+              "level": "high",
+              "peakTimes": "10am-3pm",
+              "tip": "Book the earliest slot available — less waiting, better photos",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                3,
+                6,
+                8,
+                9,
+                10,
+                9,
+                8,
+                7,
+                5,
+                3,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "bestSeason": "autumn",
+              "worstSeason": "summer"
+            },
+            "impactNote": "This operator is DOC-certified and contributes to river conservation"
           },
           {
             "timeOfDay": "afternoon",
@@ -2643,7 +2923,12 @@
       "solo-adventure-5-days",
       "rainy-day-queenstown",
       "perfect-winter-weekend"
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 103,
+      "confirmed": 133,
+      "contextMatters": 27
+    }
   },
   "winter-family-fun": {
     "title": "Winter Family Fun: Skiing + Snow Play",
@@ -2927,7 +3212,12 @@
       "perfect-winter-weekend",
       "family-friendly-summer-week",
       "rainy-day-queenstown"
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 120,
+      "confirmed": 161,
+      "contextMatters": 31
+    }
   },
   "spring-wellness-retreat": {
     "title": "Spring Wellness Retreat",
@@ -3134,7 +3424,12 @@
       "luxury-long-weekend",
       "shoulder-season-photography",
       "cultural-queenstown"
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 85,
+      "confirmed": 115,
+      "contextMatters": 23
+    }
   },
   "group-adventure-weekend": {
     "title": "Group Adventure Weekend",
@@ -3325,7 +3620,12 @@
       "summer-adrenaline-weekend",
       "solo-adventure-5-days",
       "rainy-day-queenstown"
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 113,
+      "confirmed": 154,
+      "contextMatters": 31
+    }
   },
   "autumn-wine-culture": {
     "title": "Autumn Wine & Culture Trail",
@@ -3548,7 +3848,12 @@
       "foodie-trail-queenstown",
       "shoulder-season-photography",
       "cultural-queenstown"
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 102,
+      "confirmed": 136,
+      "contextMatters": 27
+    }
   },
   "hiking-highlights-3-day": {
     "title": "3-Day Hiking Highlights",
@@ -3650,7 +3955,41 @@
                 "lng": 168.651
               }
             ],
-            "setting": "outdoor"
+            "setting": "outdoor",
+            "crowdPressure": {
+              "level": "high",
+              "peakTimes": "10am-2pm",
+              "tip": "Alpine starts are rewarded with empty trails and better light",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                2,
+                4,
+                6,
+                8,
+                9,
+                9,
+                8,
+                7,
+                5,
+                4,
+                3,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "bestSeason": "autumn",
+              "worstSeason": "summer"
+            },
+            "impactNote": "Stay on marked tracks — alpine areas are recovering from erosion"
           },
           {
             "timeOfDay": "afternoon",
@@ -3792,6 +4131,11 @@
       "solo-adventure-5-days",
       "active-arrowtown-day",
       "shoulder-season-photography"
-    ]
+    ],
+    "reactions": {
+      "stayLonger": 124,
+      "confirmed": 162,
+      "contextMatters": 30
+    }
   }
 }

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ContributorBadge from "./ContributorBadge";
-import UpvoteButton from "./UpvoteButton";
+import ReactionButtons from "./ReactionButtons";
 import contributorsData from "@/data/community-contributors.json";
 
 type ContributorData = { name: string; avatar: string; type: string };
@@ -29,6 +29,7 @@ interface RecommendationCardProps {
   text: string;
   category: string;
   upvotes: number;
+  reactions?: { stayLonger: number; confirmed: number; contextMatters: number };
   commentCount: number;
   date: string;
   contributor: {
@@ -93,7 +94,7 @@ function RecommendationModal(props: RecommendationCardProps & { onClose: () => v
             <span className="text-[10px] font-semibold tracking-widest-custom uppercase text-copper">
               {category}
             </span>
-            <UpvoteButton count={upvotes} />
+            <ReactionButtons reactions={props.reactions || { stayLonger: Math.round(upvotes * 0.5), confirmed: Math.round(upvotes * 0.9), contextMatters: Math.round(upvotes * 0.12) }} />
           </div>
 
           <h2 id="rec-modal-title" className="text-xl md:text-2xl font-bold text-teal leading-snug">{title}</h2>
@@ -279,7 +280,7 @@ export default function RecommendationCard(props: RecommendationCardProps) {
           <span className="text-[10px] font-semibold tracking-widest-custom uppercase text-copper">
             {category}
           </span>
-          <UpvoteButton count={upvotes} />
+          <ReactionButtons reactions={props.reactions || { stayLonger: Math.round(upvotes * 0.5), confirmed: Math.round(upvotes * 0.9), contextMatters: Math.round(upvotes * 0.12) }} />
         </div>
         <h3 className="text-base font-bold text-teal leading-snug line-clamp-2">{title}</h3>
         <p className="text-gray-600 text-sm mt-2 leading-relaxed line-clamp-4">{text}</p>

@@ -6,6 +6,7 @@ import RecommendationCard from "./RecommendationCard";
 import CommunityFilterBar from "./CommunityFilterBar";
 import TripMatcher from "./TripMatcher";
 import SeasonalBanner from "./SeasonalBanner";
+import SavedTripBar from "./SavedTripBar";
 import itinerariesData from "@/data/community-itineraries.json";
 import recommendationsData from "@/data/community-recommendations.json";
 import contributorsData from "@/data/community-contributors.json";
@@ -32,6 +33,7 @@ const itineraries = itinerariesData as Record<string, {
   commentCount: number;
   endorsements?: Record<string, number>;
   days: { segments: { ageRange?: string }[] }[];
+  reactions?: { stayLonger: number; confirmed: number; contextMatters: number };
   photos?: { src: string; caption: string }[];
   costEstimate?: { level: string };
 }>;
@@ -46,6 +48,7 @@ const recommendations = recommendationsData as Record<string, {
   commentCount: number;
   date: string;
   places?: { name: string; listingSlug?: string }[];
+  reactions?: { stayLonger: number; confirmed: number; contextMatters: number };
   comments?: { author: string; authorSlug: string; authorType: string; date: string; text: string }[];
   photos?: { src: string; caption: string }[];
 }>;
@@ -74,7 +77,7 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
   const [activeSort, setActiveSort] = useState("popular");
 
   const filteredItems = useMemo(() => {
-    const items: { type: "itinerary" | "recommendation"; slug: string; upvotes: number; date: string }[] = [];
+    const items: { type: "itinerary" | "recommendation"; slug: string; upvotes: number; stayLonger: number; date: string }[] = [];
 
     for (const [slug, it] of Object.entries(itineraries)) {
       const contrib = contributors[it.contributorSlug];
@@ -83,7 +86,7 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
       if (activeTraveller !== "all" && it.travellerType !== activeTraveller) continue;
       if (activeSeason !== "all" && it.season !== activeSeason) continue;
       if (activeDuration !== "all" && !matchDuration(it.durationDays, activeDuration)) continue;
-      items.push({ type: "itinerary", slug, upvotes: it.upvotes, date: it.tripDate });
+      items.push({ type: "itinerary", slug, upvotes: it.upvotes, stayLonger: it.reactions?.stayLonger || it.upvotes, date: it.tripDate });
     }
 
     for (const [slug, rec] of Object.entries(recommendations)) {
@@ -92,12 +95,12 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
       if (activeCategory !== "all" && rec.category !== activeCategory) continue;
       if (activeTraveller !== "all" && rec.travellerType !== activeTraveller) continue;
       if (activeSeason !== "all" && rec.season !== activeSeason && rec.season !== undefined) continue;
-      items.push({ type: "recommendation", slug, upvotes: rec.upvotes, date: rec.date });
+      items.push({ type: "recommendation", slug, upvotes: rec.upvotes, stayLonger: rec.reactions?.stayLonger || rec.upvotes, date: rec.date });
     }
 
     items.sort((a, b) =>
       activeSort === "popular"
-        ? b.upvotes - a.upvotes
+        ? b.stayLonger - a.stayLonger
         : b.date.localeCompare(a.date)
     );
 
@@ -140,6 +143,7 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
                 tripDate={it.tripDate}
                 categories={it.categories}
                 upvotes={it.upvotes}
+                reactions={it.reactions}
                 commentCount={it.commentCount}
                 contributor={{ ...contrib, slug: it.contributorSlug }}
                 travellerType={it.travellerType}
@@ -161,6 +165,7 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
               text={rec.text}
               category={rec.category}
               upvotes={rec.upvotes}
+              reactions={rec.reactions}
               commentCount={rec.commentCount}
               date={rec.date}
               contributor={{ ...contrib, slug: rec.contributorSlug }}
@@ -177,6 +182,8 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
           <p className="text-gray-400 text-lg">No results match your filters. Try broadening your search.</p>
         </div>
       )}
+
+      <SavedTripBar />
     </div>
   );
 }

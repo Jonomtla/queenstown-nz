@@ -18,6 +18,15 @@ interface RainyAlternative {
   places: Place[];
 }
 
+interface CrowdPressure {
+  level: "low" | "moderate" | "high" | "extreme";
+  peakTimes: string;
+  tip: string;
+  byHour: number[];
+  bestSeason: string;
+  worstSeason: string;
+}
+
 interface Segment {
   timeOfDay: string;
   title: string;
@@ -28,6 +37,8 @@ interface Segment {
   ageRange?: string;
   setting?: "indoor" | "outdoor" | "both";
   rainyAlternative?: RainyAlternative;
+  crowdPressure?: CrowdPressure;
+  impactNote?: string;
 }
 
 interface Day {
@@ -100,6 +111,70 @@ function PlaceLink({ place }: { place: Place }) {
   );
 }
 
+const CROWD_LEVEL_STYLES: Record<string, { label: string; color: string; bg: string }> = {
+  low: { label: "Low crowds", color: "text-green-700", bg: "bg-green-100" },
+  moderate: { label: "Moderate crowds", color: "text-amber-700", bg: "bg-amber-100" },
+  high: { label: "High crowds", color: "text-orange-700", bg: "bg-orange-100" },
+  extreme: { label: "Very busy", color: "text-red-700", bg: "bg-red-100" },
+};
+
+function getBarColor(value: number): string {
+  if (value <= 3) return "bg-green-400";
+  if (value <= 6) return "bg-amber-400";
+  if (value <= 8) return "bg-orange-400";
+  return "bg-red-400";
+}
+
+function CrowdPressureChart({ pressure }: { pressure: CrowdPressure }) {
+  const style = CROWD_LEVEL_STYLES[pressure.level] || CROWD_LEVEL_STYLES.moderate;
+  const currentHour = new Date().getHours();
+  const seasonLabel = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+
+  return (
+    <div className="mt-4 bg-gray-50 border border-gray-200 rounded-xl p-4">
+      <div className="flex items-center gap-2 mb-3">
+        <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        <span className={`text-[10px] font-semibold tracking-widest-custom uppercase px-2 py-0.5 rounded-full ${style.bg} ${style.color}`}>
+          {style.label}
+        </span>
+      </div>
+
+      {/* Busyness bar chart */}
+      <div className="flex items-end gap-[2px] h-10 mb-2">
+        {pressure.byHour.map((value, hour) => (
+          <div
+            key={hour}
+            className={`flex-1 rounded-t-sm transition-opacity ${getBarColor(value)} ${hour === currentHour ? "ring-1 ring-gray-800" : "opacity-70"}`}
+            style={{ height: `${Math.max(value * 10, 2)}%` }}
+            title={`${hour}:00 — ${value}/10 busy`}
+          />
+        ))}
+      </div>
+      <div className="flex justify-between text-[9px] text-gray-400 mb-2">
+        <span>12am</span>
+        <span>6am</span>
+        <span>12pm</span>
+        <span>6pm</span>
+        <span>12am</span>
+      </div>
+
+      <p className="text-xs text-gray-600">
+        <span className="font-semibold">Usually busiest:</span> {pressure.peakTimes}
+      </p>
+      <p className="text-xs text-teal font-semibold mt-1">{pressure.tip}</p>
+
+      {pressure.bestSeason !== pressure.worstSeason && (
+        <p className="text-xs text-gray-500 mt-1">
+          Best time to visit: <span className="font-semibold text-green-600">{seasonLabel(pressure.bestSeason)}</span>
+          {" "}(much quieter than {seasonLabel(pressure.worstSeason)})
+        </p>
+      )}
+    </div>
+  );
+}
+
 function SegmentItem({ segment }: { segment: Segment }) {
   const [rainyOpen, setRainyOpen] = useState(false);
   const time = TIME_LABELS[segment.timeOfDay] || { label: segment.timeOfDay, color: "bg-gray-100 text-gray-600" };
@@ -158,6 +233,21 @@ function SegmentItem({ segment }: { segment: Segment }) {
             Local Tip
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">{segment.localTip}</p>
+        </div>
+      )}
+
+      {/* Crowd pressure indicator */}
+      {segment.crowdPressure && (
+        <CrowdPressureChart pressure={segment.crowdPressure} />
+      )}
+
+      {/* Impact note */}
+      {segment.impactNote && (
+        <div className="flex items-start gap-2 mt-3">
+          <svg className="w-4 h-4 text-green-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+          </svg>
+          <p className="text-xs text-green-700 italic leading-relaxed">{segment.impactNote}</p>
         </div>
       )}
 

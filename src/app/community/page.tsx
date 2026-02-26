@@ -2,6 +2,7 @@ import PageLayout from "@/components/templates/PageLayout";
 import CommunityHero from "@/components/community/CommunityHero";
 import CommunityFeed from "@/components/community/CommunityFeed";
 import CommunitySidebar from "@/components/community/CommunitySidebar";
+import QuickSharePrompt from "@/components/community/QuickSharePrompt";
 import Link from "next/link";
 
 export default function CommunityPage() {
@@ -30,6 +31,8 @@ export default function CommunityPage() {
           </div>
         </div>
       </section>
+
+      <QuickSharePrompt />
     </PageLayout>
   );
 }

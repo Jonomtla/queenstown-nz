@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PageLayout from "@/components/templates/PageLayout";
 import ContributorBadge from "@/components/community/ContributorBadge";
-import UpvoteButton from "@/components/community/UpvoteButton";
+import ReactionButtons from "@/components/community/ReactionButtons";
 import ItineraryDayBreakdown from "@/components/community/ItineraryDayBreakdown";
 import CommentSection from "@/components/community/CommentSection";
 import ItineraryCard from "@/components/community/ItineraryCard";
@@ -14,6 +14,8 @@ import ItineraryMap from "@/components/community/ItineraryMap";
 import PackingList from "@/components/community/PackingList";
 import UserStories from "@/components/community/UserStories";
 import ShareButtons from "@/components/community/ShareButtons";
+import CrowdSummary from "@/components/community/CrowdSummary";
+import SaveButton from "@/components/community/SaveButton";
 import itinerariesData from "@/data/community-itineraries.json";
 import contributorsData from "@/data/community-contributors.json";
 
@@ -97,6 +99,7 @@ type Itinerary = {
   summary: string;
   coverImage: string;
   upvotes: number;
+  reactions?: { stayLonger: number; confirmed: number; contextMatters: number };
   commentCount: number;
   endorsements?: Record<string, number>;
   adaptations?: Record<string, Adaptation>;
@@ -223,7 +226,7 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
               )}
             </div>
             <div className="shrink-0">
-              <UpvoteButton count={itinerary.upvotes} />
+              <ReactionButtons reactions={itinerary.reactions || { stayLonger: Math.round(itinerary.upvotes * 0.6), confirmed: Math.round(itinerary.upvotes * 0.8), contextMatters: Math.round(itinerary.upvotes * 0.15) }} />
             </div>
           </div>
 
@@ -249,6 +252,9 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
             <ItineraryMap days={itinerary.days} />
           </div>
 
+          {/* Crowd Summary */}
+          <CrowdSummary days={itinerary.days} />
+
           {/* Day breakdown */}
           <ItineraryDayBreakdown days={itinerary.days} />
 
@@ -268,9 +274,7 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
 
           {/* Action buttons */}
           <div className="flex flex-wrap gap-4 mt-12 pt-8 border-t border-gray-200">
-            <button className="border border-teal rounded-full px-6 py-2.5 text-xs font-semibold tracking-widest-custom uppercase text-teal hover:bg-teal hover:text-white transition-colors cursor-not-allowed opacity-60">
-              Save This Itinerary
-            </button>
+            <SaveButton itemId={slug} itemType="itinerary" title={itinerary.title} saveCount={142} />
             {itinerary.adaptations && Object.keys(itinerary.adaptations).length > 0 && (
               <AdaptItinerary itinerary={itinerary} />
             )}
