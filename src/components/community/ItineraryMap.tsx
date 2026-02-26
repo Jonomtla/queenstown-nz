@@ -1,3 +1,8 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+import type L from "leaflet";
+
 interface Place {
   name: string;
   lat?: number;
@@ -5,6 +10,7 @@ interface Place {
 }
 
 interface Segment {
+  title: string;
   places: Place[];
 }
 
@@ -24,20 +30,17 @@ const DAY_COLORS = [
   "#c026d3", // fuchsia
 ];
 
-export default function ItineraryMap({ days }: { days: Day[] }) {
-  // Collect all points with coordinates
-  const points: { lat: number; lng: number; name: string; dayIndex: number; label: string }[] = [];
-  let segIdx = 0;
-
+function collectPoints(days: Day[]) {
+  const points: { lat: number; lng: number; name: string; segmentTitle: string; dayIndex: number; label: string }[] = [];
   for (const day of days) {
     for (let s = 0; s < day.segments.length; s++) {
       for (const place of day.segments[s].places) {
         if (place.lat && place.lng) {
-          segIdx++;
           points.push({
             lat: place.lat,
             lng: place.lng,
             name: place.name,
+            segmentTitle: day.segments[s].title,
             dayIndex: day.dayNumber - 1,
             label: `${day.dayNumber}.${s + 1}`,
           });
@@ -45,30 +48,79 @@ export default function ItineraryMap({ days }: { days: Day[] }) {
       }
     }
   }
+  return points;
+}
+
+export default function ItineraryMap({ days }: { days: Day[] }) {
+  const mapRef = useRef<HTMLDivElement>(null);
+  const mapInstanceRef = useRef<L.Map | null>(null);
+
+  const points = collectPoints(days);
+
+  useEffect(() => {
+    if (!mapRef.current || points.length < 2 || mapInstanceRef.current) return;
+
+    let map: L.Map;
+
+    (async () => {
+      const leaflet = await import("leaflet");
+
+      if (!mapRef.current || mapInstanceRef.current) return;
+
+      map = leaflet.map(mapRef.current, {
+        scrollWheelZoom: false,
+        attributionControl: true,
+      });
+      mapInstanceRef.current = map;
+
+      leaflet.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        maxZoom: 18,
+      }).addTo(map);
+
+      const bounds = leaflet.latLngBounds(points.map((p) => [p.lat, p.lng]));
+      map.fitBounds(bounds, { padding: [40, 40] });
+
+      const lineCoords = points.map((p) => [p.lat, p.lng] as [number, number]);
+      leaflet.polyline(lineCoords, {
+        color: "#94a3b8",
+        weight: 2,
+        dashArray: "8 6",
+        opacity: 0.7,
+      }).addTo(map);
+
+      for (const point of points) {
+        const color = DAY_COLORS[point.dayIndex % DAY_COLORS.length];
+
+        const icon = leaflet.divIcon({
+          className: "itinerary-map-marker",
+          html: `<div style="
+            width: 28px; height: 28px; border-radius: 50%;
+            background: ${color}; border: 2px solid white;
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 10px; font-weight: 700;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+          ">${point.label}</div>`,
+          iconSize: [28, 28],
+          iconAnchor: [14, 14],
+        });
+
+        leaflet.marker([point.lat, point.lng], { icon })
+          .bindPopup(`<strong>${point.name}</strong><br/><span style="color:#666;font-size:12px">${point.segmentTitle}</span>`)
+          .addTo(map);
+      }
+    })();
+
+    return () => {
+      if (mapInstanceRef.current) {
+        mapInstanceRef.current.remove();
+        mapInstanceRef.current = null;
+      }
+    };
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (points.length < 2) return null;
 
-  // Calculate bounds with padding
-  const lats = points.map((p) => p.lat);
-  const lngs = points.map((p) => p.lng);
-  const minLat = Math.min(...lats);
-  const maxLat = Math.max(...lats);
-  const minLng = Math.min(...lngs);
-  const maxLng = Math.max(...lngs);
-
-  const latRange = maxLat - minLat || 0.01;
-  const lngRange = maxLng - minLng || 0.01;
-  const padding = 40;
-  const width = 600;
-  const height = 400;
-  const innerW = width - padding * 2;
-  const innerH = height - padding * 2;
-
-  const toX = (lng: number) => padding + ((lng - minLng) / lngRange) * innerW;
-  // Invert Y since lat increases northward
-  const toY = (lat: number) => padding + ((maxLat - lat) / latRange) * innerH;
-
-  // Unique days for legend
   const dayNumbers = [...new Set(points.map((p) => p.dayIndex))];
 
   return (
@@ -80,55 +132,8 @@ export default function ItineraryMap({ days }: { days: Day[] }) {
         <h3 className="text-sm font-bold tracking-widest-custom uppercase text-teal">Your Route</h3>
       </div>
 
-      <svg viewBox={`0 0 ${width} ${height}`} className="w-full h-auto" role="img" aria-label="Route overview map">
-        {/* Background */}
-        <rect x="0" y="0" width={width} height={height} rx="12" fill="#f5f5f0" />
+      <div ref={mapRef} className="w-full h-[400px] rounded-xl overflow-hidden" />
 
-        {/* Connecting lines */}
-        {points.slice(1).map((point, i) => {
-          const prev = points[i];
-          return (
-            <line
-              key={`line-${i}`}
-              x1={toX(prev.lng)}
-              y1={toY(prev.lat)}
-              x2={toX(point.lng)}
-              y2={toY(point.lat)}
-              stroke="#94a3b8"
-              strokeWidth="1.5"
-              strokeDasharray="6 4"
-              opacity="0.6"
-            />
-          );
-        })}
-
-        {/* Pins */}
-        {points.map((point, i) => {
-          const color = DAY_COLORS[point.dayIndex % DAY_COLORS.length];
-          const x = toX(point.lng);
-          const y = toY(point.lat);
-          return (
-            <g key={`pin-${i}`}>
-              <title>{point.name}</title>
-              <circle cx={x} cy={y} r="14" fill={color} opacity="0.15" />
-              <circle cx={x} cy={y} r="8" fill={color} stroke="white" strokeWidth="2" />
-              <text
-                x={x}
-                y={y + 1}
-                textAnchor="middle"
-                dominantBaseline="central"
-                fill="white"
-                fontSize="7"
-                fontWeight="bold"
-              >
-                {point.label}
-              </text>
-            </g>
-          );
-        })}
-      </svg>
-
-      {/* Legend */}
       <div className="flex flex-wrap gap-3 mt-3">
         {dayNumbers.map((dayIdx) => {
           const day = days[dayIdx];
