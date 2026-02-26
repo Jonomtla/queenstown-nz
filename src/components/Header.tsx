@@ -60,6 +60,7 @@ const NAV_ITEMS = [
       { label: "Winter Guide", href: "/community/category/winter/" },
       { label: "Family", href: "/community/category/family/" },
       { label: "Dining Guide", href: "/community/category/dining/" },
+      { label: "Golf Hub", href: "/community/hubs/golf/" },
     ],
   },
 ];

@@ -1,0 +1,166 @@
+{
+  "hero": {
+    "title": "Golf in Queenstown",
+    "subtitle": "World-class courses framed by mountains, lakes, and Central Otago vineyards. Tee off at sunrise with The Remarkables as your backdrop.",
+    "image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_800,q_65,w_1600,x_3439,y_4457/v1/clients/queenstownnz/Queenstown_Golf_Club_8__4de95f71-8986-4f98-bd7d-30d79056c6db.jpg",
+    "stats": {
+      "courses": 6,
+      "holes": "9 to 27",
+      "season": "Year-round",
+      "bestMonth": "March"
+    }
+  },
+  "courses": [
+    {
+      "slug": "millbrook-resort",
+      "name": "Millbrook Resort",
+      "holes": 27,
+      "par": 72,
+      "type": "Championship",
+      "location": "Arrowtown",
+      "description": "27-hole championship course designed by Sir Bob Charles. Set against the Remarkables with autumn colour that rivals Augusta. The Coronet Nine is the signature — a par-3 over water with the mountains as a backdrop.",
+      "greenFee": "$175-$250",
+      "image": "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=800&h=500&fit=crop",
+      "bestTime": "Autumn mornings — golden light, no wind, empty fairways",
+      "localTip": "Book the 7:15am tee time. You'll have the course to yourself and finish in time for lunch at the Millhouse.",
+      "crowdPressure": { "level": "moderate", "peakMonths": [0, 1, 11], "quietMonths": [4, 5, 6, 7] },
+      "operatorNote": "Cart included in green fee. Twilight rates after 3pm from Nov-Mar."
+    },
+    {
+      "slug": "frankton-golf-centre",
+      "name": "Frankton Golf Centre",
+      "holes": 9,
+      "par": 33,
+      "type": "Public",
+      "location": "Frankton",
+      "description": "Relaxed 9-hole course with views of The Remarkables and Lake Wakatipu. No booking required — just show up. Perfect for a casual round between activities.",
+      "greenFee": "$20-$35",
+      "image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_600,q_65,w_800,x_3439,y_4457/v1/clients/queenstownnz/Queenstown_Golf_Club_8__4de95f71-8986-4f98-bd7d-30d79056c6db.jpg",
+      "bestTime": "Late afternoon in summer — warm, golden, quiet",
+      "localTip": "Bring your own clubs if you can. Rental sets are basic. The 7th hole views are worth the walk alone.",
+      "crowdPressure": { "level": "low", "peakMonths": [0, 1], "quietMonths": [5, 6, 7, 8] },
+      "operatorNote": "Open dawn to dusk. No booking needed — walk on anytime."
+    },
+    {
+      "slug": "jacks-point",
+      "name": "Jack's Point Golf Course",
+      "holes": 18,
+      "par": 72,
+      "type": "Championship",
+      "location": "Jack's Point",
+      "description": "Ranked #1 in NZ by Golf Digest multiple times. John Darby designed this links-style course that plays along the shores of Lake Wakatipu with The Remarkables towering above. Holes 14-16 along the lake are unforgettable.",
+      "greenFee": "$225-$350",
+      "image": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=800&h=500&fit=crop",
+      "bestTime": "Early autumn — still warm, no wind, shoulder season rates",
+      "localTip": "The lakeside holes (14-16) are the money shots. If you only have time for 9, play the back nine.",
+      "crowdPressure": { "level": "high", "peakMonths": [0, 1, 2, 11], "quietMonths": [5, 6, 7] },
+      "operatorNote": "Booking essential. 7-day advance booking recommended in summer. Club hire available."
+    },
+    {
+      "slug": "arrowtown-golf-club",
+      "name": "Arrowtown Golf Club",
+      "holes": 18,
+      "par": 70,
+      "type": "Members/Visitors",
+      "location": "Arrowtown",
+      "description": "Charming 18-hole course nestled in the Arrowtown basin. Tree-lined fairways, mountain views, and a genuine small-town golf club atmosphere. The clubhouse bacon butty is legendary.",
+      "greenFee": "$60-$90",
+      "image": "https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?w=800&h=500&fit=crop",
+      "bestTime": "Autumn — the deciduous trees lining the fairways turn gold",
+      "localTip": "Play in April when the trees turn. It's one of the most photogenic rounds you'll ever play. Stay for the bacon butty.",
+      "crowdPressure": { "level": "low", "peakMonths": [0, 3], "quietMonths": [5, 6, 7, 8] },
+      "operatorNote": "Visitors welcome any day. Book 48hrs ahead in summer. Club hire $30."
+    },
+    {
+      "slug": "queenstown-golf-club",
+      "name": "Queenstown Golf Club",
+      "holes": 18,
+      "par": 72,
+      "type": "Members/Visitors",
+      "location": "Kelvin Heights",
+      "description": "18-hole lakefront course on the Kelvin Heights peninsula. The most scenic course in town — surrounded by water on three sides with 360° mountain views. The water taxi from Queenstown Bay adds to the experience.",
+      "greenFee": "$95-$140",
+      "image": "https://images.unsplash.com/photo-1592919505780-303950717480?w=800&h=500&fit=crop",
+      "bestTime": "Morning round, any season — the lake is glassy before 10am",
+      "localTip": "Take the water taxi from Queenstown Bay (10 mins). It's the most scenic commute to any golf course in the world.",
+      "crowdPressure": { "level": "moderate", "peakMonths": [0, 1, 11], "quietMonths": [5, 6, 7] },
+      "operatorNote": "Water taxi available from Queenstown Bay. Book tee times online."
+    },
+    {
+      "slug": "the-hills",
+      "name": "The Hills",
+      "holes": 18,
+      "par": 72,
+      "type": "Private/Limited Access",
+      "location": "Arrowtown",
+      "description": "Ultra-exclusive course sculpted into the Wakatipu Basin hills. Known for its dramatic landscape art installations between holes. Limited visitor access — but if you can get on, it's bucket-list golf.",
+      "greenFee": "$500+ (guest access only)",
+      "image": "https://images.unsplash.com/photo-1600183952612-1eaa1e4d2a42?w=800&h=500&fit=crop",
+      "bestTime": "Late summer — long golden evenings, art installations glow",
+      "localTip": "The only way on is through a member or by staying at certain partner lodges. Ask your accommodation if they have a relationship.",
+      "crowdPressure": { "level": "low", "peakMonths": [1], "quietMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] },
+      "operatorNote": "Private club. Guest access via member introduction or partner lodge bookings."
+    }
+  ],
+  "seasonality": {
+    "monthly": [7, 8, 6, 9, 5, 3, 2, 3, 5, 7, 8, 8],
+    "conditions": {
+      "summer": { "label": "Peak Season", "temp": "20-28°C", "daylight": "6am-9:30pm", "notes": "Long days, warm conditions. Book ahead — courses are busy. Early AM and twilight rounds are magic.", "rating": 9 },
+      "autumn": { "label": "Best Season", "temp": "10-20°C", "daylight": "7am-6pm", "notes": "Locals' favourite. Golden trees, calm mornings, empty courses. March is perfection. April brings autumn festival.", "rating": 10 },
+      "winter": { "label": "Quiet Season", "temp": "2-10°C", "daylight": "8am-5pm", "notes": "Cold but clear. Frost delays common before 10am. Courses are empty and green fees drop. Snow on the mountains makes every hole a postcard.", "rating": 6 },
+      "spring": { "label": "Shoulder Season", "temp": "10-18°C", "daylight": "6:30am-7:30pm", "notes": "Courses greening up, warming days. Some rain but great value. September can be wet, October is ideal.", "rating": 8 }
+    }
+  },
+  "communityTips": [
+    {
+      "author": "Dave McPherson",
+      "authorType": "local",
+      "text": "If you're only playing one course, make it Jack's Point. But if you want the authentic local experience, Arrowtown Golf Club on an autumn morning with a bacon butty afterwards is hard to beat.",
+      "helpful": 47
+    },
+    {
+      "author": "Tom Richardson",
+      "authorType": "visitor",
+      "text": "We played 4 courses in 3 days — Millbrook, Jack's Point, Queenstown Golf Club, and Arrowtown. Each completely different. I'd add an extra day just for golf next time.",
+      "helpful": 34
+    },
+    {
+      "author": "Sarah Chen",
+      "authorType": "local",
+      "text": "The water taxi to Queenstown Golf Club is a must-do even if you don't play golf. 10 minutes across the lake, stunning views. My partner plays while I walk the Kelvin Heights trail.",
+      "helpful": 28
+    },
+    {
+      "author": "Craig & Wendy",
+      "authorType": "visitor",
+      "text": "We came for 3 days of skiing but it rained. Played Frankton instead — $35 for 9 holes with Remarkables views. Best rainy day backup we've ever had.",
+      "helpful": 22
+    }
+  ],
+  "itineraryIdeas": [
+    {
+      "title": "The 3-Day Golf Trail",
+      "days": ["Millbrook Resort (27 holes) + lunch at the Millhouse", "Jack's Point (18 holes) + Gibbston wine tasting", "Arrowtown Golf Club (18 holes) + historic village walk"],
+      "bestSeason": "autumn",
+      "tip": "Book accommodation in Arrowtown — you're central to 3 of the 4 best courses."
+    },
+    {
+      "title": "Golf & Wine Weekend",
+      "days": ["Jack's Point morning round + Gibbston Valley cellar doors afternoon", "Queenstown Golf Club via water taxi + waterfront dinner"],
+      "bestSeason": "summer",
+      "tip": "The Queenstown Trail cycling path connects the courses. Rent e-bikes."
+    },
+    {
+      "title": "Casual Golf Day",
+      "days": ["Frankton Golf Centre (9 holes, walk-on) + Remarkables Park lunch + Queenstown Gardens frisbee golf"],
+      "bestSeason": "any",
+      "tip": "No booking needed for either. Great for families or a half-day activity."
+    }
+  ],
+  "stayLonger": {
+    "averageGolfTrip": 2.1,
+    "recommendedDays": 4,
+    "stat": "Golfers who play 3+ courses rate their Queenstown trip 52% higher",
+    "nudge": "Most golfers come for 2 days and wish they'd booked 4. Each course is completely different — lake, mountain, vineyard, bush. You need at least 3 rounds to get the full picture."
+  }
+}
