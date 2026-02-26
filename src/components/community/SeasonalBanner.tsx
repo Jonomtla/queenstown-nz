@@ -50,30 +50,41 @@ export default function SeasonalBanner({ activeSeason, onSeasonChange }: Seasona
   if (dismissed || activeSeason === currentSeason) return null;
 
   return (
-    <div className="bg-teal/10 border border-teal/20 rounded-xl p-4 mb-6 flex items-center gap-3">
-      <div className="w-10 h-10 rounded-full bg-teal/20 flex items-center justify-center shrink-0">
-        <svg className="w-5 h-5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={season.icon} />
-        </svg>
+    <div className="bg-teal/10 border border-teal/20 rounded-xl p-4 mb-6 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+      <div className="flex items-center gap-3 w-full sm:w-auto">
+        <div className="w-10 h-10 rounded-full bg-teal/20 flex items-center justify-center shrink-0">
+          <svg className="w-5 h-5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={season.icon} />
+          </svg>
+        </div>
+        <p className="text-sm text-gray-700 flex-1 sm:flex-none">{season.message}</p>
+        <button
+          onClick={() => setDismissed(true)}
+          className="sm:hidden shrink-0 w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors"
+          aria-label="Dismiss"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
       </div>
-      <div className="flex-1 min-w-0">
-        <p className="text-sm text-gray-700">{season.message}</p>
+      <div className="flex items-center gap-2 w-full sm:w-auto sm:ml-auto">
+        <button
+          onClick={() => onSeasonChange(currentSeason)}
+          className="flex-1 sm:flex-none text-xs font-semibold tracking-widest-custom uppercase text-teal hover:text-teal-light transition-colors px-4 py-2.5 rounded-full bg-teal/10 hover:bg-teal/20 text-center"
+        >
+          Show {season.label}
+        </button>
+        <button
+          onClick={() => setDismissed(true)}
+          className="hidden sm:flex shrink-0 w-8 h-8 items-center justify-center text-gray-400 hover:text-gray-600 transition-colors"
+          aria-label="Dismiss"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
       </div>
-      <button
-        onClick={() => onSeasonChange(currentSeason)}
-        className="shrink-0 text-xs font-semibold tracking-widest-custom uppercase text-teal hover:text-teal-light transition-colors px-3 py-1.5 rounded-full bg-teal/10 hover:bg-teal/20"
-      >
-        Show {season.label}
-      </button>
-      <button
-        onClick={() => setDismissed(true)}
-        className="shrink-0 text-gray-400 hover:text-gray-600 transition-colors"
-        aria-label="Dismiss"
-      >
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
     </div>
   );
 }
