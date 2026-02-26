@@ -42,6 +42,15 @@ type RainyAlternative = {
   places: Place[];
 };
 
+type CrowdPressure = {
+  level: "low" | "moderate" | "high" | "extreme";
+  peakTimes: string;
+  tip: string;
+  byHour: number[];
+  bestSeason: string;
+  worstSeason: string;
+};
+
 type Segment = {
   timeOfDay: string;
   title: string;
@@ -52,6 +61,8 @@ type Segment = {
   ageRange?: string;
   setting?: "indoor" | "outdoor" | "both";
   rainyAlternative?: RainyAlternative;
+  crowdPressure?: CrowdPressure;
+  impactNote?: string;
 };
 
 type Adaptation = {
@@ -226,7 +237,7 @@ export default async function ItineraryPage({ params }: { params: Promise<{ slug
               )}
             </div>
             <div className="shrink-0">
-              <ReactionButtons reactions={itinerary.reactions || { stayLonger: Math.round(itinerary.upvotes * 0.6), confirmed: Math.round(itinerary.upvotes * 0.8), contextMatters: Math.round(itinerary.upvotes * 0.15) }} />
+              <ReactionButtons variant="full" reactions={itinerary.reactions || { stayLonger: Math.round(itinerary.upvotes * 0.6), confirmed: Math.round(itinerary.upvotes * 0.8), contextMatters: Math.round(itinerary.upvotes * 0.15) }} />
             </div>
           </div>
 

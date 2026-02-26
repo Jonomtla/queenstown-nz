@@ -103,7 +103,40 @@
             ],
             "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=500&fit=crop",
             "ageRange": "all-ages",
-            "setting": "both"
+            "setting": "both",
+            "crowdPressure": {
+              "level": "moderate",
+              "peakTimes": "11am-2pm",
+              "tip": "Visit on a weekday morning for a quieter experience",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                2,
+                4,
+                6,
+                7,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "bestSeason": "winter",
+              "worstSeason": "autumn"
+            }
           },
           {
             "timeOfDay": "evening",
@@ -244,7 +277,40 @@
             ],
             "localTip": "Locals know the queue is shortest between 8-9am and after 2pm. Midday is chaos.",
             "ageRange": "all-ages",
-            "setting": "indoor"
+            "setting": "indoor",
+            "crowdPressure": {
+              "level": "low",
+              "peakTimes": "10am-12pm",
+              "tip": "Sunday mornings are relaxed — take your time",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                2,
+                3,
+                4,
+                4,
+                3,
+                3,
+                2,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "bestSeason": "winter",
+              "worstSeason": "summer"
+            }
           },
           {
             "timeOfDay": "afternoon",
@@ -570,7 +636,41 @@
             ],
             "localTip": "Buy the combo ticket (gondola + 3 luge rides). The kids will want more than one go, guaranteed.",
             "ageRange": "ages-3+",
-            "setting": "outdoor"
+            "setting": "outdoor",
+            "crowdPressure": {
+              "level": "moderate",
+              "peakTimes": "11am-3pm",
+              "tip": "Book the first time slot of the day for shorter queues",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                2,
+                4,
+                6,
+                8,
+                8,
+                7,
+                7,
+                6,
+                5,
+                3,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "bestSeason": "autumn",
+              "worstSeason": "summer"
+            },
+            "impactNote": "This operator contributes 5% of revenue to Whakatipu Wildlife Trust"
           },
           {
             "timeOfDay": "afternoon",
@@ -622,7 +722,40 @@
             ],
             "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=500&fit=crop",
             "ageRange": "all-ages",
-            "setting": "outdoor"
+            "setting": "outdoor",
+            "crowdPressure": {
+              "level": "high",
+              "peakTimes": "10am-2pm",
+              "tip": "The Luge gets a 45-min queue at peak — go first thing or after 3pm",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                3,
+                6,
+                8,
+                9,
+                10,
+                9,
+                8,
+                7,
+                5,
+                4,
+                3,
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              "bestSeason": "winter",
+              "worstSeason": "summer"
+            }
           },
           {
             "timeOfDay": "afternoon",
@@ -986,7 +1119,40 @@
                 "lng": 168.6613
               }
             ],
-            "setting": "both"
+            "setting": "both",
+            "crowdPressure": {
+              "level": "moderate",
+              "peakTimes": "12pm-2pm",
+              "tip": "Lunch rush is real — book ahead or visit at 2:30pm",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                2,
+                4,
+                7,
+                9,
+                8,
+                5,
+                3,
+                2,
+                2,
+                3,
+                4,
+                3,
+                2,
+                1,
+                0
+              ],
+              "bestSeason": "autumn",
+              "worstSeason": "summer"
+            }
           },
           {
             "timeOfDay": "evening",
@@ -1001,7 +1167,41 @@
               }
             ],
             "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&h=500&fit=crop",
-            "setting": "indoor"
+            "setting": "indoor",
+            "crowdPressure": {
+              "level": "high",
+              "peakTimes": "6pm-8pm",
+              "tip": "Book at least 3 days ahead for Friday/Saturday dinner",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                2,
+                2,
+                2,
+                2,
+                3,
+                5,
+                8,
+                9,
+                8,
+                5,
+                2,
+                0
+              ],
+              "bestSeason": "winter",
+              "worstSeason": "summer"
+            },
+            "impactNote": "Sources produce from Central Otago growers — ask about the seasonal specials"
           }
         ]
       },
@@ -1346,7 +1546,41 @@
                   "lng": 168.661
                 }
               ]
-            }
+            },
+            "crowdPressure": {
+              "level": "low",
+              "peakTimes": "11am-1pm",
+              "tip": "This trail sees maybe 20 people a day — real solitude",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                2,
+                3,
+                3,
+                3,
+                2,
+                2,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "bestSeason": "autumn",
+              "worstSeason": "summer"
+            },
+            "impactNote": "DOC-maintained track — hut fees fund pest control in the Wakatipu basin"
           },
           {
             "timeOfDay": "evening",
@@ -1887,7 +2121,40 @@
               }
             ],
             "ageRange": "ages-8+",
-            "setting": "indoor"
+            "setting": "indoor",
+            "crowdPressure": {
+              "level": "moderate",
+              "peakTimes": "10am-12pm",
+              "tip": "Everyone heads indoors on rainy days — go in the afternoon when the rush dies",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                3,
+                5,
+                7,
+                7,
+                6,
+                5,
+                4,
+                3,
+                3,
+                2,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "bestSeason": "summer",
+              "worstSeason": "winter"
+            }
           },
           {
             "timeOfDay": "afternoon",
@@ -2490,7 +2757,41 @@
               }
             ],
             "ageRange": "adults-only",
-            "setting": "indoor"
+            "setting": "indoor",
+            "crowdPressure": {
+              "level": "low",
+              "peakTimes": "5pm-7pm",
+              "tip": "Onsen never feels crowded — but sunset slots book out weeks ahead",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                2,
+                3,
+                3,
+                3,
+                3,
+                3,
+                4,
+                5,
+                7,
+                6,
+                4,
+                2,
+                1,
+                0,
+                0
+              ],
+              "bestSeason": "winter",
+              "worstSeason": "summer"
+            },
+            "impactNote": "Built with minimal environmental footprint — geothermally heated, native plantings throughout"
           },
           {
             "timeOfDay": "evening",
@@ -2868,7 +3169,41 @@
                 "lng": 168.658
               }
             ],
-            "setting": "outdoor"
+            "setting": "outdoor",
+            "crowdPressure": {
+              "level": "extreme",
+              "peakTimes": "10am-3pm",
+              "tip": "The canyon gets 200+ people in summer peaks — book the 8am slot",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                5,
+                8,
+                10,
+                10,
+                10,
+                9,
+                9,
+                8,
+                6,
+                4,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "bestSeason": "autumn",
+              "worstSeason": "summer"
+            },
+            "impactNote": "This operator plants a native tree for every 100 bookings"
           },
           {
             "timeOfDay": "afternoon",
@@ -4046,7 +4381,41 @@
             "image": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=500&fit=crop",
             "setting": "outdoor",
             "localTip": "Start by 7am to have the summit to yourself. Take the gondola down to save your knees if you're wrecked.",
-            "ageRange": "teens+"
+            "ageRange": "teens+",
+            "crowdPressure": {
+              "level": "moderate",
+              "peakTimes": "10am-1pm",
+              "tip": "Most day-trippers arrive by 10am — the afternoon crowd thins fast",
+              "byHour": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                3,
+                5,
+                7,
+                8,
+                8,
+                7,
+                5,
+                4,
+                3,
+                2,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "bestSeason": "autumn",
+              "worstSeason": "summer"
+            },
+            "impactNote": "Stay on marked tracks — alpine tussock takes decades to recover from trampling"
           },
           {
             "timeOfDay": "evening",
