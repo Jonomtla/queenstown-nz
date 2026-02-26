@@ -8,6 +8,9 @@ import TripMatcher from "./TripMatcher";
 import SeasonalBanner from "./SeasonalBanner";
 import SavedTripBar from "./SavedTripBar";
 import ContributeBar from "./ContributeBar";
+import DestinationBusyness from "./DestinationBusyness";
+import SeasonalDepth from "./SeasonalDepth";
+import StayLongerProof from "./StayLongerProof";
 import itinerariesData from "@/data/community-itineraries.json";
 import recommendationsData from "@/data/community-recommendations.json";
 import contributorsData from "@/data/community-contributors.json";
@@ -132,8 +135,8 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
       />
 
       <div className="mt-8 grid md:grid-cols-2 gap-6" aria-live="polite">
-        {filteredItems.map((item) => {
-          if (item.type === "itinerary") {
+        {filteredItems.map((item, index) => {
+          const card = item.type === "itinerary" ? (() => {
             const it = itineraries[item.slug];
             const contrib = contributors[it.contributorSlug];
             return (
@@ -159,26 +162,44 @@ export default function CommunityFeed({ initialCategory, initialSeason, initialT
                 ecoTag={it.ecoTag}
               />
             );
-          }
-          const rec = recommendations[item.slug];
-          const contrib = contributors[rec.contributorSlug];
-          return (
-            <RecommendationCard
-              key={item.slug}
-              slug={item.slug}
-              title={rec.title}
-              text={rec.text}
-              category={rec.category}
-              upvotes={rec.upvotes}
-              reactions={rec.reactions}
-              commentCount={rec.commentCount}
-              date={rec.date}
-              contributor={{ ...contrib, slug: rec.contributorSlug }}
-              places={rec.places}
-              comments={rec.comments}
-              photos={rec.photos}
-            />
-          );
+          })() : (() => {
+            const rec = recommendations[item.slug];
+            const contrib = contributors[rec.contributorSlug];
+            return (
+              <RecommendationCard
+                key={item.slug}
+                slug={item.slug}
+                title={rec.title}
+                text={rec.text}
+                category={rec.category}
+                upvotes={rec.upvotes}
+                reactions={rec.reactions}
+                commentCount={rec.commentCount}
+                date={rec.date}
+                contributor={{ ...contrib, slug: rec.contributorSlug }}
+                places={rec.places}
+                comments={rec.comments}
+                photos={rec.photos}
+              />
+            );
+          })();
+
+          // Insert sidebar widgets between cards on mobile (hidden on desktop where sidebar exists)
+          const mobileWidget = index === 3 ? (
+            <div key="mw-busyness" className="lg:hidden md:col-span-2">
+              <DestinationBusyness />
+            </div>
+          ) : index === 7 ? (
+            <div key="mw-seasonal" className="lg:hidden md:col-span-2">
+              <SeasonalDepth />
+            </div>
+          ) : index === 11 ? (
+            <div key="mw-staylonger" className="lg:hidden md:col-span-2">
+              <StayLongerProof />
+            </div>
+          ) : null;
+
+          return [card, mobileWidget];
         })}
       </div>
 
