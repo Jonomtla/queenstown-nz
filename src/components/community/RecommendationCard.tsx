@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ContributorBadge from "./ContributorBadge";
 import ReactionButtons from "./ReactionButtons";
+import SaveButton from "./SaveButton";
 import contributorsData from "@/data/community-contributors.json";
 
 type ContributorData = { name: string; avatar: string; type: string };
@@ -389,11 +390,13 @@ export default function RecommendationCard(props: RecommendationCardProps) {
             avatar={contributor.avatar}
             type={contributor.type}
           />
-          <button
-            onClick={(e) => { e.stopPropagation(); setModalOpen(true); }}
-            aria-label={`${commentCount} comments — view details`}
-            className="inline-flex items-center gap-1.5 text-xs text-gray-400 hover:text-teal transition-colors"
-          >
+          <div className="flex items-center gap-3">
+            <SaveButton itemId={props.slug} itemType="recommendation" title={title} variant="compact" />
+            <button
+              onClick={(e) => { e.stopPropagation(); setModalOpen(true); }}
+              aria-label={`${commentCount} comments — view details`}
+              className="inline-flex items-center gap-1.5 text-xs text-gray-400 hover:text-teal transition-colors"
+            >
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 strokeLinecap="round"
@@ -403,7 +406,8 @@ export default function RecommendationCard(props: RecommendationCardProps) {
               />
             </svg>
             {commentCount}
-          </button>
+            </button>
+          </div>
         </div>
       </div>
 

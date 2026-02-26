@@ -142,12 +142,12 @@ function CrowdPressureChart({ pressure }: { pressure: CrowdPressure }) {
       </div>
 
       {/* Busyness bar chart */}
-      <div className="flex items-end gap-[2px] h-10 mb-2">
+      <div className="flex items-end gap-[2px] h-12 mb-2">
         {pressure.byHour.map((value, hour) => (
           <div
             key={hour}
             className={`flex-1 rounded-t-sm transition-opacity ${getBarColor(value)} ${hour === currentHour ? "ring-1 ring-gray-800" : "opacity-70"}`}
-            style={{ height: `${Math.max(value * 10, 2)}%` }}
+            style={{ height: `${Math.max(value * 4.5, 2)}px` }}
             title={`${hour}:00 — ${value}/10 busy`}
           />
         ))}

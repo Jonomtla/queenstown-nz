@@ -93,7 +93,7 @@ export default function DestinationBusyness() {
                       ? getBarColor(data.value) + " opacity-100"
                       : getBarColor(data.value) + " opacity-50"
                 }`}
-                style={{ height: `${Math.max(data.value * 10, 5)}%` }}
+                style={{ height: `${Math.max(data.value * 7, 4)}px` }}
               />
             </div>
           );
